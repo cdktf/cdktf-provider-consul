@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 2.16";
-const FQ_PROVIDER_NAME = "consul";
+const FQ_PROVIDER_NAME = "hashicorp/consul";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
