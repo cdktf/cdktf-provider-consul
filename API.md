@@ -341,6 +341,8 @@ public resetTokenLocality(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -373,6 +375,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformElement"></a>
+
+```typescript
+import { aclAuthMethod } from '@cdktf/provider-consul'
+
+aclAuthMethod.AclAuthMethod.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformResource"></a>
+
+```typescript
+import { aclAuthMethod } from '@cdktf/provider-consul'
+
+aclAuthMethod.AclAuthMethod.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1112,6 +1142,8 @@ public resetSelector(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1144,6 +1176,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformElement"></a>
+
+```typescript
+import { aclBindingRule } from '@cdktf/provider-consul'
+
+aclBindingRule.AclBindingRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformResource"></a>
+
+```typescript
+import { aclBindingRule } from '@cdktf/provider-consul'
+
+aclBindingRule.AclBindingRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1795,6 +1855,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1827,6 +1889,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformElement"></a>
+
+```typescript
+import { aclPolicy } from '@cdktf/provider-consul'
+
+aclPolicy.AclPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformResource"></a>
+
+```typescript
+import { aclPolicy } from '@cdktf/provider-consul'
+
+aclPolicy.AclPolicy.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2496,6 +2586,8 @@ public resetServiceIdentities(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRole.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2528,6 +2620,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformElement"></a>
+
+```typescript
+import { aclRole } from '@cdktf/provider-consul'
+
+aclRole.AclRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformResource"></a>
+
+```typescript
+import { aclRole } from '@cdktf/provider-consul'
+
+aclRole.AclRole.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3247,6 +3367,8 @@ public resetServiceIdentities(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3279,6 +3401,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformElement"></a>
+
+```typescript
+import { aclToken } from '@cdktf/provider-consul'
+
+aclToken.AclToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformResource"></a>
+
+```typescript
+import { aclToken } from '@cdktf/provider-consul'
+
+aclToken.AclToken.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3968,6 +4118,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4000,6 +4152,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement"></a>
+
+```typescript
+import { aclTokenPolicyAttachment } from '@cdktf/provider-consul'
+
+aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource"></a>
+
+```typescript
+import { aclTokenPolicyAttachment } from '@cdktf/provider-consul'
+
+aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4513,6 +4693,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4545,6 +4727,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformElement"></a>
+
+```typescript
+import { aclTokenRoleAttachment } from '@cdktf/provider-consul'
+
+aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformResource"></a>
+
+```typescript
+import { aclTokenRoleAttachment } from '@cdktf/provider-consul'
+
+aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5065,6 +5275,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5097,6 +5309,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformElement"></a>
+
+```typescript
+import { adminPartition } from '@cdktf/provider-consul'
+
+adminPartition.AdminPartition.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformResource"></a>
+
+```typescript
+import { adminPartition } from '@cdktf/provider-consul'
+
+adminPartition.AdminPartition.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5631,6 +5871,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentService.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentService.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5663,6 +5905,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.agentService.AgentService.isTerraformElement"></a>
+
+```typescript
+import { agentService } from '@cdktf/provider-consul'
+
+agentService.AgentService.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.agentService.AgentService.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.agentService.AgentService.isTerraformResource"></a>
+
+```typescript
+import { agentService } from '@cdktf/provider-consul'
+
+agentService.AgentService.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.agentService.AgentService.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6276,6 +6546,8 @@ public resetUpgradeVersionTag(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -6308,6 +6580,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformElement"></a>
+
+```typescript
+import { autopilotConfig } from '@cdktf/provider-consul'
+
+autopilotConfig.AutopilotConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformResource"></a>
+
+```typescript
+import { autopilotConfig } from '@cdktf/provider-consul'
+
+autopilotConfig.AutopilotConfig.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6987,6 +7287,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7019,6 +7321,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformElement"></a>
+
+```typescript
+import { catalogEntry } from '@cdktf/provider-consul'
+
+catalogEntry.CatalogEntry.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformResource"></a>
+
+```typescript
+import { catalogEntry } from '@cdktf/provider-consul'
+
+catalogEntry.CatalogEntry.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7598,6 +7928,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7630,6 +7962,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformElement"></a>
+
+```typescript
+import { certificateAuthority } from '@cdktf/provider-consul'
+
+certificateAuthority.CertificateAuthority.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformResource"></a>
+
+```typescript
+import { certificateAuthority } from '@cdktf/provider-consul'
+
+certificateAuthority.CertificateAuthority.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8164,6 +8524,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -8196,6 +8558,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformElement"></a>
+
+```typescript
+import { configEntry } from '@cdktf/provider-consul'
+
+configEntry.ConfigEntry.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource"></a>
+
+```typescript
+import { configEntry } from '@cdktf/provider-consul'
+
+configEntry.ConfigEntry.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8750,6 +9140,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -8782,6 +9174,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-consul'
+
+provider.ConsulProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-consul'
+
+provider.ConsulProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9529,6 +9949,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -9561,6 +9983,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAclAuthMethod } from '@cdktf/provider-consul'
+
+dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAclAuthMethod } from '@cdktf/provider-consul'
+
+dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10176,6 +10626,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10208,6 +10660,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAclPolicy } from '@cdktf/provider-consul'
+
+dataConsulAclPolicy.DataConsulAclPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAclPolicy } from '@cdktf/provider-consul'
+
+dataConsulAclPolicy.DataConsulAclPolicy.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10768,6 +11248,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10800,6 +11282,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAclRole } from '@cdktf/provider-consul'
+
+dataConsulAclRole.DataConsulAclRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAclRole } from '@cdktf/provider-consul'
+
+dataConsulAclRole.DataConsulAclRole.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11371,6 +11881,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11403,6 +11915,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAclToken } from '@cdktf/provider-consul'
+
+dataConsulAclToken.DataConsulAclToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAclToken } from '@cdktf/provider-consul'
+
+dataConsulAclToken.DataConsulAclToken.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12014,6 +12554,8 @@ public resetPgpKey(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12046,6 +12588,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAclTokenSecretId } from '@cdktf/provider-consul'
+
+dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAclTokenSecretId } from '@cdktf/provider-consul'
+
+dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12603,6 +13173,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12635,6 +13207,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAgentConfig } from '@cdktf/provider-consul'
+
+dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAgentConfig } from '@cdktf/provider-consul'
+
+dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13141,6 +13741,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -13173,6 +13775,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAgentSelf } from '@cdktf/provider-consul'
+
+dataConsulAgentSelf.DataConsulAgentSelf.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAgentSelf } from '@cdktf/provider-consul'
+
+dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14397,6 +15027,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -14429,6 +15061,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement"></a>
+
+```typescript
+import { dataConsulAutopilotHealth } from '@cdktf/provider-consul'
+
+dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulAutopilotHealth } from '@cdktf/provider-consul'
+
+dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14951,6 +15611,8 @@ public resetQueryOptions(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -14983,6 +15645,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformElement"></a>
+
+```typescript
+import { dataConsulCatalogNodes } from '@cdktf/provider-consul'
+
+dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulCatalogNodes } from '@cdktf/provider-consul'
+
+dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogNodes.DataConsulCatalogNodes.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15537,6 +16227,8 @@ public resetTag(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -15569,6 +16261,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformElement"></a>
+
+```typescript
+import { dataConsulCatalogService } from '@cdktf/provider-consul'
+
+dataConsulCatalogService.DataConsulCatalogService.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulCatalogService } from '@cdktf/provider-consul'
+
+dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16157,6 +16877,8 @@ public resetQueryOptions(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -16189,6 +16911,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformElement"></a>
+
+```typescript
+import { dataConsulCatalogServices } from '@cdktf/provider-consul'
+
+dataConsulCatalogServices.DataConsulCatalogServices.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulCatalogServices } from '@cdktf/provider-consul'
+
+dataConsulCatalogServices.DataConsulCatalogServices.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16702,6 +17452,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -16734,6 +17486,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformElement"></a>
+
+```typescript
+import { dataConsulDatacenters } from '@cdktf/provider-consul'
+
+dataConsulDatacenters.DataConsulDatacenters.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulDatacenters } from '@cdktf/provider-consul'
+
+dataConsulDatacenters.DataConsulDatacenters.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17240,6 +18020,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -17272,6 +18054,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformElement"></a>
+
+```typescript
+import { dataConsulKeyPrefix } from '@cdktf/provider-consul'
+
+dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulKeyPrefix } from '@cdktf/provider-consul'
+
+dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17921,6 +18731,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -17953,6 +18765,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformElement"></a>
+
+```typescript
+import { dataConsulKeys } from '@cdktf/provider-consul'
+
+dataConsulKeys.DataConsulKeys.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulKeys } from '@cdktf/provider-consul'
+
+dataConsulKeys.DataConsulKeys.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -18535,6 +19375,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -18567,6 +19409,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement"></a>
+
+```typescript
+import { dataConsulNetworkAreaMembers } from '@cdktf/provider-consul'
+
+dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulNetworkAreaMembers } from '@cdktf/provider-consul'
+
+dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -19105,6 +19975,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -19137,6 +20009,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement"></a>
+
+```typescript
+import { dataConsulNetworkSegments } from '@cdktf/provider-consul'
+
+dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulNetworkSegments } from '@cdktf/provider-consul'
+
+dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -19659,6 +20559,8 @@ public resetQueryOptions(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -19691,6 +20593,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformElement"></a>
+
+```typescript
+import { dataConsulNodes } from '@cdktf/provider-consul'
+
+dataConsulNodes.DataConsulNodes.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulNodes } from '@cdktf/provider-consul'
+
+dataConsulNodes.DataConsulNodes.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulNodes.DataConsulNodes.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -20211,6 +21141,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -20243,6 +21175,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformElement"></a>
+
+```typescript
+import { dataConsulPeering } from '@cdktf/provider-consul'
+
+dataConsulPeering.DataConsulPeering.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulPeering } from '@cdktf/provider-consul'
+
+dataConsulPeering.DataConsulPeering.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -20840,6 +21800,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -20872,6 +21834,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformElement"></a>
+
+```typescript
+import { dataConsulPeerings } from '@cdktf/provider-consul'
+
+dataConsulPeerings.DataConsulPeerings.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulPeerings } from '@cdktf/provider-consul'
+
+dataConsulPeerings.DataConsulPeerings.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -21393,6 +22383,8 @@ public resetTag(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -21425,6 +22417,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformElement"></a>
+
+```typescript
+import { dataConsulService } from '@cdktf/provider-consul'
+
+dataConsulService.DataConsulService.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulService } from '@cdktf/provider-consul'
+
+dataConsulService.DataConsulService.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -22042,6 +23062,8 @@ public resetWaitFor(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -22074,6 +23096,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement"></a>
+
+```typescript
+import { dataConsulServiceHealth } from '@cdktf/provider-consul'
+
+dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulServiceHealth } from '@cdktf/provider-consul'
+
+dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -22728,6 +23778,8 @@ public resetQueryOptions(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulServices.DataConsulServices.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -22760,6 +23812,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformElement"></a>
+
+```typescript
+import { dataConsulServices } from '@cdktf/provider-consul'
+
+dataConsulServices.DataConsulServices.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformDataSource"></a>
+
+```typescript
+import { dataConsulServices } from '@cdktf/provider-consul'
+
+dataConsulServices.DataConsulServices.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -23308,6 +24388,8 @@ public resetSourceNamespace(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.intention.Intention.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.intention.Intention.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -23340,6 +24422,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.intention.Intention.isTerraformElement"></a>
+
+```typescript
+import { intention } from '@cdktf/provider-consul'
+
+intention.Intention.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.intention.Intention.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.intention.Intention.isTerraformResource"></a>
+
+```typescript
+import { intention } from '@cdktf/provider-consul'
+
+intention.Intention.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.intention.Intention.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -24040,6 +25150,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefix.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -24072,6 +25184,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformElement"></a>
+
+```typescript
+import { keyPrefix } from '@cdktf/provider-consul'
+
+keyPrefix.KeyPrefix.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformResource"></a>
+
+```typescript
+import { keyPrefix } from '@cdktf/provider-consul'
+
+keyPrefix.KeyPrefix.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -24743,6 +25883,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -24775,6 +25917,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.keys.Keys.isTerraformElement"></a>
+
+```typescript
+import { keys } from '@cdktf/provider-consul'
+
+keys.Keys.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.keys.Keys.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.keys.Keys.isTerraformResource"></a>
+
+```typescript
+import { keys } from '@cdktf/provider-consul'
+
+keys.Keys.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.keys.Keys.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -25372,6 +26542,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.license.License.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.license.License.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.license.License.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -25404,6 +26576,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.license.License.isTerraformElement"></a>
+
+```typescript
+import { license } from '@cdktf/provider-consul'
+
+license.License.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.license.License.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.license.License.isTerraformResource"></a>
+
+```typescript
+import { license } from '@cdktf/provider-consul'
+
+license.License.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.license.License.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -26062,6 +27262,8 @@ public resetRoleDefaults(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -26094,6 +27296,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.namespace.Namespace.isTerraformElement"></a>
+
+```typescript
+import { namespace } from '@cdktf/provider-consul'
+
+namespace.Namespace.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespace.Namespace.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.namespace.Namespace.isTerraformResource"></a>
+
+```typescript
+import { namespace } from '@cdktf/provider-consul'
+
+namespace.Namespace.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespace.Namespace.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -26695,6 +27925,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -26727,6 +27959,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformElement"></a>
+
+```typescript
+import { namespacePolicyAttachment } from '@cdktf/provider-consul'
+
+namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformResource"></a>
+
+```typescript
+import { namespacePolicyAttachment } from '@cdktf/provider-consul'
+
+namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -27240,6 +28500,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -27272,6 +28534,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformElement"></a>
+
+```typescript
+import { namespaceRoleAttachment } from '@cdktf/provider-consul'
+
+namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformResource"></a>
+
+```typescript
+import { namespaceRoleAttachment } from '@cdktf/provider-consul'
+
+namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -27813,6 +29103,8 @@ public resetUseTls(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -27845,6 +29137,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.networkArea.NetworkArea.isTerraformElement"></a>
+
+```typescript
+import { networkArea } from '@cdktf/provider-consul'
+
+networkArea.NetworkArea.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.networkArea.NetworkArea.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.networkArea.NetworkArea.isTerraformResource"></a>
+
+```typescript
+import { networkArea } from '@cdktf/provider-consul'
+
+networkArea.NetworkArea.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.networkArea.NetworkArea.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -28452,6 +29772,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.node.Node.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.node.Node.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.node.Node.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -28484,6 +29806,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.node.Node.isTerraformElement"></a>
+
+```typescript
+import { node } from '@cdktf/provider-consul'
+
+node.Node.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.node.Node.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.node.Node.isTerraformResource"></a>
+
+```typescript
+import { node } from '@cdktf/provider-consul'
+
+node.Node.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.node.Node.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -29099,6 +30449,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -29131,6 +30483,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.peering.Peering.isTerraformElement"></a>
+
+```typescript
+import { peering } from '@cdktf/provider-consul'
+
+peering.Peering.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.peering.Peering.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.peering.Peering.isTerraformResource"></a>
+
+```typescript
+import { peering } from '@cdktf/provider-consul'
+
+peering.Peering.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.peering.Peering.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -29790,6 +31170,8 @@ public resetPartition(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -29822,6 +31204,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformElement"></a>
+
+```typescript
+import { peeringToken } from '@cdktf/provider-consul'
+
+peeringToken.PeeringToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformResource"></a>
+
+```typescript
+import { peeringToken } from '@cdktf/provider-consul'
+
+peeringToken.PeeringToken.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -30505,6 +31915,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQuery.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -30537,6 +31949,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformElement"></a>
+
+```typescript
+import { preparedQuery } from '@cdktf/provider-consul'
+
+preparedQuery.PreparedQuery.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformResource"></a>
+
+```typescript
+import { preparedQuery } from '@cdktf/provider-consul'
+
+preparedQuery.PreparedQuery.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -31448,6 +32888,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-consul.service.Service.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-consul.service.Service.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -31480,6 +32922,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-consul.service.Service.isTerraformElement"></a>
+
+```typescript
+import { service } from '@cdktf/provider-consul'
+
+service.Service.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.service.Service.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-consul.service.Service.isTerraformResource"></a>
+
+```typescript
+import { service } from '@cdktf/provider-consul'
+
+service.Service.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.service.Service.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
