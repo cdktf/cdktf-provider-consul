@@ -36,6 +36,7 @@ export * as dataConsulAutopilotHealth from './data-consul-autopilot-health';
 export * as dataConsulCatalogNodes from './data-consul-catalog-nodes';
 export * as dataConsulCatalogService from './data-consul-catalog-service';
 export * as dataConsulCatalogServices from './data-consul-catalog-services';
+export * as dataConsulConfigEntry from './data-consul-config-entry';
 export * as dataConsulDatacenters from './data-consul-datacenters';
 export * as dataConsulKeyPrefix from './data-consul-key-prefix';
 export * as dataConsulKeys from './data-consul-keys';

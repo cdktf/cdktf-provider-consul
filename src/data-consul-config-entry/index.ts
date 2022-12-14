@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/acl_policy
+// https://www.terraform.io/docs/providers/consul/d/config_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,52 +6,64 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataConsulAclPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataConsulConfigEntryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_policy#id DataConsulAclPolicy#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#id DataConsulConfigEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_policy#name DataConsulAclPolicy#name}
+  * The kind of config entry to read.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#kind DataConsulConfigEntry#kind}
+  */
+  readonly kind: string;
+  /**
+  * The name of the config entry to read.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#name DataConsulConfigEntry#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_policy#namespace DataConsulAclPolicy#namespace}
+  * The namespace the config entry is associated with.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#namespace DataConsulConfigEntry#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_policy#partition DataConsulAclPolicy#partition}
+  * The partition the config entry is associated with.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#partition DataConsulConfigEntry#partition}
   */
   readonly partition?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/acl_policy consul_acl_policy}
+* Represents a {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry}
 */
-export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
+export class DataConsulConfigEntry extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "consul_acl_policy";
+  public static readonly tfResourceType = "consul_config_entry";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/acl_policy consul_acl_policy} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataConsulAclPolicyConfig
+  * @param options DataConsulConfigEntryConfig
   */
-  public constructor(scope: Construct, id: string, config: DataConsulAclPolicyConfig) {
+  public constructor(scope: Construct, id: string, config: DataConsulConfigEntryConfig) {
     super(scope, id, {
-      terraformResourceType: 'consul_acl_policy',
+      terraformResourceType: 'consul_config_entry',
       terraformGeneratorMetadata: {
         providerName: 'consul',
         providerVersion: '2.17.0',
@@ -66,6 +78,7 @@ export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._kind = config.kind;
     this._name = config.name;
     this._namespace = config.namespace;
     this._partition = config.partition;
@@ -75,14 +88,9 @@ export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // datacenters - computed: true, optional: false, required: false
-  public get datacenters() {
-    return this.getListAttribute('datacenters');
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
+  // config_json - computed: true, optional: false, required: false
+  public get configJson() {
+    return this.getStringAttribute('config_json');
   }
 
   // id - computed: true, optional: true, required: false
@@ -99,6 +107,19 @@ export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // kind - computed: false, optional: false, required: true
+  private _kind?: string; 
+  public get kind() {
+    return this.getStringAttribute('kind');
+  }
+  public set kind(value: string) {
+    this._kind = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kindInput() {
+    return this._kind;
   }
 
   // name - computed: false, optional: false, required: true
@@ -146,11 +167,6 @@ export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
     return this._partition;
   }
 
-  // rules - computed: true, optional: false, required: false
-  public get rules() {
-    return this.getStringAttribute('rules');
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -158,6 +174,7 @@ export class DataConsulAclPolicy extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      kind: cdktf.stringToTerraform(this._kind),
       name: cdktf.stringToTerraform(this._name),
       namespace: cdktf.stringToTerraform(this._namespace),
       partition: cdktf.stringToTerraform(this._partition),

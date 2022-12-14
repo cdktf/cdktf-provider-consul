@@ -50,7 +50,7 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_peering',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.16.2',
+        providerVersion: '2.17.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -75,11 +75,6 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
     return this.getStringAttribute('deleted_at');
   }
 
-  // exported_service_count - computed: true, optional: false, required: false
-  public get exportedServiceCount() {
-    return this.getNumberAttribute('exported_service_count');
-  }
-
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -94,11 +89,6 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // imported_service_count - computed: true, optional: false, required: false
-  public get importedServiceCount() {
-    return this.getNumberAttribute('imported_service_count');
   }
 
   // meta - computed: true, optional: false, required: false

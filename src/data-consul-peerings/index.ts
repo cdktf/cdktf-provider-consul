@@ -64,19 +64,9 @@ export class DataConsulPeeringsPeersOutputReference extends cdktf.ComplexObject 
     return this.getStringAttribute('deleted_at');
   }
 
-  // exported_service_count - computed: true, optional: false, required: false
-  public get exportedServiceCount() {
-    return this.getNumberAttribute('exported_service_count');
-  }
-
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-
-  // imported_service_count - computed: true, optional: false, required: false
-  public get importedServiceCount() {
-    return this.getNumberAttribute('imported_service_count');
   }
 
   // meta - computed: true, optional: false, required: false
@@ -166,7 +156,7 @@ export class DataConsulPeerings extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_peerings',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.16.2',
+        providerVersion: '2.17.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

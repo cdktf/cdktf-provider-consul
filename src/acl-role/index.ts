@@ -329,7 +329,7 @@ export class AclRole extends cdktf.TerraformResource {
       terraformResourceType: 'consul_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.16.2',
+        providerVersion: '2.17.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
