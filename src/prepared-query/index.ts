@@ -355,7 +355,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
       terraformResourceType: 'consul_prepared_query',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.16.2',
+        providerVersion: '2.17.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
