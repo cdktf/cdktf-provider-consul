@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/autopilot_h
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealth(scope Construct, id *string, config DataConsulAutopilotHealthConfig) DataConsulAutopilotHealth
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 &dataconsulautopilothealth.DataConsulAutopilotHealthConfig {
 	Connection: interface{},
@@ -713,7 +713,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 &dataconsulautopilothealth.DataConsulAutopilotHealthServers {
 
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilotheal
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealthServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAutopilotHealthServersList
 ```
@@ -860,7 +860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealthServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAutopilotHealthServersOutputReference
 ```
