@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/r/service con
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.NewService(scope Construct, id *string, config ServiceConfig) Service
 ```
@@ -363,7 +363,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.service.Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.Service_IsConstruct(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.service.Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ service.Service_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.service.Service.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.Service_IsTerraformResource(x interface{}) *bool
 ```
@@ -916,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.service.ServiceCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 &service.ServiceCheck {
 	CheckId: *string,
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.service.ServiceCheckHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 &service.ServiceCheckHeader {
 	Name: *string,
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.service.ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 &service.ServiceConfig {
 	Connection: interface{},
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.ServiceCheckHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.NewServiceCheckHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceCheckHeaderList
 ```
@@ -1600,7 +1600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.NewServiceCheckHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceCheckHeaderOutputReference
 ```
@@ -1911,7 +1911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.ServiceCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.NewServiceCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceCheckList
 ```
@@ -2054,7 +2054,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/service"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/service"
 
 service.NewServiceCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServiceCheckOutputReference
 ```
