@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_binding
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.NewAclBindingRule(scope Construct, id *string, config AclBindingRuleConfig) AclBindingRule
 ```
@@ -301,7 +301,7 @@ func ResetSelector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 &aclbindingrule.AclBindingRuleConfig {
 	Connection: interface{},
