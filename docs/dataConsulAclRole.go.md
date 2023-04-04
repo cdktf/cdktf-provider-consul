@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/acl_role co
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRole(scope Construct, id *string, config DataConsulAclRoleConfig) DataConsulAclRole
 ```
@@ -287,7 +287,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.DataConsulAclRole_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.DataConsulAclRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataconsulaclrole.DataConsulAclRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.DataConsulAclRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 &dataconsulaclrole.DataConsulAclRoleConfig {
 	Connection: interface{},
@@ -803,7 +803,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleNodeIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 &dataconsulaclrole.DataConsulAclRoleNodeIdentities {
 
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRolePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 &dataconsulaclrole.DataConsulAclRolePolicies {
 
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleServiceIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 &dataconsulaclrole.DataConsulAclRoleServiceIdentities {
 
@@ -844,7 +844,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleNodeIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRoleNodeIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclRoleNodeIdentitiesList
 ```
@@ -976,7 +976,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleNodeIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRoleNodeIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclRoleNodeIdentitiesOutputReference
 ```
@@ -1265,7 +1265,7 @@ func InternalValue() DataConsulAclRoleNodeIdentities
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRolePoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRolePoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclRolePoliciesList
 ```
@@ -1397,7 +1397,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRolePoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRolePoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclRolePoliciesOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() DataConsulAclRolePolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleServiceIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRoleServiceIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclRoleServiceIdentitiesList
 ```
@@ -1818,7 +1818,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclRole.DataConsulAclRoleServiceIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulaclrole"
 
 dataconsulaclrole.NewDataConsulAclRoleServiceIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclRoleServiceIdentitiesOutputReference
 ```
