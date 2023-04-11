@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/r/autopilot_c
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/autopilotconfig"
 
 autopilotconfig.NewAutopilotConfig(scope Construct, id *string, config AutopilotConfigConfig) AutopilotConfig
 ```
@@ -329,7 +329,7 @@ func ResetUpgradeVersionTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsConstruct(x interface{}) *bool
 ```
@@ -361,7 +361,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -375,7 +375,7 @@ autopilotconfig.AutopilotConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/autopilotconfig"
 
 &autopilotconfig.AutopilotConfigConfig {
 	Connection: interface{},
