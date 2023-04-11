@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/acl_token_s
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.NewDataConsulAclTokenSecretId(scope Construct, id *string, config DataConsulAclTokenSecretIdConfig) DataConsulAclTokenSecretId
 ```
@@ -294,7 +294,7 @@ func ResetPgpKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulacltokensecretid"
 
 &dataconsulacltokensecretid.DataConsulAclTokenSecretIdConfig {
 	Connection: interface{},

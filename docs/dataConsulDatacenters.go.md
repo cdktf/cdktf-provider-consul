@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/datacenters
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsuldatacenters"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenters"
 
 dataconsuldatacenters.NewDataConsulDatacenters(scope Construct, id *string, config DataConsulDatacentersConfig) DataConsulDatacenters
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsuldatacenters"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenters"
 
 dataconsuldatacenters.DataConsulDatacenters_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsuldatacenters"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenters"
 
 dataconsuldatacenters.DataConsulDatacenters_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataconsuldatacenters.DataConsulDatacenters_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsuldatacenters"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenters"
 
 dataconsuldatacenters.DataConsulDatacenters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/dataconsuldatacenters"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenters"
 
 &dataconsuldatacenters.DataConsulDatacentersConfig {
 	Connection: interface{},

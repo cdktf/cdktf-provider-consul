@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/r/license con
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.license.License.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/license"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/license"
 
 license.NewLicense(scope Construct, id *string, config LicenseConfig) License
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.license.License.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/license"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/license"
 
 license.License_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.license.License.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/license"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/license"
 
 license.License_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ license.License_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.license.License.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/license"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/license"
 
 license.License_IsTerraformResource(x interface{}) *bool
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.license.LicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v3/license"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/license"
 
 &license.LicenseConfig {
 	Connection: interface{},
