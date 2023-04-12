@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/service_hea
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealth(scope Construct, id *string, config DataConsulServiceHealthConfig) DataConsulServiceHealth
 ```
@@ -322,7 +322,7 @@ func ResetWaitFor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ dataconsulservicehealth.DataConsulServiceHealth_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -754,7 +754,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthConfig {
 	Connection: interface{},
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResults {
 
@@ -998,7 +998,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsChecks {
 
@@ -1011,7 +1011,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsNode {
 
@@ -1024,7 +1024,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsService {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehea
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsChecksList
 ```
@@ -1171,7 +1171,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsChecksOutputReference
 ```
@@ -1537,7 +1537,7 @@ func InternalValue() DataConsulServiceHealthResultsChecks
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsList
 ```
@@ -1669,7 +1669,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsNodeList
 ```
@@ -1801,7 +1801,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsNodeOutputReference
 ```
@@ -2134,7 +2134,7 @@ func InternalValue() DataConsulServiceHealthResultsNode
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsOutputReference
 ```
@@ -2434,7 +2434,7 @@ func InternalValue() DataConsulServiceHealthResults
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsServiceList
 ```
@@ -2566,7 +2566,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsServiceOutputReference
 ```

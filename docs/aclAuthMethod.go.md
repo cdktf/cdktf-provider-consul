@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_me
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethod(scope Construct, id *string, config AclAuthMethodConfig) AclAuthMethod
 ```
@@ -349,7 +349,7 @@ func ResetTokenLocality()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ aclauthmethod.AclAuthMethod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsTerraformResource(x interface{}) *bool
 ```
@@ -858,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 &aclauthmethod.AclAuthMethodConfig {
 	Connection: interface{},
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 &aclauthmethod.AclAuthMethodNamespaceRule {
 	BindNamespace: *string,
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethodNamespaceRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclAuthMethodNamespaceRuleList
 ```
@@ -1342,7 +1342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethodNamespaceRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclAuthMethodNamespaceRuleOutputReference
 ```

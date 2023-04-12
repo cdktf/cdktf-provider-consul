@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/network_are
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembers(scope Construct, id *string, config DataConsulNetworkAreaMembersConfig) DataConsulNetworkAreaMembers
 ```
@@ -287,7 +287,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 &dataconsulnetworkareamembers.DataConsulNetworkAreaMembersConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 &dataconsulnetworkareamembers.DataConsulNetworkAreaMembersMembers {
 
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkare
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulNetworkAreaMembersMembersList
 ```
@@ -917,7 +917,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulNetworkAreaMembersMembersOutputReference
 ```

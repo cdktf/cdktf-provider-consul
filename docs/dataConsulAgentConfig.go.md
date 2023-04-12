@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/consul/d/agent_confi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.NewDataConsulAgentConfig(scope Construct, id *string, config DataConsulAgentConfigConfig) DataConsulAgentConfig
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 &dataconsulagentconfig.DataConsulAgentConfigConfig {
 	Connection: interface{},
