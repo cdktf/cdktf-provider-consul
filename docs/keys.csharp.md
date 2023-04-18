@@ -1,6 +1,6 @@
 # `consul_keys`
 
-Refer to the Terraform Registory for docs: [`consul_keys`](https://www.terraform.io/docs/providers/consul/r/keys).
+Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys).
 
 # `keys` Submodule <a name="`keys` Submodule" id="@cdktf/provider-consul.keys"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_keys`](https://www.terraform
 
 ### Keys <a name="Keys" id="@cdktf/provider-consul.keys.Keys"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/keys consul_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keys.Keys.Initializer"></a>
 
@@ -394,7 +394,7 @@ Keys.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.Keys.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -501,10 +501,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.keys.Keys.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -717,7 +717,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new KeysConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -737,18 +737,18 @@ new KeysConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#datacenter Keys#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#id Keys#id}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#datacenter Keys#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#id Keys#id}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.key">Key</a></code> | <code>object</code> | key block. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#namespace Keys#namespace}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#partition Keys#partition}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#token Keys#token}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#namespace Keys#namespace}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#partition Keys#partition}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#token Keys#token}. |
 
 ---
 
@@ -765,10 +765,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.keys.KeysConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -830,7 +830,7 @@ public string Datacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#datacenter Keys#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#datacenter Keys#datacenter}.
 
 ---
 
@@ -842,7 +842,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#id Keys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#id Keys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -859,7 +859,7 @@ public object Key { get; set; }
 
 key block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#key Keys#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#key Keys#key}
 
 ---
 
@@ -871,7 +871,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#namespace Keys#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#namespace Keys#namespace}.
 
 ---
 
@@ -883,7 +883,7 @@ public string Partition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#partition Keys#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#partition Keys#partition}.
 
 ---
 
@@ -895,7 +895,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#token Keys#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#token Keys#token}.
 
 ---
 
@@ -920,12 +920,12 @@ new KeysKey {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#path Keys#path}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#default Keys#default}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#delete Keys#delete}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#flags Keys#flags}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#name Keys#name}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#value Keys#value}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#path Keys#path}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#default Keys#default}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#delete Keys#delete}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#flags Keys#flags}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#name Keys#name}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#value Keys#value}. |
 
 ---
 
@@ -937,7 +937,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#path Keys#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#path Keys#path}.
 
 ---
 
@@ -949,7 +949,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#default Keys#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#default Keys#default}.
 
 ---
 
@@ -961,7 +961,7 @@ public object Delete { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#delete Keys#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#delete Keys#delete}.
 
 ---
 
@@ -973,7 +973,7 @@ public double Flags { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#flags Keys#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#flags Keys#flags}.
 
 ---
 
@@ -985,7 +985,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#name Keys#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#name Keys#name}.
 
 ---
 
@@ -997,7 +997,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#value Keys#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#value Keys#value}.
 
 ---
 

@@ -40,7 +40,7 @@ The following submodules are available:
 - [intention](./intention.java.md)
 - [keyPrefix](./keyPrefix.java.md)
 - [keys](./keys.java.md)
-- [license](./license.java.md)
+- [licenseResource](./licenseResource.java.md)
 - [namespace](./namespace.java.md)
 - [namespacePolicyAttachment](./namespacePolicyAttachment.java.md)
 - [namespaceRoleAttachment](./namespaceRoleAttachment.java.md)

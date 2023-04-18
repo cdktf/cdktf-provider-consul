@@ -1,6 +1,6 @@
 # `consul_peering_token`
 
-Refer to the Terraform Registory for docs: [`consul_peering_token`](https://www.terraform.io/docs/providers/consul/r/peering_token).
+Refer to the Terraform Registory for docs: [`consul_peering_token`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token).
 
 # `peeringToken` Submodule <a name="`peeringToken` Submodule" id="@cdktf/provider-consul.peeringToken"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_peering_token`](https://www.
 
 ### PeeringToken <a name="PeeringToken" id="@cdktf/provider-consul.peeringToken.PeeringToken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/peering_token consul_peering_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token consul_peering_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peeringToken.PeeringToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.NewPeeringToken(scope Construct, id *string, config PeeringTokenConfig) PeeringToken
 ```
@@ -291,7 +291,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.peeringToken.PeeringToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ peeringtoken.PeeringToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ peeringtoken.PeeringToken_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -463,10 +463,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.peeringToken.PeeringToken.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -635,11 +635,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.peeringToken.PeeringTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 &peeringtoken.PeeringTokenConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -657,16 +657,16 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/peeringtoken"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.peerName">PeerName</a></code> | <code>*string</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}. |
 
 ---
 
@@ -683,10 +683,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -752,7 +752,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#peer_name PeeringToken#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 
 ---
 
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#meta PeeringToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#meta PeeringToken#meta}
 
 ---
 
@@ -795,7 +795,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}.
 
 ---
 

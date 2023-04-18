@@ -1,6 +1,6 @@
 # `consul_agent_service`
 
-Refer to the Terraform Registory for docs: [`consul_agent_service`](https://www.terraform.io/docs/providers/consul/r/agent_service).
+Refer to the Terraform Registory for docs: [`consul_agent_service`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service).
 
 # `agentService` Submodule <a name="`agentService` Submodule" id="@cdktf/provider-consul.agentService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_agent_service`](https://www.
 
 ### AgentService <a name="AgentService" id="@cdktf/provider-consul.agentService.AgentService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/agent_service consul_agent_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.agentService.AgentService.Initializer"></a>
 
@@ -367,7 +367,7 @@ AgentService.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.agentService.AgentService.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -657,7 +657,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new AgentServiceConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -676,17 +676,17 @@ new AgentServiceConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#name AgentService#name}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#address AgentService#address}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#id AgentService#id}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#port AgentService#port}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#tags AgentService#tags}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#name AgentService#name}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#address AgentService#address}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#id AgentService#id}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#port AgentService#port}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#tags AgentService#tags}. |
 
 ---
 
@@ -703,10 +703,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.agentService.AgentServiceConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -768,7 +768,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#name AgentService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#name AgentService#name}.
 
 ---
 
@@ -780,7 +780,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#address AgentService#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#address AgentService#address}.
 
 ---
 
@@ -792,7 +792,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#id AgentService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#id AgentService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -807,7 +807,7 @@ public double Port { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#port AgentService#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#port AgentService#port}.
 
 ---
 
@@ -819,7 +819,7 @@ public string[] Tags { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#tags AgentService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#tags AgentService#tags}.
 
 ---
 

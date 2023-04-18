@@ -1,6 +1,6 @@
 # `consul_peering`
 
-Refer to the Terraform Registory for docs: [`consul_peering`](https://www.terraform.io/docs/providers/consul/r/peering).
+Refer to the Terraform Registory for docs: [`consul_peering`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering).
 
 # `peering` Submodule <a name="`peering` Submodule" id="@cdktf/provider-consul.peering"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_peering`](https://www.terraf
 
 ### Peering <a name="Peering" id="@cdktf/provider-consul.peering.Peering"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/peering consul_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering consul_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peering.Peering.Initializer"></a>
 
@@ -19,6 +19,7 @@ Peering.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ Peering.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,9 +48,9 @@ Peering.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.peeringToken">peeringToken</a></code> | <code>java.lang.String</code> | The peering token fetched from the peer cluster. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.peerName">peerName</a></code> | <code>java.lang.String</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}. |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}. |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}. |
 
 ---
 
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peering.Peering.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The peering token fetched from the peer cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peering_token Peering#peering_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peering_token Peering#peering_token}
 
 ---
 
@@ -131,7 +132,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peer_name Peering#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peer_name Peering#peer_name}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -154,7 +155,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#meta Peering#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#meta Peering#meta}
 
 ---
 
@@ -162,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}.
 
 ---
 
@@ -476,7 +477,7 @@ Peering.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peering.Peering.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -586,10 +587,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peering.Peering.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -834,6 +835,7 @@ PeeringConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -854,7 +856,7 @@ PeeringConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -862,9 +864,9 @@ PeeringConfig.builder()
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peeringToken">peeringToken</a></code> | <code>java.lang.String</code> | The peering token fetched from the peer cluster. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peerName">peerName</a></code> | <code>java.lang.String</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}. |
 
 ---
 
@@ -881,10 +883,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peering.PeeringConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -948,7 +950,7 @@ public java.lang.String getPeeringToken();
 
 The peering token fetched from the peer cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peering_token Peering#peering_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peering_token Peering#peering_token}
 
 ---
 
@@ -964,7 +966,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peer_name Peering#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peer_name Peering#peer_name}
 
 ---
 
@@ -976,7 +978,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -995,7 +997,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#meta Peering#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#meta Peering#meta}
 
 ---
 
@@ -1007,7 +1009,7 @@ public java.lang.String getPartition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}.
 
 ---
 

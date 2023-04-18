@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/keys
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,58 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface KeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#datacenter Keys#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#datacenter Keys#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#id Keys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#id Keys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#namespace Keys#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#namespace Keys#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#partition Keys#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#partition Keys#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#token Keys#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#token Keys#token}
   */
   readonly token?: string;
   /**
   * key block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#key Keys#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#key Keys#key}
   */
   readonly key?: KeysKey[] | cdktf.IResolvable;
 }
 export interface KeysKey {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#default Keys#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#default Keys#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#delete Keys#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#delete Keys#delete}
   */
   readonly delete?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#flags Keys#flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#flags Keys#flags}
   */
   readonly flags?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#name Keys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#name Keys#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#path Keys#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#path Keys#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/keys#value Keys#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#value Keys#value}
   */
   readonly value?: string;
 }
@@ -268,7 +268,7 @@ export class KeysKeyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/keys consul_keys}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys}
 */
 export class Keys extends cdktf.TerraformResource {
 
@@ -282,7 +282,7 @@ export class Keys extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/keys consul_keys} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `consul_agent_service`
 
-Refer to the Terraform Registory for docs: [`consul_agent_service`](https://www.terraform.io/docs/providers/consul/r/agent_service).
+Refer to the Terraform Registory for docs: [`consul_agent_service`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service).
 
 # `agentService` Submodule <a name="`agentService` Submodule" id="@cdktf/provider-consul.agentService"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_agent_service`](https://www.
 
 ### AgentService <a name="AgentService" id="@cdktf/provider-consul.agentService.AgentService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/agent_service consul_agent_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.agentService.AgentService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.NewAgentService(scope Construct, id *string, config AgentServiceConfig) AgentService
 ```
@@ -298,7 +298,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.agentService.AgentService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.agentService.AgentService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.agentService.AgentService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentService.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -471,10 +471,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.agentService.AgentService.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,11 +653,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.agentService.AgentServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 &agentservice.AgentServiceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -676,17 +676,17 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/agentservice"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#name AgentService#name}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#address AgentService#address}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#id AgentService#id}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#port AgentService#port}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#tags AgentService#tags}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#name AgentService#name}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#address AgentService#address}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#id AgentService#id}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#port AgentService#port}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#tags AgentService#tags}. |
 
 ---
 
@@ -703,10 +703,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.agentService.AgentServiceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -768,7 +768,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#name AgentService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#name AgentService#name}.
 
 ---
 
@@ -780,7 +780,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#address AgentService#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#address AgentService#address}.
 
 ---
 
@@ -792,7 +792,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#id AgentService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#id AgentService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -807,7 +807,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#port AgentService#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#port AgentService#port}.
 
 ---
 
@@ -819,7 +819,7 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#tags AgentService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#tags AgentService#tags}.
 
 ---
 

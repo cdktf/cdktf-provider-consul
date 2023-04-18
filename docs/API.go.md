@@ -40,7 +40,7 @@ The following submodules are available:
 - [intention](./intention.go.md)
 - [keyPrefix](./keyPrefix.go.md)
 - [keys](./keys.go.md)
-- [license](./license.go.md)
+- [licenseResource](./licenseResource.go.md)
 - [namespace](./namespace.go.md)
 - [namespacePolicyAttachment](./namespacePolicyAttachment.go.md)
 - [namespaceRoleAttachment](./namespaceRoleAttachment.go.md)

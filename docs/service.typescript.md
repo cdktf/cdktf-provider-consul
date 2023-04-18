@@ -1,6 +1,6 @@
 # `consul_service`
 
-Refer to the Terraform Registory for docs: [`consul_service`](https://www.terraform.io/docs/providers/consul/r/service).
+Refer to the Terraform Registory for docs: [`consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service).
 
 # `service` Submodule <a name="`service` Submodule" id="@cdktf/provider-consul.service"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_service`](https://www.terraf
 
 ### Service <a name="Service" id="@cdktf/provider-consul.service.Service"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/service consul_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service consul_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.Service.Initializer"></a>
 
@@ -436,7 +436,7 @@ service.Service.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-consul.service.Service.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -558,10 +558,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.service.Service.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -929,18 +929,18 @@ const serviceCheck: service.ServiceCheck = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.checkId">checkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#check_id Service#check_id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.interval">interval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#interval Service#interval}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.timeout">timeout</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#timeout Service#timeout}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.deregisterCriticalServiceAfter">deregisterCriticalServiceAfter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#deregister_critical_service_after Service#deregister_critical_service_after}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.checkId">checkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#check_id Service#check_id}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.interval">interval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#interval Service#interval}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.timeout">timeout</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#timeout Service#timeout}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.deregisterCriticalServiceAfter">deregisterCriticalServiceAfter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>[]</code> | header block. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.http">http</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#http Service#http}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.method">method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#method Service#method}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.notes">notes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#notes Service#notes}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#status Service#status}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tcp">tcp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tcp Service#tcp}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tls_skip_verify Service#tls_skip_verify}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.http">http</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#http Service#http}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.method">method</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#method Service#method}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.notes">notes</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#notes Service#notes}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#status Service#status}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tcp">tcp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tcp Service#tcp}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}. |
 
 ---
 
@@ -952,7 +952,7 @@ public readonly checkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#check_id Service#check_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#check_id Service#check_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly interval: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#interval Service#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#interval Service#interval}.
 
 ---
 
@@ -976,7 +976,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}.
 
 ---
 
@@ -988,7 +988,7 @@ public readonly timeout: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#timeout Service#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#timeout Service#timeout}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly deregisterCriticalServiceAfter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#deregister_critical_service_after Service#deregister_critical_service_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly header: IResolvable | ServiceCheckHeader[];
 
 header block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#header Service#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#header Service#header}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly http: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#http Service#http}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#http Service#http}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly method: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#method Service#method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#method Service#method}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly notes: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#notes Service#notes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#notes Service#notes}.
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#status Service#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#status Service#status}.
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly tcp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tcp Service#tcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tcp Service#tcp}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public readonly tlsSkipVerify: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tls_skip_verify Service#tls_skip_verify}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}.
 
 ---
 
@@ -1104,8 +1104,8 @@ const serviceCheckHeader: service.ServiceCheckHeader = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.value">value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#value Service#value}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.value">value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#value Service#value}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public readonly value: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#value Service#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#value Service#value}.
 
 ---
 
@@ -1148,26 +1148,26 @@ const serviceConfig: service.ServiceConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#node Service#node}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#address Service#address}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#node Service#node}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#address Service#address}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.check">check</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>[]</code> | check block. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#datacenter Service#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enableTagOverride</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#enable_tag_override Service#enable_tag_override}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#external Service#external}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#id Service#id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">meta</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#meta Service#meta}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#namespace Service#namespace}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#datacenter Service#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enableTagOverride</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#enable_tag_override Service#enable_tag_override}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">meta</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#meta Service#meta}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#namespace Service#namespace}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.partition">partition</a></code> | <code>string</code> | The partition the service is associated with. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#port Service#port}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#service_id Service#service_id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tags Service#tags}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#port Service#port}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#service_id Service#service_id}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tags Service#tags}. |
 
 ---
 
@@ -1184,10 +1184,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.service.ServiceConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#name Service#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#name Service#name}.
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly nodeAttribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#node Service#node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#node Service#node}.
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly address: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#address Service#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#address Service#address}.
 
 ---
 
@@ -1287,7 +1287,7 @@ public readonly check: IResolvable | ServiceCheck[];
 
 check block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#check Service#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#check Service#check}
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly datacenter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#datacenter Service#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#datacenter Service#datacenter}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly enableTagOverride: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#enable_tag_override Service#enable_tag_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#enable_tag_override Service#enable_tag_override}.
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly external: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#external Service#external}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#external Service#external}.
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1350,7 +1350,7 @@ public readonly meta: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#meta Service#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#meta Service#meta}.
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#namespace Service#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#namespace Service#namespace}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly partition: string;
 
 The partition the service is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#partition Service#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#partition Service#partition}
 
 ---
 
@@ -1388,7 +1388,7 @@ public readonly port: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#port Service#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#port Service#port}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly serviceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#service_id Service#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#service_id Service#service_id}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/service#tags Service#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/service#tags Service#tags}.
 
 ---
 

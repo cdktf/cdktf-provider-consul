@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/acl_token
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulAclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_token#accessor_id DataConsulAclToken#accessor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}
   */
   readonly accessorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_token#id DataConsulAclToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token#id DataConsulAclToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_token#namespace DataConsulAclToken#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/acl_token#partition DataConsulAclToken#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}
   */
   readonly partition?: string;
 }
@@ -305,7 +305,7 @@ export class DataConsulAclTokenServiceIdentitiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/acl_token consul_acl_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token consul_acl_token}
 */
 export class DataConsulAclToken extends cdktf.TerraformDataSource {
 
@@ -319,7 +319,7 @@ export class DataConsulAclToken extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/acl_token consul_acl_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/acl_token consul_acl_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

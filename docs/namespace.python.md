@@ -1,6 +1,6 @@
 # `consul_namespace`
 
-Refer to the Terraform Registory for docs: [`consul_namespace`](https://www.terraform.io/docs/providers/consul/r/namespace).
+Refer to the Terraform Registory for docs: [`consul_namespace`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace).
 
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-consul.namespace"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_namespace`](https://www.terr
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-consul.namespace.Namespace"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/namespace consul_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace consul_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespace.Namespace.Initializer"></a>
 
@@ -19,7 +19,7 @@ namespace.Namespace(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,19 +40,19 @@ namespace.Namespace(
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}. |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}. |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}. |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}. |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.partition">partition</a></code> | <code>str</code> | The partition the namespace is associated with. |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.policyDefaults">policy_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}. |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.roleDefaults">role_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.policyDefaults">policy_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.roleDefaults">role_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}. |
 
 ---
 
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespace.Namespace.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The partition the namespace is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#partition Namespace#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#partition Namespace#partition}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}.
 
 ---
 
@@ -539,7 +539,7 @@ namespace.Namespace.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,10 +647,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespace.Namespace.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -873,7 +873,7 @@ from cdktf_cdktf_provider_consul import namespace
 
 namespace.NamespaceConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -894,19 +894,19 @@ namespace.NamespaceConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}. |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.partition">partition</a></code> | <code>str</code> | The partition the namespace is associated with. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.policyDefaults">policy_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.roleDefaults">role_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.policyDefaults">policy_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.roleDefaults">role_defaults</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}. |
 
 ---
 
@@ -923,10 +923,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespace.NamespaceConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -988,7 +988,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}.
 
 ---
 
@@ -1012,7 +1012,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1027,7 @@ meta: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}.
 
 ---
 
@@ -1041,7 +1041,7 @@ partition: str
 
 The partition the namespace is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#partition Namespace#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#partition Namespace#partition}
 
 ---
 
@@ -1053,7 +1053,7 @@ policy_defaults: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}.
 
 ---
 
@@ -1065,7 +1065,7 @@ role_defaults: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}.
 
 ---
 

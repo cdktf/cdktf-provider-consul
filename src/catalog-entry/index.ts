@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/catalog_entry
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,57 +8,57 @@ import * as cdktf from 'cdktf';
 
 export interface CatalogEntryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#datacenter CatalogEntry#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#node CatalogEntry#node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}
   */
   readonly nodeAttribute: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#token CatalogEntry#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}
   */
   readonly token?: string;
   /**
   * service block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#service CatalogEntry#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#service CatalogEntry#service}
   */
   readonly service?: CatalogEntryService[] | cdktf.IResolvable;
 }
 export interface CatalogEntryService {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#name CatalogEntry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#name CatalogEntry#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#port CatalogEntry#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#port CatalogEntry#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#tags CatalogEntry#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#tags CatalogEntry#tags}
   */
   readonly tags?: string[];
 }
@@ -244,7 +244,7 @@ export class CatalogEntryServiceList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry consul_catalog_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry}
 */
 export class CatalogEntry extends cdktf.TerraformResource {
 
@@ -258,7 +258,7 @@ export class CatalogEntry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry consul_catalog_entry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

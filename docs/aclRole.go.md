@@ -1,6 +1,6 @@
 # `consul_acl_role`
 
-Refer to the Terraform Registory for docs: [`consul_acl_role`](https://www.terraform.io/docs/providers/consul/r/acl_role).
+Refer to the Terraform Registory for docs: [`consul_acl_role`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-consul.aclRole"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_acl_role`](https://www.terra
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-consul.aclRole.AclRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_role consul_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role consul_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRole(scope Construct, id *string, config AclRoleConfig) AclRole
 ```
@@ -345,7 +345,7 @@ func ResetServiceIdentities()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclRole.AclRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ aclrole.AclRole_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -524,10 +524,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclRole.AclRole.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -766,11 +766,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -792,7 +792,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -800,8 +800,8 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.name">Name</a></code> | <code>*string</code> | The name of the ACL role. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.description">Description</a></code> | <code>*string</code> | A free form human readable description of the role. |
-| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#id AclRole#id}. |
-| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#namespace AclRole#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#namespace AclRole#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.nodeIdentities">NodeIdentities</a></code> | <code>interface{}</code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the ACL role is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | The list of policies that should be applied to the role. |
@@ -822,10 +822,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclRole.AclRoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -889,7 +889,7 @@ Name *string
 
 The name of the ACL role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -903,7 +903,7 @@ Description *string
 
 A free form human readable description of the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -915,7 +915,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -930,7 +930,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#namespace AclRole#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#namespace AclRole#namespace}.
 
 ---
 
@@ -944,7 +944,7 @@ NodeIdentities interface{}
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#node_identities AclRole#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#node_identities AclRole#node_identities}
 
 ---
 
@@ -958,7 +958,7 @@ Partition *string
 
 The partition the ACL role is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#partition AclRole#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#partition AclRole#partition}
 
 ---
 
@@ -972,7 +972,7 @@ Policies *[]*string
 
 The list of policies that should be applied to the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#policies AclRole#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#policies AclRole#policies}
 
 ---
 
@@ -986,7 +986,7 @@ ServiceIdentities interface{}
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#service_identities AclRole#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#service_identities AclRole#service_identities}
 
 ---
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleNodeIdentities {
 	Datacenter: *string,
@@ -1022,7 +1022,7 @@ Datacenter *string
 
 Specifies the node's datacenter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#datacenter AclRole#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#datacenter AclRole#datacenter}
 
 ---
 
@@ -1036,7 +1036,7 @@ NodeName *string
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#node_name AclRole#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#node_name AclRole#node_name}
 
 ---
 
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleServiceIdentities {
 	ServiceName: *string,
@@ -1072,7 +1072,7 @@ ServiceName *string
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#service_name AclRole#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#service_name AclRole#service_name}
 
 ---
 
@@ -1088,7 +1088,7 @@ The datacenters the effective policy is valid within.
 
 When no datacenters are provided the effective policy is valid in all datacenters including those which do not yet exist but may in the future.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_role#datacenters AclRole#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_role#datacenters AclRole#datacenters}
 
 ---
 
@@ -1099,7 +1099,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleNodeIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclRoleNodeIdentitiesList
 ```
@@ -1242,7 +1242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleNodeIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclRoleNodeIdentitiesOutputReference
 ```
@@ -1553,7 +1553,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleServiceIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclRoleServiceIdentitiesList
 ```
@@ -1696,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleServiceIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclRoleServiceIdentitiesOutputReference
 ```

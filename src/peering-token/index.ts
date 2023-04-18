@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/peering_token
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PeeringTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,23 +17,23 @@ export interface PeeringTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies KV metadata to associate with the peering. This parameter is not required and does not directly impact the cluster peering process.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#meta PeeringToken#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#meta PeeringToken#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}
   */
   readonly partition?: string;
   /**
   * The name assigned to the peer cluster. The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#peer_name PeeringToken#peer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
   */
   readonly peerName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/peering_token consul_peering_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token consul_peering_token}
 */
 export class PeeringToken extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class PeeringToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/peering_token consul_peering_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token consul_peering_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `consul_intention`
 
-Refer to the Terraform Registory for docs: [`consul_intention`](https://www.terraform.io/docs/providers/consul/r/intention).
+Refer to the Terraform Registory for docs: [`consul_intention`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention).
 
 # `intention` Submodule <a name="`intention` Submodule" id="@cdktf/provider-consul.intention"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_intention`](https://www.terr
 
 ### Intention <a name="Intention" id="@cdktf/provider-consul.intention.Intention"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/intention consul_intention}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention consul_intention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.intention.Intention.Initializer"></a>
 
@@ -381,7 +381,7 @@ Intention.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.Intention.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.intention.Intention.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -493,10 +493,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.intention.Intention.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -759,7 +759,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new IntentionConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -782,21 +782,21 @@ new IntentionConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#action Intention#action}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">DestinationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_name Intention#destination_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">SourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_name Intention#source_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#datacenter Intention#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#description Intention#description}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">DestinationNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_namespace Intention#destination_namespace}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#id Intention#id}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#meta Intention#meta}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">SourceNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_namespace Intention#source_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">Action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#action Intention#action}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">DestinationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_name Intention#destination_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">SourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_name Intention#source_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#datacenter Intention#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#description Intention#description}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">DestinationNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_namespace Intention#destination_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#id Intention#id}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#meta Intention#meta}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">SourceNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_namespace Intention#source_namespace}. |
 
 ---
 
@@ -813,10 +813,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.intention.IntentionConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -878,7 +878,7 @@ public string Action { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#action Intention#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#action Intention#action}.
 
 ---
 
@@ -890,7 +890,7 @@ public string DestinationName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_name Intention#destination_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_name Intention#destination_name}.
 
 ---
 
@@ -902,7 +902,7 @@ public string SourceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_name Intention#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_name Intention#source_name}.
 
 ---
 
@@ -914,7 +914,7 @@ public string Datacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#datacenter Intention#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#datacenter Intention#datacenter}.
 
 ---
 
@@ -926,7 +926,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#description Intention#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#description Intention#description}.
 
 ---
 
@@ -938,7 +938,7 @@ public string DestinationNamespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_namespace Intention#destination_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_namespace Intention#destination_namespace}.
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#id Intention#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#id Intention#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public System.Collections.Generic.IDictionary<string, string> Meta { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#meta Intention#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#meta Intention#meta}.
 
 ---
 
@@ -977,7 +977,7 @@ public string SourceNamespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_namespace Intention#source_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_namespace Intention#source_namespace}.
 
 ---
 

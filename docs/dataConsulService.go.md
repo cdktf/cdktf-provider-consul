@@ -1,6 +1,6 @@
 # `data_consul_service`
 
-Refer to the Terraform Registory for docs: [`data_consul_service`](https://www.terraform.io/docs/providers/consul/d/service).
+Refer to the Terraform Registory for docs: [`data_consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service).
 
 # `dataConsulService` Submodule <a name="`dataConsulService` Submodule" id="@cdktf/provider-consul.dataConsulService"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_service`](https://www.t
 
 ### DataConsulService <a name="DataConsulService" id="@cdktf/provider-consul.dataConsulService.DataConsulService"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/d/service consul_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service consul_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulService.DataConsulService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.NewDataConsulService(scope Construct, id *string, config DataConsulServiceConfig) DataConsulService
 ```
@@ -318,7 +318,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.DataConsulService_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.DataConsulService_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataconsulservice.DataConsulService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulService.DataConsulService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.DataConsulService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ dataconsulservice.DataConsulService_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulService.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulService.DataConsulService.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -684,11 +684,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 &dataconsulservice.DataConsulServiceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -708,18 +708,18 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#name DataConsulService#name}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#filter DataConsulService#filter}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#id DataConsulService#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#name DataConsulService#name}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#filter DataConsulService#filter}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#id DataConsulService#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.queryOptions">QueryOptions</a></code> | <code>interface{}</code> | query_options block. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#tag DataConsulService#tag}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.tag">Tag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#tag DataConsulService#tag}. |
 
 ---
 
@@ -736,10 +736,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -801,7 +801,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#name DataConsulService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#name DataConsulService#name}.
 
 ---
 
@@ -813,7 +813,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}.
 
 ---
 
@@ -825,7 +825,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#filter DataConsulService#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#filter DataConsulService#filter}.
 
 ---
 
@@ -837,7 +837,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#id DataConsulService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#id DataConsulService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +854,7 @@ QueryOptions interface{}
 
 query_options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#query_options DataConsulService#query_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#query_options DataConsulService#query_options}
 
 ---
 
@@ -866,7 +866,7 @@ Tag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#tag DataConsulService#tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#tag DataConsulService#tag}.
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 &dataconsulservice.DataConsulServiceQueryOptions {
 	AllowStale: interface{},
@@ -895,16 +895,16 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.allowStale">AllowStale</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#allow_stale DataConsulService#allow_stale}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#namespace DataConsulService#namespace}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.near">Near</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#near DataConsulService#near}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.nodeMeta">NodeMeta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#node_meta DataConsulService#node_meta}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#partition DataConsulService#partition}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.requireConsistent">RequireConsistent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#require_consistent DataConsulService#require_consistent}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#token DataConsulService#token}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.waitIndex">WaitIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_index DataConsulService#wait_index}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.waitTime">WaitTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_time DataConsulService#wait_time}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.allowStale">AllowStale</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#allow_stale DataConsulService#allow_stale}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#namespace DataConsulService#namespace}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.near">Near</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#near DataConsulService#near}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.nodeMeta">NodeMeta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#node_meta DataConsulService#node_meta}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#partition DataConsulService#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.requireConsistent">RequireConsistent</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#require_consistent DataConsulService#require_consistent}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#token DataConsulService#token}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.waitIndex">WaitIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_index DataConsulService#wait_index}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptions.property.waitTime">WaitTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_time DataConsulService#wait_time}. |
 
 ---
 
@@ -916,7 +916,7 @@ AllowStale interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#allow_stale DataConsulService#allow_stale}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#allow_stale DataConsulService#allow_stale}.
 
 ---
 
@@ -928,7 +928,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}.
 
 ---
 
@@ -940,7 +940,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#namespace DataConsulService#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#namespace DataConsulService#namespace}.
 
 ---
 
@@ -952,7 +952,7 @@ Near *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#near DataConsulService#near}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#near DataConsulService#near}.
 
 ---
 
@@ -964,7 +964,7 @@ NodeMeta *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#node_meta DataConsulService#node_meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#node_meta DataConsulService#node_meta}.
 
 ---
 
@@ -976,7 +976,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#partition DataConsulService#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#partition DataConsulService#partition}.
 
 ---
 
@@ -988,7 +988,7 @@ RequireConsistent interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#require_consistent DataConsulService#require_consistent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#require_consistent DataConsulService#require_consistent}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#token DataConsulService#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#token DataConsulService#token}.
 
 ---
 
@@ -1012,7 +1012,7 @@ WaitIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_index DataConsulService#wait_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_index DataConsulService#wait_index}.
 
 ---
 
@@ -1024,7 +1024,7 @@ WaitTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_time DataConsulService#wait_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_time DataConsulService#wait_time}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 &dataconsulservice.DataConsulServiceService {
 
@@ -1048,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.NewDataConsulServiceQueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceQueryOptionsList
 ```
@@ -1191,7 +1191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceQueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.NewDataConsulServiceQueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceQueryOptionsOutputReference
 ```
@@ -1748,7 +1748,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.NewDataConsulServiceServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceServiceList
 ```
@@ -1880,7 +1880,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulService.DataConsulServiceServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservice"
 
 dataconsulservice.NewDataConsulServiceServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceServiceOutputReference
 ```

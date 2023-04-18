@@ -1,6 +1,6 @@
 # `consul_peering_token`
 
-Refer to the Terraform Registory for docs: [`consul_peering_token`](https://www.terraform.io/docs/providers/consul/r/peering_token).
+Refer to the Terraform Registory for docs: [`consul_peering_token`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token).
 
 # `peeringToken` Submodule <a name="`peeringToken` Submodule" id="@cdktf/provider-consul.peeringToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_peering_token`](https://www.
 
 ### PeeringToken <a name="PeeringToken" id="@cdktf/provider-consul.peeringToken.PeeringToken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/peering_token consul_peering_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token consul_peering_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peeringToken.PeeringToken.Initializer"></a>
 
@@ -19,7 +19,7 @@ peeringToken.PeeringToken(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,16 +37,16 @@ peeringToken.PeeringToken(
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.peerName">peer_name</a></code> | <code>str</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#peer_name PeeringToken#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#meta PeeringToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#meta PeeringToken#meta}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}.
 
 ---
 
@@ -494,7 +494,7 @@ peeringToken.PeeringToken.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -597,10 +597,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peeringToken.PeeringToken.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -773,7 +773,7 @@ from cdktf_cdktf_provider_consul import peering_token
 
 peeringToken.PeeringTokenConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -791,16 +791,16 @@ peeringToken.PeeringTokenConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.peerName">peer_name</a></code> | <code>str</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">partition</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}. |
 
 ---
 
@@ -817,10 +817,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -886,7 +886,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#peer_name PeeringToken#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 
 ---
 
@@ -898,7 +898,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#id PeeringToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#id PeeringToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -917,7 +917,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#meta PeeringToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#meta PeeringToken#meta}
 
 ---
 
@@ -929,7 +929,7 @@ partition: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering_token#partition PeeringToken#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering_token#partition PeeringToken#partition}.
 
 ---
 

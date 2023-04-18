@@ -15,7 +15,7 @@ export * as configEntry from './config-entry';
 export * as intention from './intention';
 export * as keyPrefix from './key-prefix';
 export * as keys from './keys';
-export * as license from './license';
+export * as licenseResource from './license-resource';
 export * as namespace from './namespace';
 export * as namespacePolicyAttachment from './namespace-policy-attachment';
 export * as namespaceRoleAttachment from './namespace-role-attachment';

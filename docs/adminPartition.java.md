@@ -1,6 +1,6 @@
 # `consul_admin_partition`
 
-Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://www.terraform.io/docs/providers/consul/r/admin_partition).
+Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition).
 
 # `adminPartition` Submodule <a name="`adminPartition` Submodule" id="@cdktf/provider-consul.adminPartition"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://ww
 
 ### AdminPartition <a name="AdminPartition" id="@cdktf/provider-consul.adminPartition.AdminPartition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/admin_partition consul_admin_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition consul_admin_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer"></a>
 
@@ -19,6 +19,7 @@ AdminPartition.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,7 +38,7 @@ AdminPartition.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -45,7 +46,7 @@ AdminPartition.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#description AdminPartition#description}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -443,7 +444,7 @@ AdminPartition.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -543,10 +544,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -691,6 +692,7 @@ AdminPartitionConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -709,7 +711,7 @@ AdminPartitionConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -717,7 +719,7 @@ AdminPartitionConfig.builder()
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.name">name</a></code> | <code>java.lang.String</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.description">description</a></code> | <code>java.lang.String</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -734,10 +736,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -801,7 +803,7 @@ public java.lang.String getName();
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -815,7 +817,7 @@ public java.lang.String getDescription();
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#description AdminPartition#description}
 
 ---
 
@@ -827,7 +829,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

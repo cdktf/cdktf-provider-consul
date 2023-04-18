@@ -1,6 +1,6 @@
 # `consul_admin_partition`
 
-Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://www.terraform.io/docs/providers/consul/r/admin_partition).
+Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition).
 
 # `adminPartition` Submodule <a name="`adminPartition` Submodule" id="@cdktf/provider-consul.adminPartition"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://ww
 
 ### AdminPartition <a name="AdminPartition" id="@cdktf/provider-consul.adminPartition.AdminPartition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/admin_partition consul_admin_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition consul_admin_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer"></a>
 
@@ -353,7 +353,7 @@ adminPartition.AdminPartition.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -605,7 +605,7 @@ const adminPartitionConfig: adminPartition.AdminPartitionConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -613,7 +613,7 @@ const adminPartitionConfig: adminPartition.AdminPartitionConfig = { ... }
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.name">name</a></code> | <code>string</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.description">description</a></code> | <code>string</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -630,10 +630,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -697,7 +697,7 @@ public readonly name: string;
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -711,7 +711,7 @@ public readonly description: string;
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#description AdminPartition#description}
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

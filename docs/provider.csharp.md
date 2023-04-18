@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`consul`](https://www.terraform.io/docs/providers/consul).
+Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-consul.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul`](https://www.terraform.io/d
 
 ### ConsulProvider <a name="ConsulProvider" id="@cdktf/provider-consul.provider.ConsulProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul consul}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer"></a>
 
@@ -809,22 +809,22 @@ new ConsulProviderConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#address ConsulProvider#address}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caFile">CaFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_file ConsulProvider#ca_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPath">CaPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_path ConsulProvider#ca_path}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPem">CaPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_pem ConsulProvider#ca_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">CertFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_file ConsulProvider#cert_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">CertPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_pem ConsulProvider#cert_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#datacenter ConsulProvider#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caFile">CaFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPath">CaPath</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPem">CaPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">CertFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">CertPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">Header</a></code> | <code>object</code> | header block. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">HttpAuth</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#http_auth ConsulProvider#http_auth}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">InsecureHttps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#insecure_https ConsulProvider#insecure_https}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">KeyFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_file ConsulProvider#key_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_pem ConsulProvider#key_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#namespace ConsulProvider#namespace}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#scheme ConsulProvider#scheme}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#token ConsulProvider#token}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">HttpAuth</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">InsecureHttps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">KeyFile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.scheme">Scheme</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}. |
 
 ---
 
@@ -836,7 +836,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#address ConsulProvider#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#alias ConsulProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#alias ConsulProvider#alias}
 
 ---
 
@@ -862,7 +862,7 @@ public string CaFile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_file ConsulProvider#ca_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}.
 
 ---
 
@@ -874,7 +874,7 @@ public string CaPath { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_path ConsulProvider#ca_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}.
 
 ---
 
@@ -886,7 +886,7 @@ public string CaPem { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_pem ConsulProvider#ca_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}.
 
 ---
 
@@ -898,7 +898,7 @@ public string CertFile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_file ConsulProvider#cert_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}.
 
 ---
 
@@ -910,7 +910,7 @@ public string CertPem { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_pem ConsulProvider#cert_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}.
 
 ---
 
@@ -922,7 +922,7 @@ public string Datacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#datacenter ConsulProvider#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}.
 
 ---
 
@@ -936,7 +936,7 @@ public object Header { get; set; }
 
 header block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#header ConsulProvider#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#header ConsulProvider#header}
 
 ---
 
@@ -948,7 +948,7 @@ public string HttpAuth { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#http_auth ConsulProvider#http_auth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}.
 
 ---
 
@@ -960,7 +960,7 @@ public object InsecureHttps { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#insecure_https ConsulProvider#insecure_https}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}.
 
 ---
 
@@ -972,7 +972,7 @@ public string KeyFile { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_file ConsulProvider#key_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}.
 
 ---
 
@@ -984,7 +984,7 @@ public string KeyPem { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_pem ConsulProvider#key_pem}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}.
 
 ---
 
@@ -996,7 +996,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#namespace ConsulProvider#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public string Scheme { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#scheme ConsulProvider#scheme}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}.
 
 ---
 
@@ -1020,7 +1020,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#token ConsulProvider#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public string Name { get; set; }
 
 The header name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#name ConsulProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#name ConsulProvider#name}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string Value { get; set; }
 
 The header value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#value ConsulProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#value ConsulProvider#value}
 
 ---
 

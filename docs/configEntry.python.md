@@ -1,6 +1,6 @@
 # `consul_config_entry`
 
-Refer to the Terraform Registory for docs: [`consul_config_entry`](https://www.terraform.io/docs/providers/consul/r/config_entry).
+Refer to the Terraform Registory for docs: [`consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry).
 
 # `configEntry` Submodule <a name="`configEntry` Submodule" id="@cdktf/provider-consul.configEntry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_config_entry`](https://www.t
 
 ### ConfigEntry <a name="ConfigEntry" id="@cdktf/provider-consul.configEntry.ConfigEntry"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/config_entry consul_config_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry consul_config_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntry.ConfigEntry.Initializer"></a>
 
@@ -19,7 +19,7 @@ configEntry.ConfigEntry(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,17 +39,17 @@ configEntry.ConfigEntry(
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#kind ConfigEntry#kind}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#name ConfigEntry#name}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.configJson">config_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#config_json ConfigEntry#config_json}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#id ConfigEntry#id}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#namespace ConfigEntry#namespace}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.configJson">config_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.partition">partition</a></code> | <code>str</code> | The partition the config entry is associated with. |
 
 ---
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.configEntry.ConfigEntry.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#kind ConfigEntry#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#name ConfigEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#config_json ConfigEntry#config_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#id ConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#namespace ConfigEntry#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#partition ConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#partition ConfigEntry#partition}
 
 ---
 
@@ -515,7 +515,7 @@ configEntry.ConfigEntry.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -621,10 +621,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.configEntry.ConfigEntry.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -827,7 +827,7 @@ from cdktf_cdktf_provider_consul import config_entry
 
 configEntry.ConfigEntryConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -847,17 +847,17 @@ configEntry.ConfigEntryConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#kind ConfigEntry#kind}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#name ConfigEntry#name}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.configJson">config_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#config_json ConfigEntry#config_json}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#id ConfigEntry#id}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#namespace ConfigEntry#namespace}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.kind">kind</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.configJson">config_json</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.partition">partition</a></code> | <code>str</code> | The partition the config entry is associated with. |
 
 ---
@@ -875,10 +875,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -940,7 +940,7 @@ kind: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#kind ConfigEntry#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}.
 
 ---
 
@@ -952,7 +952,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#name ConfigEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}.
 
 ---
 
@@ -964,7 +964,7 @@ config_json: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#config_json ConfigEntry#config_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}.
 
 ---
 
@@ -976,7 +976,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#id ConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#namespace ConfigEntry#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}.
 
 ---
 
@@ -1005,7 +1005,7 @@ partition: str
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/config_entry#partition ConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#partition ConfigEntry#partition}
 
 ---
 

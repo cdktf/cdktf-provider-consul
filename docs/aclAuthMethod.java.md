@@ -1,6 +1,6 @@
 # `consul_acl_auth_method`
 
-Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://www.terraform.io/docs/providers/consul/r/acl_auth_method).
+Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method).
 
 # `aclAuthMethod` Submodule <a name="`aclAuthMethod` Submodule" id="@cdktf/provider-consul.aclAuthMethod"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://ww
 
 ### AclAuthMethod <a name="AclAuthMethod" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method consul_acl_auth_method}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method consul_acl_auth_method}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer"></a>
 
@@ -19,6 +19,7 @@ AclAuthMethod.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -47,7 +48,7 @@ AclAuthMethod.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -59,9 +60,9 @@ AclAuthMethod.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.configJson">configJson</a></code> | <code>java.lang.String</code> | The raw configuration for this ACL auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A free form human readable description of the auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | An optional name to use instead of the name attribute when displaying information about this auth method. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#id AclAuthMethod#id}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.maxTokenTtl">maxTokenTtl</a></code> | <code>java.lang.String</code> | The maximum life of any token created by this auth method. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace AclAuthMethod#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespaceRule">namespaceRule</a></code> | <code>java.util.List<<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>> OR com.hashicorp.cdktf.IResolvable</code> | namespace_rule block. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL auth method is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.tokenLocality">tokenLocality</a></code> | <code>java.lang.String</code> | The kind of token that this auth method produces. This can be either 'local' or 'global'. |
@@ -94,7 +95,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -134,7 +135,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#name AclAuthMethod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
 
 ---
 
@@ -144,7 +145,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The type of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#type AclAuthMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
 
 ---
 
@@ -154,7 +155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#config AclAuthMethod#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
 
 ---
 
@@ -164,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#config_json AclAuthMethod#config_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#config_json AclAuthMethod#config_json}
 
 ---
 
@@ -174,7 +175,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 A free form human readable description of the auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#description AclAuthMethod#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#description AclAuthMethod#description}
 
 ---
 
@@ -184,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 An optional name to use instead of the name attribute when displaying information about this auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#display_name AclAuthMethod#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#display_name AclAuthMethod#display_name}
 
 ---
 
@@ -192,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#id AclAuthMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -205,7 +206,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The maximum life of any token created by this auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
 
 ---
 
@@ -213,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace AclAuthMethod#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}.
 
 ---
 
@@ -223,7 +224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 namespace_rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
 
 ---
 
@@ -233,7 +234,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The partition the ACL auth method is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#partition AclAuthMethod#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#partition AclAuthMethod#partition}
 
 ---
 
@@ -243,7 +244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The kind of token that this auth method produces. This can be either 'local' or 'global'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#token_locality AclAuthMethod#token_locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
 
 ---
 
@@ -619,7 +620,7 @@ AclAuthMethod.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -737,10 +738,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1065,6 +1066,7 @@ AclAuthMethodConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1093,7 +1095,7 @@ AclAuthMethodConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1105,9 +1107,9 @@ AclAuthMethodConfig.builder()
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.configJson">configJson</a></code> | <code>java.lang.String</code> | The raw configuration for this ACL auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.description">description</a></code> | <code>java.lang.String</code> | A free form human readable description of the auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | An optional name to use instead of the name attribute when displaying information about this auth method. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#id AclAuthMethod#id}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.maxTokenTtl">maxTokenTtl</a></code> | <code>java.lang.String</code> | The maximum life of any token created by this auth method. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace AclAuthMethod#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespaceRule">namespaceRule</a></code> | <code>java.util.List<<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>> OR com.hashicorp.cdktf.IResolvable</code> | namespace_rule block. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL auth method is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.tokenLocality">tokenLocality</a></code> | <code>java.lang.String</code> | The kind of token that this auth method produces. This can be either 'local' or 'global'. |
@@ -1127,10 +1129,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1194,7 +1196,7 @@ public java.lang.String getName();
 
 The name of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#name AclAuthMethod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
 
 ---
 
@@ -1208,7 +1210,7 @@ public java.lang.String getType();
 
 The type of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#type AclAuthMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
 
 ---
 
@@ -1222,7 +1224,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfig();
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#config AclAuthMethod#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
 
 ---
 
@@ -1236,7 +1238,7 @@ public java.lang.String getConfigJson();
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#config_json AclAuthMethod#config_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#config_json AclAuthMethod#config_json}
 
 ---
 
@@ -1250,7 +1252,7 @@ public java.lang.String getDescription();
 
 A free form human readable description of the auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#description AclAuthMethod#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#description AclAuthMethod#description}
 
 ---
 
@@ -1264,7 +1266,7 @@ public java.lang.String getDisplayName();
 
 An optional name to use instead of the name attribute when displaying information about this auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#display_name AclAuthMethod#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#display_name AclAuthMethod#display_name}
 
 ---
 
@@ -1276,7 +1278,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#id AclAuthMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1293,7 +1295,7 @@ public java.lang.String getMaxTokenTtl();
 
 The maximum life of any token created by this auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
 
 ---
 
@@ -1305,7 +1307,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace AclAuthMethod#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}.
 
 ---
 
@@ -1319,7 +1321,7 @@ public java.lang.Object getNamespaceRule();
 
 namespace_rule block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
 
 ---
 
@@ -1333,7 +1335,7 @@ public java.lang.String getPartition();
 
 The partition the ACL auth method is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#partition AclAuthMethod#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#partition AclAuthMethod#partition}
 
 ---
 
@@ -1347,7 +1349,7 @@ public java.lang.String getTokenLocality();
 
 The kind of token that this auth method produces. This can be either 'local' or 'global'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#token_locality AclAuthMethod#token_locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
 
 ---
 
@@ -1368,8 +1370,8 @@ AclAuthMethodNamespaceRule.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.property.bindNamespace">bindNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.property.selector">selector</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#selector AclAuthMethod#selector}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.property.bindNamespace">bindNamespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.property.selector">selector</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#selector AclAuthMethod#selector}. |
 
 ---
 
@@ -1381,7 +1383,7 @@ public java.lang.String getBindNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}.
 
 ---
 
@@ -1393,7 +1395,7 @@ public java.lang.String getSelector();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_auth_method#selector AclAuthMethod#selector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#selector AclAuthMethod#selector}.
 
 ---
 

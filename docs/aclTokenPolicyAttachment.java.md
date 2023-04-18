@@ -1,6 +1,6 @@
 # `consul_acl_token_policy_attachment`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token_policy_attachment`](https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment).
+Refer to the Terraform Registory for docs: [`consul_acl_token_policy_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment).
 
 # `aclTokenPolicyAttachment` Submodule <a name="`aclTokenPolicyAttachment` Submodule" id="@cdktf/provider-consul.aclTokenPolicyAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_token_policy_attachment`
 
 ### AclTokenPolicyAttachment <a name="AclTokenPolicyAttachment" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment consul_acl_token_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer"></a>
 
@@ -19,6 +19,7 @@ AclTokenPolicyAttachment.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -37,7 +38,7 @@ AclTokenPolicyAttachment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -45,7 +46,7 @@ AclTokenPolicyAttachment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | The policy name. |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.tokenId">tokenId</a></code> | <code>java.lang.String</code> | The token accessor id. |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
 
 ---
 
@@ -75,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -115,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The policy name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
 
 ---
 
@@ -125,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The token accessor id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -436,7 +437,7 @@ AclTokenPolicyAttachment.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -536,10 +537,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -684,6 +685,7 @@ AclTokenPolicyAttachmentConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -702,7 +704,7 @@ AclTokenPolicyAttachmentConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -710,7 +712,7 @@ AclTokenPolicyAttachmentConfig.builder()
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | The policy name. |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.tokenId">tokenId</a></code> | <code>java.lang.String</code> | The token accessor id. |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
 
 ---
 
@@ -727,10 +729,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -794,7 +796,7 @@ public java.lang.String getPolicy();
 
 The policy name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
 
 ---
 
@@ -808,7 +810,7 @@ public java.lang.String getTokenId();
 
 The token accessor id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
 
 ---
 
@@ -820,7 +822,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

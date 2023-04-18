@@ -1,6 +1,6 @@
 # `consul_catalog_entry`
 
-Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://www.terraform.io/docs/providers/consul/r/catalog_entry).
+Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry).
 
 # `catalogEntry` Submodule <a name="`catalogEntry` Submodule" id="@cdktf/provider-consul.catalogEntry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://www.
 
 ### CatalogEntry <a name="CatalogEntry" id="@cdktf/provider-consul.catalogEntry.CatalogEntry"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry consul_catalog_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer"></a>
 
@@ -19,7 +19,7 @@ catalogEntry.CatalogEntry(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -39,18 +39,18 @@ catalogEntry.CatalogEntry(
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#node CatalogEntry#node}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#datacenter CatalogEntry#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.service">service</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a>]]</code> | service block. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#token CatalogEntry#token}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}. |
 
 ---
 
@@ -80,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#node CatalogEntry#node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#datacenter CatalogEntry#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 service block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#service CatalogEntry#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#service CatalogEntry#service}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#token CatalogEntry#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}.
 
 ---
 
@@ -530,7 +530,7 @@ catalogEntry.CatalogEntry.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntry.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -636,10 +636,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -842,7 +842,7 @@ from cdktf_cdktf_provider_consul import catalog_entry
 
 catalogEntry.CatalogEntryConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -862,18 +862,18 @@ catalogEntry.CatalogEntryConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#node CatalogEntry#node}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#datacenter CatalogEntry#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.service">service</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a>]]</code> | service block. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#token CatalogEntry#token}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.token">token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}. |
 
 ---
 
@@ -890,10 +890,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -955,7 +955,7 @@ address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 
 ---
 
@@ -967,7 +967,7 @@ node_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#node CatalogEntry#node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}.
 
 ---
 
@@ -979,7 +979,7 @@ datacenter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#datacenter CatalogEntry#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
 
 ---
 
@@ -991,7 +991,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1008,7 +1008,7 @@ service: typing.Union[IResolvable, typing.List[CatalogEntryService]]
 
 service block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#service CatalogEntry#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#service CatalogEntry#service}
 
 ---
 
@@ -1020,7 +1020,7 @@ token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#token CatalogEntry#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}.
 
 ---
 
@@ -1044,11 +1044,11 @@ catalogEntry.CatalogEntryService(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#name CatalogEntry#name}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#port CatalogEntry#port}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#tags CatalogEntry#tags}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#name CatalogEntry#name}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#port CatalogEntry#port}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#tags CatalogEntry#tags}. |
 
 ---
 
@@ -1060,7 +1060,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#name CatalogEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#name CatalogEntry#name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#address CatalogEntry#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 
 ---
 
@@ -1084,7 +1084,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#id CatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1099,7 +1099,7 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#port CatalogEntry#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#port CatalogEntry#port}.
 
 ---
 
@@ -1111,7 +1111,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/catalog_entry#tags CatalogEntry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#tags CatalogEntry#tags}.
 
 ---
 

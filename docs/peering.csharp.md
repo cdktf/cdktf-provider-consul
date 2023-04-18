@@ -1,6 +1,6 @@
 # `consul_peering`
 
-Refer to the Terraform Registory for docs: [`consul_peering`](https://www.terraform.io/docs/providers/consul/r/peering).
+Refer to the Terraform Registory for docs: [`consul_peering`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering).
 
 # `peering` Submodule <a name="`peering` Submodule" id="@cdktf/provider-consul.peering"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_peering`](https://www.terraf
 
 ### Peering <a name="Peering" id="@cdktf/provider-consul.peering.Peering"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/peering consul_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering consul_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peering.Peering.Initializer"></a>
 
@@ -360,7 +360,7 @@ Peering.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peering.Peering.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -470,10 +470,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.peering.Peering.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -716,7 +716,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new PeeringConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -735,7 +735,7 @@ new PeeringConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -743,9 +743,9 @@ new PeeringConfig {
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peeringToken">PeeringToken</a></code> | <code>string</code> | The peering token fetched from the peer cluster. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peerName">PeerName</a></code> | <code>string</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}. |
 
 ---
 
@@ -762,10 +762,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.peering.PeeringConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -829,7 +829,7 @@ public string PeeringToken { get; set; }
 
 The peering token fetched from the peer cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peering_token Peering#peering_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peering_token Peering#peering_token}
 
 ---
 
@@ -845,7 +845,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#peer_name Peering#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#peer_name Peering#peer_name}
 
 ---
 
@@ -857,7 +857,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#id Peering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#id Peering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -876,7 +876,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#meta Peering#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#meta Peering#meta}
 
 ---
 
@@ -888,7 +888,7 @@ public string Partition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/peering#partition Peering#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/peering#partition Peering#partition}.
 
 ---
 

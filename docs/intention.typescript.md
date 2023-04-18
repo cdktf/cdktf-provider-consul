@@ -1,6 +1,6 @@
 # `consul_intention`
 
-Refer to the Terraform Registory for docs: [`consul_intention`](https://www.terraform.io/docs/providers/consul/r/intention).
+Refer to the Terraform Registory for docs: [`consul_intention`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention).
 
 # `intention` Submodule <a name="`intention` Submodule" id="@cdktf/provider-consul.intention"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_intention`](https://www.terr
 
 ### Intention <a name="Intention" id="@cdktf/provider-consul.intention.Intention"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/intention consul_intention}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention consul_intention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.intention.Intention.Initializer"></a>
 
@@ -381,7 +381,7 @@ intention.Intention.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.Intention.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.intention.Intention.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.Intention.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -493,10 +493,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.intention.Intention.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -765,21 +765,21 @@ const intentionConfig: intention.IntentionConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#action Intention#action}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">destinationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_name Intention#destination_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">sourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_name Intention#source_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#datacenter Intention#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#description Intention#description}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">destinationNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_namespace Intention#destination_namespace}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#id Intention#id}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">meta</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#meta Intention#meta}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">sourceNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_namespace Intention#source_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">action</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#action Intention#action}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">destinationName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_name Intention#destination_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">sourceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_name Intention#source_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#datacenter Intention#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#description Intention#description}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">destinationNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_namespace Intention#destination_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#id Intention#id}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">meta</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#meta Intention#meta}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">sourceNamespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_namespace Intention#source_namespace}. |
 
 ---
 
@@ -796,10 +796,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.intention.IntentionConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -861,7 +861,7 @@ public readonly action: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#action Intention#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#action Intention#action}.
 
 ---
 
@@ -873,7 +873,7 @@ public readonly destinationName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_name Intention#destination_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_name Intention#destination_name}.
 
 ---
 
@@ -885,7 +885,7 @@ public readonly sourceName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_name Intention#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_name Intention#source_name}.
 
 ---
 
@@ -897,7 +897,7 @@ public readonly datacenter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#datacenter Intention#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#datacenter Intention#datacenter}.
 
 ---
 
@@ -909,7 +909,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#description Intention#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#description Intention#description}.
 
 ---
 
@@ -921,7 +921,7 @@ public readonly destinationNamespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#destination_namespace Intention#destination_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#destination_namespace Intention#destination_namespace}.
 
 ---
 
@@ -933,7 +933,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#id Intention#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#id Intention#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -948,7 +948,7 @@ public readonly meta: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#meta Intention#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#meta Intention#meta}.
 
 ---
 
@@ -960,7 +960,7 @@ public readonly sourceNamespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/intention#source_namespace Intention#source_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/intention#source_namespace Intention#source_namespace}.
 
 ---
 

@@ -40,7 +40,7 @@ The following submodules are available:
 - [intention](./intention.csharp.md)
 - [keyPrefix](./keyPrefix.csharp.md)
 - [keys](./keys.csharp.md)
-- [license](./license.csharp.md)
+- [licenseResource](./licenseResource.csharp.md)
 - [namespace](./namespace.csharp.md)
 - [namespacePolicyAttachment](./namespacePolicyAttachment.csharp.md)
 - [namespaceRoleAttachment](./namespaceRoleAttachment.csharp.md)

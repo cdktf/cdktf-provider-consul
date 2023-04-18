@@ -1,6 +1,6 @@
 # `consul_acl_token`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token`](https://www.terraform.io/docs/providers/consul/r/acl_token).
+Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token).
 
 # `aclToken` Submodule <a name="`aclToken` Submodule" id="@cdktf/provider-consul.aclToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_token`](https://www.terr
 
 ### AclToken <a name="AclToken" id="@cdktf/provider-consul.aclToken.AclToken"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclToken.Initializer"></a>
 
@@ -19,6 +19,7 @@ AclToken.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -48,7 +49,7 @@ AclToken.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -57,9 +58,9 @@ AclToken.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.accessorId">accessorId</a></code> | <code>java.lang.String</code> | The token id. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The token description. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.expirationTime">expirationTime</a></code> | <code>java.lang.String</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.local">local</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to set the token local to the current datacenter. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#namespace AclToken#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#namespace AclToken#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.nodeIdentities">nodeIdentities</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities">AclTokenNodeIdentities</a>></code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL token is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | List of policies. |
@@ -94,7 +95,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -134,7 +135,7 @@ Must be unique amongst siblings in the same scope
 
 The token id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -144,7 +145,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The token description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -154,7 +155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -162,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +176,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -183,7 +184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#namespace AclToken#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#namespace AclToken#namespace}.
 
 ---
 
@@ -193,7 +194,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -203,7 +204,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -213,7 +214,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 List of policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -223,7 +224,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 List of roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -233,7 +234,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#service_identities AclToken#service_identities}
 
 ---
 
@@ -629,7 +630,7 @@ AclToken.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -745,10 +746,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclToken.AclToken.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1053,6 +1054,7 @@ AclTokenConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1082,7 +1084,7 @@ AclTokenConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1091,9 +1093,9 @@ AclTokenConfig.builder()
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.accessorId">accessorId</a></code> | <code>java.lang.String</code> | The token id. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.description">description</a></code> | <code>java.lang.String</code> | The token description. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.expirationTime">expirationTime</a></code> | <code>java.lang.String</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.local">local</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Flag to set the token local to the current datacenter. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#namespace AclToken#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#namespace AclToken#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.nodeIdentities">nodeIdentities</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities">AclTokenNodeIdentities</a>></code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL token is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | List of policies. |
@@ -1115,10 +1117,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclToken.AclTokenConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1182,7 +1184,7 @@ public java.lang.String getAccessorId();
 
 The token id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -1196,7 +1198,7 @@ public java.lang.String getDescription();
 
 The token description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -1210,7 +1212,7 @@ public java.lang.String getExpirationTime();
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -1222,7 +1224,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1239,7 +1241,7 @@ public java.lang.Object getLocal();
 
 Flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -1251,7 +1253,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#namespace AclToken#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#namespace AclToken#namespace}.
 
 ---
 
@@ -1265,7 +1267,7 @@ public java.lang.Object getNodeIdentities();
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -1279,7 +1281,7 @@ public java.lang.String getPartition();
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -1293,7 +1295,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 List of policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -1307,7 +1309,7 @@ public java.util.List<java.lang.String> getRoles();
 
 List of roles.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -1321,7 +1323,7 @@ public java.lang.Object getServiceIdentities();
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#service_identities AclToken#service_identities}
 
 ---
 
@@ -1357,7 +1359,7 @@ public java.lang.String getDatacenter();
 
 Specifies the node's datacenter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#datacenter AclToken#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#datacenter AclToken#datacenter}
 
 ---
 
@@ -1371,7 +1373,7 @@ public java.lang.String getNodeName();
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#node_name AclToken#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#node_name AclToken#node_name}
 
 ---
 
@@ -1407,7 +1409,7 @@ public java.lang.String getServiceName();
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#service_name AclToken#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#service_name AclToken#service_name}
 
 ---
 
@@ -1421,7 +1423,7 @@ public java.util.List<java.lang.String> getDatacenters();
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token#datacenters AclToken#datacenters}
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/keys
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#datacenter DataConsulKeys#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#datacenter DataConsulKeys#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#id DataConsulKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#id DataConsulKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#namespace DataConsulKeys#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#namespace DataConsulKeys#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#partition DataConsulKeys#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#partition DataConsulKeys#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#token DataConsulKeys#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#token DataConsulKeys#token}
   */
   readonly token?: string;
   /**
   * key block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#key DataConsulKeys#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#key DataConsulKeys#key}
   */
   readonly key?: DataConsulKeysKey[] | cdktf.IResolvable;
 }
 export interface DataConsulKeysKey {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#default DataConsulKeys#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#default DataConsulKeys#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#name DataConsulKeys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#name DataConsulKeys#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/keys#path DataConsulKeys#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys#path DataConsulKeys#path}
   */
   readonly path: string;
 }
@@ -184,7 +184,7 @@ export class DataConsulKeysKeyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/keys consul_keys}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys consul_keys}
 */
 export class DataConsulKeys extends cdktf.TerraformDataSource {
 
@@ -198,7 +198,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/keys consul_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/keys consul_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

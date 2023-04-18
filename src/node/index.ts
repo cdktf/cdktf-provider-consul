@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/node
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface NodeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#address Node#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#address Node#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#datacenter Node#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#datacenter Node#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#id Node#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#id Node#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#meta Node#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#meta Node#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#name Node#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#name Node#name}
   */
   readonly name: string;
   /**
   * The partition the node is associated with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#partition Node#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#partition Node#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/node#token Node#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node#token Node#token}
   */
   readonly token?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/node consul_node}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node consul_node}
 */
 export class Node extends cdktf.TerraformResource {
 
@@ -57,7 +57,7 @@ export class Node extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/node consul_node} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/node consul_node} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
