@@ -1,3 +1,7 @@
+# `consul_certificate_authority`
+
+Refer to the Terraform Registory for docs: [`consul_certificate_authority`](https://www.terraform.io/docs/providers/consul/r/certificate_authority).
+
 # `certificateAuthority` Submodule <a name="`certificateAuthority` Submodule" id="@cdktf/provider-consul.certificateAuthority"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `consul_namespace_role_attachment`
+
+Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment).
+
 # `namespaceRoleAttachment` Submodule <a name="`namespaceRoleAttachment` Submodule" id="@cdktf/provider-consul.namespaceRoleAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

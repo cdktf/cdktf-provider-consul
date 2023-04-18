@@ -1,3 +1,7 @@
+# `consul_acl_binding_rule`
+
+Refer to the Terraform Registory for docs: [`consul_acl_binding_rule`](https://www.terraform.io/docs/providers/consul/r/acl_binding_rule).
+
 # `aclBindingRule` Submodule <a name="`aclBindingRule` Submodule" id="@cdktf/provider-consul.aclBindingRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

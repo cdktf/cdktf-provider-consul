@@ -1,3 +1,7 @@
+# `data_consul_keys`
+
+Refer to the Terraform Registory for docs: [`data_consul_keys`](https://www.terraform.io/docs/providers/consul/d/keys).
+
 # `dataConsulKeys` Submodule <a name="`dataConsulKeys` Submodule" id="@cdktf/provider-consul.dataConsulKeys"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

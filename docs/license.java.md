@@ -1,3 +1,7 @@
+# `consul_license`
+
+Refer to the Terraform Registory for docs: [`consul_license`](https://www.terraform.io/docs/providers/consul/r/license).
+
 # `license` Submodule <a name="`license` Submodule" id="@cdktf/provider-consul.license"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

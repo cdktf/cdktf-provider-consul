@@ -1,3 +1,7 @@
+# `consul_namespace_policy_attachment`
+
+Refer to the Terraform Registory for docs: [`consul_namespace_policy_attachment`](https://www.terraform.io/docs/providers/consul/r/namespace_policy_attachment).
+
 # `namespacePolicyAttachment` Submodule <a name="`namespacePolicyAttachment` Submodule" id="@cdktf/provider-consul.namespacePolicyAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

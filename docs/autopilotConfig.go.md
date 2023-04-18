@@ -1,3 +1,7 @@
+# `consul_autopilot_config`
+
+Refer to the Terraform Registory for docs: [`consul_autopilot_config`](https://www.terraform.io/docs/providers/consul/r/autopilot_config).
+
 # `autopilotConfig` Submodule <a name="`autopilotConfig` Submodule" id="@cdktf/provider-consul.autopilotConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
