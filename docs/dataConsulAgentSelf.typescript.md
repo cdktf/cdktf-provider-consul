@@ -1,3 +1,7 @@
+# `data_consul_agent_self`
+
+Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://www.terraform.io/docs/providers/consul/d/agent_self).
+
 # `dataConsulAgentSelf` Submodule <a name="`dataConsulAgentSelf` Submodule" id="@cdktf/provider-consul.dataConsulAgentSelf"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

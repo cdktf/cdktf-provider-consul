@@ -1,3 +1,7 @@
+# `consul_acl_role`
+
+Refer to the Terraform Registory for docs: [`consul_acl_role`](https://www.terraform.io/docs/providers/consul/r/acl_role).
+
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-consul.aclRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `consul_node`
+
+Refer to the Terraform Registory for docs: [`consul_node`](https://www.terraform.io/docs/providers/consul/r/node).
+
 # `node` Submodule <a name="`node` Submodule" id="@cdktf/provider-consul.node"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

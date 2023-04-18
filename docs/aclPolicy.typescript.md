@@ -1,3 +1,7 @@
+# `consul_acl_policy`
+
+Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://www.terraform.io/docs/providers/consul/r/acl_policy).
+
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-consul.aclPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

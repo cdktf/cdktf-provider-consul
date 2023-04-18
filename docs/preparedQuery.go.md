@@ -1,3 +1,7 @@
+# `consul_prepared_query`
+
+Refer to the Terraform Registory for docs: [`consul_prepared_query`](https://www.terraform.io/docs/providers/consul/r/prepared_query).
+
 # `preparedQuery` Submodule <a name="`preparedQuery` Submodule" id="@cdktf/provider-consul.preparedQuery"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

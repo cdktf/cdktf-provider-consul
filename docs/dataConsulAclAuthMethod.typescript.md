@@ -1,3 +1,7 @@
+# `data_consul_acl_auth_method`
+
+Refer to the Terraform Registory for docs: [`data_consul_acl_auth_method`](https://www.terraform.io/docs/providers/consul/d/acl_auth_method).
+
 # `dataConsulAclAuthMethod` Submodule <a name="`dataConsulAclAuthMethod` Submodule" id="@cdktf/provider-consul.dataConsulAclAuthMethod"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
