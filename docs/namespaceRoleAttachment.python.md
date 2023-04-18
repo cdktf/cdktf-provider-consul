@@ -1,6 +1,6 @@
 # `consul_namespace_role_attachment`
 
-Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment).
+Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment).
 
 # `namespaceRoleAttachment` Submodule <a name="`namespaceRoleAttachment` Submodule" id="@cdktf/provider-consul.namespaceRoleAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](
 
 ### NamespaceRoleAttachment <a name="NamespaceRoleAttachment" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment consul_namespace_role_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment consul_namespace_role_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer"></a>
 
@@ -19,7 +19,7 @@ namespaceRoleAttachment.NamespaceRoleAttachment(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,7 +36,7 @@ namespaceRoleAttachment.NamespaceRoleAttachment(
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +44,7 @@ namespaceRoleAttachment.NamespaceRoleAttachment(
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace to attach the role to. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.role">role</a></code> | <code>str</code> | The role name. |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The namespace to attach the role to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#role NamespaceRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#role NamespaceRoleAttachment#role}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -466,7 +466,7 @@ namespaceRoleAttachment.NamespaceRoleAttachment.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -566,10 +566,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -712,7 +712,7 @@ from cdktf_cdktf_provider_consul import namespace_role_attachment
 
 namespaceRoleAttachment.NamespaceRoleAttachmentConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -729,7 +729,7 @@ namespaceRoleAttachment.NamespaceRoleAttachmentConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -737,7 +737,7 @@ namespaceRoleAttachment.NamespaceRoleAttachmentConfig(
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace to attach the role to. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.role">role</a></code> | <code>str</code> | The role name. |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
 
 ---
 
@@ -754,10 +754,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -821,7 +821,7 @@ namespace: str
 
 The namespace to attach the role to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
 
 ---
 
@@ -835,7 +835,7 @@ role: str
 
 The role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#role NamespaceRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#role NamespaceRoleAttachment#role}
 
 ---
 
@@ -847,7 +847,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

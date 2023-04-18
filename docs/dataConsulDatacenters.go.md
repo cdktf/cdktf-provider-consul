@@ -1,6 +1,6 @@
 # `data_consul_datacenters`
 
-Refer to the Terraform Registory for docs: [`data_consul_datacenters`](https://www.terraform.io/docs/providers/consul/d/datacenters).
+Refer to the Terraform Registory for docs: [`data_consul_datacenters`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/datacenters).
 
 # `dataConsulDatacenters` Submodule <a name="`dataConsulDatacenters` Submodule" id="@cdktf/provider-consul.dataConsulDatacenters"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_datacenters`](https://w
 
 ### DataConsulDatacenters <a name="DataConsulDatacenters" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/d/datacenters consul_datacenters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/datacenters consul_datacenters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataconsuldatacenters.DataConsulDatacenters_IsTerraformDataSource(x interface{})
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -537,7 +537,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenter
 
 &dataconsuldatacenters.DataConsulDatacentersConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -552,13 +552,13 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsuldatacenter
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/datacenters#id DataConsulDatacenters#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/datacenters#id DataConsulDatacenters#id}. |
 
 ---
 
@@ -575,10 +575,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/datacenters#id DataConsulDatacenters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/datacenters#id DataConsulDatacenters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

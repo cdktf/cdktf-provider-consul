@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/agent_service
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface AgentServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#address AgentService#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#address AgentService#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#id AgentService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#id AgentService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#name AgentService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#name AgentService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#port AgentService#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#port AgentService#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/agent_service#tags AgentService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service#tags AgentService#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/agent_service consul_agent_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service}
 */
 export class AgentService extends cdktf.TerraformResource {
 
@@ -47,7 +47,7 @@ export class AgentService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/agent_service consul_agent_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/agent_service consul_agent_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

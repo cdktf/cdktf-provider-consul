@@ -1,6 +1,6 @@
 # `consul_network_area`
 
-Refer to the Terraform Registory for docs: [`consul_network_area`](https://www.terraform.io/docs/providers/consul/r/network_area).
+Refer to the Terraform Registory for docs: [`consul_network_area`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area).
 
 # `networkArea` Submodule <a name="`networkArea` Submodule" id="@cdktf/provider-consul.networkArea"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_network_area`](https://www.t
 
 ### NetworkArea <a name="NetworkArea" id="@cdktf/provider-consul.networkArea.NetworkArea"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/network_area consul_network_area}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area consul_network_area}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.networkArea.NetworkArea.Initializer"></a>
 
@@ -374,7 +374,7 @@ NetworkArea.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkArea.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -480,10 +480,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.networkArea.NetworkArea.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -686,7 +686,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new NetworkAreaConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -706,18 +706,18 @@ new NetworkAreaConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.peerDatacenter">PeerDatacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#peer_datacenter NetworkArea#peer_datacenter}. |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#datacenter NetworkArea#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#id NetworkArea#id}. |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.retryJoin">RetryJoin</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#retry_join NetworkArea#retry_join}. |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#token NetworkArea#token}. |
-| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.useTls">UseTls</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#use_tls NetworkArea#use_tls}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.peerDatacenter">PeerDatacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#peer_datacenter NetworkArea#peer_datacenter}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#datacenter NetworkArea#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#id NetworkArea#id}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.retryJoin">RetryJoin</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#retry_join NetworkArea#retry_join}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#token NetworkArea#token}. |
+| <code><a href="#@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.useTls">UseTls</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#use_tls NetworkArea#use_tls}. |
 
 ---
 
@@ -734,10 +734,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.networkArea.NetworkAreaConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -799,7 +799,7 @@ public string PeerDatacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#peer_datacenter NetworkArea#peer_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#peer_datacenter NetworkArea#peer_datacenter}.
 
 ---
 
@@ -811,7 +811,7 @@ public string Datacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#datacenter NetworkArea#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#datacenter NetworkArea#datacenter}.
 
 ---
 
@@ -823,7 +823,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#id NetworkArea#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#id NetworkArea#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ public string[] RetryJoin { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#retry_join NetworkArea#retry_join}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#retry_join NetworkArea#retry_join}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#token NetworkArea#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#token NetworkArea#token}.
 
 ---
 
@@ -862,7 +862,7 @@ public object UseTls { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#use_tls NetworkArea#use_tls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#use_tls NetworkArea#use_tls}.
 
 ---
 

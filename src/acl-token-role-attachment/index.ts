@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface AclTokenRoleAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#id AclTokenRoleAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface AclTokenRoleAttachmentConfig extends cdktf.TerraformMetaArgumen
   /**
   * The role name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#role AclTokenRoleAttachment#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#role AclTokenRoleAttachment#role}
   */
   readonly role: string;
   /**
   * The token accessor id.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
   */
   readonly tokenId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment consul_acl_token_role_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}
 */
 export class AclTokenRoleAttachment extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class AclTokenRoleAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment consul_acl_token_role_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

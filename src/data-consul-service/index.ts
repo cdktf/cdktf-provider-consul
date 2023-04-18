@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/service
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#filter DataConsulService#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#filter DataConsulService#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#id DataConsulService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#id DataConsulService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#name DataConsulService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#name DataConsulService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#tag DataConsulService#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#tag DataConsulService#tag}
   */
   readonly tag?: string;
   /**
   * query_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#query_options DataConsulService#query_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#query_options DataConsulService#query_options}
   */
   readonly queryOptions?: DataConsulServiceQueryOptions[] | cdktf.IResolvable;
 }
@@ -171,43 +171,43 @@ export class DataConsulServiceServiceList extends cdktf.ComplexList {
 }
 export interface DataConsulServiceQueryOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#allow_stale DataConsulService#allow_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#allow_stale DataConsulService#allow_stale}
   */
   readonly allowStale?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#datacenter DataConsulService#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#datacenter DataConsulService#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#namespace DataConsulService#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#namespace DataConsulService#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#near DataConsulService#near}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#near DataConsulService#near}
   */
   readonly near?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#node_meta DataConsulService#node_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#node_meta DataConsulService#node_meta}
   */
   readonly nodeMeta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#partition DataConsulService#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#partition DataConsulService#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#require_consistent DataConsulService#require_consistent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#require_consistent DataConsulService#require_consistent}
   */
   readonly requireConsistent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#token DataConsulService#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#token DataConsulService#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_index DataConsulService#wait_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_index DataConsulService#wait_index}
   */
   readonly waitIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/service#wait_time DataConsulService#wait_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service#wait_time DataConsulService#wait_time}
   */
   readonly waitTime?: string;
 }
@@ -511,7 +511,7 @@ export class DataConsulServiceQueryOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/service consul_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service consul_service}
 */
 export class DataConsulService extends cdktf.TerraformDataSource {
 
@@ -525,7 +525,7 @@ export class DataConsulService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/service consul_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/service consul_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

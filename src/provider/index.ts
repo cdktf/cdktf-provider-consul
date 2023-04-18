@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,71 +8,71 @@ import * as cdktf from 'cdktf';
 
 export interface ConsulProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#address ConsulProvider#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_file ConsulProvider#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}
   */
   readonly caFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_path ConsulProvider#ca_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}
   */
   readonly caPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#ca_pem ConsulProvider#ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}
   */
   readonly caPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_file ConsulProvider#cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}
   */
   readonly certFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#cert_pem ConsulProvider#cert_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}
   */
   readonly certPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#datacenter ConsulProvider#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#http_auth ConsulProvider#http_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}
   */
   readonly httpAuth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#insecure_https ConsulProvider#insecure_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}
   */
   readonly insecureHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_file ConsulProvider#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}
   */
   readonly keyFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#key_pem ConsulProvider#key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}
   */
   readonly keyPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#namespace ConsulProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#scheme ConsulProvider#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}
   */
   readonly scheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#token ConsulProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#alias ConsulProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#alias ConsulProvider#alias}
   */
   readonly alias?: string;
   /**
   * header block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#header ConsulProvider#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#header ConsulProvider#header}
   */
   readonly header?: ConsulProviderHeader[] | cdktf.IResolvable;
 }
@@ -80,13 +80,13 @@ export interface ConsulProviderHeader {
   /**
   * The header name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#name ConsulProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#name ConsulProvider#name}
   */
   readonly name: string;
   /**
   * The header value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul#value ConsulProvider#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#value ConsulProvider#value}
   */
   readonly value: string;
 }
@@ -104,7 +104,7 @@ export function consulProviderHeaderToTerraform(struct?: ConsulProviderHeader | 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul consul}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul}
 */
 export class ConsulProvider extends cdktf.TerraformProvider {
 
@@ -118,7 +118,7 @@ export class ConsulProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul consul} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

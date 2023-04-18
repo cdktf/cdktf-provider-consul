@@ -40,7 +40,7 @@ The following submodules are available:
 - [intention](./intention.python.md)
 - [keyPrefix](./keyPrefix.python.md)
 - [keys](./keys.python.md)
-- [license](./license.python.md)
+- [licenseResource](./licenseResource.python.md)
 - [namespace](./namespace.python.md)
 - [namespacePolicyAttachment](./namespacePolicyAttachment.python.md)
 - [namespaceRoleAttachment](./namespaceRoleAttachment.python.md)

@@ -1,6 +1,6 @@
 # `consul_acl_policy`
 
-Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://www.terraform.io/docs/providers/consul/r/acl_policy).
+Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-consul.aclPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://www.ter
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-consul.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_policy consul_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer"></a>
 
@@ -19,6 +19,7 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -41,7 +42,7 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -51,8 +52,8 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.rules">rules</a></code> | <code>java.lang.String</code> | The ACL policy rules. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.datacenters">datacenters</a></code> | <code>java.util.List<java.lang.String></code> | The ACL policy datacenters. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The ACL policy description. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#id AclPolicy#id}. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#namespace AclPolicy#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL policy is associated with. |
 
 ---
@@ -83,7 +84,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -123,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The ACL policy name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -133,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The ACL policy rules.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#rules AclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#rules AclPolicy#rules}
 
 ---
 
@@ -143,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The ACL policy datacenters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#datacenters AclPolicy#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
 
 ---
 
@@ -153,7 +154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The ACL policy description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -161,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -172,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#namespace AclPolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
 
 ---
 
@@ -182,7 +183,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consu
 
 The partition the ACL policy is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#partition AclPolicy#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#partition AclPolicy#partition}
 
 ---
 
@@ -510,7 +511,7 @@ AclPolicy.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -618,10 +619,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclPolicy.AclPolicy.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -846,6 +847,7 @@ AclPolicyConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -868,7 +870,7 @@ AclPolicyConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -878,8 +880,8 @@ AclPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.rules">rules</a></code> | <code>java.lang.String</code> | The ACL policy rules. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.datacenters">datacenters</a></code> | <code>java.util.List<java.lang.String></code> | The ACL policy datacenters. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | The ACL policy description. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#id AclPolicy#id}. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#namespace AclPolicy#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL policy is associated with. |
 
 ---
@@ -897,10 +899,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -964,7 +966,7 @@ public java.lang.String getName();
 
 The ACL policy name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -978,7 +980,7 @@ public java.lang.String getRules();
 
 The ACL policy rules.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#rules AclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#rules AclPolicy#rules}
 
 ---
 
@@ -992,7 +994,7 @@ public java.util.List<java.lang.String> getDatacenters();
 
 The ACL policy datacenters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#datacenters AclPolicy#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
 
 ---
 
@@ -1006,7 +1008,7 @@ public java.lang.String getDescription();
 
 The ACL policy description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -1018,7 +1020,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1033,7 +1035,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#namespace AclPolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
 
 ---
 
@@ -1047,7 +1049,7 @@ public java.lang.String getPartition();
 
 The partition the ACL policy is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_policy#partition AclPolicy#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#partition AclPolicy#partition}
 
 ---
 

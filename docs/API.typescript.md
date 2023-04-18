@@ -40,7 +40,7 @@ The following submodules are available:
 - [intention](./intention.typescript.md)
 - [keyPrefix](./keyPrefix.typescript.md)
 - [keys](./keys.typescript.md)
-- [license](./license.typescript.md)
+- [licenseResource](./licenseResource.typescript.md)
 - [namespace](./namespace.typescript.md)
 - [namespacePolicyAttachment](./namespacePolicyAttachment.typescript.md)
 - [namespaceRoleAttachment](./namespaceRoleAttachment.typescript.md)

@@ -1,6 +1,6 @@
 # `consul_acl_binding_rule`
 
-Refer to the Terraform Registory for docs: [`consul_acl_binding_rule`](https://www.terraform.io/docs/providers/consul/r/acl_binding_rule).
+Refer to the Terraform Registory for docs: [`consul_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule).
 
 # `aclBindingRule` Submodule <a name="`aclBindingRule` Submodule" id="@cdktf/provider-consul.aclBindingRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_binding_rule`](https://w
 
 ### AclBindingRule <a name="AclBindingRule" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule consul_acl_binding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule consul_acl_binding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.Initializer"></a>
 
@@ -374,7 +374,7 @@ AclBindingRule.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -730,7 +730,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new AclBindingRuleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -752,7 +752,7 @@ new AclBindingRuleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -762,8 +762,8 @@ new AclBindingRuleConfig {
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.bindName">BindName</a></code> | <code>string</code> | The name to bind to a token at login-time. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.bindType">BindType</a></code> | <code>string</code> | Specifies the way the binding rule affects a token created at login. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.description">Description</a></code> | <code>string</code> | A free form human readable description of the binding rule. |
-| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#id AclBindingRule#id}. |
-| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#namespace AclBindingRule#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#namespace AclBindingRule#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.partition">Partition</a></code> | <code>string</code> | The partition the ACL binding rule is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.selector">Selector</a></code> | <code>string</code> | The expression used to math this rule against valid identities returned from an auth method validation. |
 
@@ -782,10 +782,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -849,7 +849,7 @@ public string AuthMethod { get; set; }
 
 The name of the ACL auth method this rule apply.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#auth_method AclBindingRule#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
 
 ---
 
@@ -863,7 +863,7 @@ public string BindName { get; set; }
 
 The name to bind to a token at login-time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#bind_name AclBindingRule#bind_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
 
 ---
 
@@ -877,7 +877,7 @@ public string BindType { get; set; }
 
 Specifies the way the binding rule affects a token created at login.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#bind_type AclBindingRule#bind_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
 
 ---
 
@@ -891,7 +891,7 @@ public string Description { get; set; }
 
 A free form human readable description of the binding rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#description AclBindingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
 
 ---
 
@@ -903,7 +903,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#id AclBindingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#id AclBindingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,7 +918,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#namespace AclBindingRule#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#namespace AclBindingRule#namespace}.
 
 ---
 
@@ -932,7 +932,7 @@ public string Partition { get; set; }
 
 The partition the ACL binding rule is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#partition AclBindingRule#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#partition AclBindingRule#partition}
 
 ---
 
@@ -946,7 +946,7 @@ public string Selector { get; set; }
 
 The expression used to math this rule against valid identities returned from an auth method validation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_binding_rule#selector AclBindingRule#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
 
 ---
 

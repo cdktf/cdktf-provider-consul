@@ -1,6 +1,6 @@
 # `consul_namespace`
 
-Refer to the Terraform Registory for docs: [`consul_namespace`](https://www.terraform.io/docs/providers/consul/r/namespace).
+Refer to the Terraform Registory for docs: [`consul_namespace`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace).
 
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-consul.namespace"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_namespace`](https://www.terr
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-consul.namespace.Namespace"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/namespace consul_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace consul_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespace.Namespace.Initializer"></a>
 
@@ -381,7 +381,7 @@ namespace.Namespace_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.Namespace.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -489,10 +489,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.namespace.Namespace.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/namespace"
 
 &namespace.NamespaceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -736,19 +736,19 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/namespace"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}. |
 | <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the namespace is associated with. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.policyDefaults">PolicyDefaults</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}. |
-| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.roleDefaults">RoleDefaults</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.policyDefaults">PolicyDefaults</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}. |
+| <code><a href="#@cdktf/provider-consul.namespace.NamespaceConfig.property.roleDefaults">RoleDefaults</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}. |
 
 ---
 
@@ -765,10 +765,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.namespace.NamespaceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -830,7 +830,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#name Namespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#name Namespace#name}.
 
 ---
 
@@ -842,7 +842,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#description Namespace#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#description Namespace#description}.
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -869,7 +869,7 @@ Meta *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#meta Namespace#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#meta Namespace#meta}.
 
 ---
 
@@ -883,7 +883,7 @@ Partition *string
 
 The partition the namespace is associated with.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#partition Namespace#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#partition Namespace#partition}
 
 ---
 
@@ -895,7 +895,7 @@ PolicyDefaults *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#policy_defaults Namespace#policy_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#policy_defaults Namespace#policy_defaults}.
 
 ---
 
@@ -907,7 +907,7 @@ RoleDefaults *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace#role_defaults Namespace#role_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace#role_defaults Namespace#role_defaults}.
 
 ---
 

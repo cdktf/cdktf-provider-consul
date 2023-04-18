@@ -1,6 +1,6 @@
 # `consul_acl_token_role_attachment`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment).
+Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment).
 
 # `aclTokenRoleAttachment` Submodule <a name="`aclTokenRoleAttachment` Submodule" id="@cdktf/provider-consul.aclTokenRoleAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](
 
 ### AclTokenRoleAttachment <a name="AclTokenRoleAttachment" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment consul_acl_token_role_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.Initializer"></a>
 
@@ -346,7 +346,7 @@ AclTokenRoleAttachment.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new AclTokenRoleAttachmentConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new AclTokenRoleAttachmentConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new AclTokenRoleAttachmentConfig {
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.role">Role</a></code> | <code>string</code> | The role name. |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.tokenId">TokenId</a></code> | <code>string</code> | The token accessor id. |
-| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#id AclTokenRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ public string Role { get; set; }
 
 The role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#role AclTokenRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#role AclTokenRoleAttachment#role}
 
 ---
 
@@ -715,7 +715,7 @@ public string TokenId { get; set; }
 
 The token accessor id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
 
 ---
 
@@ -727,7 +727,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/acl_token_role_attachment#id AclTokenRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

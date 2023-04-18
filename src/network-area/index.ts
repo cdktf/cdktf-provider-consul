@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/network_area
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,36 +8,36 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkAreaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#datacenter NetworkArea#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#datacenter NetworkArea#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#id NetworkArea#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#id NetworkArea#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#peer_datacenter NetworkArea#peer_datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#peer_datacenter NetworkArea#peer_datacenter}
   */
   readonly peerDatacenter: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#retry_join NetworkArea#retry_join}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#retry_join NetworkArea#retry_join}
   */
   readonly retryJoin?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#token NetworkArea#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#token NetworkArea#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/network_area#use_tls NetworkArea#use_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area#use_tls NetworkArea#use_tls}
   */
   readonly useTls?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/network_area consul_network_area}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area consul_network_area}
 */
 export class NetworkArea extends cdktf.TerraformResource {
 
@@ -51,7 +51,7 @@ export class NetworkArea extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/network_area consul_network_area} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/network_area consul_network_area} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

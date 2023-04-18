@@ -1,6 +1,6 @@
 # `data_consul_peerings`
 
-Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://www.terraform.io/docs/providers/consul/d/peerings).
+Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings).
 
 # `dataConsulPeerings` Submodule <a name="`dataConsulPeerings` Submodule" id="@cdktf/provider-consul.dataConsulPeerings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://www.
 
 ### DataConsulPeerings <a name="DataConsulPeerings" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/d/peerings consul_peerings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings consul_peerings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.Initializer"></a>
 
@@ -352,7 +352,7 @@ dataconsulpeerings.DataConsulPeerings_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -440,10 +440,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -566,7 +566,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulpeerings"
 
 &dataconsulpeerings.DataConsulPeeringsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -582,14 +582,14 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulpeerings"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/peerings#id DataConsulPeerings#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/peerings#partition DataConsulPeerings#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#id DataConsulPeerings#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}. |
 
 ---
 
@@ -606,10 +606,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/peerings#id DataConsulPeerings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#id DataConsulPeerings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/peerings#partition DataConsulPeerings#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}.
 
 ---
 

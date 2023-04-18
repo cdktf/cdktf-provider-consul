@@ -1,6 +1,6 @@
 # `consul_namespace_role_attachment`
 
-Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment).
+Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment).
 
 # `namespaceRoleAttachment` Submodule <a name="`namespaceRoleAttachment` Submodule" id="@cdktf/provider-consul.namespaceRoleAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_namespace_role_attachment`](
 
 ### NamespaceRoleAttachment <a name="NamespaceRoleAttachment" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment consul_namespace_role_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment consul_namespace_role_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer"></a>
 
@@ -346,7 +346,7 @@ namespaceroleattachment.NamespaceRoleAttachment_IsTerraformResource(x interface{
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -592,7 +592,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/namespaceroleattachm
 
 &namespaceroleattachment.NamespaceRoleAttachmentConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -609,7 +609,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/namespaceroleattachm
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/namespaceroleattachm
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace to attach the role to. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.role">Role</a></code> | <code>*string</code> | The role name. |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -701,7 +701,7 @@ Namespace *string
 
 The namespace to attach the role to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
 
 ---
 
@@ -715,7 +715,7 @@ Role *string
 
 The role name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#role NamespaceRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#role NamespaceRoleAttachment#role}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/namespace_role_attachment#id NamespaceRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

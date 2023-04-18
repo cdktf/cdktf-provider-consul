@@ -1,6 +1,6 @@
 # `consul_admin_partition`
 
-Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://www.terraform.io/docs/providers/consul/r/admin_partition).
+Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition).
 
 # `adminPartition` Submodule <a name="`adminPartition` Submodule" id="@cdktf/provider-consul.adminPartition"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_admin_partition`](https://ww
 
 ### AdminPartition <a name="AdminPartition" id="@cdktf/provider-consul.adminPartition.AdminPartition"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/r/admin_partition consul_admin_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition consul_admin_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer"></a>
 
@@ -353,7 +353,7 @@ AdminPartition.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -599,7 +599,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 
 new AdminPartitionConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -616,7 +616,7 @@ new AdminPartitionConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -624,7 +624,7 @@ new AdminPartitionConfig {
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.name">Name</a></code> | <code>string</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.description">Description</a></code> | <code>string</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -641,10 +641,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -708,7 +708,7 @@ public string Name { get; set; }
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -722,7 +722,7 @@ public string Description { get; set; }
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#description AdminPartition#description}
 
 ---
 
@@ -734,7 +734,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

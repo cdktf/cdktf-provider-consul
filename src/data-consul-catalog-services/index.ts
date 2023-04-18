@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/catalog_services
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulCatalogServicesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#id DataConsulCatalogServices#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#id DataConsulCatalogServices#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,49 +17,49 @@ export interface DataConsulCatalogServicesConfig extends cdktf.TerraformMetaArgu
   /**
   * query_options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#query_options DataConsulCatalogServices#query_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#query_options DataConsulCatalogServices#query_options}
   */
   readonly queryOptions?: DataConsulCatalogServicesQueryOptions[] | cdktf.IResolvable;
 }
 export interface DataConsulCatalogServicesQueryOptions {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#allow_stale DataConsulCatalogServices#allow_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#allow_stale DataConsulCatalogServices#allow_stale}
   */
   readonly allowStale?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#datacenter DataConsulCatalogServices#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#datacenter DataConsulCatalogServices#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#namespace DataConsulCatalogServices#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#namespace DataConsulCatalogServices#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#near DataConsulCatalogServices#near}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#near DataConsulCatalogServices#near}
   */
   readonly near?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#node_meta DataConsulCatalogServices#node_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#node_meta DataConsulCatalogServices#node_meta}
   */
   readonly nodeMeta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#partition DataConsulCatalogServices#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#partition DataConsulCatalogServices#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#require_consistent DataConsulCatalogServices#require_consistent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#require_consistent DataConsulCatalogServices#require_consistent}
   */
   readonly requireConsistent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#token DataConsulCatalogServices#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#token DataConsulCatalogServices#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#wait_index DataConsulCatalogServices#wait_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#wait_index DataConsulCatalogServices#wait_index}
   */
   readonly waitIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/catalog_services#wait_time DataConsulCatalogServices#wait_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services#wait_time DataConsulCatalogServices#wait_time}
   */
   readonly waitTime?: string;
 }
@@ -363,7 +363,7 @@ export class DataConsulCatalogServicesQueryOptionsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/catalog_services consul_catalog_services}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services consul_catalog_services}
 */
 export class DataConsulCatalogServices extends cdktf.TerraformDataSource {
 
@@ -377,7 +377,7 @@ export class DataConsulCatalogServices extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/catalog_services consul_catalog_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/catalog_services consul_catalog_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/d/config_entry
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulConfigEntryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#id DataConsulConfigEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,31 +17,31 @@ export interface DataConsulConfigEntryConfig extends cdktf.TerraformMetaArgument
   /**
   * The kind of config entry to read.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#kind DataConsulConfigEntry#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
   */
   readonly kind: string;
   /**
   * The name of the config entry to read.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#name DataConsulConfigEntry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
   */
   readonly name: string;
   /**
   * The namespace the config entry is associated with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#namespace DataConsulConfigEntry#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
   */
   readonly namespace?: string;
   /**
   * The partition the config entry is associated with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/config_entry#partition DataConsulConfigEntry#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
   */
   readonly partition?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry consul_config_entry}
 */
 export class DataConsulConfigEntry extends cdktf.TerraformDataSource {
 
@@ -55,7 +55,7 @@ export class DataConsulConfigEntry extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/d/config_entry consul_config_entry} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry consul_config_entry} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

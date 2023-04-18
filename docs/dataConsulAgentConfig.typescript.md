@@ -1,6 +1,6 @@
 # `data_consul_agent_config`
 
-Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://www.terraform.io/docs/providers/consul/d/agent_config).
+Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config).
 
 # `dataConsulAgentConfig` Submodule <a name="`dataConsulAgentConfig` Submodule" id="@cdktf/provider-consul.dataConsulAgentConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://
 
 ### DataConsulAgentConfig <a name="DataConsulAgentConfig" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/d/agent_config consul_agent_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config consul_agent_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -436,10 +436,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -598,13 +598,13 @@ const dataConsulAgentConfigConfig: dataConsulAgentConfig.DataConsulAgentConfigCo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/agent_config#id DataConsulAgentConfig#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}. |
 
 ---
 
@@ -621,10 +621,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -686,7 +686,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/d/agent_config#id DataConsulAgentConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

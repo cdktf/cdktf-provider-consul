@@ -1,6 +1,6 @@
 # `data_consul_agent_self`
 
-Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://www.terraform.io/docs/providers/consul/d/agent_self).
+Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_self).
 
 # `dataConsulAgentSelf` Submodule <a name="`dataConsulAgentSelf` Submodule" id="@cdktf/provider-consul.dataConsulAgentSelf"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://ww
 
 ### DataConsulAgentSelf <a name="DataConsulAgentSelf" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/consul/d/agent_self consul_agent_self}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_self consul_agent_self}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.Initializer"></a>
 
@@ -338,7 +338,7 @@ dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -493,10 +493,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1295,7 +1295,7 @@ const dataConsulAgentSelfConfig: dataConsulAgentSelf.DataConsulAgentSelfConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1317,10 +1317,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelfConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 

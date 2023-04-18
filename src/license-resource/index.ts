@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/consul/r/license
+// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,28 +6,28 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LicenseConfig extends cdktf.TerraformMetaArguments {
+export interface LicenseResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/license#datacenter License#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license#datacenter LicenseResource#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/license#id License#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license#id LicenseResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/consul/r/license#license License#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license#license LicenseResource#license}
   */
   readonly license: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/consul/r/license consul_license}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license consul_license}
 */
-export class License extends cdktf.TerraformResource {
+export class LicenseResource extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,13 +39,13 @@ export class License extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/consul/r/license consul_license} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/license consul_license} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options LicenseConfig
+  * @param options LicenseResourceConfig
   */
-  public constructor(scope: Construct, id: string, config: LicenseConfig) {
+  public constructor(scope: Construct, id: string, config: LicenseResourceConfig) {
     super(scope, id, {
       terraformResourceType: 'consul_license',
       terraformGeneratorMetadata: {
