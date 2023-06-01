@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.node.Node.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/node"
 
 node.NewNode(scope Construct, id *string, config NodeConfig) Node
 ```
@@ -305,7 +305,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.node.Node.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/node"
 
 node.Node_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.node.Node.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/node"
 
 node.Node_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ node.Node_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.node.Node.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/node"
 
 node.Node_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.node.NodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/node"
 
 &node.NodeConfig {
 	Connection: interface{},
