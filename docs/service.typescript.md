@@ -1793,7 +1793,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.value">value</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a></code> | *No description.* |
 
 ---
 
@@ -1864,10 +1864,10 @@ public readonly value: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServiceCheckHeader | IResolvable;
+public readonly internalValue: IResolvable | ServiceCheckHeader;
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>
 
 ---
 
@@ -2336,7 +2336,7 @@ public resetTlsSkipVerify(): void
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tcp">tcp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.timeout">timeout</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a></code> | *No description.* |
 
 ---
 
@@ -2607,10 +2607,10 @@ public readonly tlsSkipVerify: boolean | IResolvable;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ServiceCheck | IResolvable;
+public readonly internalValue: IResolvable | ServiceCheck;
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>
 
 ---
 

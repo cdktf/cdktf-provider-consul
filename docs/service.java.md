@@ -2044,7 +2044,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.value">value</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a></code> | *No description.* |
 
 ---
 
@@ -2118,7 +2118,7 @@ public java.util.List<java.lang.String> getValue();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>
 
 ---
 
@@ -2587,7 +2587,7 @@ public void resetTlsSkipVerify()
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tcp">tcp</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.timeout">timeout</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a></code> | *No description.* |
 
 ---
 
@@ -2861,7 +2861,7 @@ public java.lang.Object getTlsSkipVerify();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>
 
 ---
 

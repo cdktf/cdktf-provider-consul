@@ -1400,7 +1400,7 @@ public resetValue(): void
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a></code> | *No description.* |
 
 ---
 
@@ -1551,10 +1551,10 @@ public readonly value: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: KeysKey | IResolvable;
+public readonly internalValue: IResolvable | KeysKey;
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>
 
 ---
 

@@ -1356,7 +1356,7 @@ public resetTags(): void
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a></code> | *No description.* |
 
 ---
 
@@ -1487,10 +1487,10 @@ public readonly tags: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: CatalogEntryService | IResolvable;
+public readonly internalValue: IResolvable | CatalogEntryService;
 ```
 
-- *Type:* <a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a>
 
 ---
 

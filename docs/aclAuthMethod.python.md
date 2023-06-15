@@ -34,7 +34,7 @@ aclAuthMethod.AclAuthMethod(
   id: str = None,
   max_token_ttl: str = None,
   namespace: str = None,
-  namespace_rule: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable] = None,
+  namespace_rule: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]] = None,
   partition: str = None,
   token_locality: str = None
 )
@@ -60,7 +60,7 @@ aclAuthMethod.AclAuthMethod(
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.maxTokenTtl">max_token_ttl</a></code> | <code>str</code> | The maximum life of any token created by this auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespaceRule">namespace_rule</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]</code> | namespace_rule block. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespaceRule">namespace_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]</code> | namespace_rule block. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.partition">partition</a></code> | <code>str</code> | The partition the ACL auth method is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.tokenLocality">token_locality</a></code> | <code>str</code> | The kind of token that this auth method produces. This can be either 'local' or 'global'. |
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `namespace_rule`<sup>Optional</sup> <a name="namespace_rule" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer.parameter.namespaceRule"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]
 
 namespace_rule block.
 
@@ -492,13 +492,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_namespace_rule(
-  value: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable]
+  value: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.putNamespaceRule.parameter.value"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]
 
 ---
 
@@ -665,7 +665,7 @@ aclAuthMethod.AclAuthMethod.is_terraform_resource(
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.maxTokenTtlInput">max_token_ttl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.namespaceRuleInput">namespace_rule_input</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.namespaceRuleInput">namespace_rule_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.partitionInput">partition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.tokenLocalityInput">token_locality_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -918,10 +918,10 @@ namespace_input: str
 ##### `namespace_rule_input`<sup>Optional</sup> <a name="namespace_rule_input" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.property.namespaceRuleInput"></a>
 
 ```python
-namespace_rule_input: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable]
+namespace_rule_input: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]
 
 ---
 
@@ -1109,7 +1109,7 @@ aclAuthMethod.AclAuthMethodConfig(
   id: str = None,
   max_token_ttl: str = None,
   namespace: str = None,
-  namespace_rule: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable] = None,
+  namespace_rule: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]] = None,
   partition: str = None,
   token_locality: str = None
 )
@@ -1135,7 +1135,7 @@ aclAuthMethod.AclAuthMethodConfig(
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.maxTokenTtl">max_token_ttl</a></code> | <code>str</code> | The maximum life of any token created by this auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespaceRule">namespace_rule</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]</code> | namespace_rule block. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespaceRule">namespace_rule</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]</code> | namespace_rule block. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.partition">partition</a></code> | <code>str</code> | The partition the ACL auth method is associated with. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.tokenLocality">token_locality</a></code> | <code>str</code> | The kind of token that this auth method produces. This can be either 'local' or 'global'. |
 
@@ -1339,10 +1339,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `namespace_rule`<sup>Optional</sup> <a name="namespace_rule" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespaceRule"></a>
 
 ```python
-namespace_rule: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable]
+namespace_rule: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]
 
 namespace_rule block.
 
@@ -1538,7 +1538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]</code> | *No description.* |
 
 ---
 
@@ -1569,10 +1569,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[typing.List[AclAuthMethodNamespaceRule], IResolvable]
+internal_value: typing.Union[IResolvable, typing.List[AclAuthMethodNamespaceRule]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule">AclAuthMethodNamespaceRule</a>]]
 
 ---
 
