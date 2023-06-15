@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority"
 
 certificateauthority.NewCertificateAuthority(scope Construct, id *string, config CertificateAuthorityConfig) CertificateAuthority
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ certificateauthority.CertificateAuthority_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/certificateauthority"
 
 &certificateauthority.CertificateAuthorityConfig {
 	Connection: interface{},

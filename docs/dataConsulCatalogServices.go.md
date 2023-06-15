@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.NewDataConsulCatalogServices(scope Construct, id *string, config DataConsulCatalogServicesConfig) DataConsulCatalogServices
 ```
@@ -297,7 +297,7 @@ func ResetQueryOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.DataConsulCatalogServices_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.DataConsulCatalogServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataconsulcatalogservices.DataConsulCatalogServices_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.DataConsulCatalogServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 &dataconsulcatalogservices.DataConsulCatalogServicesConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServicesQueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 &dataconsulcatalogservices.DataConsulCatalogServicesQueryOptions {
 	AllowStale: interface{},
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServicesQueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.NewDataConsulCatalogServicesQueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulCatalogServicesQueryOptionsList
 ```
@@ -1046,7 +1046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogServices.DataConsulCatalogServicesQueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v4/dataconsulcatalogservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulcatalogservices"
 
 dataconsulcatalogservices.NewDataConsulCatalogServicesQueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulCatalogServicesQueryOptionsOutputReference
 ```
