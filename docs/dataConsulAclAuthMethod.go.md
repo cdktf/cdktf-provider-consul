@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.NewDataConsulAclAuthMethod(scope Construct, id *string, config DataConsulAclAuthMethodConfig) DataConsulAclAuthMethod
 ```
@@ -291,7 +291,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.DataConsulAclAuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.DataConsulAclAuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataconsulaclauthmethod.DataConsulAclAuthMethod_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.DataConsulAclAuthMethod_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 &dataconsulaclauthmethod.DataConsulAclAuthMethodConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethodNamespaceRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 &dataconsulaclauthmethod.DataConsulAclAuthMethodNamespaceRule {
 
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmet
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethodNamespaceRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.NewDataConsulAclAuthMethodNamespaceRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclAuthMethodNamespaceRuleList
 ```
@@ -998,7 +998,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethodNamespaceRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v5/dataconsulaclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclauthmethod"
 
 dataconsulaclauthmethod.NewDataConsulAclAuthMethodNamespaceRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclAuthMethodNamespaceRuleOutputReference
 ```

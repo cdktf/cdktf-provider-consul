@@ -2098,7 +2098,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.valueInput">value_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.value">value</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -2169,10 +2169,10 @@ value: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceCheckHeader, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceCheckHeader]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
 
 ---
 
@@ -2678,7 +2678,7 @@ def reset_tls_skip_verify() -> None
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tcp">tcp</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.timeout">timeout</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | *No description.* |
 
 ---
 
@@ -2949,10 +2949,10 @@ tls_skip_verify: typing.Union[bool, IResolvable]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServiceCheck, IResolvable]
+internal_value: typing.Union[IResolvable, ServiceCheck]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 ---
 
