@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs
+// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,85 +8,157 @@ import * as cdktf from 'cdktf';
 
 export interface ConsulProviderConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}
+  * The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#address ConsulProvider#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}
+  * A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_file ConsulProvider#ca_file}
   */
   readonly caFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}
+  * A path to a directory of PEM-encoded certificate authority files to use to check the authenticity of client and server connections. Can also be specified with the `CONSUL_CAPATH` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_path ConsulProvider#ca_path}
   */
   readonly caPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}
+  * PEM-encoded certificate authority used to verify the remote agent's certificate.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_pem ConsulProvider#ca_pem}
   */
   readonly caPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}
+  * A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_file ConsulProvider#cert_file}
   */
   readonly certFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}
+  * PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_pem ConsulProvider#cert_pem}
   */
   readonly certPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}
+  * The datacenter to use. Defaults to that of the agent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#datacenter ConsulProvider#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}
+  * HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. This may also be specified using the `CONSUL_HTTP_AUTH` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#http_auth ConsulProvider#http_auth}
   */
   readonly httpAuth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}
+  * Boolean value to disable SSL certificate verification; setting this value to true is not recommended for production use. Only use this with scheme set to "https".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#insecure_https ConsulProvider#insecure_https}
   */
   readonly insecureHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}
+  * A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_file ConsulProvider#key_file}
   */
   readonly keyFile?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}
+  * PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_pem ConsulProvider#key_pem}
   */
   readonly keyPem?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#namespace ConsulProvider#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}
+  * The URL scheme of the agent to use ("http" or "https"). Defaults to "http".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#scheme ConsulProvider#scheme}
   */
   readonly scheme?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}
+  * The ACL token to use by default when making requests to the agent. Can also be specified with `CONSUL_HTTP_TOKEN` or `CONSUL_TOKEN` as an environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#token ConsulProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#alias ConsulProvider#alias}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#alias ConsulProvider#alias}
   */
   readonly alias?: string;
   /**
+  * auth_jwt block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#auth_jwt ConsulProvider#auth_jwt}
+  */
+  readonly authJwt?: ConsulProviderAuthJwt;
+  /**
   * header block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#header ConsulProvider#header}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#header ConsulProvider#header}
   */
   readonly header?: ConsulProviderHeader[] | cdktf.IResolvable;
 }
+export interface ConsulProviderAuthJwt {
+  /**
+  * The name of the auth method to use for login.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#auth_method ConsulProvider#auth_method}
+  */
+  readonly authMethod: string;
+  /**
+  * The bearer token to present to the auth method during login for authentication purposes. For the Kubernetes auth method this is a [Service Account Token (JWT)](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#service-account-tokens).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#bearer_token ConsulProvider#bearer_token}
+  */
+  readonly bearerToken?: string;
+  /**
+  * Specifies arbitrary KV metadata linked to the token. Can be useful to track origins.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#meta ConsulProvider#meta}
+  */
+  readonly meta?: { [key: string]: string };
+  /**
+  * Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#use_terraform_cloud_workload_identity ConsulProvider#use_terraform_cloud_workload_identity}
+  */
+  readonly useTerraformCloudWorkloadIdentity?: boolean | cdktf.IResolvable;
+}
+
+export function consulProviderAuthJwtToTerraform(struct?: ConsulProviderAuthJwt): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+    bearer_token: cdktf.stringToTerraform(struct!.bearerToken),
+    meta: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.meta),
+    use_terraform_cloud_workload_identity: cdktf.booleanToTerraform(struct!.useTerraformCloudWorkloadIdentity),
+  }
+}
+
 export interface ConsulProviderHeader {
   /**
-  * The header name
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#name ConsulProvider#name}
+  * The name of the header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#name ConsulProvider#name}
   */
   readonly name: string;
   /**
-  * The header value
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#value ConsulProvider#value}
+  * The value of the header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#value ConsulProvider#value}
   */
   readonly value: string;
 }
@@ -109,7 +176,7 @@ export function consulProviderHeaderToTerraform(struct?: ConsulProviderHeader | 
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul}
 */
 export class ConsulProvider extends cdktf.TerraformProvider {
 
@@ -123,7 +190,7 @@ export class ConsulProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -134,7 +201,7 @@ export class ConsulProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'consul',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: '~> 2.16'
       },
       terraformProviderSource: 'consul'
@@ -154,6 +221,7 @@ export class ConsulProvider extends cdktf.TerraformProvider {
     this._scheme = config.scheme;
     this._token = config.token;
     this._alias = config.alias;
+    this._authJwt = config.authJwt;
     this._header = config.header;
   }
 
@@ -401,6 +469,22 @@ export class ConsulProvider extends cdktf.TerraformProvider {
     return this._alias;
   }
 
+  // auth_jwt - computed: false, optional: true, required: false
+  private _authJwt?: ConsulProviderAuthJwt; 
+  public get authJwt() {
+    return this._authJwt;
+  }
+  public set authJwt(value: ConsulProviderAuthJwt | undefined) {
+    this._authJwt = value;
+  }
+  public resetAuthJwt() {
+    this._authJwt = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authJwtInput() {
+    return this._authJwt;
+  }
+
   // header - computed: false, optional: true, required: false
   private _header?: ConsulProviderHeader[] | cdktf.IResolvable; 
   public get header() {
@@ -438,6 +522,7 @@ export class ConsulProvider extends cdktf.TerraformProvider {
       scheme: cdktf.stringToTerraform(this._scheme),
       token: cdktf.stringToTerraform(this._token),
       alias: cdktf.stringToTerraform(this._alias),
+      auth_jwt: consulProviderAuthJwtToTerraform(this._authJwt),
       header: cdktf.listMapper(consulProviderHeaderToTerraform, true)(this._header),
     };
   }

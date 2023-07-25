@@ -1,6 +1,6 @@
 # `consul_certificate_authority`
 
-Refer to the Terraform Registory for docs: [`consul_certificate_authority`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority).
+Refer to the Terraform Registory for docs: [`consul_certificate_authority`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority).
 
 # `certificateAuthority` Submodule <a name="`certificateAuthority` Submodule" id="@cdktf/provider-consul.certificateAuthority"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_certificate_authority`](http
 
 ### CertificateAuthority <a name="CertificateAuthority" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.Initializer"></a>
 
@@ -70,6 +70,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetConfig">resetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetConfigJson">resetConfigJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -258,6 +260,18 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetConfig` <a name="resetConfig" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetConfig"></a>
+
+```typescript
+public resetConfig(): void
+```
+
+##### `resetConfigJson` <a name="resetConfigJson" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetConfigJson"></a>
+
+```typescript
+public resetConfigJson(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.resetId"></a>
 
 ```typescript
@@ -353,9 +367,11 @@ certificateAuthority.CertificateAuthority.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.configInput">configInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.configJsonInput">configJsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.connectProviderInput">connectProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.config">config</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.configJson">configJson</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.connectProvider">connectProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.id">id</a></code> | <code>string</code> | *No description.* |
 
@@ -513,6 +529,16 @@ public readonly configInput: {[ key: string ]: string};
 
 ---
 
+##### `configJsonInput`<sup>Optional</sup> <a name="configJsonInput" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.configJsonInput"></a>
+
+```typescript
+public readonly configJsonInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `connectProviderInput`<sup>Optional</sup> <a name="connectProviderInput" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.connectProviderInput"></a>
 
 ```typescript
@@ -540,6 +566,16 @@ public readonly config: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `configJson`<sup>Required</sup> <a name="configJson" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.property.configJson"></a>
+
+```typescript
+public readonly configJson: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -604,9 +640,10 @@ const certificateAuthorityConfig: certificateAuthority.CertificateAuthorityConfi
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.config">config</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#config CertificateAuthority#config}. |
-| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.connectProvider">connectProvider</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}. |
-| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#id CertificateAuthority#id}. |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.connectProvider">connectProvider</a></code> | <code>string</code> | Specifies the CA provider type to use. |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.config">config</a></code> | <code>{[ key: string ]: string}</code> | The raw configuration to use for the chosen provider. |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.configJson">configJson</a></code> | <code>string</code> | The raw configuration to use for the chosen provider. |
+| <code><a href="#@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#id CertificateAuthority#id}. |
 
 ---
 
@@ -680,18 +717,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.config"></a>
-
-```typescript
-public readonly config: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: string}
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#config CertificateAuthority#config}.
-
----
-
 ##### `connectProvider`<sup>Required</sup> <a name="connectProvider" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.connectProvider"></a>
 
 ```typescript
@@ -700,7 +725,41 @@ public readonly connectProvider: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}.
+Specifies the CA provider type to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.config"></a>
+
+```typescript
+public readonly config: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+The raw configuration to use for the chosen provider.
+
+For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#config CertificateAuthority#config}
+
+---
+
+##### `configJson`<sup>Optional</sup> <a name="configJson" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.property.configJson"></a>
+
+```typescript
+public readonly configJson: string;
+```
+
+- *Type:* string
+
+The raw configuration to use for the chosen provider.
+
+For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#config_json CertificateAuthority#config_json}
 
 ---
 
@@ -712,7 +771,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#id CertificateAuthority#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#id CertificateAuthority#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

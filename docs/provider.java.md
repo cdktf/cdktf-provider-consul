@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs).
+Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-consul.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform
 
 ### ConsulProvider <a name="ConsulProvider" id="@cdktf/provider-consul.provider.ConsulProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs consul}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs consul}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer"></a>
 
@@ -18,6 +18,7 @@ import com.hashicorp.cdktf.providers.consul.provider.ConsulProvider;
 ConsulProvider.Builder.create(Construct scope, java.lang.String id)
 //  .address(java.lang.String)
 //  .alias(java.lang.String)
+//  .authJwt(ConsulProviderAuthJwt)
 //  .caFile(java.lang.String)
 //  .caPath(java.lang.String)
 //  .caPem(java.lang.String)
@@ -41,22 +42,23 @@ ConsulProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500". |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caFile">caFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caPath">caPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certFile">certFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certPem">certPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.datacenter">datacenter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.authJwt">authJwt</a></code> | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a></code> | auth_jwt block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caFile">caFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate authority used to verify the remote agent's certificate. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caPath">caPath</a></code> | <code>java.lang.String</code> | A path to a directory of PEM-encoded certificate authority files to use to check the authenticity of client and server connections. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.caPem">caPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.datacenter">datacenter</a></code> | <code>java.lang.String</code> | The datacenter to use. Defaults to that of the agent. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyPem">keyPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.scheme">scheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#namespace ConsulProvider#namespace}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.scheme">scheme</a></code> | <code>java.lang.String</code> | The URL scheme of the agent to use ("http" or "https"). Defaults to "http". |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The ACL token to use by default when making requests to the agent. |
 
 ---
 
@@ -82,7 +84,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}.
+The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#address ConsulProvider#address}
 
 ---
 
@@ -92,7 +96,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#alias ConsulProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#alias ConsulProvider#alias}
+
+---
+
+##### `authJwt`<sup>Optional</sup> <a name="authJwt" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.authJwt"></a>
+
+- *Type:* <a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a>
+
+auth_jwt block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#auth_jwt ConsulProvider#auth_jwt}
 
 ---
 
@@ -100,7 +114,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}.
+A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_file ConsulProvider#ca_file}
 
 ---
 
@@ -108,7 +124,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}.
+A path to a directory of PEM-encoded certificate authority files to use to check the authenticity of client and server connections.
+
+Can also be specified with the `CONSUL_CAPATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_path ConsulProvider#ca_path}
 
 ---
 
@@ -116,7 +136,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}.
+PEM-encoded certificate authority used to verify the remote agent's certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_pem ConsulProvider#ca_pem}
 
 ---
 
@@ -124,7 +146,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}.
+A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_file ConsulProvider#cert_file}
 
 ---
 
@@ -132,7 +156,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}.
+PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_pem ConsulProvider#cert_pem}
 
 ---
 
@@ -140,7 +166,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}.
+The datacenter to use. Defaults to that of the agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#datacenter ConsulProvider#datacenter}
 
 ---
 
@@ -150,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#header ConsulProvider#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#header ConsulProvider#header}
 
 ---
 
@@ -158,7 +186,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}.
+HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`.
+
+This may also be specified using the `CONSUL_HTTP_AUTH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#http_auth ConsulProvider#http_auth}
 
 ---
 
@@ -166,7 +198,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}.
+Boolean value to disable SSL certificate verification;
+
+setting this value to true is not recommended for production use. Only use this with scheme set to "https".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#insecure_https ConsulProvider#insecure_https}
 
 ---
 
@@ -174,7 +210,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}.
+A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_file ConsulProvider#key_file}
 
 ---
 
@@ -182,7 +220,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}.
+PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_pem ConsulProvider#key_pem}
 
 ---
 
@@ -190,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#namespace ConsulProvider#namespace}.
 
 ---
 
@@ -198,7 +238,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}.
+The URL scheme of the agent to use ("http" or "https"). Defaults to "http".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#scheme ConsulProvider#scheme}
 
 ---
 
@@ -206,7 +248,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}.
+The ACL token to use by default when making requests to the agent.
+
+Can also be specified with `CONSUL_HTTP_TOKEN` or `CONSUL_TOKEN` as an environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#token ConsulProvider#token}
 
 ---
 
@@ -222,6 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetAddress">resetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetAuthJwt">resetAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetCaFile">resetCaFile</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetCaPath">resetCaPath</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetCaPem">resetCaPem</a></code> | *No description.* |
@@ -313,6 +360,12 @@ public void resetAddress()
 
 ```java
 public void resetAlias()
+```
+
+##### `resetAuthJwt` <a name="resetAuthJwt" id="@cdktf/provider-consul.provider.ConsulProvider.resetAuthJwt"></a>
+
+```java
+public void resetAuthJwt()
 ```
 
 ##### `resetCaFile` <a name="resetCaFile" id="@cdktf/provider-consul.provider.ConsulProvider.resetCaFile"></a>
@@ -484,6 +537,7 @@ ConsulProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.authJwtInput">authJwtInput</a></code> | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caFileInput">caFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caPathInput">caPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caPemInput">caPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -499,6 +553,7 @@ ConsulProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.schemeInput">schemeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.authJwt">authJwt</a></code> | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caPath">caPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.caPem">caPem</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -625,6 +680,16 @@ public java.lang.String getAliasInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `authJwtInput`<sup>Optional</sup> <a name="authJwtInput" id="@cdktf/provider-consul.provider.ConsulProvider.property.authJwtInput"></a>
+
+```java
+public ConsulProviderAuthJwt getAuthJwtInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a>
 
 ---
 
@@ -775,6 +840,16 @@ public java.lang.String getAddress();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `authJwt`<sup>Optional</sup> <a name="authJwt" id="@cdktf/provider-consul.provider.ConsulProvider.property.authJwt"></a>
+
+```java
+public ConsulProviderAuthJwt getAuthJwt();
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a>
 
 ---
 
@@ -938,6 +1013,91 @@ public java.lang.String getTfResourceType();
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ConsulProviderAuthJwt <a name="ConsulProviderAuthJwt" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.consul.provider.ConsulProviderAuthJwt;
+
+ConsulProviderAuthJwt.builder()
+    .authMethod(java.lang.String)
+//  .bearerToken(java.lang.String)
+//  .meta(java.util.Map<java.lang.String, java.lang.String>)
+//  .useTerraformCloudWorkloadIdentity(java.lang.Boolean)
+//  .useTerraformCloudWorkloadIdentity(IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.authMethod">authMethod</a></code> | <code>java.lang.String</code> | The name of the auth method to use for login. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.bearerToken">bearerToken</a></code> | <code>java.lang.String</code> | The bearer token to present to the auth method during login for authentication purposes. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies arbitrary KV metadata linked to the token. Can be useful to track origins. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">useTerraformCloudWorkloadIdentity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
+
+---
+
+##### `authMethod`<sup>Required</sup> <a name="authMethod" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.authMethod"></a>
+
+```java
+public java.lang.String getAuthMethod();
+```
+
+- *Type:* java.lang.String
+
+The name of the auth method to use for login.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#auth_method ConsulProvider#auth_method}
+
+---
+
+##### `bearerToken`<sup>Optional</sup> <a name="bearerToken" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.bearerToken"></a>
+
+```java
+public java.lang.String getBearerToken();
+```
+
+- *Type:* java.lang.String
+
+The bearer token to present to the auth method during login for authentication purposes.
+
+For the Kubernetes auth method this is a [Service Account Token (JWT)](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#service-account-tokens).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#bearer_token ConsulProvider#bearer_token}
+
+---
+
+##### `meta`<sup>Optional</sup> <a name="meta" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.meta"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getMeta();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Specifies arbitrary KV metadata linked to the token. Can be useful to track origins.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#meta ConsulProvider#meta}
+
+---
+
+##### `useTerraformCloudWorkloadIdentity`<sup>Optional</sup> <a name="useTerraformCloudWorkloadIdentity" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity"></a>
+
+```java
+public java.lang.Object getUseTerraformCloudWorkloadIdentity();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#use_terraform_cloud_workload_identity ConsulProvider#use_terraform_cloud_workload_identity}
+
+---
+
 ### ConsulProviderConfig <a name="ConsulProviderConfig" id="@cdktf/provider-consul.provider.ConsulProviderConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderConfig.Initializer"></a>
@@ -948,6 +1108,7 @@ import com.hashicorp.cdktf.providers.consul.provider.ConsulProviderConfig;
 ConsulProviderConfig.builder()
 //  .address(java.lang.String)
 //  .alias(java.lang.String)
+//  .authJwt(ConsulProviderAuthJwt)
 //  .caFile(java.lang.String)
 //  .caPath(java.lang.String)
 //  .caPem(java.lang.String)
@@ -971,22 +1132,23 @@ ConsulProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.address">address</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.address">address</a></code> | <code>java.lang.String</code> | The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500". |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caFile">caFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPath">caPath</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPem">caPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">certFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">certPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.authJwt">authJwt</a></code> | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a></code> | auth_jwt block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caFile">caFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate authority used to verify the remote agent's certificate. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPath">caPath</a></code> | <code>java.lang.String</code> | A path to a directory of PEM-encoded certificate authority files to use to check the authenticity of client and server connections. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.caPem">caPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | The datacenter to use. Defaults to that of the agent. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.scheme">scheme</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#namespace ConsulProvider#namespace}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.scheme">scheme</a></code> | <code>java.lang.String</code> | The URL scheme of the agent to use ("http" or "https"). Defaults to "http". |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The ACL token to use by default when making requests to the agent. |
 
 ---
 
@@ -998,7 +1160,9 @@ public java.lang.String getAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#address ConsulProvider#address}.
+The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#address ConsulProvider#address}
 
 ---
 
@@ -1012,7 +1176,21 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#alias ConsulProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#alias ConsulProvider#alias}
+
+---
+
+##### `authJwt`<sup>Optional</sup> <a name="authJwt" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.authJwt"></a>
+
+```java
+public ConsulProviderAuthJwt getAuthJwt();
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt">ConsulProviderAuthJwt</a>
+
+auth_jwt block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#auth_jwt ConsulProvider#auth_jwt}
 
 ---
 
@@ -1024,7 +1202,9 @@ public java.lang.String getCaFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_file ConsulProvider#ca_file}.
+A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_file ConsulProvider#ca_file}
 
 ---
 
@@ -1036,7 +1216,11 @@ public java.lang.String getCaPath();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_path ConsulProvider#ca_path}.
+A path to a directory of PEM-encoded certificate authority files to use to check the authenticity of client and server connections.
+
+Can also be specified with the `CONSUL_CAPATH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_path ConsulProvider#ca_path}
 
 ---
 
@@ -1048,7 +1232,9 @@ public java.lang.String getCaPem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#ca_pem ConsulProvider#ca_pem}.
+PEM-encoded certificate authority used to verify the remote agent's certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#ca_pem ConsulProvider#ca_pem}
 
 ---
 
@@ -1060,7 +1246,9 @@ public java.lang.String getCertFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_file ConsulProvider#cert_file}.
+A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_file ConsulProvider#cert_file}
 
 ---
 
@@ -1072,7 +1260,9 @@ public java.lang.String getCertPem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#cert_pem ConsulProvider#cert_pem}.
+PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#cert_pem ConsulProvider#cert_pem}
 
 ---
 
@@ -1084,7 +1274,9 @@ public java.lang.String getDatacenter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#datacenter ConsulProvider#datacenter}.
+The datacenter to use. Defaults to that of the agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#datacenter ConsulProvider#datacenter}
 
 ---
 
@@ -1098,7 +1290,7 @@ public java.lang.Object getHeader();
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#header ConsulProvider#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#header ConsulProvider#header}
 
 ---
 
@@ -1110,7 +1302,11 @@ public java.lang.String getHttpAuth();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#http_auth ConsulProvider#http_auth}.
+HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`.
+
+This may also be specified using the `CONSUL_HTTP_AUTH` environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#http_auth ConsulProvider#http_auth}
 
 ---
 
@@ -1122,7 +1318,11 @@ public java.lang.Object getInsecureHttps();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#insecure_https ConsulProvider#insecure_https}.
+Boolean value to disable SSL certificate verification;
+
+setting this value to true is not recommended for production use. Only use this with scheme set to "https".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#insecure_https ConsulProvider#insecure_https}
 
 ---
 
@@ -1134,7 +1334,9 @@ public java.lang.String getKeyFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_file ConsulProvider#key_file}.
+A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_file ConsulProvider#key_file}
 
 ---
 
@@ -1146,7 +1348,9 @@ public java.lang.String getKeyPem();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#key_pem ConsulProvider#key_pem}.
+PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#key_pem ConsulProvider#key_pem}
 
 ---
 
@@ -1158,7 +1362,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#namespace ConsulProvider#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#namespace ConsulProvider#namespace}.
 
 ---
 
@@ -1170,7 +1374,9 @@ public java.lang.String getScheme();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#scheme ConsulProvider#scheme}.
+The URL scheme of the agent to use ("http" or "https"). Defaults to "http".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#scheme ConsulProvider#scheme}
 
 ---
 
@@ -1182,7 +1388,11 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#token ConsulProvider#token}.
+The ACL token to use by default when making requests to the agent.
+
+Can also be specified with `CONSUL_HTTP_TOKEN` or `CONSUL_TOKEN` as an environment variable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#token ConsulProvider#token}
 
 ---
 
@@ -1203,8 +1413,8 @@ ConsulProviderHeader.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderHeader.property.name">name</a></code> | <code>java.lang.String</code> | The header name. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderHeader.property.value">value</a></code> | <code>java.lang.String</code> | The header value. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderHeader.property.name">name</a></code> | <code>java.lang.String</code> | The name of the header. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderHeader.property.value">value</a></code> | <code>java.lang.String</code> | The value of the header. |
 
 ---
 
@@ -1216,9 +1426,9 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-The header name.
+The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#name ConsulProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#name ConsulProvider#name}
 
 ---
 
@@ -1230,9 +1440,9 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-The header value.
+The value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs#value ConsulProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#value ConsulProvider#value}
 
 ---
 

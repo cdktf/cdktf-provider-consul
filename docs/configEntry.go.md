@@ -1,6 +1,6 @@
 # `consul_config_entry`
 
-Refer to the Terraform Registory for docs: [`consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry).
+Refer to the Terraform Registory for docs: [`consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry).
 
 # `configEntry` Submodule <a name="`configEntry` Submodule" id="@cdktf/provider-consul.configEntry"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_config_entry`](https://regis
 
 ### ConfigEntry <a name="ConfigEntry" id="@cdktf/provider-consul.configEntry.ConfigEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry consul_config_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry consul_config_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntry.ConfigEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentry"
 
 configentry.NewConfigEntry(scope Construct, id *string, config ConfigEntryConfig) ConfigEntry
 ```
@@ -298,7 +298,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntry.ConfigEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentry"
 
 configentry.ConfigEntry_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentry"
 
 configentry.ConfigEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ configentry.ConfigEntry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentry"
 
 configentry.ConfigEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntry.ConfigEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentry"
 
 &configentry.ConfigEntryConfig {
 	Connection: interface{},
@@ -705,11 +705,11 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/configentry"
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.configJson">ConfigJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}. |
-| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.kind">Kind</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#kind ConfigEntry#kind}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#name ConfigEntry#name}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.configJson">ConfigJson</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#config_json ConfigEntry#config_json}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#id ConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#namespace ConfigEntry#namespace}. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntryConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the config entry is associated with. |
 
 ---
@@ -792,7 +792,7 @@ Kind *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#kind ConfigEntry#kind}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#kind ConfigEntry#kind}.
 
 ---
 
@@ -804,7 +804,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#name ConfigEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#name ConfigEntry#name}.
 
 ---
 
@@ -816,7 +816,7 @@ ConfigJson *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#config_json ConfigEntry#config_json}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#config_json ConfigEntry#config_json}.
 
 ---
 
@@ -828,7 +828,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#id ConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#id ConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -843,7 +843,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#namespace ConfigEntry#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#namespace ConfigEntry#namespace}.
 
 ---
 
@@ -857,7 +857,7 @@ Partition *string
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/config_entry#partition ConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#partition ConfigEntry#partition}
 
 ---
 

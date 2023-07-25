@@ -1,6 +1,6 @@
 # `consul_catalog_entry`
 
-Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry).
+Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry).
 
 # `catalogEntry` Submodule <a name="`catalogEntry` Submodule" id="@cdktf/provider-consul.catalogEntry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://regi
 
 ### CatalogEntry <a name="CatalogEntry" id="@cdktf/provider-consul.catalogEntry.CatalogEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry consul_catalog_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry consul_catalog_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer"></a>
 
@@ -704,12 +704,12 @@ const catalogEntryConfig: catalogEntry.CatalogEntryConfig = { ... }
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.nodeAttribute">nodeAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#node CatalogEntry#node}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.service">service</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService">CatalogEntryService</a>[]</code> | service block. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.token">token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.property.token">token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#token CatalogEntry#token}. |
 
 ---
 
@@ -791,7 +791,7 @@ public readonly address: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 
 ---
 
@@ -803,7 +803,7 @@ public readonly nodeAttribute: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#node CatalogEntry#node}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#node CatalogEntry#node}.
 
 ---
 
@@ -815,7 +815,7 @@ public readonly datacenter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}.
 
 ---
 
@@ -827,7 +827,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -844,7 +844,7 @@ public readonly service: IResolvable | CatalogEntryService[];
 
 service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#service CatalogEntry#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#service CatalogEntry#service}
 
 ---
 
@@ -856,7 +856,7 @@ public readonly token: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#token CatalogEntry#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#token CatalogEntry#token}.
 
 ---
 
@@ -874,11 +874,11 @@ const catalogEntryService: catalogEntry.CatalogEntryService = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#name CatalogEntry#name}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#port CatalogEntry#port}. |
-| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#tags CatalogEntry#tags}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#name CatalogEntry#name}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.address">address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#address CatalogEntry#address}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#id CatalogEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.port">port</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#port CatalogEntry#port}. |
+| <code><a href="#@cdktf/provider-consul.catalogEntry.CatalogEntryService.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#tags CatalogEntry#tags}. |
 
 ---
 
@@ -890,7 +890,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#name CatalogEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#name CatalogEntry#name}.
 
 ---
 
@@ -902,7 +902,7 @@ public readonly address: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#address CatalogEntry#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#address CatalogEntry#address}.
 
 ---
 
@@ -914,7 +914,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#id CatalogEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#id CatalogEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ public readonly port: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#port CatalogEntry#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#port CatalogEntry#port}.
 
 ---
 
@@ -941,7 +941,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/catalog_entry#tags CatalogEntry#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/catalog_entry#tags CatalogEntry#tags}.
 
 ---
 

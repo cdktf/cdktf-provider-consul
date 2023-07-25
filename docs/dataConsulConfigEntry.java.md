@@ -1,6 +1,6 @@
 # `data_consul_config_entry`
 
-Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry).
+Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry).
 
 # `dataConsulConfigEntry` Submodule <a name="`dataConsulConfigEntry` Submodule" id="@cdktf/provider-consul.dataConsulConfigEntry"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://
 
 ### DataConsulConfigEntry <a name="DataConsulConfigEntry" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry consul_config_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry consul_config_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer"></a>
 
@@ -48,7 +48,7 @@ DataConsulConfigEntry.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.kind">kind</a></code> | <code>java.lang.String</code> | The kind of config entry to read. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the config entry to read. |
-| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace the config entry is associated with. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | The partition the config entry is associated with. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The kind of config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The namespace the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
 
 ---
 
@@ -785,7 +785,7 @@ DataConsulConfigEntryConfig.builder()
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.kind">kind</a></code> | <code>java.lang.String</code> | The kind of config entry to read. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the config entry to read. |
-| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace the config entry is associated with. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | The partition the config entry is associated with. |
 
@@ -871,7 +871,7 @@ public java.lang.String getKind();
 
 The kind of config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
 
 ---
 
@@ -885,7 +885,7 @@ public java.lang.String getName();
 
 The name of the config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
 
 ---
 
@@ -897,7 +897,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -914,7 +914,7 @@ public java.lang.String getNamespace();
 
 The namespace the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
 
 ---
 
@@ -928,7 +928,7 @@ public java.lang.String getPartition();
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
 
 ---
 

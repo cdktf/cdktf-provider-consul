@@ -1,6 +1,6 @@
 # `consul_key_prefix`
 
-Refer to the Terraform Registory for docs: [`consul_key_prefix`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix).
+Refer to the Terraform Registory for docs: [`consul_key_prefix`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix).
 
 # `keyPrefix` Submodule <a name="`keyPrefix` Submodule" id="@cdktf/provider-consul.keyPrefix"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_key_prefix`](https://registr
 
 ### KeyPrefix <a name="KeyPrefix" id="@cdktf/provider-consul.keyPrefix.KeyPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix consul_key_prefix}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix consul_key_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.Initializer"></a>
 
@@ -785,14 +785,14 @@ new KeyPrefixConfig {
 | <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.pathPrefix">PathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#id KeyPrefix#id}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#partition KeyPrefix#partition}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.pathPrefix">PathPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#id KeyPrefix#id}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#partition KeyPrefix#partition}. |
 | <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.subkey">Subkey</a></code> | <code>object</code> | subkey block. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.subkeys">Subkeys</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#token KeyPrefix#token}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.subkeys">Subkeys</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#token KeyPrefix#token}. |
 
 ---
 
@@ -874,7 +874,7 @@ public string PathPrefix { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}.
 
 ---
 
@@ -886,7 +886,7 @@ public string Datacenter { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}.
 
 ---
 
@@ -898,7 +898,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#id KeyPrefix#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#id KeyPrefix#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}.
 
 ---
 
@@ -925,7 +925,7 @@ public string Partition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#partition KeyPrefix#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#partition KeyPrefix#partition}.
 
 ---
 
@@ -939,7 +939,7 @@ public object Subkey { get; set; }
 
 subkey block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
 
 ---
 
@@ -951,7 +951,7 @@ public System.Collections.Generic.IDictionary<string, string> Subkeys { get; set
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}.
 
 ---
 
@@ -963,7 +963,7 @@ public string Token { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#token KeyPrefix#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#token KeyPrefix#token}.
 
 ---
 
@@ -985,9 +985,9 @@ new KeyPrefixSubkey {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#path KeyPrefix#path}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#value KeyPrefix#value}. |
-| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#flags KeyPrefix#flags}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#path KeyPrefix#path}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#value KeyPrefix#value}. |
+| <code><a href="#@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#flags KeyPrefix#flags}. |
 
 ---
 
@@ -999,7 +999,7 @@ public string Path { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#path KeyPrefix#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#path KeyPrefix#path}.
 
 ---
 
@@ -1011,7 +1011,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#value KeyPrefix#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#value KeyPrefix#value}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public double Flags { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/key_prefix#flags KeyPrefix#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/key_prefix#flags KeyPrefix#flags}.
 
 ---
 

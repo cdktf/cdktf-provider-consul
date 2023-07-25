@@ -1,6 +1,6 @@
 # `data_consul_peerings`
 
-Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings).
+Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings).
 
 # `dataConsulPeerings` Submodule <a name="`dataConsulPeerings` Submodule" id="@cdktf/provider-consul.dataConsulPeerings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_peerings`](https://regi
 
 ### DataConsulPeerings <a name="DataConsulPeerings" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings consul_peerings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings consul_peerings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeerings(scope Construct, id *string, config DataConsulPeeringsConfig) DataConsulPeerings
 ```
@@ -284,7 +284,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataconsulpeerings.DataConsulPeerings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 &dataconsulpeerings.DataConsulPeeringsConfig {
 	Connection: interface{},
@@ -588,8 +588,8 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#id DataConsulPeerings#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings#id DataConsulPeerings#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}. |
 
 ---
 
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#id DataConsulPeerings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings#id DataConsulPeerings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peerings#partition DataConsulPeerings#partition}.
 
 ---
 
@@ -695,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 &dataconsulpeerings.DataConsulPeeringsPeers {
 
@@ -710,7 +710,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeeringsPeersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulPeeringsPeersList
 ```
@@ -842,7 +842,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeeringsPeersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulPeeringsPeersOutputReference
 ```

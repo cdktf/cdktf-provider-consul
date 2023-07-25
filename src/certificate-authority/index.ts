@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority
+// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface CertificateAuthorityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#config CertificateAuthority#config}
+  * The raw configuration to use for the chosen provider. For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#config CertificateAuthority#config}
   */
-  readonly config: { [key: string]: string };
+  readonly config?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}
+  * The raw configuration to use for the chosen provider. For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#config_json CertificateAuthority#config_json}
+  */
+  readonly configJson?: string;
+  /**
+  * Specifies the CA provider type to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}
   */
   readonly connectProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority#id CertificateAuthority#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority#id CertificateAuthority#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +35,7 @@ export interface CertificateAuthorityConfig extends cdktf.TerraformMetaArguments
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority}
 */
 export class CertificateAuthority extends cdktf.TerraformResource {
 
@@ -44,7 +49,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/certificate_authority consul_certificate_authority} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/certificate_authority consul_certificate_authority} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +60,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
       terraformResourceType: 'consul_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -67,6 +72,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._config = config.config;
+    this._configJson = config.configJson;
     this._connectProvider = config.connectProvider;
     this._id = config.id;
   }
@@ -75,7 +81,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // config - computed: false, optional: false, required: true
+  // config - computed: false, optional: true, required: false
   private _config?: { [key: string]: string }; 
   public get config() {
     return this.getStringMapAttribute('config');
@@ -83,9 +89,28 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   public set config(value: { [key: string]: string }) {
     this._config = value;
   }
+  public resetConfig() {
+    this._config = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
     return this._config;
+  }
+
+  // config_json - computed: false, optional: true, required: false
+  private _configJson?: string; 
+  public get configJson() {
+    return this.getStringAttribute('config_json');
+  }
+  public set configJson(value: string) {
+    this._configJson = value;
+  }
+  public resetConfigJson() {
+    this._configJson = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configJsonInput() {
+    return this._configJson;
   }
 
   // connect_provider - computed: false, optional: false, required: true
@@ -124,6 +149,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       config: cdktf.hashMapper(cdktf.stringToTerraform)(this._config),
+      config_json: cdktf.stringToTerraform(this._configJson),
       connect_provider: cdktf.stringToTerraform(this._connectProvider),
       id: cdktf.stringToTerraform(this._id),
     };

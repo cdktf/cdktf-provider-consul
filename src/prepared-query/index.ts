@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query
+// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +8,114 @@ import * as cdktf from 'cdktf';
 
 export interface PreparedQueryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#connect PreparedQuery#connect}
+  * When `true` the prepared query will return connect proxy services for a queried service.  Conditions such as `tags` in the prepared query will be matched against the proxy service. Defaults to false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#connect PreparedQuery#connect}
   */
   readonly connect?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+  * The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#id PreparedQuery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#id PreparedQuery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
+  * Specifies a list of check IDs that should be ignored when filtering unhealthy instances. This is mostly useful in an emergency or as a temporary measure when a health check is found to be unreliable. Being able to ignore it in centrally-defined queries can be simpler than de-registering the check as an interim solution until the check can be fixed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
   */
   readonly ignoreCheckIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#name PreparedQuery#name}
+  * The name of the prepared query. Used to identify the prepared query during requests. Can be specified as an empty string to configure the query as a catch-all.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#name PreparedQuery#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#near PreparedQuery#near}
+  * Allows specifying the name of a node to sort results near using Consul's distance sorting and network coordinates. The magic `_agent` value can be used to always sort nearest the node servicing the request.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#near PreparedQuery#near}
   */
   readonly near?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
+  * Specifies a list of user-defined key/value pairs that will be used for filtering the query results to nodes with the given metadata values present.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
   */
   readonly nodeMeta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
+  * When `true`, the prepared query will only return nodes with passing health checks in the result.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
   */
   readonly onlyPassing?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#service PreparedQuery#service}
+  * The name of the service to query
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#service PreparedQuery#service}
   */
   readonly service: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
+  * Specifies a list of user-defined key/value pairs that will be used for filtering the query results to services with the given metadata values present.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
   */
   readonly serviceMeta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#session PreparedQuery#session}
+  * The name of the Consul session to tie this query's lifetime to.  This is an advanced parameter that should not be used without a complete understanding of Consul sessions and the implications of their use (it is recommended to leave this blank in nearly all cases).  If this parameter is omitted the query will not expire.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#session PreparedQuery#session}
   */
   readonly session?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
+  * The ACL token to store with the prepared query. This token will be used by default whenever the query is executed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
   */
   readonly storedToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#tags PreparedQuery#tags}
+  * The list of required and/or disallowed tags.  If a tag is in this list it must be present.  If the tag is preceded with a "!" then it is disallowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#tags PreparedQuery#tags}
   */
   readonly tags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#token PreparedQuery#token}
+  * The ACL token to use when saving the prepared query. This overrides the token that the agent provides by default.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#token PreparedQuery#token}
   */
   readonly token?: string;
   /**
   * dns block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#dns PreparedQuery#dns}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#dns PreparedQuery#dns}
   */
   readonly dns?: PreparedQueryDns;
   /**
   * failover block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#failover PreparedQuery#failover}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#failover PreparedQuery#failover}
   */
   readonly failover?: PreparedQueryFailover;
   /**
   * template block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#template PreparedQuery#template}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#template PreparedQuery#template}
   */
   readonly template?: PreparedQueryTemplate;
 }
 export interface PreparedQueryDns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
+  * The TTL to send when returning DNS results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
   */
   readonly ttl?: string;
 }
@@ -155,15 +178,153 @@ export class PreparedQueryDnsOutputReference extends cdktf.ComplexObject {
     return this._ttl;
   }
 }
+export interface PreparedQueryFailoverTargets {
+  /**
+  * Specifies a WAN federated datacenter to forward the query to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+  */
+  readonly datacenter?: string;
+  /**
+  * Specifies a cluster peer to use for failover.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#peer PreparedQuery#peer}
+  */
+  readonly peer?: string;
+}
+
+export function preparedQueryFailoverTargetsToTerraform(struct?: PreparedQueryFailoverTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    datacenter: cdktf.stringToTerraform(struct!.datacenter),
+    peer: cdktf.stringToTerraform(struct!.peer),
+  }
+}
+
+export class PreparedQueryFailoverTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PreparedQueryFailoverTargets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._datacenter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datacenter = this._datacenter;
+    }
+    if (this._peer !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.peer = this._peer;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PreparedQueryFailoverTargets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._datacenter = undefined;
+      this._peer = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._datacenter = value.datacenter;
+      this._peer = value.peer;
+    }
+  }
+
+  // datacenter - computed: false, optional: true, required: false
+  private _datacenter?: string; 
+  public get datacenter() {
+    return this.getStringAttribute('datacenter');
+  }
+  public set datacenter(value: string) {
+    this._datacenter = value;
+  }
+  public resetDatacenter() {
+    this._datacenter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datacenterInput() {
+    return this._datacenter;
+  }
+
+  // peer - computed: false, optional: true, required: false
+  private _peer?: string; 
+  public get peer() {
+    return this.getStringAttribute('peer');
+  }
+  public set peer(value: string) {
+    this._peer = value;
+  }
+  public resetPeer() {
+    this._peer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peerInput() {
+    return this._peer;
+  }
+}
+
+export class PreparedQueryFailoverTargetsList extends cdktf.ComplexList {
+  public internalValue? : PreparedQueryFailoverTargets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PreparedQueryFailoverTargetsOutputReference {
+    return new PreparedQueryFailoverTargetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PreparedQueryFailover {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
+  * Remote datacenters to return results from.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
   */
   readonly datacenters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
+  * Return results from this many datacenters, sorted in ascending order of estimated RTT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
   */
   readonly nearestN?: number;
+  /**
+  * targets block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#targets PreparedQuery#targets}
+  */
+  readonly targets?: PreparedQueryFailoverTargets[] | cdktf.IResolvable;
 }
 
 export function preparedQueryFailoverToTerraform(struct?: PreparedQueryFailoverOutputReference | PreparedQueryFailover): any {
@@ -174,6 +335,7 @@ export function preparedQueryFailoverToTerraform(struct?: PreparedQueryFailoverO
   return {
     datacenters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.datacenters),
     nearest_n: cdktf.numberToTerraform(struct!.nearestN),
+    targets: cdktf.listMapper(preparedQueryFailoverTargetsToTerraform, true)(struct!.targets),
   }
 }
 
@@ -199,6 +361,10 @@ export class PreparedQueryFailoverOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.nearestN = this._nearestN;
     }
+    if (this._targets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targets = this._targets?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -207,11 +373,13 @@ export class PreparedQueryFailoverOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this._datacenters = undefined;
       this._nearestN = undefined;
+      this._targets.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._datacenters = value.datacenters;
       this._nearestN = value.nearestN;
+      this._targets.internalValue = value.targets;
     }
   }
 
@@ -246,14 +414,40 @@ export class PreparedQueryFailoverOutputReference extends cdktf.ComplexObject {
   public get nearestNInput() {
     return this._nearestN;
   }
+
+  // targets - computed: false, optional: true, required: false
+  private _targets = new PreparedQueryFailoverTargetsList(this, "targets", false);
+  public get targets() {
+    return this._targets;
+  }
+  public putTargets(value: PreparedQueryFailoverTargets[] | cdktf.IResolvable) {
+    this._targets.internalValue = value;
+  }
+  public resetTargets() {
+    this._targets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetsInput() {
+    return this._targets.internalValue;
+  }
 }
 export interface PreparedQueryTemplate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
+  * The regular expression to match with. When using `name_prefix_match`, this regex is applied against the query name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
   */
   readonly regexp: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query#type PreparedQuery#type}
+  * If set to true, will cause the tags list inside the service structure to be stripped of any empty strings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#remove_empty_tags PreparedQuery#remove_empty_tags}
+  */
+  readonly removeEmptyTags?: boolean | cdktf.IResolvable;
+  /**
+  * The type of template matching to perform. Currently only `name_prefix_match` is supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#type PreparedQuery#type}
   */
   readonly type: string;
 }
@@ -265,6 +459,7 @@ export function preparedQueryTemplateToTerraform(struct?: PreparedQueryTemplateO
   }
   return {
     regexp: cdktf.stringToTerraform(struct!.regexp),
+    remove_empty_tags: cdktf.booleanToTerraform(struct!.removeEmptyTags),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -287,6 +482,10 @@ export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.regexp = this._regexp;
     }
+    if (this._removeEmptyTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.removeEmptyTags = this._removeEmptyTags;
+    }
     if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
@@ -298,11 +497,13 @@ export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._regexp = undefined;
+      this._removeEmptyTags = undefined;
       this._type = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._regexp = value.regexp;
+      this._removeEmptyTags = value.removeEmptyTags;
       this._type = value.type;
     }
   }
@@ -320,6 +521,22 @@ export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
     return this._regexp;
   }
 
+  // remove_empty_tags - computed: false, optional: true, required: false
+  private _removeEmptyTags?: boolean | cdktf.IResolvable; 
+  public get removeEmptyTags() {
+    return this.getBooleanAttribute('remove_empty_tags');
+  }
+  public set removeEmptyTags(value: boolean | cdktf.IResolvable) {
+    this._removeEmptyTags = value;
+  }
+  public resetRemoveEmptyTags() {
+    this._removeEmptyTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get removeEmptyTagsInput() {
+    return this._removeEmptyTags;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -335,7 +552,7 @@ export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query consul_prepared_query}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query consul_prepared_query}
 */
 export class PreparedQuery extends cdktf.TerraformResource {
 
@@ -349,7 +566,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/prepared_query consul_prepared_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query consul_prepared_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -360,7 +577,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
       terraformResourceType: 'consul_prepared_query',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

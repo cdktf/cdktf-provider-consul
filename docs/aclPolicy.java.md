@@ -1,6 +1,6 @@
 # `consul_acl_policy`
 
-Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy).
+Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-consul.aclPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registr
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-consul.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy consul_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer"></a>
 
@@ -52,8 +52,8 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.rules">rules</a></code> | <code>java.lang.String</code> | The ACL policy rules. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.datacenters">datacenters</a></code> | <code>java.util.List<java.lang.String></code> | The ACL policy datacenters. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The ACL policy description. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL policy is associated with. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The ACL policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ACL policy rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#rules AclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#rules AclPolicy#rules}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ACL policy datacenters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ACL policy description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The partition the ACL policy is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#partition AclPolicy#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#partition AclPolicy#partition}
 
 ---
 
@@ -880,8 +880,8 @@ AclPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.rules">rules</a></code> | <code>java.lang.String</code> | The ACL policy rules. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.datacenters">datacenters</a></code> | <code>java.util.List<java.lang.String></code> | The ACL policy datacenters. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | The ACL policy description. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | The partition the ACL policy is associated with. |
 
 ---
@@ -966,7 +966,7 @@ public java.lang.String getName();
 
 The ACL policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -980,7 +980,7 @@ public java.lang.String getRules();
 
 The ACL policy rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#rules AclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#rules AclPolicy#rules}
 
 ---
 
@@ -994,7 +994,7 @@ public java.util.List<java.lang.String> getDatacenters();
 
 The ACL policy datacenters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
 
 ---
 
@@ -1008,7 +1008,7 @@ public java.lang.String getDescription();
 
 The ACL policy description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -1020,7 +1020,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ public java.lang.String getNamespace();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getPartition();
 
 The partition the ACL policy is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#partition AclPolicy#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#partition AclPolicy#partition}
 
 ---
 

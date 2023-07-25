@@ -1,6 +1,6 @@
 # `data_consul_agent_config`
 
-Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config).
+Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config).
 
 # `dataConsulAgentConfig` Submodule <a name="`dataConsulAgentConfig` Submodule" id="@cdktf/provider-consul.dataConsulAgentConfig"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_agent_config`](https://
 
 ### DataConsulAgentConfig <a name="DataConsulAgentConfig" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config consul_agent_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config consul_agent_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.NewDataConsulAgentConfig(scope Construct, id *string, config DataConsulAgentConfigConfig) DataConsulAgentConfig
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
 
 &dataconsulagentconfig.DataConsulAgentConfigConfig {
 	Connection: interface{},
@@ -613,7 +613,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/dataconsulagentconfi
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}. |
 
 ---
 
@@ -695,7 +695,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_config#id DataConsulAgentConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

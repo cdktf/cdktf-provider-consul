@@ -1,6 +1,6 @@
 # `consul_acl_policy`
 
-Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy).
+Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-consul.aclPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registr
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-consul.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy consul_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy consul_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.NewAclPolicy(scope Construct, id *string, config AclPolicyConfig) AclPolicy
 ```
@@ -305,7 +305,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclPolicy.AclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 &aclpolicy.AclPolicyConfig {
 	Connection: interface{},
@@ -739,8 +739,8 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v6/aclpolicy"
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.rules">Rules</a></code> | <code>*string</code> | The ACL policy rules. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.datacenters">Datacenters</a></code> | <code>*[]*string</code> | The ACL policy datacenters. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.description">Description</a></code> | <code>*string</code> | The ACL policy description. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}. |
-| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}. |
 | <code><a href="#@cdktf/provider-consul.aclPolicy.AclPolicyConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the ACL policy is associated with. |
 
 ---
@@ -825,7 +825,7 @@ Name *string
 
 The ACL policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -839,7 +839,7 @@ Rules *string
 
 The ACL policy rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#rules AclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#rules AclPolicy#rules}
 
 ---
 
@@ -853,7 +853,7 @@ Datacenters *[]*string
 
 The ACL policy datacenters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#datacenters AclPolicy#datacenters}
 
 ---
 
@@ -867,7 +867,7 @@ Description *string
 
 The ACL policy description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -894,7 +894,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#namespace AclPolicy#namespace}.
 
 ---
 
@@ -908,7 +908,7 @@ Partition *string
 
 The partition the ACL policy is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/acl_policy#partition AclPolicy#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_policy#partition AclPolicy#partition}
 
 ---
 
