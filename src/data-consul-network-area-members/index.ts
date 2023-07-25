@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members
+// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulNetworkAreaMembersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}
   */
   readonly uuid: string;
 }
@@ -143,7 +143,7 @@ export class DataConsulNetworkAreaMembersMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members consul_network_area_members}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members consul_network_area_members}
 */
 export class DataConsulNetworkAreaMembers extends cdktf.TerraformDataSource {
 
@@ -157,7 +157,7 @@ export class DataConsulNetworkAreaMembers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/network_area_members consul_network_area_members} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/network_area_members consul_network_area_members} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class DataConsulNetworkAreaMembers extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_network_area_members',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.17.0',
+        providerVersion: '2.18.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

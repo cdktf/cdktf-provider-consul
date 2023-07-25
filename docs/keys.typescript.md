@@ -1,6 +1,6 @@
 # `consul_keys`
 
-Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys).
+Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys).
 
 # `keys` Submodule <a name="`keys` Submodule" id="@cdktf/provider-consul.keys"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terr
 
 ### Keys <a name="Keys" id="@cdktf/provider-consul.keys.Keys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys consul_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys consul_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keys.Keys.Initializer"></a>
 
@@ -729,12 +729,12 @@ const keysConfig: keys.KeysConfig = { ... }
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#datacenter Keys#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#id Keys#id}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#datacenter Keys#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#id Keys#id}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.key">key</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]</code> | key block. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#namespace Keys#namespace}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#partition Keys#partition}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#token Keys#token}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#namespace Keys#namespace}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#partition Keys#partition}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#token Keys#token}. |
 
 ---
 
@@ -816,7 +816,7 @@ public readonly datacenter: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#datacenter Keys#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#datacenter Keys#datacenter}.
 
 ---
 
@@ -828,7 +828,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#id Keys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#id Keys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,7 +845,7 @@ public readonly key: IResolvable | KeysKey[];
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#key Keys#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#key Keys#key}
 
 ---
 
@@ -857,7 +857,7 @@ public readonly namespace: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#namespace Keys#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#namespace Keys#namespace}.
 
 ---
 
@@ -869,7 +869,7 @@ public readonly partition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#partition Keys#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#partition Keys#partition}.
 
 ---
 
@@ -881,7 +881,7 @@ public readonly token: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#token Keys#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#token Keys#token}.
 
 ---
 
@@ -899,12 +899,12 @@ const keysKey: keys.KeysKey = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#path Keys#path}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#default Keys#default}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">delete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#delete Keys#delete}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">flags</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#flags Keys#flags}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#name Keys#name}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#value Keys#value}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#path Keys#path}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#default Keys#default}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">delete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#delete Keys#delete}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">flags</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#flags Keys#flags}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#name Keys#name}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#value Keys#value}. |
 
 ---
 
@@ -916,7 +916,7 @@ public readonly path: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#path Keys#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#path Keys#path}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#default Keys#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#default Keys#default}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly delete: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#delete Keys#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#delete Keys#delete}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly flags: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#flags Keys#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#flags Keys#flags}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#name Keys#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#name Keys#name}.
 
 ---
 
@@ -976,7 +976,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/resources/keys#value Keys#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/keys#value Keys#value}.
 
 ---
 

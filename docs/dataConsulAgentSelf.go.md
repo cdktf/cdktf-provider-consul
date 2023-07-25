@@ -1,6 +1,6 @@
 # `data_consul_agent_self`
 
-Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_self).
+Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_self).
 
 # `dataConsulAgentSelf` Submodule <a name="`dataConsulAgentSelf` Submodule" id="@cdktf/provider-consul.dataConsulAgentSelf"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://re
 
 ### DataConsulAgentSelf <a name="DataConsulAgentSelf" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.17.0/docs/data-sources/agent_self consul_agent_self}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_self consul_agent_self}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.Initializer"></a>
 
