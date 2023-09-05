@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/namespacepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment"
 
 namespacepolicyattachment.NewNamespacePolicyAttachment(scope Construct, id *string, config NamespacePolicyAttachmentConfig) NamespacePolicyAttachment
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/namespacepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment"
 
 namespacepolicyattachment.NamespacePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/namespacepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment"
 
 namespacepolicyattachment.NamespacePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ namespacepolicyattachment.NamespacePolicyAttachment_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/namespacepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment"
 
 namespacepolicyattachment.NamespacePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.namespacePolicyAttachment.NamespacePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/namespacepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespacepolicyattachment"
 
 &namespacepolicyattachment.NamespacePolicyAttachmentConfig {
 	Connection: interface{},
