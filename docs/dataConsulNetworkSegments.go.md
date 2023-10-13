@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
 
 dataconsulnetworksegments.NewDataConsulNetworkSegments(scope Construct, id *string, config DataConsulNetworkSegmentsConfig) DataConsulNetworkSegments
 ```
@@ -291,7 +291,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v7/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
 
 &dataconsulnetworksegments.DataConsulNetworkSegmentsConfig {
 	Connection: interface{},
