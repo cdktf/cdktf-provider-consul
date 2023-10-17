@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/adminpartition"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/adminpartition"
 
 adminpartition.NewAdminPartition(scope Construct, id *string, config AdminPartitionConfig) AdminPartition
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.adminPartition.AdminPartition.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/adminpartition"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/adminpartition"
 
 adminpartition.AdminPartition_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/adminpartition"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/adminpartition"
 
 adminpartition.AdminPartition_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ adminpartition.AdminPartition_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.adminPartition.AdminPartition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/adminpartition"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/adminpartition"
 
 adminpartition.AdminPartition_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.adminPartition.AdminPartitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/adminpartition"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/adminpartition"
 
 &adminpartition.AdminPartitionConfig {
 	Connection: interface{},

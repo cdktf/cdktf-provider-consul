@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.NewDataConsulServices(scope Construct, id *string, config DataConsulServicesConfig) DataConsulServices
 ```
@@ -297,7 +297,7 @@ func ResetQueryOptions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.DataConsulServices_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.DataConsulServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataconsulservices.DataConsulServices_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulServices.DataConsulServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.DataConsulServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServices.DataConsulServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 &dataconsulservices.DataConsulServicesConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServices.DataConsulServicesQueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 &dataconsulservices.DataConsulServicesQueryOptions {
 	AllowStale: interface{},
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServices.DataConsulServicesQueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.NewDataConsulServicesQueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServicesQueryOptionsList
 ```
@@ -1046,7 +1046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServices.DataConsulServicesQueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservices"
 
 dataconsulservices.NewDataConsulServicesQueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServicesQueryOptionsOutputReference
 ```
