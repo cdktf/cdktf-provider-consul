@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/service
 // generated from terraform resource schema
 
@@ -524,6 +519,20 @@ export class DataConsulService extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "consul_service";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataConsulService resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataConsulService to import
+  * @param importFromId The id of the existing DataConsulService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/service#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataConsulService to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "consul_service", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

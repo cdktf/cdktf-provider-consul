@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 provider.NewConsulProvider(scope Construct, id *string, config ConsulProviderConfig) ConsulProvider
 ```
@@ -253,13 +253,14 @@ func ResetToken()
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ConsulProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.provider.ConsulProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 provider.ConsulProvider_IsConstruct(x interface{}) *bool
 ```
@@ -291,7 +292,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 provider.ConsulProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -305,7 +306,7 @@ provider.ConsulProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 provider.ConsulProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -313,6 +314,50 @@ provider.ConsulProvider_IsTerraformProvider(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
+
+provider.ConsulProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a ConsulProvider resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the ConsulProvider to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing ConsulProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the ConsulProvider to import is found.
 
 ---
 
@@ -812,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 &provider.ConsulProviderAuthJwt {
 	AuthMethod: *string,
@@ -896,12 +941,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 &provider.ConsulProviderConfig {
 	Address: *string,
 	Alias: *string,
-	AuthJwt: github.com/cdktf/cdktf-provider-consul-go/consul/v8.provider.ConsulProviderAuthJwt,
+	AuthJwt: github.com/cdktf/cdktf-provider-consul-go/consul.provider.ConsulProviderAuthJwt,
 	CaFile: *string,
 	CaPath: *string,
 	CaPem: *string,
@@ -1192,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/provider"
 
 &provider.ConsulProviderHeader {
 	Name: *string,
