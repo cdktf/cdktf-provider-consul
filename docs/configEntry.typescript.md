@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.toMetadata">toMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.resetConfigJson">resetConfigJson</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.resetNamespace">resetNamespace</a></code> | *No description.* |
@@ -140,6 +143,22 @@ public toTerraform(): any
 ```
 
 Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-consul.configEntry.ConfigEntry.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-consul.configEntry.ConfigEntry.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
 
 ##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-consul.configEntry.ConfigEntry.getAnyMapAttribute"></a>
 
@@ -249,6 +268,24 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-consul.configEntry.ConfigEntry.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-consul.configEntry.ConfigEntry.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.configEntry.ConfigEntry.importFrom.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
 ##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-consul.configEntry.ConfigEntry.interpolationForAttribute"></a>
 
 ```typescript
@@ -258,6 +295,30 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.configEntry.ConfigEntry.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-consul.configEntry.ConfigEntry.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-consul.configEntry.ConfigEntry.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-consul.configEntry.ConfigEntry.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -292,6 +353,7 @@ public resetPartition(): void
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ConfigEntry resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -352,6 +414,50 @@ configEntry.ConfigEntry.isTerraformResource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.configEntry.ConfigEntry.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport"></a>
+
+```typescript
+import { configEntry } from '@cdktf/provider-consul'
+
+configEntry.ConfigEntry.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a ConfigEntry resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the ConfigEntry to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing ConfigEntry that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/config_entry#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.configEntry.ConfigEntry.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the ConfigEntry to import is found.
 
 ---
 

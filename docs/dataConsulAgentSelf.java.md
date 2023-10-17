@@ -318,6 +318,7 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataConsulAgentSelf resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -378,6 +379,50 @@ DataConsulAgentSelf.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.consul.data_consul_agent_self.DataConsulAgentSelf;
+
+DataConsulAgentSelf.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataConsulAgentSelf.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataConsulAgentSelf resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataConsulAgentSelf to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataConsulAgentSelf that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/agent_self#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataConsulAgentSelf to import is found.
 
 ---
 

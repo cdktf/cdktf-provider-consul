@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.NewDataConsulCatalogService(scope Construct, id *string, config DataConsulCatalogServiceConfig) DataConsulCatalogService
 ```
@@ -312,13 +312,14 @@ func ResetTag()
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataConsulCatalogService resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.DataConsulCatalogService_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.DataConsulCatalogService_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +365,7 @@ dataconsulcatalogservice.DataConsulCatalogService_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.DataConsulCatalogService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,6 +373,50 @@ dataconsulcatalogservice.DataConsulCatalogService_IsTerraformDataSource(x interf
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
+
+dataconsulcatalogservice.DataConsulCatalogService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataConsulCatalogService resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataConsulCatalogService to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataConsulCatalogService that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/catalog_service#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogService.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataConsulCatalogService to import is found.
 
 ---
 
@@ -684,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 &dataconsulcatalogservice.DataConsulCatalogServiceConfig {
 	Connection: interface{},
@@ -875,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceQueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 &dataconsulcatalogservice.DataConsulCatalogServiceQueryOptions {
 	AllowStale: interface{},
@@ -1033,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 &dataconsulcatalogservice.DataConsulCatalogServiceService {
 
@@ -1048,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogser
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceQueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.NewDataConsulCatalogServiceQueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulCatalogServiceQueryOptionsList
 ```
@@ -1191,7 +1236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceQueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.NewDataConsulCatalogServiceQueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulCatalogServiceQueryOptionsOutputReference
 ```
@@ -1748,7 +1793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.NewDataConsulCatalogServiceServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulCatalogServiceServiceList
 ```
@@ -1880,7 +1925,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulCatalogService.DataConsulCatalogServiceServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulcatalogservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulcatalogservice"
 
 dataconsulcatalogservice.NewDataConsulCatalogServiceServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulCatalogServiceServiceOutputReference
 ```

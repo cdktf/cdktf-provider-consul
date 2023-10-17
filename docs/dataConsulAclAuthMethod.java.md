@@ -382,6 +382,7 @@ public void resetPartition()
 | <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataConsulAclAuthMethod resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -442,6 +443,50 @@ DataConsulAclAuthMethod.isTerraformDataSource(java.lang.Object x)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.consul.data_consul_acl_auth_method.DataConsulAclAuthMethod;
+
+DataConsulAclAuthMethod.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataConsulAclAuthMethod.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataConsulAclAuthMethod resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataConsulAclAuthMethod to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataConsulAclAuthMethod that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_auth_method#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.dataConsulAclAuthMethod.DataConsulAclAuthMethod.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataConsulAclAuthMethod to import is found.
 
 ---
 

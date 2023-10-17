@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.NewDataConsulConfigEntry(scope Construct, id *string, config DataConsulConfigEntryConfig) DataConsulConfigEntry
 ```
@@ -285,13 +285,14 @@ func ResetPartition()
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataConsulConfigEntry resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +338,7 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,6 +346,50 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{})
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
+
+dataconsulconfigentry.DataConsulConfigEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataConsulConfigEntry resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataConsulConfigEntry to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataConsulConfigEntry that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/config_entry#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataConsulConfigEntry to import is found.
 
 ---
 
@@ -635,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 &dataconsulconfigentry.DataConsulConfigEntryConfig {
 	Connection: interface{},
