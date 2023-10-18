@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRole(scope Construct, id *string, config AclRoleConfig) AclRole
 ```
@@ -407,7 +407,7 @@ func ResetServiceIdentities()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclRole.AclRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclRole.AclRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ aclrole.AclRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclRole.AclRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.AclRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -872,7 +872,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleConfig {
 	Connection: interface{},
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleNodeIdentities {
 	Datacenter: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 &aclrole.AclRoleServiceIdentities {
 	ServiceName: *string,
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleNodeIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclRoleNodeIdentitiesList
 ```
@@ -1348,7 +1348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleNodeIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleNodeIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclRoleNodeIdentitiesOutputReference
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleServiceIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclRoleServiceIdentitiesList
 ```
@@ -1802,7 +1802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRoleServiceIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrole"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrole"
 
 aclrole.NewAclRoleServiceIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclRoleServiceIdentitiesOutputReference
 ```
