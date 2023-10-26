@@ -1,6 +1,6 @@
 # `consul_prepared_query`
 
-Refer to the Terraform Registory for docs: [`consul_prepared_query`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query).
+Refer to the Terraform Registory for docs: [`consul_prepared_query`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query).
 
 # `preparedQuery` Submodule <a name="`preparedQuery` Submodule" id="@cdktf/provider-consul.preparedQuery"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_prepared_query`](https://reg
 
 ### PreparedQuery <a name="PreparedQuery" id="@cdktf/provider-consul.preparedQuery.PreparedQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query consul_prepared_query}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query consul_prepared_query}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.Initializer"></a>
 
@@ -565,7 +565,7 @@ The construct id used in the generated config for the PreparedQuery to import.
 
 The id of the existing PreparedQuery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1186,7 +1186,7 @@ new PreparedQueryConfig {
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.dns">Dns</a></code> | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryDns">PreparedQueryDns</a></code> | dns block. |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.failover">Failover</a></code> | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryFailover">PreparedQueryFailover</a></code> | failover block. |
-| <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#id PreparedQuery#id}. |
+| <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#id PreparedQuery#id}. |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.ignoreCheckIds">IgnoreCheckIds</a></code> | <code>string[]</code> | Specifies a list of check IDs that should be ignored when filtering unhealthy instances. |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.near">Near</a></code> | <code>string</code> | Allows specifying the name of a node to sort results near using Consul's distance sorting and network coordinates. |
 | <code><a href="#@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.property.nodeMeta">NodeMeta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies a list of user-defined key/value pairs that will be used for filtering the query results to nodes with the given metadata values present. |
@@ -1282,7 +1282,7 @@ The name of the prepared query.
 
 Used to identify the prepared query during requests. Can be specified as an empty string to configure the query as a catch-all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#name PreparedQuery#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#name PreparedQuery#name}
 
 ---
 
@@ -1296,7 +1296,7 @@ public string Service { get; set; }
 
 The name of the service to query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#service PreparedQuery#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#service PreparedQuery#service}
 
 ---
 
@@ -1312,7 +1312,7 @@ When `true` the prepared query will return connect proxy services for a queried 
 
 Conditions such as `tags` in the prepared query will be matched against the proxy service. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#connect PreparedQuery#connect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#connect PreparedQuery#connect}
 
 ---
 
@@ -1326,7 +1326,7 @@ public string Datacenter { get; set; }
 
 The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
 
 ---
 
@@ -1340,7 +1340,7 @@ public PreparedQueryDns Dns { get; set; }
 
 dns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#dns PreparedQuery#dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#dns PreparedQuery#dns}
 
 ---
 
@@ -1354,7 +1354,7 @@ public PreparedQueryFailover Failover { get; set; }
 
 failover block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#failover PreparedQuery#failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#failover PreparedQuery#failover}
 
 ---
 
@@ -1366,7 +1366,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#id PreparedQuery#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#id PreparedQuery#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1385,7 +1385,7 @@ Specifies a list of check IDs that should be ignored when filtering unhealthy in
 
 This is mostly useful in an emergency or as a temporary measure when a health check is found to be unreliable. Being able to ignore it in centrally-defined queries can be simpler than de-registering the check as an interim solution until the check can be fixed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
 
 ---
 
@@ -1401,7 +1401,7 @@ Allows specifying the name of a node to sort results near using Consul's distanc
 
 The magic `_agent` value can be used to always sort nearest the node servicing the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#near PreparedQuery#near}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#near PreparedQuery#near}
 
 ---
 
@@ -1415,7 +1415,7 @@ public System.Collections.Generic.IDictionary<string, string> NodeMeta { get; se
 
 Specifies a list of user-defined key/value pairs that will be used for filtering the query results to nodes with the given metadata values present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
 
 ---
 
@@ -1429,7 +1429,7 @@ public object OnlyPassing { get; set; }
 
 When `true`, the prepared query will only return nodes with passing health checks in the result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
 
 ---
 
@@ -1443,7 +1443,7 @@ public System.Collections.Generic.IDictionary<string, string> ServiceMeta { get;
 
 Specifies a list of user-defined key/value pairs that will be used for filtering the query results to services with the given metadata values present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
 
 ---
 
@@ -1459,7 +1459,7 @@ The name of the Consul session to tie this query's lifetime to.
 
 This is an advanced parameter that should not be used without a complete understanding of Consul sessions and the implications of their use (it is recommended to leave this blank in nearly all cases).  If this parameter is omitted the query will not expire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#session PreparedQuery#session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#session PreparedQuery#session}
 
 ---
 
@@ -1475,7 +1475,7 @@ The ACL token to store with the prepared query.
 
 This token will be used by default whenever the query is executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
 
 ---
 
@@ -1491,7 +1491,7 @@ The list of required and/or disallowed tags.
 
 If a tag is in this list it must be present.  If the tag is preceded with a "!" then it is disallowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#tags PreparedQuery#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#tags PreparedQuery#tags}
 
 ---
 
@@ -1505,7 +1505,7 @@ public PreparedQueryTemplate Template { get; set; }
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#template PreparedQuery#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#template PreparedQuery#template}
 
 ---
 
@@ -1521,7 +1521,7 @@ The ACL token to use when saving the prepared query.
 
 This overrides the token that the agent provides by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#token PreparedQuery#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#token PreparedQuery#token}
 
 ---
 
@@ -1555,7 +1555,7 @@ public string Ttl { get; set; }
 
 The TTL to send when returning DNS results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
 
 ---
 
@@ -1593,7 +1593,7 @@ public string[] Datacenters { get; set; }
 
 Remote datacenters to return results from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
 
 ---
 
@@ -1607,7 +1607,7 @@ public double NearestN { get; set; }
 
 Return results from this many datacenters, sorted in ascending order of estimated RTT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
 
 ---
 
@@ -1621,7 +1621,7 @@ public object Targets { get; set; }
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#targets PreparedQuery#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#targets PreparedQuery#targets}
 
 ---
 
@@ -1657,7 +1657,7 @@ public string Datacenter { get; set; }
 
 Specifies a WAN federated datacenter to forward the query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
 
 ---
 
@@ -1671,7 +1671,7 @@ public string Peer { get; set; }
 
 Specifies a cluster peer to use for failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#peer PreparedQuery#peer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#peer PreparedQuery#peer}
 
 ---
 
@@ -1709,7 +1709,7 @@ public string Regexp { get; set; }
 
 The regular expression to match with. When using `name_prefix_match`, this regex is applied against the query name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
 
 ---
 
@@ -1723,7 +1723,7 @@ public string Type { get; set; }
 
 The type of template matching to perform. Currently only `name_prefix_match` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#type PreparedQuery#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#type PreparedQuery#type}
 
 ---
 
@@ -1737,7 +1737,7 @@ public object RemoveEmptyTags { get; set; }
 
 If set to true, will cause the tags list inside the service structure to be stripped of any empty strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/prepared_query#remove_empty_tags PreparedQuery#remove_empty_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/prepared_query#remove_empty_tags PreparedQuery#remove_empty_tags}
 
 ---
 

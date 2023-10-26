@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering
+// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering#id DataConsulPeering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering#id DataConsulPeering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering#partition DataConsulPeering#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering#partition DataConsulPeering#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}
   */
   readonly peerName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering consul_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering consul_peering}
 */
 export class DataConsulPeering extends cdktf.TerraformDataSource {
 
@@ -46,7 +46,7 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulPeering resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulPeering to import
-  * @param importFromId The id of the existing DataConsulPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulPeering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +58,7 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/peering consul_peering} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/peering consul_peering} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +69,7 @@ export class DataConsulPeering extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_peering',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

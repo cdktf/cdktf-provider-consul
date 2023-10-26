@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area
+// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkAreaConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#datacenter NetworkArea#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#datacenter NetworkArea#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#id NetworkArea#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#id NetworkArea#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#peer_datacenter NetworkArea#peer_datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#peer_datacenter NetworkArea#peer_datacenter}
   */
   readonly peerDatacenter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#retry_join NetworkArea#retry_join}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#retry_join NetworkArea#retry_join}
   */
   readonly retryJoin?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#token NetworkArea#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#token NetworkArea#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#use_tls NetworkArea#use_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#use_tls NetworkArea#use_tls}
   */
   readonly useTls?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area consul_network_area}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area consul_network_area}
 */
 export class NetworkArea extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class NetworkArea extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkArea resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkArea to import
-  * @param importFromId The id of the existing NetworkArea that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkArea that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkArea to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +70,7 @@ export class NetworkArea extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/network_area consul_network_area} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/network_area consul_network_area} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,7 @@ export class NetworkArea extends cdktf.TerraformResource {
       terraformResourceType: 'consul_network_area',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
