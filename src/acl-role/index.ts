@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role
+// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free form human readable description of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#description AclRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#description AclRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#id AclRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#id AclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,49 +23,57 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the ACL role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#name AclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#namespace AclRole#namespace}
+  * The namespace to create the role within.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#namespace AclRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The partition the ACL role is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#partition AclRole#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#partition AclRole#partition}
   */
   readonly partition?: string;
   /**
-  * The list of policies that should be applied to the role.
+  * The list of policies that should be applied to the role. Both the policy ID or its name can be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#policies AclRole#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#policies AclRole#policies}
   */
   readonly policies?: string[];
   /**
   * node_identities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#node_identities AclRole#node_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#node_identities AclRole#node_identities}
   */
   readonly nodeIdentities?: AclRoleNodeIdentities[] | cdktf.IResolvable;
   /**
   * service_identities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#service_identities AclRole#service_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#service_identities AclRole#service_identities}
   */
   readonly serviceIdentities?: AclRoleServiceIdentities[] | cdktf.IResolvable;
+  /**
+  * templated_policies block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#templated_policies AclRole#templated_policies}
+  */
+  readonly templatedPolicies?: AclRoleTemplatedPolicies[] | cdktf.IResolvable;
 }
 export interface AclRoleNodeIdentities {
   /**
   * Specifies the node's datacenter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#datacenter AclRole#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#datacenter AclRole#datacenter}
   */
   readonly datacenter: string;
   /**
   * The name of the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#node_name AclRole#node_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#node_name AclRole#node_name}
   */
   readonly nodeName: string;
 }
@@ -186,13 +189,13 @@ export interface AclRoleServiceIdentities {
   /**
   * The datacenters the effective policy is valid within. When no datacenters are provided the effective policy is valid in all datacenters including those which do not yet exist but may in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#datacenters AclRole#datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#datacenters AclRole#datacenters}
   */
   readonly datacenters?: string[];
   /**
   * The name of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#service_name AclRole#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#service_name AclRole#service_name}
   */
   readonly serviceName: string;
 }
@@ -307,9 +310,230 @@ export class AclRoleServiceIdentitiesList extends cdktf.ComplexList {
     return new AclRoleServiceIdentitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AclRoleTemplatedPoliciesTemplateVariables {
+  /**
+  * The name of node, workload identity or service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#name AclRole#name}
+  */
+  readonly name?: string;
+}
+
+export function aclRoleTemplatedPoliciesTemplateVariablesToTerraform(struct?: AclRoleTemplatedPoliciesTemplateVariablesOutputReference | AclRoleTemplatedPoliciesTemplateVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class AclRoleTemplatedPoliciesTemplateVariablesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AclRoleTemplatedPoliciesTemplateVariables | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AclRoleTemplatedPoliciesTemplateVariables | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface AclRoleTemplatedPolicies {
+  /**
+  * Specifies the datacenters the effective policy is valid within.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#datacenters AclRole#datacenters}
+  */
+  readonly datacenters?: string[];
+  /**
+  * The name of the templated policies.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#template_name AclRole#template_name}
+  */
+  readonly templateName: string;
+  /**
+  * template_variables block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#template_variables AclRole#template_variables}
+  */
+  readonly templateVariables?: AclRoleTemplatedPoliciesTemplateVariables;
+}
+
+export function aclRoleTemplatedPoliciesToTerraform(struct?: AclRoleTemplatedPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    datacenters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.datacenters),
+    template_name: cdktf.stringToTerraform(struct!.templateName),
+    template_variables: aclRoleTemplatedPoliciesTemplateVariablesToTerraform(struct!.templateVariables),
+  }
+}
+
+export class AclRoleTemplatedPoliciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AclRoleTemplatedPolicies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._datacenters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datacenters = this._datacenters;
+    }
+    if (this._templateName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.templateName = this._templateName;
+    }
+    if (this._templateVariables?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.templateVariables = this._templateVariables?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AclRoleTemplatedPolicies | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._datacenters = undefined;
+      this._templateName = undefined;
+      this._templateVariables.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._datacenters = value.datacenters;
+      this._templateName = value.templateName;
+      this._templateVariables.internalValue = value.templateVariables;
+    }
+  }
+
+  // datacenters - computed: false, optional: true, required: false
+  private _datacenters?: string[]; 
+  public get datacenters() {
+    return this.getListAttribute('datacenters');
+  }
+  public set datacenters(value: string[]) {
+    this._datacenters = value;
+  }
+  public resetDatacenters() {
+    this._datacenters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datacentersInput() {
+    return this._datacenters;
+  }
+
+  // template_name - computed: false, optional: false, required: true
+  private _templateName?: string; 
+  public get templateName() {
+    return this.getStringAttribute('template_name');
+  }
+  public set templateName(value: string) {
+    this._templateName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateNameInput() {
+    return this._templateName;
+  }
+
+  // template_variables - computed: false, optional: true, required: false
+  private _templateVariables = new AclRoleTemplatedPoliciesTemplateVariablesOutputReference(this, "template_variables");
+  public get templateVariables() {
+    return this._templateVariables;
+  }
+  public putTemplateVariables(value: AclRoleTemplatedPoliciesTemplateVariables) {
+    this._templateVariables.internalValue = value;
+  }
+  public resetTemplateVariables() {
+    this._templateVariables.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateVariablesInput() {
+    return this._templateVariables.internalValue;
+  }
+}
+
+export class AclRoleTemplatedPoliciesList extends cdktf.ComplexList {
+  public internalValue? : AclRoleTemplatedPolicies[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AclRoleTemplatedPoliciesOutputReference {
+    return new AclRoleTemplatedPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role consul_acl_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role consul_acl_role}
 */
 export class AclRole extends cdktf.TerraformResource {
 
@@ -325,7 +549,7 @@ export class AclRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclRole to import
-  * @param importFromId The id of the existing AclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -337,7 +561,7 @@ export class AclRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_role consul_acl_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_role consul_acl_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -348,7 +572,7 @@ export class AclRole extends cdktf.TerraformResource {
       terraformResourceType: 'consul_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.18.0',
+        providerVersion: '2.19.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -367,6 +591,7 @@ export class AclRole extends cdktf.TerraformResource {
     this._policies = config.policies;
     this._nodeIdentities.internalValue = config.nodeIdentities;
     this._serviceIdentities.internalValue = config.serviceIdentities;
+    this._templatedPolicies.internalValue = config.templatedPolicies;
   }
 
   // ==========
@@ -498,6 +723,22 @@ export class AclRole extends cdktf.TerraformResource {
     return this._serviceIdentities.internalValue;
   }
 
+  // templated_policies - computed: false, optional: true, required: false
+  private _templatedPolicies = new AclRoleTemplatedPoliciesList(this, "templated_policies", false);
+  public get templatedPolicies() {
+    return this._templatedPolicies;
+  }
+  public putTemplatedPolicies(value: AclRoleTemplatedPolicies[] | cdktf.IResolvable) {
+    this._templatedPolicies.internalValue = value;
+  }
+  public resetTemplatedPolicies() {
+    this._templatedPolicies.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templatedPoliciesInput() {
+    return this._templatedPolicies.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -512,6 +753,7 @@ export class AclRole extends cdktf.TerraformResource {
       policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
       node_identities: cdktf.listMapper(aclRoleNodeIdentitiesToTerraform, true)(this._nodeIdentities.internalValue),
       service_identities: cdktf.listMapper(aclRoleServiceIdentitiesToTerraform, true)(this._serviceIdentities.internalValue),
+      templated_policies: cdktf.listMapper(aclRoleTemplatedPoliciesToTerraform, true)(this._templatedPolicies.internalValue),
     };
   }
 }

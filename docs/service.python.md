@@ -1,6 +1,6 @@
 # `consul_service`
 
-Refer to the Terraform Registory for docs: [`consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service).
+Refer to the Terraform Registory for docs: [`consul_service`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service).
 
 # `service` Submodule <a name="`service` Submodule" id="@cdktf/provider-consul.service"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_service`](https://registry.t
 
 ### Service <a name="Service" id="@cdktf/provider-consul.service.Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service consul_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service consul_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.Service.Initializer"></a>
 
@@ -53,20 +53,20 @@ service.Service(
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#node Service#node}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#address Service#address}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the service. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.nodeAttribute">node_attribute</a></code> | <code>str</code> | The name of the node the to register the service on. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.address">address</a></code> | <code>str</code> | The address of the service. Defaults to the address of the node. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.check">check</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | check block. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#datacenter Service#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#enable_tag_override Service#enable_tag_override}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#external Service#external}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#id Service#id}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#meta Service#meta}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#namespace Service#namespace}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | A map of arbitrary KV metadata linked to the service instance. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace to create the service within. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.partition">partition</a></code> | <code>str</code> | The partition the service is associated with. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#port Service#port}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#service_id Service#service_id}. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tags Service#tags}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | The port of the service. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.serviceId">service_id</a></code> | <code>str</code> | If the service ID is not provided, it will be defaulted to the value of the `name` attribute. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of values that are opaque to Consul, but can be used to distinguish between services or nodes. |
 
 ---
 
@@ -134,7 +134,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}.
+The name of the service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -142,7 +144,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#node Service#node}.
+The name of the node the to register the service on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#node Service#node}
 
 ---
 
@@ -150,7 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#address Service#address}.
+The address of the service. Defaults to the address of the node.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#address Service#address}
 
 ---
 
@@ -160,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#check Service#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#check Service#check}
 
 ---
 
@@ -168,7 +174,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#datacenter Service#datacenter}.
+The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#datacenter Service#datacenter}
 
 ---
 
@@ -176,7 +184,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#enable_tag_override Service#enable_tag_override}.
+Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
 
 ---
 
@@ -184,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#external Service#external}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#external Service#external}.
 
 ---
 
@@ -192,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +213,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#meta Service#meta}.
+A map of arbitrary KV metadata linked to the service instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#meta Service#meta}
 
 ---
 
@@ -211,7 +223,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#namespace Service#namespace}.
+The namespace to create the service within.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#namespace Service#namespace}
 
 ---
 
@@ -221,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The partition the service is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#partition Service#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#partition Service#partition}
 
 ---
 
@@ -229,7 +243,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#port Service#port}.
+The port of the service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#port Service#port}
 
 ---
 
@@ -237,7 +253,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#service_id Service#service_id}.
+If the service ID is not provided, it will be defaulted to the value of the `name` attribute.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#service_id Service#service_id}
 
 ---
 
@@ -245,7 +263,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tags Service#tags}.
+A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#tags Service#tags}
 
 ---
 
@@ -763,7 +783,7 @@ The construct id used in the generated config for the Service to import.
 
 The id of the existing Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1293,18 +1313,18 @@ service.ServiceCheck(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.checkId">check_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#check_id Service#check_id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.interval">interval</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#interval Service#interval}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.timeout">timeout</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#timeout Service#timeout}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.deregisterCriticalServiceAfter">deregister_critical_service_after</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.checkId">check_id</a></code> | <code>str</code> | An ID, *unique per agent*. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.interval">interval</a></code> | <code>str</code> | The interval to wait between each health-check invocation. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.name">name</a></code> | <code>str</code> | The name of the health-check. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.timeout">timeout</a></code> | <code>str</code> | Specifies a timeout for outgoing connections in the case of a HTTP or TCP check. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.deregisterCriticalServiceAfter">deregister_critical_service_after</a></code> | <code>str</code> | The time after which the service is automatically deregistered when in the `critical` state. Defaults to `30s`. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]</code> | header block. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.http">http</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#http Service#http}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.method">method</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#method Service#method}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.notes">notes</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#notes Service#notes}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#status Service#status}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tcp">tcp</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tcp Service#tcp}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.http">http</a></code> | <code>str</code> | The HTTP endpoint to call for an HTTP check. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.method">method</a></code> | <code>str</code> | The method to use for HTTP health-checks. Defaults to `GET`. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.notes">notes</a></code> | <code>str</code> | An opaque field meant to hold human readable text. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.status">status</a></code> | <code>str</code> | The initial health-check status. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tcp">tcp</a></code> | <code>str</code> | The TCP address and port to connect to for a TCP check. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`. |
 
 ---
 
@@ -1316,7 +1336,9 @@ check_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#check_id Service#check_id}.
+An ID, *unique per agent*.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#check_id Service#check_id}
 
 ---
 
@@ -1328,7 +1350,9 @@ interval: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#interval Service#interval}.
+The interval to wait between each health-check invocation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#interval Service#interval}
 
 ---
 
@@ -1340,7 +1364,9 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}.
+The name of the health-check.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1352,7 +1378,9 @@ timeout: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#timeout Service#timeout}.
+Specifies a timeout for outgoing connections in the case of a HTTP or TCP check.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#timeout Service#timeout}
 
 ---
 
@@ -1364,7 +1392,9 @@ deregister_critical_service_after: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}.
+The time after which the service is automatically deregistered when in the `critical` state. Defaults to `30s`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}
 
 ---
 
@@ -1378,7 +1408,7 @@ header: typing.Union[IResolvable, typing.List[ServiceCheckHeader]]
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#header Service#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#header Service#header}
 
 ---
 
@@ -1390,7 +1420,9 @@ http: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#http Service#http}.
+The HTTP endpoint to call for an HTTP check.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#http Service#http}
 
 ---
 
@@ -1402,7 +1434,9 @@ method: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#method Service#method}.
+The method to use for HTTP health-checks. Defaults to `GET`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#method Service#method}
 
 ---
 
@@ -1414,7 +1448,9 @@ notes: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#notes Service#notes}.
+An opaque field meant to hold human readable text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#notes Service#notes}
 
 ---
 
@@ -1426,7 +1462,9 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#status Service#status}.
+The initial health-check status.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#status Service#status}
 
 ---
 
@@ -1438,7 +1476,9 @@ tcp: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tcp Service#tcp}.
+The TCP address and port to connect to for a TCP check.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#tcp Service#tcp}
 
 ---
 
@@ -1450,7 +1490,9 @@ tls_skip_verify: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}.
+Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}
 
 ---
 
@@ -1471,8 +1513,8 @@ service.ServiceCheckHeader(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.value">value</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#value Service#value}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.name">name</a></code> | <code>str</code> | The name of the header. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeader.property.value">value</a></code> | <code>typing.List[str]</code> | The header's list of values. |
 
 ---
 
@@ -1484,7 +1526,9 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}.
+The name of the header.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1496,7 +1540,9 @@ value: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#value Service#value}.
+The header's list of values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#value Service#value}
 
 ---
 
@@ -1543,20 +1589,20 @@ service.ServiceConfig(
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.nodeAttribute">node_attribute</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#node Service#node}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.address">address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#address Service#address}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.name">name</a></code> | <code>str</code> | The name of the service. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.nodeAttribute">node_attribute</a></code> | <code>str</code> | The name of the node the to register the service on. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.address">address</a></code> | <code>str</code> | The address of the service. Defaults to the address of the node. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.check">check</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | check block. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">datacenter</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#datacenter Service#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#enable_tag_override Service#enable_tag_override}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#external Service#external}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#id Service#id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#meta Service#meta}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#namespace Service#namespace}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | A map of arbitrary KV metadata linked to the service instance. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace to create the service within. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.partition">partition</a></code> | <code>str</code> | The partition the service is associated with. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#port Service#port}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#service_id Service#service_id}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tags Service#tags}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The port of the service. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.serviceId">service_id</a></code> | <code>str</code> | If the service ID is not provided, it will be defaulted to the value of the `name` attribute. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of values that are opaque to Consul, but can be used to distinguish between services or nodes. |
 
 ---
 
@@ -1638,7 +1684,9 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#name Service#name}.
+The name of the service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1650,7 +1698,9 @@ node_attribute: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#node Service#node}.
+The name of the node the to register the service on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#node Service#node}
 
 ---
 
@@ -1662,7 +1712,9 @@ address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#address Service#address}.
+The address of the service. Defaults to the address of the node.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#address Service#address}
 
 ---
 
@@ -1676,7 +1728,7 @@ check: typing.Union[IResolvable, typing.List[ServiceCheck]]
 
 check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#check Service#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#check Service#check}
 
 ---
 
@@ -1688,7 +1740,9 @@ datacenter: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#datacenter Service#datacenter}.
+The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#datacenter Service#datacenter}
 
 ---
 
@@ -1700,7 +1754,9 @@ enable_tag_override: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#enable_tag_override Service#enable_tag_override}.
+Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
 
 ---
 
@@ -1712,7 +1768,7 @@ external: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#external Service#external}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#external Service#external}.
 
 ---
 
@@ -1724,7 +1780,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1739,7 +1795,9 @@ meta: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#meta Service#meta}.
+A map of arbitrary KV metadata linked to the service instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#meta Service#meta}
 
 ---
 
@@ -1751,7 +1809,9 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#namespace Service#namespace}.
+The namespace to create the service within.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#namespace Service#namespace}
 
 ---
 
@@ -1765,7 +1825,7 @@ partition: str
 
 The partition the service is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#partition Service#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#partition Service#partition}
 
 ---
 
@@ -1777,7 +1837,9 @@ port: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#port Service#port}.
+The port of the service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#port Service#port}
 
 ---
 
@@ -1789,7 +1851,9 @@ service_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#service_id Service#service_id}.
+If the service ID is not provided, it will be defaulted to the value of the `name` attribute.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#service_id Service#service_id}
 
 ---
 
@@ -1801,7 +1865,9 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/service#tags Service#tags}.
+A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/service#tags Service#tags}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_consul_acl_token`
 
-Refer to the Terraform Registory for docs: [`data_consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token).
+Refer to the Terraform Registory for docs: [`data_consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token).
 
 # `dataConsulAclToken` Submodule <a name="`dataConsulAclToken` Submodule" id="@cdktf/provider-consul.dataConsulAclToken"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_acl_token`](https://reg
 
 ### DataConsulAclToken <a name="DataConsulAclToken" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclToken(scope Construct, id *string, config DataConsulAclTokenConfig) DataConsulAclToken
 ```
@@ -292,7 +292,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.DataConsulAclToken_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.DataConsulAclToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataconsulacltoken.DataConsulAclToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.DataConsulAclToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataconsulacltoken.DataConsulAclToken_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.DataConsulAclToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataConsulAclToken to impo
 
 The id of the existing DataConsulAclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -416,6 +416,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.policies">Policies</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenPoliciesList">DataConsulAclTokenPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.roles">Roles</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenRolesList">DataConsulAclTokenRolesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.serviceIdentities">ServiceIdentities</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenServiceIdentitiesList">DataConsulAclTokenServiceIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.templatedPolicies">TemplatedPolicies</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList">DataConsulAclTokenTemplatedPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.accessorIdInput">AccessorIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
@@ -619,6 +620,16 @@ func ServiceIdentities() DataConsulAclTokenServiceIdentitiesList
 
 ---
 
+##### `TemplatedPolicies`<sup>Required</sup> <a name="TemplatedPolicies" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.templatedPolicies"></a>
+
+```go
+func TemplatedPolicies() DataConsulAclTokenTemplatedPoliciesList
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList">DataConsulAclTokenTemplatedPoliciesList</a>
+
+---
+
 ##### `AccessorIdInput`<sup>Optional</sup> <a name="AccessorIdInput" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.property.accessorIdInput"></a>
 
 ```go
@@ -724,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 &dataconsulacltoken.DataConsulAclTokenConfig {
 	Connection: interface{},
@@ -752,10 +763,10 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#id DataConsulAclToken#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | The accessor ID of the ACL token. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#id DataConsulAclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace to lookup the ACL token. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition to lookup the ACL token. |
 
 ---
 
@@ -837,7 +848,9 @@ AccessorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}.
+The accessor ID of the ACL token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}
 
 ---
 
@@ -849,7 +862,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#id DataConsulAclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#id DataConsulAclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -864,7 +877,9 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}.
+The namespace to lookup the ACL token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}
 
 ---
 
@@ -876,7 +891,9 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}.
+The partition to lookup the ACL token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}
 
 ---
 
@@ -885,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenNodeIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 &dataconsulacltoken.DataConsulAclTokenNodeIdentities {
 
@@ -898,7 +915,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 &dataconsulacltoken.DataConsulAclTokenPolicies {
 
@@ -911,7 +928,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 &dataconsulacltoken.DataConsulAclTokenRoles {
 
@@ -924,9 +941,35 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenServiceIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 &dataconsulacltoken.DataConsulAclTokenServiceIdentities {
+
+}
+```
+
+
+### DataConsulAclTokenTemplatedPolicies <a name="DataConsulAclTokenTemplatedPolicies" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPolicies.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+&dataconsulacltoken.DataConsulAclTokenTemplatedPolicies {
+
+}
+```
+
+
+### DataConsulAclTokenTemplatedPoliciesTemplateVariables <a name="DataConsulAclTokenTemplatedPoliciesTemplateVariables" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariables"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariables.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+&dataconsulacltoken.DataConsulAclTokenTemplatedPoliciesTemplateVariables {
 
 }
 ```
@@ -939,7 +982,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenNodeIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenNodeIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenNodeIdentitiesList
 ```
@@ -1071,7 +1114,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenNodeIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenNodeIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenNodeIdentitiesOutputReference
 ```
@@ -1360,7 +1403,7 @@ func InternalValue() DataConsulAclTokenNodeIdentities
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenPoliciesList
 ```
@@ -1492,7 +1535,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenPoliciesOutputReference
 ```
@@ -1781,7 +1824,7 @@ func InternalValue() DataConsulAclTokenPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenRolesList
 ```
@@ -1913,7 +1956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenRolesOutputReference
 ```
@@ -2202,7 +2245,7 @@ func InternalValue() DataConsulAclTokenRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenServiceIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenServiceIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenServiceIdentitiesList
 ```
@@ -2334,7 +2377,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenServiceIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulacltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
 
 dataconsulacltoken.NewDataConsulAclTokenServiceIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenServiceIdentitiesOutputReference
 ```
@@ -2614,6 +2657,848 @@ func InternalValue() DataConsulAclTokenServiceIdentities
 ```
 
 - *Type:* <a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenServiceIdentities">DataConsulAclTokenServiceIdentities</a>
+
+---
+
+
+### DataConsulAclTokenTemplatedPoliciesList <a name="DataConsulAclTokenTemplatedPoliciesList" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+dataconsulacltoken.NewDataConsulAclTokenTemplatedPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenTemplatedPoliciesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.get"></a>
+
+```go
+func Get(index *f64) DataConsulAclTokenTemplatedPoliciesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataConsulAclTokenTemplatedPoliciesOutputReference <a name="DataConsulAclTokenTemplatedPoliciesOutputReference" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+dataconsulacltoken.NewDataConsulAclTokenTemplatedPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenTemplatedPoliciesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.datacenters">Datacenters</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.templateName">TemplateName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.templateVariables">TemplateVariables</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList">DataConsulAclTokenTemplatedPoliciesTemplateVariablesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPolicies">DataConsulAclTokenTemplatedPolicies</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Datacenters`<sup>Required</sup> <a name="Datacenters" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.datacenters"></a>
+
+```go
+func Datacenters() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `TemplateName`<sup>Required</sup> <a name="TemplateName" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.templateName"></a>
+
+```go
+func TemplateName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TemplateVariables`<sup>Required</sup> <a name="TemplateVariables" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.templateVariables"></a>
+
+```go
+func TemplateVariables() DataConsulAclTokenTemplatedPoliciesTemplateVariablesList
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList">DataConsulAclTokenTemplatedPoliciesTemplateVariablesList</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataConsulAclTokenTemplatedPolicies
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPolicies">DataConsulAclTokenTemplatedPolicies</a>
+
+---
+
+
+### DataConsulAclTokenTemplatedPoliciesTemplateVariablesList <a name="DataConsulAclTokenTemplatedPoliciesTemplateVariablesList" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+dataconsulacltoken.NewDataConsulAclTokenTemplatedPoliciesTemplateVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAclTokenTemplatedPoliciesTemplateVariablesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.get"></a>
+
+```go
+func Get(index *f64) DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference <a name="DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltoken"
+
+dataconsulacltoken.NewDataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariables">DataConsulAclTokenTemplatedPoliciesTemplateVariables</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataConsulAclTokenTemplatedPoliciesTemplateVariables
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenTemplatedPoliciesTemplateVariables">DataConsulAclTokenTemplatedPoliciesTemplateVariables</a>
 
 ---
 

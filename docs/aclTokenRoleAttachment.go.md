@@ -1,6 +1,6 @@
 # `consul_acl_token_role_attachment`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment).
+Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment).
 
 # `aclTokenRoleAttachment` Submodule <a name="`aclTokenRoleAttachment` Submodule" id="@cdktf/provider-consul.aclTokenRoleAttachment"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_acl_token_role_attachment`](
 
 ### AclTokenRoleAttachment <a name="AclTokenRoleAttachment" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment consul_acl_token_role_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 acltokenroleattachment.NewAclTokenRoleAttachment(scope Construct, id *string, config AclTokenRoleAttachmentConfig) AclTokenRoleAttachment
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 acltokenroleattachment.AclTokenRoleAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 acltokenroleattachment.AclTokenRoleAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ acltokenroleattachment.AclTokenRoleAttachment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 acltokenroleattachment.AclTokenRoleAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ acltokenroleattachment.AclTokenRoleAttachment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 acltokenroleattachment.AclTokenRoleAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the AclTokenRoleAttachment to 
 
 The id of the existing AclTokenRoleAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenroleattachment"
 
 &acltokenroleattachment.AclTokenRoleAttachmentConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenroleattachme
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.role">Role</a></code> | <code>*string</code> | The role name. |
 | <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.tokenId">TokenId</a></code> | <code>*string</code> | The token accessor id. |
-| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclTokenRoleAttachment.AclTokenRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}. |
 
 ---
 
@@ -807,7 +807,7 @@ Role *string
 
 The role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment#role AclTokenRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment#role AclTokenRoleAttachment#role}
 
 ---
 
@@ -821,7 +821,7 @@ TokenId *string
 
 The token accessor id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment#token_id AclTokenRoleAttachment#token_id}
 
 ---
 
@@ -833,7 +833,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token_role_attachment#id AclTokenRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

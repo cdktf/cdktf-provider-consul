@@ -1,6 +1,6 @@
 # `consul_node`
 
-Refer to the Terraform Registory for docs: [`consul_node`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node).
+Refer to the Terraform Registory for docs: [`consul_node`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node).
 
 # `node` Submodule <a name="`node` Submodule" id="@cdktf/provider-consul.node"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_node`](https://registry.terr
 
 ### Node <a name="Node" id="@cdktf/provider-consul.node.Node"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node consul_node}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node consul_node}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.node.Node.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 node.NewNode(scope Construct, id *string, config NodeConfig) Node
 ```
@@ -367,7 +367,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.node.Node.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 node.Node_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.node.Node.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 node.Node_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ node.Node_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.node.Node.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 node.Node_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ node.Node_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.node.Node.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 node.Node_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -456,7 +456,7 @@ The construct id used in the generated config for the Node to import.
 
 The id of the existing Node that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.node.NodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/node"
 
 &node.NodeConfig {
 	Connection: interface{},
@@ -841,13 +841,13 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/node"
 | <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#address Node#address}. |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#name Node#name}. |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#datacenter Node#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#id Node#id}. |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#meta Node#meta}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#address Node#address}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#name Node#name}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#datacenter Node#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#id Node#id}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#meta Node#meta}. |
 | <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the node is associated with. |
-| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#token Node#token}. |
+| <code><a href="#@cdktf/provider-consul.node.NodeConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#token Node#token}. |
 
 ---
 
@@ -929,7 +929,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#address Node#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#address Node#address}.
 
 ---
 
@@ -941,7 +941,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#name Node#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#name Node#name}.
 
 ---
 
@@ -953,7 +953,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#datacenter Node#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#datacenter Node#datacenter}.
 
 ---
 
@@ -965,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#id Node#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#id Node#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +980,7 @@ Meta *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#meta Node#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#meta Node#meta}.
 
 ---
 
@@ -994,7 +994,7 @@ Partition *string
 
 The partition the node is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#partition Node#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#partition Node#partition}
 
 ---
 
@@ -1006,7 +1006,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/node#token Node#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/node#token Node#token}.
 
 ---
 

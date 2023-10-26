@@ -1,6 +1,6 @@
 # `consul_acl_token`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token).
+Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token).
 
 # `aclToken` Submodule <a name="`aclToken` Submodule" id="@cdktf/provider-consul.aclToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry
 
 ### AclToken <a name="AclToken" id="@cdktf/provider-consul.aclToken.AclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclToken.Initializer"></a>
 
@@ -35,7 +35,8 @@ aclToken.AclToken(
   partition: str = None,
   policies: typing.List[str] = None,
   roles: typing.List[str] = None,
-  service_identities: typing.Union[IResolvable, typing.List[AclTokenServiceIdentities]] = None
+  service_identities: typing.Union[IResolvable, typing.List[AclTokenServiceIdentities]] = None,
+  templated_policies: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]] = None
 )
 ```
 
@@ -50,17 +51,18 @@ aclToken.AclToken(
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.accessorId">accessor_id</a></code> | <code>str</code> | The token id. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.description">description</a></code> | <code>str</code> | The token description. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.accessorId">accessor_id</a></code> | <code>str</code> | The uuid of the token. If omitted, Consul will generate a random uuid. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.expirationTime">expiration_time</a></code> | <code>str</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#id AclToken#id}. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to set the token local to the current datacenter. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#namespace AclToken#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | The flag to set the token local to the current datacenter. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace to create the token within. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.nodeIdentities">node_identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities">AclTokenNodeIdentities</a>]]</code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.partition">partition</a></code> | <code>str</code> | The partition the ACL token is associated with. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.policies">policies</a></code> | <code>typing.List[str]</code> | List of policies. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | List of roles. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.policies">policies</a></code> | <code>typing.List[str]</code> | The list of policies attached to the token. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | The list of roles attached to the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.serviceIdentities">service_identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentities">AclTokenServiceIdentities</a>]]</code> | service_identities block. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.templatedPolicies">templated_policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]</code> | templated_policies block. |
 
 ---
 
@@ -128,9 +130,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The token id.
+The uuid of the token. If omitted, Consul will generate a random uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -138,9 +140,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The token description.
+The description of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,9 +171,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Flag to set the token local to the current datacenter.
+The flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -179,7 +181,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#namespace AclToken#namespace}.
+The namespace to create the token within.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#namespace AclToken#namespace}
 
 ---
 
@@ -189,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -199,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -207,9 +211,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-List of policies.
+The list of policies attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -217,9 +221,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-List of roles.
+The list of roles attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -229,7 +233,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+
+---
+
+##### `templated_policies`<sup>Optional</sup> <a name="templated_policies" id="@cdktf/provider-consul.aclToken.AclToken.Initializer.parameter.templatedPolicies"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]
+
+templated_policies block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
 
 ---
 
@@ -258,6 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.putNodeIdentities">put_node_identities</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.putServiceIdentities">put_service_identities</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.putTemplatedPolicies">put_templated_policies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetAccessorId">reset_accessor_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetExpirationTime">reset_expiration_time</a></code> | *No description.* |
@@ -269,6 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetPolicies">reset_policies</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetRoles">reset_roles</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetServiceIdentities">reset_service_identities</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.resetTemplatedPolicies">reset_templated_policies</a></code> | *No description.* |
 
 ---
 
@@ -575,6 +591,20 @@ def put_service_identities(
 
 ---
 
+##### `put_templated_policies` <a name="put_templated_policies" id="@cdktf/provider-consul.aclToken.AclToken.putTemplatedPolicies"></a>
+
+```python
+def put_templated_policies(
+  value: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-consul.aclToken.AclToken.putTemplatedPolicies.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]
+
+---
+
 ##### `reset_accessor_id` <a name="reset_accessor_id" id="@cdktf/provider-consul.aclToken.AclToken.resetAccessorId"></a>
 
 ```python
@@ -639,6 +669,12 @@ def reset_roles() -> None
 
 ```python
 def reset_service_identities() -> None
+```
+
+##### `reset_templated_policies` <a name="reset_templated_policies" id="@cdktf/provider-consul.aclToken.AclToken.resetTemplatedPolicies"></a>
+
+```python
+def reset_templated_policies() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -755,7 +791,7 @@ The construct id used in the generated config for the AclToken to import.
 
 The id of the existing AclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,6 +823,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.nodeIdentities">node_identities</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentitiesList">AclTokenNodeIdentitiesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.serviceIdentities">service_identities</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentitiesList">AclTokenServiceIdentitiesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.templatedPolicies">templated_policies</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList">AclTokenTemplatedPoliciesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.accessorIdInput">accessor_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.expirationTimeInput">expiration_time_input</a></code> | <code>str</code> | *No description.* |
@@ -798,6 +835,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.policiesInput">policies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.serviceIdentitiesInput">service_identities_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentities">AclTokenServiceIdentities</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.templatedPoliciesInput">templated_policies_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.accessorId">accessor_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclToken.property.expirationTime">expiration_time</a></code> | <code>str</code> | *No description.* |
@@ -972,6 +1010,16 @@ service_identities: AclTokenServiceIdentitiesList
 
 ---
 
+##### `templated_policies`<sup>Required</sup> <a name="templated_policies" id="@cdktf/provider-consul.aclToken.AclToken.property.templatedPolicies"></a>
+
+```python
+templated_policies: AclTokenTemplatedPoliciesList
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList">AclTokenTemplatedPoliciesList</a>
+
+---
+
 ##### `accessor_id_input`<sup>Optional</sup> <a name="accessor_id_input" id="@cdktf/provider-consul.aclToken.AclToken.property.accessorIdInput"></a>
 
 ```python
@@ -1079,6 +1127,16 @@ service_identities_input: typing.Union[IResolvable, typing.List[AclTokenServiceI
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentities">AclTokenServiceIdentities</a>]]
+
+---
+
+##### `templated_policies_input`<sup>Optional</sup> <a name="templated_policies_input" id="@cdktf/provider-consul.aclToken.AclToken.property.templatedPoliciesInput"></a>
+
+```python
+templated_policies_input: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]
 
 ---
 
@@ -1217,7 +1275,8 @@ aclToken.AclTokenConfig(
   partition: str = None,
   policies: typing.List[str] = None,
   roles: typing.List[str] = None,
-  service_identities: typing.Union[IResolvable, typing.List[AclTokenServiceIdentities]] = None
+  service_identities: typing.Union[IResolvable, typing.List[AclTokenServiceIdentities]] = None,
+  templated_policies: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]] = None
 )
 ```
 
@@ -1232,17 +1291,18 @@ aclToken.AclTokenConfig(
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.accessorId">accessor_id</a></code> | <code>str</code> | The token id. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.description">description</a></code> | <code>str</code> | The token description. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.accessorId">accessor_id</a></code> | <code>str</code> | The uuid of the token. If omitted, Consul will generate a random uuid. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.description">description</a></code> | <code>str</code> | The description of the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.expirationTime">expiration_time</a></code> | <code>str</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#id AclToken#id}. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to set the token local to the current datacenter. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#namespace AclToken#namespace}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.local">local</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | The flag to set the token local to the current datacenter. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace to create the token within. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.nodeIdentities">node_identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities">AclTokenNodeIdentities</a>]]</code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.partition">partition</a></code> | <code>str</code> | The partition the ACL token is associated with. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.policies">policies</a></code> | <code>typing.List[str]</code> | List of policies. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | List of roles. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.policies">policies</a></code> | <code>typing.List[str]</code> | The list of policies attached to the token. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | The list of roles attached to the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.serviceIdentities">service_identities</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentities">AclTokenServiceIdentities</a>]]</code> | service_identities block. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.templatedPolicies">templated_policies</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]</code> | templated_policies block. |
 
 ---
 
@@ -1324,9 +1384,9 @@ accessor_id: str
 
 - *Type:* str
 
-The token id.
+The uuid of the token. If omitted, Consul will generate a random uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -1338,9 +1398,9 @@ description: str
 
 - *Type:* str
 
-The token description.
+The description of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -1354,7 +1414,7 @@ expiration_time: str
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -1366,7 +1426,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1381,9 +1441,9 @@ local: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Flag to set the token local to the current datacenter.
+The flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -1395,7 +1455,9 @@ namespace: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#namespace AclToken#namespace}.
+The namespace to create the token within.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#namespace AclToken#namespace}
 
 ---
 
@@ -1409,7 +1471,7 @@ node_identities: typing.Union[IResolvable, typing.List[AclTokenNodeIdentities]]
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -1423,7 +1485,7 @@ partition: str
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -1435,9 +1497,9 @@ policies: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of policies.
+The list of policies attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -1449,9 +1511,9 @@ roles: typing.List[str]
 
 - *Type:* typing.List[str]
 
-List of roles.
+The list of roles attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -1465,7 +1527,21 @@ service_identities: typing.Union[IResolvable, typing.List[AclTokenServiceIdentit
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+
+---
+
+##### `templated_policies`<sup>Optional</sup> <a name="templated_policies" id="@cdktf/provider-consul.aclToken.AclTokenConfig.property.templatedPolicies"></a>
+
+```python
+templated_policies: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]
+
+templated_policies block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
 
 ---
 
@@ -1486,7 +1562,7 @@ aclToken.AclTokenNodeIdentities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities.property.datacenter">datacenter</a></code> | <code>str</code> | Specifies the node's datacenter. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities.property.datacenter">datacenter</a></code> | <code>str</code> | The datacenter of the node. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities.property.nodeName">node_name</a></code> | <code>str</code> | The name of the node. |
 
 ---
@@ -1499,9 +1575,9 @@ datacenter: str
 
 - *Type:* str
 
-Specifies the node's datacenter.
+The datacenter of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#datacenter AclToken#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenter AclToken#datacenter}
 
 ---
 
@@ -1515,7 +1591,7 @@ node_name: str
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#node_name AclToken#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#node_name AclToken#node_name}
 
 ---
 
@@ -1551,7 +1627,7 @@ service_name: str
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#service_name AclToken#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#service_name AclToken#service_name}
 
 ---
 
@@ -1565,7 +1641,107 @@ datacenters: typing.List[str]
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+
+---
+
+### AclTokenTemplatedPolicies <a name="AclTokenTemplatedPolicies" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_consul import acl_token
+
+aclToken.AclTokenTemplatedPolicies(
+  template_name: str,
+  datacenters: typing.List[str] = None,
+  template_variables: AclTokenTemplatedPoliciesTemplateVariables = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.templateName">template_name</a></code> | <code>str</code> | The name of the templated policies. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.datacenters">datacenters</a></code> | <code>typing.List[str]</code> | Specifies the datacenters the effective policy is valid within. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.templateVariables">template_variables</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a></code> | template_variables block. |
+
+---
+
+##### `template_name`<sup>Required</sup> <a name="template_name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.templateName"></a>
+
+```python
+template_name: str
+```
+
+- *Type:* str
+
+The name of the templated policies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#template_name AclToken#template_name}
+
+---
+
+##### `datacenters`<sup>Optional</sup> <a name="datacenters" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.datacenters"></a>
+
+```python
+datacenters: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Specifies the datacenters the effective policy is valid within.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+
+---
+
+##### `template_variables`<sup>Optional</sup> <a name="template_variables" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.property.templateVariables"></a>
+
+```python
+template_variables: AclTokenTemplatedPoliciesTemplateVariables
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a>
+
+template_variables block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#template_variables AclToken#template_variables}
+
+---
+
+### AclTokenTemplatedPoliciesTemplateVariables <a name="AclTokenTemplatedPoliciesTemplateVariables" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_consul import acl_token
+
+aclToken.AclTokenTemplatedPoliciesTemplateVariables(
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables.property.name">name</a></code> | <code>str</code> | The name of node, workload identity or service. |
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+The name of node, workload identity or service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#name AclToken#name}
 
 ---
 
@@ -2552,6 +2728,853 @@ internal_value: typing.Union[IResolvable, AclTokenServiceIdentities]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.aclToken.AclTokenServiceIdentities">AclTokenServiceIdentities</a>]
+
+---
+
+
+### AclTokenTemplatedPoliciesList <a name="AclTokenTemplatedPoliciesList" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_consul import acl_token
+
+aclToken.AclTokenTemplatedPoliciesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> AclTokenTemplatedPoliciesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[AclTokenTemplatedPolicies]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]]
+
+---
+
+
+### AclTokenTemplatedPoliciesOutputReference <a name="AclTokenTemplatedPoliciesOutputReference" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_consul import acl_token
+
+aclToken.AclTokenTemplatedPoliciesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.putTemplateVariables">put_template_variables</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resetDatacenters">reset_datacenters</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resetTemplateVariables">reset_template_variables</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_template_variables` <a name="put_template_variables" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.putTemplateVariables"></a>
+
+```python
+def put_template_variables(
+  name: str = None
+) -> None
+```
+
+###### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.putTemplateVariables.parameter.name"></a>
+
+- *Type:* str
+
+The name of node, workload identity or service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#name AclToken#name}
+
+---
+
+##### `reset_datacenters` <a name="reset_datacenters" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resetDatacenters"></a>
+
+```python
+def reset_datacenters() -> None
+```
+
+##### `reset_template_variables` <a name="reset_template_variables" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.resetTemplateVariables"></a>
+
+```python
+def reset_template_variables() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateVariables">template_variables</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference">AclTokenTemplatedPoliciesTemplateVariablesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.datacentersInput">datacenters_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateNameInput">template_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateVariablesInput">template_variables_input</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.datacenters">datacenters</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateName">template_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `template_variables`<sup>Required</sup> <a name="template_variables" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateVariables"></a>
+
+```python
+template_variables: AclTokenTemplatedPoliciesTemplateVariablesOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference">AclTokenTemplatedPoliciesTemplateVariablesOutputReference</a>
+
+---
+
+##### `datacenters_input`<sup>Optional</sup> <a name="datacenters_input" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.datacentersInput"></a>
+
+```python
+datacenters_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `template_name_input`<sup>Optional</sup> <a name="template_name_input" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateNameInput"></a>
+
+```python
+template_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `template_variables_input`<sup>Optional</sup> <a name="template_variables_input" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateVariablesInput"></a>
+
+```python
+template_variables_input: AclTokenTemplatedPoliciesTemplateVariables
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a>
+
+---
+
+##### `datacenters`<sup>Required</sup> <a name="datacenters" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.datacenters"></a>
+
+```python
+datacenters: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `template_name`<sup>Required</sup> <a name="template_name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.templateName"></a>
+
+```python
+template_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, AclTokenTemplatedPolicies]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies">AclTokenTemplatedPolicies</a>]
+
+---
+
+
+### AclTokenTemplatedPoliciesTemplateVariablesOutputReference <a name="AclTokenTemplatedPoliciesTemplateVariablesOutputReference" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_consul import acl_token
+
+aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: AclTokenTemplatedPoliciesTemplateVariables
+```
+
+- *Type:* <a href="#@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables">AclTokenTemplatedPoliciesTemplateVariables</a>
 
 ---
 

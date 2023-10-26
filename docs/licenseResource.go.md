@@ -1,6 +1,6 @@
 # `consul_license`
 
-Refer to the Terraform Registory for docs: [`consul_license`](https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license).
+Refer to the Terraform Registory for docs: [`consul_license`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license).
 
 # `licenseResource` Submodule <a name="`licenseResource` Submodule" id="@cdktf/provider-consul.licenseResource"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_license`](https://registry.t
 
 ### LicenseResource <a name="LicenseResource" id="@cdktf/provider-consul.licenseResource.LicenseResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license consul_license}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license consul_license}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.licenseResource.LicenseResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 licenseresource.NewLicenseResource(scope Construct, id *string, config LicenseResourceConfig) LicenseResource
 ```
@@ -346,7 +346,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.licenseResource.LicenseResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 licenseresource.LicenseResource_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.licenseResource.LicenseResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.licenseResource.LicenseResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ licenseresource.LicenseResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.licenseResource.LicenseResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 licenseresource.LicenseResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -435,7 +435,7 @@ The construct id used in the generated config for the LicenseResource to import.
 
 The id of the existing LicenseResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.licenseResource.LicenseResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/licenseresource"
 
 &licenseresource.LicenseResourceConfig {
 	Connection: interface{},
@@ -838,9 +838,9 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/licenseresource"
 | <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.license">License</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#license LicenseResource#license}. |
-| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#datacenter LicenseResource#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#id LicenseResource#id}. |
+| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.license">License</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#license LicenseResource#license}. |
+| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#datacenter LicenseResource#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.licenseResource.LicenseResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#id LicenseResource#id}. |
 
 ---
 
@@ -922,7 +922,7 @@ License *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#license LicenseResource#license}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#license LicenseResource#license}.
 
 ---
 
@@ -934,7 +934,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#datacenter LicenseResource#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#datacenter LicenseResource#datacenter}.
 
 ---
 
@@ -946,7 +946,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.18.0/docs/resources/license#id LicenseResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/license#id LicenseResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
