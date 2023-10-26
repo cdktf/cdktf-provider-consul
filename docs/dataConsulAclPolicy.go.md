@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 dataconsulaclpolicy.NewDataConsulAclPolicy(scope Construct, id *string, config DataConsulAclPolicyConfig) DataConsulAclPolicy
 ```
@@ -292,7 +292,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 dataconsulaclpolicy.DataConsulAclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 dataconsulaclpolicy.DataConsulAclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataconsulaclpolicy.DataConsulAclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 dataconsulaclpolicy.DataConsulAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataconsulaclpolicy.DataConsulAclPolicy_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 dataconsulaclpolicy.DataConsulAclPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclPolicy.DataConsulAclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulaclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulaclpolicy"
 
 &dataconsulaclpolicy.DataConsulAclPolicyConfig {
 	Connection: interface{},
