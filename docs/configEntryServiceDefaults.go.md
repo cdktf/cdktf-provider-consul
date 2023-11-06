@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaults(scope Construct, id *string, config ConfigEntryServiceDefaultsConfig) ConfigEntryServiceDefaults
 ```
@@ -522,7 +522,7 @@ func ResetUpstreamConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaults.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.ConfigEntryServiceDefaults_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaults.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.ConfigEntryServiceDefaults_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ configentryservicedefaults.ConfigEntryServiceDefaults_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaults.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.ConfigEntryServiceDefaults_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ configentryservicedefaults.ConfigEntryServiceDefaults_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaults.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.ConfigEntryServiceDefaults_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1229,7 +1229,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsConfig {
 	Connection: interface{},
@@ -1640,7 +1640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsDestination {
 	Addresses: *[]*string,
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsEnvoyExtensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsEnvoyExtensions {
 	Arguments: *map[string]*string,
@@ -1774,7 +1774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExpose.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsExpose {
 	Checks: interface{},
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExposePaths.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsExposePaths {
 	ListenerPort: *f64,
@@ -1896,7 +1896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsMeshGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsMeshGateway {
 	Mode: *string,
@@ -1928,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsTransparentProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsTransparentProxy {
 	DialedDirectly: interface{},
@@ -1974,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfig {
 	Defaults: interface{},
@@ -2024,7 +2024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaults {
 	BalanceOutboundConnections: *string,
@@ -2136,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimits {
 	MaxConcurrentRequests: *f64,
@@ -2202,7 +2202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGateway {
 	Mode: *string,
@@ -2234,7 +2234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheck {
 	BaseEjectionTime: *string,
@@ -2334,7 +2334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigOverrides {
 	BalanceOutboundConnections: *string,
@@ -2524,7 +2524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesLimits {
 	MaxConcurrentRequests: *f64,
@@ -2590,7 +2590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGateway {
 	Mode: *string,
@@ -2622,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 &configentryservicedefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheck {
 	BaseEjectionTime: *string,
@@ -2724,7 +2724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsDestinationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsDestinationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsDestinationList
 ```
@@ -2867,7 +2867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsDestinationOutputReference
 ```
@@ -3178,7 +3178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsEnvoyExtensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsEnvoyExtensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsEnvoyExtensionsList
 ```
@@ -3321,7 +3321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsEnvoyExtensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsEnvoyExtensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsEnvoyExtensionsOutputReference
 ```
@@ -3733,7 +3733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExposeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsExposeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsExposeList
 ```
@@ -3876,7 +3876,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExposeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsExposeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsExposeOutputReference
 ```
@@ -4214,7 +4214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExposePathsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsExposePathsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsExposePathsList
 ```
@@ -4357,7 +4357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsExposePathsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsExposePathsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsExposePathsOutputReference
 ```
@@ -4740,7 +4740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsMeshGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsMeshGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsMeshGatewayList
 ```
@@ -4883,7 +4883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsMeshGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsMeshGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsMeshGatewayOutputReference
 ```
@@ -5172,7 +5172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsTransparentProxyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsTransparentProxyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsTransparentProxyList
 ```
@@ -5315,7 +5315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsTransparentProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsTransparentProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsTransparentProxyOutputReference
 ```
@@ -5626,7 +5626,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsList
 ```
@@ -5769,7 +5769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsLimitsOutputReference
 ```
@@ -6123,7 +6123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsList
 ```
@@ -6266,7 +6266,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayList
 ```
@@ -6409,7 +6409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsMeshGatewayOutputReference
 ```
@@ -6705,7 +6705,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsOutputReference
 ```
@@ -7185,7 +7185,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckList
 ```
@@ -7328,7 +7328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigDefaultsPassiveHealthCheckOutputReference
 ```
@@ -7740,7 +7740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigList
 ```
@@ -7883,7 +7883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOutputReference
 ```
@@ -8234,7 +8234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsList
 ```
@@ -8377,7 +8377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesLimitsOutputReference
 ```
@@ -8731,7 +8731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesList
 ```
@@ -8874,7 +8874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayList
 ```
@@ -9017,7 +9017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesMeshGatewayOutputReference
 ```
@@ -9313,7 +9313,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesOutputReference
 ```
@@ -9938,7 +9938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckList
 ```
@@ -10081,7 +10081,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceDefaults.ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicedefaults"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicedefaults"
 
 configentryservicedefaults.NewConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceDefaultsUpstreamConfigOverridesPassiveHealthCheckOutputReference
 ```

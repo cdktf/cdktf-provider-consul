@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 certificateauthority.NewCertificateAuthority(scope Construct, id *string, config CertificateAuthorityConfig) CertificateAuthority
 ```
@@ -353,7 +353,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ certificateauthority.CertificateAuthority_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 certificateauthority.CertificateAuthority_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ certificateauthority.CertificateAuthority_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthority.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 certificateauthority.CertificateAuthority_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.certificateAuthority.CertificateAuthorityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/certificateauthority"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/certificateauthority"
 
 &certificateauthority.CertificateAuthorityConfig {
 	Connection: interface{},
