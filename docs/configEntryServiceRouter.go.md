@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.1
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouter(scope Construct, id *string, config ConfigEntryServiceRouterConfig) ConfigEntryServiceRouter
 ```
@@ -380,7 +380,7 @@ func ResetRoutes()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.ConfigEntryServiceRouter_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.ConfigEntryServiceRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ configentryservicerouter.ConfigEntryServiceRouter_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.ConfigEntryServiceRouter_IsTerraformResource(x interface{}) *bool
 ```
@@ -440,7 +440,7 @@ configentryservicerouter.ConfigEntryServiceRouter_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.ConfigEntryServiceRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -801,7 +801,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterConfig {
 	Connection: interface{},
@@ -1000,11 +1000,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutes {
-	Destination: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestination,
-	Match: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatch,
+	Destination: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestination,
+	Match: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatch,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesDestination {
 	IdleTimeout: *string,
@@ -1058,9 +1058,9 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceroute
 	NumRetries: *f64,
 	Partition: *string,
 	PrefixRewrite: *string,
-	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationRequestHeaders,
+	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationRequestHeaders,
 	RequestTimeout: *string,
-	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationResponseHeaders,
+	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationResponseHeaders,
 	RetryOn: *[]*string,
 	RetryOnConnectFailure: interface{},
 	RetryOnStatusCodes: *[]*f64,
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesDestinationRequestHeaders {
 	Add: *map[string]*string,
@@ -1342,7 +1342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesDestinationResponseHeaders {
 	Add: *map[string]*string,
@@ -1408,10 +1408,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesMatch {
-	Http: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttp,
+	Http: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttp,
 }
 ```
 
@@ -1442,7 +1442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesMatchHttp {
 	Header: interface{},
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesMatchHttpHeader {
 	Exact: *string,
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpQueryParam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 &configentryservicerouter.ConfigEntryServiceRouterRoutesMatchHttpQueryParam {
 	Exact: *string,
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceRouterRoutesDestinationOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() ConfigEntryServiceRouterRoutesDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesDestinationRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceRouterRoutesDestinationRequestHeadersOutputReference
 ```
@@ -2758,7 +2758,7 @@ func InternalValue() ConfigEntryServiceRouterRoutesDestinationRequestHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesDestinationResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesDestinationResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceRouterRoutesDestinationResponseHeadersOutputReference
 ```
@@ -3094,7 +3094,7 @@ func InternalValue() ConfigEntryServiceRouterRoutesDestinationResponseHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceRouterRoutesList
 ```
@@ -3237,7 +3237,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchHttpHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceRouterRoutesMatchHttpHeaderList
 ```
@@ -3380,7 +3380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchHttpHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceRouterRoutesMatchHttpHeaderOutputReference
 ```
@@ -3850,7 +3850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceRouterRoutesMatchHttpOutputReference
 ```
@@ -4299,7 +4299,7 @@ func InternalValue() ConfigEntryServiceRouterRoutesMatchHttp
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpQueryParamList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchHttpQueryParamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceRouterRoutesMatchHttpQueryParamList
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchHttpQueryParamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchHttpQueryParamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceRouterRoutesMatchHttpQueryParamOutputReference
 ```
@@ -4825,7 +4825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceRouterRoutesMatchOutputReference
 ```
@@ -5116,7 +5116,7 @@ func InternalValue() ConfigEntryServiceRouterRoutesMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceRouter.ConfigEntryServiceRouterRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicerouter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicerouter"
 
 configentryservicerouter.NewConfigEntryServiceRouterRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceRouterRoutesOutputReference
 ```
