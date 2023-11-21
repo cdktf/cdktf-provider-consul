@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ConfigEntryServiceRouterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#id ConfigEntryServiceRouter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#id ConfigEntryServiceRouter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface ConfigEntryServiceRouterConfig extends cdktf.TerraformMetaArgum
   /**
   * Specifies key-value pairs to add to the KV store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#meta ConfigEntryServiceRouter#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#meta ConfigEntryServiceRouter#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Specifies a name for the configuration entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
   */
   readonly name: string;
   /**
   * Specifies the namespace to apply the configuration entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#namespace ConfigEntryServiceRouter#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#namespace ConfigEntryServiceRouter#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the admin partition to apply the configuration entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#partition ConfigEntryServiceRouter#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#partition ConfigEntryServiceRouter#partition}
   */
   readonly partition?: string;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#routes ConfigEntryServiceRouter#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#routes ConfigEntryServiceRouter#routes}
   */
   readonly routes?: ConfigEntryServiceRouterRoutes[] | cdktf.IResolvable;
 }
@@ -54,19 +54,19 @@ export interface ConfigEntryServiceRouterRoutesDestinationRequestHeaders {
   /**
   * Defines a set of key-value pairs to add to the header. Use header names as the keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#add ConfigEntryServiceRouter#add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#add ConfigEntryServiceRouter#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Defines a list of headers to remove.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#remove ConfigEntryServiceRouter#remove}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#remove ConfigEntryServiceRouter#remove}
   */
   readonly remove?: string[];
   /**
   * Defines a set of key-value pairs to add to the request header or to replace existing header values with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#set ConfigEntryServiceRouter#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#set ConfigEntryServiceRouter#set}
   */
   readonly set?: { [key: string]: string };
 }
@@ -179,19 +179,19 @@ export interface ConfigEntryServiceRouterRoutesDestinationResponseHeaders {
   /**
   * Defines a set of key-value pairs to add to the header. Use header names as the keys
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#add ConfigEntryServiceRouter#add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#add ConfigEntryServiceRouter#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Defines a list of headers to remove.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#remove ConfigEntryServiceRouter#remove}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#remove ConfigEntryServiceRouter#remove}
   */
   readonly remove?: string[];
   /**
   * Defines a set of key-value pairs to add to the response header or to replace existing header values with
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#set ConfigEntryServiceRouter#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#set ConfigEntryServiceRouter#set}
   */
   readonly set?: { [key: string]: string };
 }
@@ -304,79 +304,79 @@ export interface ConfigEntryServiceRouterRoutesDestination {
   /**
   * Specifies the total amount of time permitted for the request stream to be idle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#idle_timeout ConfigEntryServiceRouter#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#idle_timeout ConfigEntryServiceRouter#idle_timeout}
   */
   readonly idleTimeout?: string;
   /**
   * Specifies the Consul namespace to resolve the service from instead of the current namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#namespace ConfigEntryServiceRouter#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#namespace ConfigEntryServiceRouter#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the number of times to retry the request when a retry condition occurs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#num_retries ConfigEntryServiceRouter#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#num_retries ConfigEntryServiceRouter#num_retries}
   */
   readonly numRetries?: number;
   /**
   * Specifies the Consul admin partition to resolve the service from instead of the current partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#partition ConfigEntryServiceRouter#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#partition ConfigEntryServiceRouter#partition}
   */
   readonly partition?: string;
   /**
   * Specifies rewrites to the HTTP request path before proxying it to its final destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#prefix_rewrite ConfigEntryServiceRouter#prefix_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#prefix_rewrite ConfigEntryServiceRouter#prefix_rewrite}
   */
   readonly prefixRewrite?: string;
   /**
   * Specifies the total amount of time permitted for the entire downstream request to be processed, including retry attempts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#request_timeout ConfigEntryServiceRouter#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#request_timeout ConfigEntryServiceRouter#request_timeout}
   */
   readonly requestTimeout?: string;
   /**
   * Specifies a list of conditions for Consul to retry requests based on the response from an upstream service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#retry_on ConfigEntryServiceRouter#retry_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#retry_on ConfigEntryServiceRouter#retry_on}
   */
   readonly retryOn?: string[];
   /**
   * Specifies that connection failure errors that trigger a retry request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#retry_on_connect_failure ConfigEntryServiceRouter#retry_on_connect_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#retry_on_connect_failure ConfigEntryServiceRouter#retry_on_connect_failure}
   */
   readonly retryOnConnectFailure?: boolean | cdktf.IResolvable;
   /**
   * Specifies a list of integers for HTTP response status codes that trigger a retry request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#retry_on_status_codes ConfigEntryServiceRouter#retry_on_status_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#retry_on_status_codes ConfigEntryServiceRouter#retry_on_status_codes}
   */
   readonly retryOnStatusCodes?: number[];
   /**
   * Specifies the name of the service to resolve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#service ConfigEntryServiceRouter#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#service ConfigEntryServiceRouter#service}
   */
   readonly service?: string;
   /**
   * Specifies a named subset of the given service to resolve instead of the one defined as that service's `default_subset` in the service resolver configuration entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#service_subset ConfigEntryServiceRouter#service_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#service_subset ConfigEntryServiceRouter#service_subset}
   */
   readonly serviceSubset?: string;
   /**
   * request_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#request_headers ConfigEntryServiceRouter#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#request_headers ConfigEntryServiceRouter#request_headers}
   */
   readonly requestHeaders?: ConfigEntryServiceRouterRoutesDestinationRequestHeaders;
   /**
   * response_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#response_headers ConfigEntryServiceRouter#response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#response_headers ConfigEntryServiceRouter#response_headers}
   */
   readonly responseHeaders?: ConfigEntryServiceRouterRoutesDestinationResponseHeaders;
 }
@@ -719,43 +719,43 @@ export interface ConfigEntryServiceRouterRoutesMatchHttpHeader {
   /**
   * Specifies that a request matches when the header with the given name is this exact value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#exact ConfigEntryServiceRouter#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#exact ConfigEntryServiceRouter#exact}
   */
   readonly exact?: string;
   /**
   * Specifies that the logic for the HTTP header match should be inverted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#invert ConfigEntryServiceRouter#invert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#invert ConfigEntryServiceRouter#invert}
   */
   readonly invert?: boolean | cdktf.IResolvable;
   /**
   * Specifies the name of the HTTP header to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
   */
   readonly name?: string;
   /**
   * Specifies that a request matches when the header with the given name has this prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#prefix ConfigEntryServiceRouter#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#prefix ConfigEntryServiceRouter#prefix}
   */
   readonly prefix?: string;
   /**
   * Specifies that a request matches when the value in the `name` argument is present anywhere in the HTTP header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#present ConfigEntryServiceRouter#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#present ConfigEntryServiceRouter#present}
   */
   readonly present?: boolean | cdktf.IResolvable;
   /**
   * Specifies that a request matches when the header with the given name matches this regular expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#regex ConfigEntryServiceRouter#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#regex ConfigEntryServiceRouter#regex}
   */
   readonly regex?: string;
   /**
   * Specifies that a request matches when the header with the given name has this suffix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#suffix ConfigEntryServiceRouter#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#suffix ConfigEntryServiceRouter#suffix}
   */
   readonly suffix?: string;
 }
@@ -992,25 +992,25 @@ export interface ConfigEntryServiceRouterRoutesMatchHttpQueryParam {
   /**
   * Specifies that a request matches when the query parameter with the given name is this exact value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#exact ConfigEntryServiceRouter#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#exact ConfigEntryServiceRouter#exact}
   */
   readonly exact?: string;
   /**
   * Specifies the name of the HTTP query parameter to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#name ConfigEntryServiceRouter#name}
   */
   readonly name?: string;
   /**
   * Specifies that a request matches when the value in the `name` argument is present anywhere in the HTTP query parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#present ConfigEntryServiceRouter#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#present ConfigEntryServiceRouter#present}
   */
   readonly present?: boolean | cdktf.IResolvable;
   /**
   * Specifies that a request matches when the query parameter with the given name matches this regular expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#regex ConfigEntryServiceRouter#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#regex ConfigEntryServiceRouter#regex}
   */
   readonly regex?: string;
 }
@@ -1178,37 +1178,37 @@ export interface ConfigEntryServiceRouterRoutesMatchHttp {
   /**
   * Specifies HTTP methods that the match applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#methods ConfigEntryServiceRouter#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#methods ConfigEntryServiceRouter#methods}
   */
   readonly methods?: string[];
   /**
   * Specifies the exact path to match on the HTTP request path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#path_exact ConfigEntryServiceRouter#path_exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#path_exact ConfigEntryServiceRouter#path_exact}
   */
   readonly pathExact?: string;
   /**
   * Specifies the path prefix to match on the HTTP request path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#path_prefix ConfigEntryServiceRouter#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#path_prefix ConfigEntryServiceRouter#path_prefix}
   */
   readonly pathPrefix?: string;
   /**
   * Specifies a regular expression to match on the HTTP request path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#path_regex ConfigEntryServiceRouter#path_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#path_regex ConfigEntryServiceRouter#path_regex}
   */
   readonly pathRegex?: string;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#header ConfigEntryServiceRouter#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#header ConfigEntryServiceRouter#header}
   */
   readonly header?: ConfigEntryServiceRouterRoutesMatchHttpHeader[] | cdktf.IResolvable;
   /**
   * query_param block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#query_param ConfigEntryServiceRouter#query_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#query_param ConfigEntryServiceRouter#query_param}
   */
   readonly queryParam?: ConfigEntryServiceRouterRoutesMatchHttpQueryParam[] | cdktf.IResolvable;
 }
@@ -1390,7 +1390,7 @@ export interface ConfigEntryServiceRouterRoutesMatch {
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#http ConfigEntryServiceRouter#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#http ConfigEntryServiceRouter#http}
   */
   readonly http?: ConfigEntryServiceRouterRoutesMatchHttp;
 }
@@ -1457,13 +1457,13 @@ export interface ConfigEntryServiceRouterRoutes {
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#destination ConfigEntryServiceRouter#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#destination ConfigEntryServiceRouter#destination}
   */
   readonly destination?: ConfigEntryServiceRouterRoutesDestination;
   /**
   * match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#match ConfigEntryServiceRouter#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#match ConfigEntryServiceRouter#match}
   */
   readonly match?: ConfigEntryServiceRouterRoutesMatch;
 }
@@ -1583,7 +1583,7 @@ export class ConfigEntryServiceRouterRoutesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router consul_config_entry_service_router}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router consul_config_entry_service_router}
 */
 export class ConfigEntryServiceRouter extends cdktf.TerraformResource {
 
@@ -1599,7 +1599,7 @@ export class ConfigEntryServiceRouter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigEntryServiceRouter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigEntryServiceRouter to import
-  * @param importFromId The id of the existing ConfigEntryServiceRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigEntryServiceRouter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigEntryServiceRouter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1611,7 +1611,7 @@ export class ConfigEntryServiceRouter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router consul_config_entry_service_router} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1622,7 +1622,7 @@ export class ConfigEntryServiceRouter extends cdktf.TerraformResource {
       terraformResourceType: 'consul_config_entry_service_router',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

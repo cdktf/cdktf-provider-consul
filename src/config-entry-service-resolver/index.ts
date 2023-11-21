@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ConfigEntryServiceResolverConfig extends cdktf.TerraformMetaArg
   /**
   * Specifies the timeout duration for establishing new network connections to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#connect_timeout ConfigEntryServiceResolver#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#connect_timeout ConfigEntryServiceResolver#connect_timeout}
   */
   readonly connectTimeout?: string;
   /**
   * Specifies a defined subset of service instances to use when no explicit subset is requested. If this parameter is not specified, Consul uses the unnamed default subset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#default_subset ConfigEntryServiceResolver#default_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#default_subset ConfigEntryServiceResolver#default_subset}
   */
   readonly defaultSubset?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#id ConfigEntryServiceResolver#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#id ConfigEntryServiceResolver#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface ConfigEntryServiceResolverConfig extends cdktf.TerraformMetaArg
   /**
   * Specifies key-value pairs to add to the KV store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#meta ConfigEntryServiceResolver#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#meta ConfigEntryServiceResolver#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Specifies a name for the configuration entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#name ConfigEntryServiceResolver#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#name ConfigEntryServiceResolver#name}
   */
   readonly name: string;
   /**
   * Specifies the namespace that the service resolver applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the admin partition that the service resolver applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
   */
   readonly partition?: string;
   /**
   * Specifies the timeout duration for receiving an HTTP response from this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#request_timeout ConfigEntryServiceResolver#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#request_timeout ConfigEntryServiceResolver#request_timeout}
   */
   readonly requestTimeout?: string;
   /**
   * failover block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#failover ConfigEntryServiceResolver#failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#failover ConfigEntryServiceResolver#failover}
   */
   readonly failover?: ConfigEntryServiceResolverFailover[] | cdktf.IResolvable;
   /**
   * load_balancer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#load_balancer ConfigEntryServiceResolver#load_balancer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#load_balancer ConfigEntryServiceResolver#load_balancer}
   */
   readonly loadBalancer?: ConfigEntryServiceResolverLoadBalancer[] | cdktf.IResolvable;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#redirect ConfigEntryServiceResolver#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#redirect ConfigEntryServiceResolver#redirect}
   */
   readonly redirect?: ConfigEntryServiceResolverRedirect[] | cdktf.IResolvable;
   /**
   * subsets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#subsets ConfigEntryServiceResolver#subsets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#subsets ConfigEntryServiceResolver#subsets}
   */
   readonly subsets?: ConfigEntryServiceResolverSubsets[] | cdktf.IResolvable;
 }
@@ -90,37 +90,37 @@ export interface ConfigEntryServiceResolverFailoverTargets {
   /**
   * Specifies the WAN federated datacenter to use for the failover target. If empty, the current datacenter is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#datacenter ConfigEntryServiceResolver#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#datacenter ConfigEntryServiceResolver#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Specifies the namespace to use for the failover target. If empty, the default namespace is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the admin partition within the same datacenter to use for the failover target. If empty, the default partition is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
   */
   readonly partition?: string;
   /**
   * Specifies the destination cluster peer to resolve the target service name from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#peer ConfigEntryServiceResolver#peer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#peer ConfigEntryServiceResolver#peer}
   */
   readonly peer?: string;
   /**
   * Specifies the service name to use for the failover target. If empty, the current service name is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
   */
   readonly service?: string;
   /**
   * Specifies the named subset to use for the failover target. If empty, the default subset for the requested service name is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
   */
   readonly serviceSubset?: string;
 }
@@ -334,43 +334,43 @@ export interface ConfigEntryServiceResolverFailover {
   /**
   * Specifies an ordered list of datacenters at the failover location to attempt connections to during a failover scenario. When Consul cannot establish a connection with the first datacenter in the list, it proceeds sequentially until establishing a connection with another datacenter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#datacenters ConfigEntryServiceResolver#datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#datacenters ConfigEntryServiceResolver#datacenters}
   */
   readonly datacenters?: string[];
   /**
   * Specifies the namespace at the failover location where the failover services are deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the sameness group at the failover location where the failover services are deployed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#sameness_group ConfigEntryServiceResolver#sameness_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#sameness_group ConfigEntryServiceResolver#sameness_group}
   */
   readonly samenessGroup?: string;
   /**
   * Specifies the name of the service to resolve at the failover location during a failover scenario.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
   */
   readonly service?: string;
   /**
   * Specifies the name of a subset of service instances to resolve at the failover location during a failover scenario.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
   */
   readonly serviceSubset?: string;
   /**
   * Name of subset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#subset_name ConfigEntryServiceResolver#subset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#subset_name ConfigEntryServiceResolver#subset_name}
   */
   readonly subsetName: string;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#targets ConfigEntryServiceResolver#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#targets ConfigEntryServiceResolver#targets}
   */
   readonly targets?: ConfigEntryServiceResolverFailoverTargets[] | cdktf.IResolvable;
 }
@@ -604,19 +604,19 @@ export interface ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfig 
   /**
   * Specifies the path to set for the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#path ConfigEntryServiceResolver#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#path ConfigEntryServiceResolver#path}
   */
   readonly path?: string;
   /**
   * Directs Consul to generate a session cookie with no expiration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#session ConfigEntryServiceResolver#session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#session ConfigEntryServiceResolver#session}
   */
   readonly session?: boolean | cdktf.IResolvable;
   /**
   * Specifies the TTL for generated cookies. Cannot be specified for session cookies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#ttl ConfigEntryServiceResolver#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#ttl ConfigEntryServiceResolver#ttl}
   */
   readonly ttl?: string;
 }
@@ -761,31 +761,31 @@ export interface ConfigEntryServiceResolverLoadBalancerHashPolicies {
   /**
   * Specifies the attribute type to hash on. You cannot specify the Field parameter if SourceIP is also configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#field ConfigEntryServiceResolver#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#field ConfigEntryServiceResolver#field}
   */
   readonly field?: string;
   /**
   * Specifies the value to hash, such as a header name, cookie name, or a URL query parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#field_value ConfigEntryServiceResolver#field_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#field_value ConfigEntryServiceResolver#field_value}
   */
   readonly fieldValue?: string;
   /**
   * Determines if the hash type should be source IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#source_ip ConfigEntryServiceResolver#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#source_ip ConfigEntryServiceResolver#source_ip}
   */
   readonly sourceIp?: boolean | cdktf.IResolvable;
   /**
   * Determines if Consul should stop computing the hash when multiple hash policies are present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#terminal ConfigEntryServiceResolver#terminal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#terminal ConfigEntryServiceResolver#terminal}
   */
   readonly terminal?: boolean | cdktf.IResolvable;
   /**
   * cookie_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#cookie_config ConfigEntryServiceResolver#cookie_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#cookie_config ConfigEntryServiceResolver#cookie_config}
   */
   readonly cookieConfig?: ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfig[] | cdktf.IResolvable;
 }
@@ -974,7 +974,7 @@ export class ConfigEntryServiceResolverLoadBalancerHashPoliciesList extends cdkt
 }
 export interface ConfigEntryServiceResolverLoadBalancerLeastRequestConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#choice_count ConfigEntryServiceResolver#choice_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#choice_count ConfigEntryServiceResolver#choice_count}
   */
   readonly choiceCount?: number;
 }
@@ -1073,13 +1073,13 @@ export interface ConfigEntryServiceResolverLoadBalancerRingHashConfig {
   /**
   * Determines the maximum number of entries in the hash ring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#maximum_ring_size ConfigEntryServiceResolver#maximum_ring_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#maximum_ring_size ConfigEntryServiceResolver#maximum_ring_size}
   */
   readonly maximumRingSize?: number;
   /**
   * Determines the minimum number of entries in the hash ring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#minimum_ring_size ConfigEntryServiceResolver#minimum_ring_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#minimum_ring_size ConfigEntryServiceResolver#minimum_ring_size}
   */
   readonly minimumRingSize?: number;
 }
@@ -1201,25 +1201,25 @@ export interface ConfigEntryServiceResolverLoadBalancer {
   /**
   * Specifies the type of load balancing policy for selecting a host. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#policy ConfigEntryServiceResolver#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#policy ConfigEntryServiceResolver#policy}
   */
   readonly policy?: string;
   /**
   * hash_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#hash_policies ConfigEntryServiceResolver#hash_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#hash_policies ConfigEntryServiceResolver#hash_policies}
   */
   readonly hashPolicies?: ConfigEntryServiceResolverLoadBalancerHashPolicies[] | cdktf.IResolvable;
   /**
   * least_request_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#least_request_config ConfigEntryServiceResolver#least_request_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#least_request_config ConfigEntryServiceResolver#least_request_config}
   */
   readonly leastRequestConfig?: ConfigEntryServiceResolverLoadBalancerLeastRequestConfig[] | cdktf.IResolvable;
   /**
   * ring_hash_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#ring_hash_config ConfigEntryServiceResolver#ring_hash_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#ring_hash_config ConfigEntryServiceResolver#ring_hash_config}
   */
   readonly ringHashConfig?: ConfigEntryServiceResolverLoadBalancerRingHashConfig[] | cdktf.IResolvable;
 }
@@ -1387,43 +1387,43 @@ export interface ConfigEntryServiceResolverRedirect {
   /**
   * Specifies the datacenter at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#datacenter ConfigEntryServiceResolver#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#datacenter ConfigEntryServiceResolver#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Specifies the namespace at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#namespace ConfigEntryServiceResolver#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the admin partition at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#partition ConfigEntryServiceResolver#partition}
   */
   readonly partition?: string;
   /**
   * Specifies the cluster with an active cluster peering connection at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#peer ConfigEntryServiceResolver#peer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#peer ConfigEntryServiceResolver#peer}
   */
   readonly peer?: string;
   /**
   * Specifies the sameness group at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#sameness_group ConfigEntryServiceResolver#sameness_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#sameness_group ConfigEntryServiceResolver#sameness_group}
   */
   readonly samenessGroup?: string;
   /**
   * Specifies the name of a service at the redirect’s destination that resolves local upstream requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service ConfigEntryServiceResolver#service}
   */
   readonly service?: string;
   /**
   * Specifies the name of a subset of services at the redirect’s destination that resolves local upstream requests. If empty, the default subset is used. If specified, you must also specify at least one of the following in the same Redirect map: Service, Namespace, andDatacenter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#service_subset ConfigEntryServiceResolver#service_subset}
   */
   readonly serviceSubset?: string;
 }
@@ -1660,19 +1660,19 @@ export interface ConfigEntryServiceResolverSubsets {
   /**
   * Specifies an expression that filters the DNS elements of service instances that belong to the subset. If empty, all healthy instances of a service are returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#filter ConfigEntryServiceResolver#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#filter ConfigEntryServiceResolver#filter}
   */
   readonly filter: string;
   /**
   * Name of subset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#name ConfigEntryServiceResolver#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#name ConfigEntryServiceResolver#name}
   */
   readonly name: string;
   /**
   * Determines if instances that return a warning from a health check are allowed to resolve a request. When set to false, instances with passing and warning states are considered healthy. When set to true, only instances with a passing health check state are considered healthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#only_passing ConfigEntryServiceResolver#only_passing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#only_passing ConfigEntryServiceResolver#only_passing}
   */
   readonly onlyPassing: boolean | cdktf.IResolvable;
 }
@@ -1806,7 +1806,7 @@ export class ConfigEntryServiceResolverSubsetsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver consul_config_entry_service_resolver}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver consul_config_entry_service_resolver}
 */
 export class ConfigEntryServiceResolver extends cdktf.TerraformResource {
 
@@ -1822,7 +1822,7 @@ export class ConfigEntryServiceResolver extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ConfigEntryServiceResolver resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigEntryServiceResolver to import
-  * @param importFromId The id of the existing ConfigEntryServiceResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigEntryServiceResolver that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigEntryServiceResolver to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1834,7 +1834,7 @@ export class ConfigEntryServiceResolver extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_resolver consul_config_entry_service_resolver} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_resolver consul_config_entry_service_resolver} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1845,7 +1845,7 @@ export class ConfigEntryServiceResolver extends cdktf.TerraformResource {
       terraformResourceType: 'consul_config_entry_service_resolver',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

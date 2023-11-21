@@ -1,6 +1,6 @@
 # `consul_config_entry_service_intentions`
 
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions).
+Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions).
 
 # `configEntryServiceIntentions` Submodule <a name="`configEntryServiceIntentions` Submodule" id="@cdktf/provider-consul.configEntryServiceIntentions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul_config_entry_service_intenti
 
 ### ConfigEntryServiceIntentions <a name="ConfigEntryServiceIntentions" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions consul_config_entry_service_intentions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions consul_config_entry_service_intentions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ConfigEntryServiceIntentio
 
 The id of the existing ConfigEntryServiceIntentions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,7 +860,7 @@ const configEntryServiceIntentionsConfig: configEntryServiceIntentions.ConfigEnt
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.name">name</a></code> | <code>string</code> | Specifies a name of the destination service for all intentions defined in the configuration entry. |
-| <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.jwt">jwt</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwt">ConfigEntryServiceIntentionsJwt</a>[]</code> | jwt block. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.meta">meta</a></code> | <code>{[ key: string ]: string}</code> | Specifies key-value pairs to add to the KV store. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.namespace">namespace</a></code> | <code>string</code> | Specifies the namespace to apply the configuration entry. |
@@ -949,7 +949,7 @@ public readonly name: string;
 
 Specifies a name of the destination service for all intentions defined in the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ public readonly jwt: IResolvable | ConfigEntryServiceIntentionsJwt[];
 
 jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#jwt ConfigEntryServiceIntentions#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#jwt ConfigEntryServiceIntentions#jwt}
 
 ---
 
@@ -992,7 +992,7 @@ public readonly meta: {[ key: string ]: string};
 
 Specifies key-value pairs to add to the KV store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#meta ConfigEntryServiceIntentions#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#meta ConfigEntryServiceIntentions#meta}
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly namespace: string;
 
 Specifies the namespace to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
 
 ---
 
@@ -1020,7 +1020,7 @@ public readonly partition: string;
 
 Specifies the admin partition to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly sources: IResolvable | ConfigEntryServiceIntentionsSources[];
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#sources ConfigEntryServiceIntentions#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#sources ConfigEntryServiceIntentions#sources}
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly providers: IResolvable | ConfigEntryServiceIntentionsJwtProvider
 
 providers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly name: string;
 
 Specifies the name of a JWT provider defined in the Name field of the jwt-provider configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly verifyClaims: IResolvable | ConfigEntryServiceIntentionsJwtProvi
 
 verify_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#verify_claims ConfigEntryServiceIntentions#verify_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#verify_claims ConfigEntryServiceIntentions#verify_claims}
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly path: string[];
 
 Specifies the path to the claim in the JSON web token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path ConfigEntryServiceIntentions#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path ConfigEntryServiceIntentions#path}
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly value: string;
 
 Specifies the value to match on when verifying the the claim designated in path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#value ConfigEntryServiceIntentions#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#value ConfigEntryServiceIntentions#value}
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly action: string;
 
 Specifies the action to take when the source sends traffic to the destination service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
 
 ---
 
@@ -1215,7 +1215,7 @@ public readonly description: string;
 
 Specifies a description of the intention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#description ConfigEntryServiceIntentions#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#description ConfigEntryServiceIntentions#description}
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly name: string;
 
 Specifies the name of the source that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly namespace: string;
 
 Specifies the traffic source namespace that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
 
 ---
 
@@ -1257,7 +1257,7 @@ public readonly partition: string;
 
 Specifies the name of an admin partition that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly peer: string;
 
 Specifies the name of a peered Consul cluster that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#peer ConfigEntryServiceIntentions#peer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#peer ConfigEntryServiceIntentions#peer}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly permissions: IResolvable | ConfigEntryServiceIntentionsSourcesPe
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#permissions ConfigEntryServiceIntentions#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#permissions ConfigEntryServiceIntentions#permissions}
 
 ---
 
@@ -1301,7 +1301,7 @@ The Precedence field contains a read-only integer.
 
 Consul generates the value based on name configurations for the source and destination services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#precedence ConfigEntryServiceIntentions#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#precedence ConfigEntryServiceIntentions#precedence}
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly samenessGroup: string;
 
 Specifies the name of a sameness group that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#sameness_group ConfigEntryServiceIntentions#sameness_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#sameness_group ConfigEntryServiceIntentions#sameness_group}
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly type: string;
 
 Specifies the type of destination service that the configuration entry applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#type ConfigEntryServiceIntentions#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#type ConfigEntryServiceIntentions#type}
 
 ---
 
@@ -1364,7 +1364,7 @@ Specifies the action to take when the source sends traffic to the destination se
 
 The value is either allow or deny.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
 
 ---
 
@@ -1378,7 +1378,7 @@ public readonly http: IResolvable | ConfigEntryServiceIntentionsSourcesPermissio
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#http ConfigEntryServiceIntentions#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#http ConfigEntryServiceIntentions#http}
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly headers: IResolvable | ConfigEntryServiceIntentionsSourcesPermis
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#headers ConfigEntryServiceIntentions#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#headers ConfigEntryServiceIntentions#headers}
 
 ---
 
@@ -1428,7 +1428,7 @@ public readonly methods: string[];
 
 Specifies a list of HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#methods ConfigEntryServiceIntentions#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#methods ConfigEntryServiceIntentions#methods}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly pathExact: string;
 
 Specifies an exact path to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_exact ConfigEntryServiceIntentions#path_exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_exact ConfigEntryServiceIntentions#path_exact}
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly pathPrefix: string;
 
 Specifies a path prefix to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_prefix ConfigEntryServiceIntentions#path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_prefix ConfigEntryServiceIntentions#path_prefix}
 
 ---
 
@@ -1470,7 +1470,7 @@ public readonly pathRegex: string;
 
 Defines a regular expression to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_regex ConfigEntryServiceIntentions#path_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_regex ConfigEntryServiceIntentions#path_regex}
 
 ---
 
@@ -1508,7 +1508,7 @@ public readonly name: string;
 
 Specifies the name of the header to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1524,7 +1524,7 @@ Specifies a value for the header key set in the Name field.
 
 If the request header value matches the Exact value, Consul applies the permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#exact ConfigEntryServiceIntentions#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#exact ConfigEntryServiceIntentions#exact}
 
 ---
 
@@ -1538,7 +1538,7 @@ public readonly invert: boolean | IResolvable;
 
 Inverts the matching logic configured in the Header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#invert ConfigEntryServiceIntentions#invert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#invert ConfigEntryServiceIntentions#invert}
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly prefix: string;
 
 Specifies a prefix value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#prefix ConfigEntryServiceIntentions#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#prefix ConfigEntryServiceIntentions#prefix}
 
 ---
 
@@ -1568,7 +1568,7 @@ Enables a match if the header configured in the Name field appears in the reques
 
 Consul matches on any value as long as the header key appears in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#present ConfigEntryServiceIntentions#present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#present ConfigEntryServiceIntentions#present}
 
 ---
 
@@ -1582,7 +1582,7 @@ public readonly regex: string;
 
 Specifies a regular expression pattern as the value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#regex ConfigEntryServiceIntentions#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#regex ConfigEntryServiceIntentions#regex}
 
 ---
 
@@ -1596,7 +1596,7 @@ public readonly suffix: string;
 
 Specifies a suffix value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#suffix ConfigEntryServiceIntentions#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#suffix ConfigEntryServiceIntentions#suffix}
 
 ---
 
