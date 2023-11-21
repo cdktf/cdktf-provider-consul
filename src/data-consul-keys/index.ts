@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,66 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulKeysConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#datacenter DataConsulKeys#datacenter}
+  * The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#datacenter DataConsulKeys#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#id DataConsulKeys#id}
+  * Whether to return an error when a key is absent from the KV store and no default is configured. This defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#error_on_missing_keys DataConsulKeys#error_on_missing_keys}
+  */
+  readonly errorOnMissingKeys?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#id DataConsulKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#namespace DataConsulKeys#namespace}
+  * The namespace to lookup the keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#namespace DataConsulKeys#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#partition DataConsulKeys#partition}
+  * The partition to lookup the keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#partition DataConsulKeys#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#token DataConsulKeys#token}
+  * The ACL token to use. This overrides the token that the agent provides by default.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#token DataConsulKeys#token}
   */
   readonly token?: string;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#key DataConsulKeys#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#key DataConsulKeys#key}
   */
   readonly key?: DataConsulKeysKey[] | cdktf.IResolvable;
 }
 export interface DataConsulKeysKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#default DataConsulKeys#default}
+  * This is the default value to set for `var.<name>` if the key does not exist in Consul. Defaults to an empty string.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#default DataConsulKeys#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#name DataConsulKeys#name}
+  * This is the name of the key. This value of the key is exposed as `var.<name>`. This is not the path of the key in Consul.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#name DataConsulKeys#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#path DataConsulKeys#path}
+  * This is the path in Consul that should be read or written to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#path DataConsulKeys#path}
   */
   readonly path: string;
 }
@@ -189,7 +204,7 @@ export class DataConsulKeysKeyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys consul_keys}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys}
 */
 export class DataConsulKeys extends cdktf.TerraformDataSource {
 
@@ -205,7 +220,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulKeys resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulKeys to import
-  * @param importFromId The id of the existing DataConsulKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulKeys to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -217,7 +232,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/keys consul_keys} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +243,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_keys',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -240,6 +255,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._datacenter = config.datacenter;
+    this._errorOnMissingKeys = config.errorOnMissingKeys;
     this._id = config.id;
     this._namespace = config.namespace;
     this._partition = config.partition;
@@ -265,6 +281,22 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get datacenterInput() {
     return this._datacenter;
+  }
+
+  // error_on_missing_keys - computed: false, optional: true, required: false
+  private _errorOnMissingKeys?: boolean | cdktf.IResolvable; 
+  public get errorOnMissingKeys() {
+    return this.getBooleanAttribute('error_on_missing_keys');
+  }
+  public set errorOnMissingKeys(value: boolean | cdktf.IResolvable) {
+    this._errorOnMissingKeys = value;
+  }
+  public resetErrorOnMissingKeys() {
+    this._errorOnMissingKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorOnMissingKeysInput() {
+    return this._errorOnMissingKeys;
   }
 
   // id - computed: true, optional: true, required: false
@@ -360,6 +392,7 @@ export class DataConsulKeys extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       datacenter: cdktf.stringToTerraform(this._datacenter),
+      error_on_missing_keys: cdktf.booleanToTerraform(this._errorOnMissingKeys),
       id: cdktf.stringToTerraform(this._id),
       namespace: cdktf.stringToTerraform(this._namespace),
       partition: cdktf.stringToTerraform(this._partition),

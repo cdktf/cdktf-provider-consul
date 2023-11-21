@@ -1,6 +1,6 @@
 # `data_consul_config_entry`
 
-Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry).
+Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry).
 
 # `dataConsulConfigEntry` Submodule <a name="`dataConsulConfigEntry` Submodule" id="@cdktf/provider-consul.dataConsulConfigEntry"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://
 
 ### DataConsulConfigEntry <a name="DataConsulConfigEntry" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry consul_config_entry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry consul_config_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.NewDataConsulConfigEntry(scope Construct, id *string, config DataConsulConfigEntryConfig) DataConsulConfigEntry
 ```
@@ -292,7 +292,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataConsulConfigEntry to i
 
 The id of the existing DataConsulConfigEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulconfigentry"
 
 &dataconsulconfigentry.DataConsulConfigEntryConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentr
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.kind">Kind</a></code> | <code>*string</code> | The kind of config entry to read. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.name">Name</a></code> | <code>*string</code> | The name of the config entry to read. |
-| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace the config entry is associated with. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the config entry is associated with. |
 
@@ -797,7 +797,7 @@ Kind *string
 
 The kind of config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#kind DataConsulConfigEntry#kind}
 
 ---
 
@@ -811,7 +811,7 @@ Name *string
 
 The name of the config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#name DataConsulConfigEntry#name}
 
 ---
 
@@ -823,7 +823,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#id DataConsulConfigEntry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -840,7 +840,7 @@ Namespace *string
 
 The namespace the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#namespace DataConsulConfigEntry#namespace}
 
 ---
 
@@ -854,7 +854,7 @@ Partition *string
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry#partition DataConsulConfigEntry#partition}
 
 ---
 

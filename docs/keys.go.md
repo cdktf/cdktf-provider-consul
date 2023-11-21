@@ -1,6 +1,6 @@
 # `consul_keys`
 
-Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys).
+Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys).
 
 # `keys` Submodule <a name="`keys` Submodule" id="@cdktf/provider-consul.keys"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terr
 
 ### Keys <a name="Keys" id="@cdktf/provider-consul.keys.Keys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys consul_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys consul_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keys.Keys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.NewKeys(scope Construct, id *string, config KeysConfig) Keys
 ```
@@ -387,7 +387,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.keys.Keys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.Keys_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.keys.Keys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.Keys_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ keys.Keys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.keys.Keys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.Keys_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ keys.Keys_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.keys.Keys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.Keys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -476,7 +476,7 @@ The construct id used in the generated config for the Keys to import.
 
 The id of the existing Keys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -819,7 +819,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.keys.KeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 &keys.KeysConfig {
 	Connection: interface{},
@@ -849,12 +849,12 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#datacenter Keys#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#id Keys#id}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#datacenter Keys#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#id Keys#id}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.key">Key</a></code> | <code>interface{}</code> | key block. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#namespace Keys#namespace}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#partition Keys#partition}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#token Keys#token}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#namespace Keys#namespace}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#partition Keys#partition}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#token Keys#token}. |
 
 ---
 
@@ -936,7 +936,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#datacenter Keys#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#datacenter Keys#datacenter}.
 
 ---
 
@@ -948,7 +948,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#id Keys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#id Keys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Key interface{}
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#key Keys#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#key Keys#key}
 
 ---
 
@@ -977,7 +977,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#namespace Keys#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#namespace Keys#namespace}.
 
 ---
 
@@ -989,7 +989,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#partition Keys#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#partition Keys#partition}.
 
 ---
 
@@ -1001,7 +1001,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#token Keys#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#token Keys#token}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.keys.KeysKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 &keys.KeysKey {
 	Path: *string,
@@ -1026,12 +1026,12 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#path Keys#path}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#default Keys#default}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#delete Keys#delete}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">Flags</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#flags Keys#flags}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#name Keys#name}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#value Keys#value}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#path Keys#path}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#default Keys#default}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#delete Keys#delete}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">Flags</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#flags Keys#flags}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#name Keys#name}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#value Keys#value}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#path Keys#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#path Keys#path}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#default Keys#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#default Keys#default}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Delete interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#delete Keys#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#delete Keys#delete}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Flags *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#flags Keys#flags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#flags Keys#flags}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#name Keys#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#name Keys#name}.
 
 ---
 
@@ -1103,7 +1103,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/keys#value Keys#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys#value Keys#value}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keys.KeysKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.NewKeysKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeysKeyList
 ```
@@ -1257,7 +1257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keys.KeysKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/keys"
 
 keys.NewKeysKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeysKeyOutputReference
 ```

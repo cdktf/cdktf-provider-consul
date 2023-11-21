@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulCatalogNodesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#id DataConsulCatalogNodes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#id DataConsulCatalogNodes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +17,7 @@ export interface DataConsulCatalogNodesConfig extends cdktf.TerraformMetaArgumen
   /**
   * query_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#query_options DataConsulCatalogNodes#query_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#query_options DataConsulCatalogNodes#query_options}
   */
   readonly queryOptions?: DataConsulCatalogNodesQueryOptions[] | cdktf.IResolvable;
 }
@@ -114,39 +109,39 @@ export class DataConsulCatalogNodesNodesList extends cdktf.ComplexList {
 }
 export interface DataConsulCatalogNodesQueryOptions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#allow_stale DataConsulCatalogNodes#allow_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#allow_stale DataConsulCatalogNodes#allow_stale}
   */
   readonly allowStale?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#datacenter DataConsulCatalogNodes#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#datacenter DataConsulCatalogNodes#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#near DataConsulCatalogNodes#near}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#near DataConsulCatalogNodes#near}
   */
   readonly near?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#node_meta DataConsulCatalogNodes#node_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#node_meta DataConsulCatalogNodes#node_meta}
   */
   readonly nodeMeta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#partition DataConsulCatalogNodes#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#partition DataConsulCatalogNodes#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#require_consistent DataConsulCatalogNodes#require_consistent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#require_consistent DataConsulCatalogNodes#require_consistent}
   */
   readonly requireConsistent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#token DataConsulCatalogNodes#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#token DataConsulCatalogNodes#token}
   */
   readonly token?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#wait_index DataConsulCatalogNodes#wait_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#wait_index DataConsulCatalogNodes#wait_index}
   */
   readonly waitIndex?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#wait_time DataConsulCatalogNodes#wait_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#wait_time DataConsulCatalogNodes#wait_time}
   */
   readonly waitTime?: string;
 }
@@ -427,7 +422,7 @@ export class DataConsulCatalogNodesQueryOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes consul_catalog_nodes}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes consul_catalog_nodes}
 */
 export class DataConsulCatalogNodes extends cdktf.TerraformDataSource {
 
@@ -443,7 +438,7 @@ export class DataConsulCatalogNodes extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulCatalogNodes resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulCatalogNodes to import
-  * @param importFromId The id of the existing DataConsulCatalogNodes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulCatalogNodes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulCatalogNodes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -455,7 +450,7 @@ export class DataConsulCatalogNodes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/catalog_nodes consul_catalog_nodes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes consul_catalog_nodes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -466,7 +461,7 @@ export class DataConsulCatalogNodes extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_catalog_nodes',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

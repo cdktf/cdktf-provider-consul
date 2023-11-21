@@ -1,6 +1,6 @@
 # `data_consul_autopilot_health`
 
-Refer to the Terraform Registory for docs: [`data_consul_autopilot_health`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health).
+Refer to the Terraform Registory for docs: [`data_consul_autopilot_health`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health).
 
 # `dataConsulAutopilotHealth` Submodule <a name="`dataConsulAutopilotHealth` Submodule" id="@cdktf/provider-consul.dataConsulAutopilotHealth"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_autopilot_health`](http
 
 ### DataConsulAutopilotHealth <a name="DataConsulAutopilotHealth" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health consul_autopilot_health}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health consul_autopilot_health}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealth(scope Construct, id *string, config DataConsulAutopilotHealthConfig) DataConsulAutopilotHealth
 ```
@@ -285,7 +285,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataconsulautopilothealth.DataConsulAutopilotHealth_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealth.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.DataConsulAutopilotHealth_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataConsulAutopilotHealth 
 
 The id of the existing DataConsulAutopilotHealth that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 &dataconsulautopilothealth.DataConsulAutopilotHealthConfig {
 	Connection: interface{},
@@ -655,8 +655,8 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopiloth
 | <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health#datacenter DataConsulAutopilotHealth#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health#id DataConsulAutopilotHealth#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health#datacenter DataConsulAutopilotHealth#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health#id DataConsulAutopilotHealth#id}. |
 
 ---
 
@@ -738,7 +738,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health#datacenter DataConsulAutopilotHealth#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health#datacenter DataConsulAutopilotHealth#datacenter}.
 
 ---
 
@@ -750,7 +750,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/autopilot_health#id DataConsulAutopilotHealth#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/autopilot_health#id DataConsulAutopilotHealth#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 &dataconsulautopilothealth.DataConsulAutopilotHealthServers {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopiloth
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealthServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulAutopilotHealthServersList
 ```
@@ -909,7 +909,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAutopilotHealth.DataConsulAutopilotHealthServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulautopilothealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulautopilothealth"
 
 dataconsulautopilothealth.NewDataConsulAutopilotHealthServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulAutopilotHealthServersOutputReference
 ```

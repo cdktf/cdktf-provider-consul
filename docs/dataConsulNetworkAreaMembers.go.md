@@ -1,6 +1,6 @@
 # `data_consul_network_area_members`
 
-Refer to the Terraform Registory for docs: [`data_consul_network_area_members`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members).
+Refer to the Terraform Registory for docs: [`data_consul_network_area_members`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members).
 
 # `dataConsulNetworkAreaMembers` Submodule <a name="`dataConsulNetworkAreaMembers` Submodule" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_consul_network_area_members`](
 
 ### DataConsulNetworkAreaMembers <a name="DataConsulNetworkAreaMembers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members consul_network_area_members}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members consul_network_area_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembers(scope Construct, id *string, config DataConsulNetworkAreaMembersConfig) DataConsulNetworkAreaMembers
 ```
@@ -292,7 +292,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.DataConsulNetworkAreaMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -381,7 +381,7 @@ The construct id used in the generated config for the DataConsulNetworkAreaMembe
 
 The id of the existing DataConsulNetworkAreaMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 &dataconsulnetworkareamembers.DataConsulNetworkAreaMembersConfig {
 	Connection: interface{},
@@ -686,10 +686,10 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkare
 | <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.uuid">Uuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.uuid">Uuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersConfig.property.token">Token</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}. |
 
 ---
 
@@ -771,7 +771,7 @@ Uuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#uuid DataConsulNetworkAreaMembers#uuid}.
 
 ---
 
@@ -783,7 +783,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#datacenter DataConsulNetworkAreaMembers#datacenter}.
 
 ---
 
@@ -795,7 +795,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#id DataConsulNetworkAreaMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -810,7 +810,7 @@ Token *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members#token DataConsulNetworkAreaMembers#token}.
 
 ---
 
@@ -819,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 &dataconsulnetworkareamembers.DataConsulNetworkAreaMembersMembers {
 
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkare
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulNetworkAreaMembersMembersList
 ```
@@ -966,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers.DataConsulNetworkAreaMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworkareamembers"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworkareamembers"
 
 dataconsulnetworkareamembers.NewDataConsulNetworkAreaMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulNetworkAreaMembersMembersOutputReference
 ```

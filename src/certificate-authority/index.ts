@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface CertificateAuthorityConfig extends cdktf.TerraformMetaArguments
   /**
   * The raw configuration to use for the chosen provider. For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority#config CertificateAuthority#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority#config CertificateAuthority#config}
   */
   readonly config?: { [key: string]: string };
   /**
   * The raw configuration to use for the chosen provider. For more information on configuring the Connect CA providers, see [Provider Config](https://developer.hashicorp.com/consul/docs/connect/ca).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority#config_json CertificateAuthority#config_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority#config_json CertificateAuthority#config_json}
   */
   readonly configJson?: string;
   /**
   * Specifies the CA provider type to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority#connect_provider CertificateAuthority#connect_provider}
   */
   readonly connectProvider: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority#id CertificateAuthority#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority#id CertificateAuthority#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +35,7 @@ export interface CertificateAuthorityConfig extends cdktf.TerraformMetaArguments
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority consul_certificate_authority}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority consul_certificate_authority}
 */
 export class CertificateAuthority extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CertificateAuthority resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificateAuthority to import
-  * @param importFromId The id of the existing CertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertificateAuthority that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificateAuthority to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/certificate_authority consul_certificate_authority} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/certificate_authority consul_certificate_authority} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class CertificateAuthority extends cdktf.TerraformResource {
       terraformResourceType: 'consul_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

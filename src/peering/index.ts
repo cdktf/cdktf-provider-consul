@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PeeringConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#id Peering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#id Peering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,29 +17,29 @@ export interface PeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies KV metadata to associate with the peering. This parameter is not required and does not directly impact the cluster peering process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#meta Peering#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#meta Peering#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#partition Peering#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#partition Peering#partition}
   */
   readonly partition?: string;
   /**
   * The name assigned to the peer cluster. The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#peer_name Peering#peer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#peer_name Peering#peer_name}
   */
   readonly peerName: string;
   /**
   * The peering token fetched from the peer cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#peering_token Peering#peering_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#peering_token Peering#peering_token}
   */
   readonly peeringToken: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering consul_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering consul_peering}
 */
 export class Peering extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class Peering extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Peering resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Peering to import
-  * @param importFromId The id of the existing Peering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Peering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Peering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -72,7 +67,7 @@ export class Peering extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/peering consul_peering} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering consul_peering} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +78,7 @@ export class Peering extends cdktf.TerraformResource {
       terraformResourceType: 'consul_peering',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

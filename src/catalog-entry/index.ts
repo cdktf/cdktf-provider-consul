@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,57 +8,57 @@ import * as cdktf from 'cdktf';
 
 export interface CatalogEntryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#address CatalogEntry#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#address CatalogEntry#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#datacenter CatalogEntry#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#id CatalogEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#id CatalogEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#node CatalogEntry#node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#node CatalogEntry#node}
   */
   readonly nodeAttribute: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#token CatalogEntry#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#token CatalogEntry#token}
   */
   readonly token?: string;
   /**
   * service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#service CatalogEntry#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#service CatalogEntry#service}
   */
   readonly service?: CatalogEntryService[] | cdktf.IResolvable;
 }
 export interface CatalogEntryService {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#address CatalogEntry#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#address CatalogEntry#address}
   */
   readonly address?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#id CatalogEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#id CatalogEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#name CatalogEntry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#name CatalogEntry#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#port CatalogEntry#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#port CatalogEntry#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#tags CatalogEntry#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#tags CatalogEntry#tags}
   */
   readonly tags?: string[];
 }
@@ -249,7 +244,7 @@ export class CatalogEntryServiceList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry consul_catalog_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry consul_catalog_entry}
 */
 export class CatalogEntry extends cdktf.TerraformResource {
 
@@ -265,7 +260,7 @@ export class CatalogEntry extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CatalogEntry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CatalogEntry to import
-  * @param importFromId The id of the existing CatalogEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CatalogEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CatalogEntry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -277,7 +272,7 @@ export class CatalogEntry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/catalog_entry consul_catalog_entry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry consul_catalog_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -288,7 +283,7 @@ export class CatalogEntry extends cdktf.TerraformResource {
       terraformResourceType: 'consul_catalog_entry',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `consul_config_entry_service_intentions`
 
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions).
+Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions).
 
 # `configEntryServiceIntentions` Submodule <a name="`configEntryServiceIntentions` Submodule" id="@cdktf/provider-consul.configEntryServiceIntentions"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_config_entry_service_intenti
 
 ### ConfigEntryServiceIntentions <a name="ConfigEntryServiceIntentions" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions consul_config_entry_service_intentions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions consul_config_entry_service_intentions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentions(scope Construct, id *string, config ConfigEntryServiceIntentionsConfig) ConfigEntryServiceIntentions
 ```
@@ -400,7 +400,7 @@ func ResetSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ConfigEntryServiceIntentio
 
 The id of the existing ConfigEntryServiceIntentions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicein
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.name">Name</a></code> | <code>*string</code> | Specifies a name of the destination service for all intentions defined in the configuration entry. |
-| <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.jwt">Jwt</a></code> | <code>interface{}</code> | jwt block. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Specifies key-value pairs to add to the KV store. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Specifies the namespace to apply the configuration entry. |
@@ -964,7 +964,7 @@ Name *string
 
 Specifies a name of the destination service for all intentions defined in the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#id ConfigEntryServiceIntentions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ Jwt interface{}
 
 jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#jwt ConfigEntryServiceIntentions#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#jwt ConfigEntryServiceIntentions#jwt}
 
 ---
 
@@ -1007,7 +1007,7 @@ Meta *map[string]*string
 
 Specifies key-value pairs to add to the KV store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#meta ConfigEntryServiceIntentions#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#meta ConfigEntryServiceIntentions#meta}
 
 ---
 
@@ -1021,7 +1021,7 @@ Namespace *string
 
 Specifies the namespace to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
 
 ---
 
@@ -1035,7 +1035,7 @@ Partition *string
 
 Specifies the admin partition to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
 
 ---
 
@@ -1049,7 +1049,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#sources ConfigEntryServiceIntentions#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#sources ConfigEntryServiceIntentions#sources}
 
 ---
 
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwt {
 	Providers: interface{},
@@ -1083,7 +1083,7 @@ Providers interface{}
 
 providers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#providers ConfigEntryServiceIntentions#providers}
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwtProviders {
 	Name: *string,
@@ -1119,7 +1119,7 @@ Name *string
 
 Specifies the name of a JWT provider defined in the Name field of the jwt-provider configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1133,7 +1133,7 @@ VerifyClaims interface{}
 
 verify_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#verify_claims ConfigEntryServiceIntentions#verify_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#verify_claims ConfigEntryServiceIntentions#verify_claims}
 
 ---
 
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaims {
 	Path: *[]*string,
@@ -1169,7 +1169,7 @@ Path *[]*string
 
 Specifies the path to the claim in the JSON web token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path ConfigEntryServiceIntentions#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path ConfigEntryServiceIntentions#path}
 
 ---
 
@@ -1183,7 +1183,7 @@ Value *string
 
 Specifies the value to match on when verifying the the claim designated in path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#value ConfigEntryServiceIntentions#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#value ConfigEntryServiceIntentions#value}
 
 ---
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSources {
 	Action: *string,
@@ -1235,7 +1235,7 @@ Action *string
 
 Specifies the action to take when the source sends traffic to the destination service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
 
 ---
 
@@ -1249,7 +1249,7 @@ Description *string
 
 Specifies a description of the intention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#description ConfigEntryServiceIntentions#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#description ConfigEntryServiceIntentions#description}
 
 ---
 
@@ -1263,7 +1263,7 @@ Name *string
 
 Specifies the name of the source that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1277,7 +1277,7 @@ Namespace *string
 
 Specifies the traffic source namespace that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#namespace ConfigEntryServiceIntentions#namespace}
 
 ---
 
@@ -1291,7 +1291,7 @@ Partition *string
 
 Specifies the name of an admin partition that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#partition ConfigEntryServiceIntentions#partition}
 
 ---
 
@@ -1305,7 +1305,7 @@ Peer *string
 
 Specifies the name of a peered Consul cluster that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#peer ConfigEntryServiceIntentions#peer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#peer ConfigEntryServiceIntentions#peer}
 
 ---
 
@@ -1319,7 +1319,7 @@ Permissions interface{}
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#permissions ConfigEntryServiceIntentions#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#permissions ConfigEntryServiceIntentions#permissions}
 
 ---
 
@@ -1335,7 +1335,7 @@ The Precedence field contains a read-only integer.
 
 Consul generates the value based on name configurations for the source and destination services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#precedence ConfigEntryServiceIntentions#precedence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#precedence ConfigEntryServiceIntentions#precedence}
 
 ---
 
@@ -1349,7 +1349,7 @@ SamenessGroup *string
 
 Specifies the name of a sameness group that the intention allows or denies traffic from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#sameness_group ConfigEntryServiceIntentions#sameness_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#sameness_group ConfigEntryServiceIntentions#sameness_group}
 
 ---
 
@@ -1363,7 +1363,7 @@ Type *string
 
 Specifies the type of destination service that the configuration entry applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#type ConfigEntryServiceIntentions#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#type ConfigEntryServiceIntentions#type}
 
 ---
 
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissions {
 	Action: *string,
@@ -1401,7 +1401,7 @@ Specifies the action to take when the source sends traffic to the destination se
 
 The value is either allow or deny.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#action ConfigEntryServiceIntentions#action}
 
 ---
 
@@ -1415,7 +1415,7 @@ Http interface{}
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#http ConfigEntryServiceIntentions#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#http ConfigEntryServiceIntentions#http}
 
 ---
 
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissionsHttp {
 	Headers: interface{},
@@ -1457,7 +1457,7 @@ Headers interface{}
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#headers ConfigEntryServiceIntentions#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#headers ConfigEntryServiceIntentions#headers}
 
 ---
 
@@ -1471,7 +1471,7 @@ Methods *[]*string
 
 Specifies a list of HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#methods ConfigEntryServiceIntentions#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#methods ConfigEntryServiceIntentions#methods}
 
 ---
 
@@ -1485,7 +1485,7 @@ PathExact *string
 
 Specifies an exact path to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_exact ConfigEntryServiceIntentions#path_exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_exact ConfigEntryServiceIntentions#path_exact}
 
 ---
 
@@ -1499,7 +1499,7 @@ PathPrefix *string
 
 Specifies a path prefix to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_prefix ConfigEntryServiceIntentions#path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_prefix ConfigEntryServiceIntentions#path_prefix}
 
 ---
 
@@ -1513,7 +1513,7 @@ PathRegex *string
 
 Defines a regular expression to match on the HTTP request path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#path_regex ConfigEntryServiceIntentions#path_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#path_regex ConfigEntryServiceIntentions#path_regex}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeaders {
 	Name: *string,
@@ -1559,7 +1559,7 @@ Name *string
 
 Specifies the name of the header to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#name ConfigEntryServiceIntentions#name}
 
 ---
 
@@ -1575,7 +1575,7 @@ Specifies a value for the header key set in the Name field.
 
 If the request header value matches the Exact value, Consul applies the permission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#exact ConfigEntryServiceIntentions#exact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#exact ConfigEntryServiceIntentions#exact}
 
 ---
 
@@ -1589,7 +1589,7 @@ Invert interface{}
 
 Inverts the matching logic configured in the Header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#invert ConfigEntryServiceIntentions#invert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#invert ConfigEntryServiceIntentions#invert}
 
 ---
 
@@ -1603,7 +1603,7 @@ Prefix *string
 
 Specifies a prefix value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#prefix ConfigEntryServiceIntentions#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#prefix ConfigEntryServiceIntentions#prefix}
 
 ---
 
@@ -1619,7 +1619,7 @@ Enables a match if the header configured in the Name field appears in the reques
 
 Consul matches on any value as long as the header key appears in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#present ConfigEntryServiceIntentions#present}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#present ConfigEntryServiceIntentions#present}
 
 ---
 
@@ -1633,7 +1633,7 @@ Regex *string
 
 Specifies a regular expression pattern as the value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#regex ConfigEntryServiceIntentions#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#regex ConfigEntryServiceIntentions#regex}
 
 ---
 
@@ -1647,7 +1647,7 @@ Suffix *string
 
 Specifies a suffix value for the header key set in the Name field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/config_entry_service_intentions#suffix ConfigEntryServiceIntentions#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions#suffix ConfigEntryServiceIntentions#suffix}
 
 ---
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtList
 ```
@@ -1801,7 +1801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtOutputReference
 ```
@@ -2110,7 +2110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtProvidersList
 ```
@@ -2253,7 +2253,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtProvidersOutputReference
 ```
@@ -2591,7 +2591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList
 ```
@@ -2734,7 +2734,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference
 ```
@@ -3059,7 +3059,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesList
 ```
@@ -3202,7 +3202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesOutputReference
 ```
@@ -3772,7 +3772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList
 ```
@@ -3915,7 +3915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference
 ```
@@ -4378,7 +4378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpList
 ```
@@ -4521,7 +4521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference
 ```
@@ -4946,7 +4946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsList
 ```
@@ -5089,7 +5089,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsOutputReference
 ```

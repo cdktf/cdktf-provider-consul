@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs).
+Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-consul.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`consul`](https://registry.terraform
 
 ### ConsulProvider <a name="ConsulProvider" id="@cdktf/provider-consul.provider.ConsulProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs consul}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs consul}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer"></a>
 
@@ -349,7 +349,7 @@ The construct id used in the generated config for the ConsulProvider to import.
 
 The id of the existing ConsulProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ public string AuthMethod { get; set; }
 
 The name of the auth method to use for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#auth_method ConsulProvider#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#auth_method ConsulProvider#auth_method}
 
 ---
 
@@ -904,7 +904,7 @@ The bearer token to present to the auth method during login for authentication p
 
 For the Kubernetes auth method this is a [Service Account Token (JWT)](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#service-account-tokens).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#bearer_token ConsulProvider#bearer_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#bearer_token ConsulProvider#bearer_token}
 
 ---
 
@@ -918,7 +918,7 @@ public System.Collections.Generic.IDictionary<string, string> Meta { get; set; }
 
 Specifies arbitrary KV metadata linked to the token. Can be useful to track origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#meta ConsulProvider#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#meta ConsulProvider#meta}
 
 ---
 
@@ -932,7 +932,7 @@ public object UseTerraformCloudWorkloadIdentity { get; set; }
 
 Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#use_terraform_cloud_workload_identity ConsulProvider#use_terraform_cloud_workload_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#use_terraform_cloud_workload_identity ConsulProvider#use_terraform_cloud_workload_identity}
 
 ---
 
@@ -982,7 +982,7 @@ new ConsulProviderConfig {
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">InsecureHttps</a></code> | <code>object</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">KeyFile</a></code> | <code>string</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#namespace ConsulProvider#namespace}. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#namespace ConsulProvider#namespace}. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.scheme">Scheme</a></code> | <code>string</code> | The URL scheme of the agent to use ("http" or "https"). Defaults to "http". |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.token">Token</a></code> | <code>string</code> | The ACL token to use by default when making requests to the agent. |
 
@@ -998,7 +998,7 @@ public string Address { get; set; }
 
 The HTTP(S) API address of the agent to use. Defaults to "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#address ConsulProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#address ConsulProvider#address}
 
 ---
 
@@ -1012,7 +1012,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#alias ConsulProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#alias ConsulProvider#alias}
 
 ---
 
@@ -1026,7 +1026,7 @@ public ConsulProviderAuthJwt AuthJwt { get; set; }
 
 auth_jwt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#auth_jwt ConsulProvider#auth_jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#auth_jwt ConsulProvider#auth_jwt}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string CaFile { get; set; }
 
 A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#ca_file ConsulProvider#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#ca_file ConsulProvider#ca_file}
 
 ---
 
@@ -1056,7 +1056,7 @@ A path to a directory of PEM-encoded certificate authority files to use to check
 
 Can also be specified with the `CONSUL_CAPATH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#ca_path ConsulProvider#ca_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#ca_path ConsulProvider#ca_path}
 
 ---
 
@@ -1070,7 +1070,7 @@ public string CaPem { get; set; }
 
 PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#ca_pem ConsulProvider#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#ca_pem ConsulProvider#ca_pem}
 
 ---
 
@@ -1084,7 +1084,7 @@ public string CertFile { get; set; }
 
 A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#cert_file ConsulProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#cert_file ConsulProvider#cert_file}
 
 ---
 
@@ -1098,7 +1098,7 @@ public string CertPem { get; set; }
 
 PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#cert_pem ConsulProvider#cert_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#cert_pem ConsulProvider#cert_pem}
 
 ---
 
@@ -1112,7 +1112,7 @@ public string Datacenter { get; set; }
 
 The datacenter to use. Defaults to that of the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#datacenter ConsulProvider#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#datacenter ConsulProvider#datacenter}
 
 ---
 
@@ -1126,7 +1126,7 @@ public object Header { get; set; }
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#header ConsulProvider#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#header ConsulProvider#header}
 
 ---
 
@@ -1142,7 +1142,7 @@ HTTP Basic Authentication credentials to be used when communicating with Consul,
 
 This may also be specified using the `CONSUL_HTTP_AUTH` environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#http_auth ConsulProvider#http_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#http_auth ConsulProvider#http_auth}
 
 ---
 
@@ -1158,7 +1158,7 @@ Boolean value to disable SSL certificate verification;
 
 setting this value to true is not recommended for production use. Only use this with scheme set to "https".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#insecure_https ConsulProvider#insecure_https}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#insecure_https ConsulProvider#insecure_https}
 
 ---
 
@@ -1172,7 +1172,7 @@ public string KeyFile { get; set; }
 
 A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#key_file ConsulProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#key_file ConsulProvider#key_file}
 
 ---
 
@@ -1186,7 +1186,7 @@ public string KeyPem { get; set; }
 
 PEM-encoded private key, required if `cert_file` or `cert_pem` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#key_pem ConsulProvider#key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#key_pem ConsulProvider#key_pem}
 
 ---
 
@@ -1198,7 +1198,7 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#namespace ConsulProvider#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#namespace ConsulProvider#namespace}.
 
 ---
 
@@ -1212,7 +1212,7 @@ public string Scheme { get; set; }
 
 The URL scheme of the agent to use ("http" or "https"). Defaults to "http".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#scheme ConsulProvider#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#scheme ConsulProvider#scheme}
 
 ---
 
@@ -1228,7 +1228,7 @@ The ACL token to use by default when making requests to the agent.
 
 Can also be specified with `CONSUL_HTTP_TOKEN` or `CONSUL_TOKEN` as an environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#token ConsulProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#token ConsulProvider#token}
 
 ---
 
@@ -1264,7 +1264,7 @@ public string Name { get; set; }
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#name ConsulProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#name ConsulProvider#name}
 
 ---
 
@@ -1278,7 +1278,7 @@ public string Value { get; set; }
 
 The value of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs#value ConsulProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs#value ConsulProvider#value}
 
 ---
 

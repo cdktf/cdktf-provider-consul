@@ -1,6 +1,6 @@
 # `consul_intention`
 
-Refer to the Terraform Registory for docs: [`consul_intention`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention).
+Refer to the Terraform Registory for docs: [`consul_intention`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention).
 
 # `intention` Submodule <a name="`intention` Submodule" id="@cdktf/provider-consul.intention"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_intention`](https://registry
 
 ### Intention <a name="Intention" id="@cdktf/provider-consul.intention.Intention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention consul_intention}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention consul_intention}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.intention.Intention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 intention.NewIntention(scope Construct, id *string, config IntentionConfig) Intention
 ```
@@ -374,7 +374,7 @@ func ResetSourceNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.intention.Intention.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 intention.Intention_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.intention.Intention.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 intention.Intention_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ intention.Intention_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.intention.Intention.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 intention.Intention_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ intention.Intention_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.intention.Intention.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 intention.Intention_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -463,7 +463,7 @@ The construct id used in the generated config for the Intention to import.
 
 The id of the existing Intention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.intention.IntentionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/intention"
 
 &intention.IntentionConfig {
 	Connection: interface{},
@@ -894,15 +894,15 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/intention"
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#action Intention#action}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">DestinationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#destination_name Intention#destination_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#source_name Intention#source_name}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#datacenter Intention#datacenter}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#description Intention#description}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">DestinationNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#destination_namespace Intention#destination_namespace}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#id Intention#id}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#meta Intention#meta}. |
-| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">SourceNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#source_namespace Intention#source_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.action">Action</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#action Intention#action}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationName">DestinationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#destination_name Intention#destination_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceName">SourceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#source_name Intention#source_name}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#datacenter Intention#datacenter}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#description Intention#description}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.destinationNamespace">DestinationNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#destination_namespace Intention#destination_namespace}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#id Intention#id}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#meta Intention#meta}. |
+| <code><a href="#@cdktf/provider-consul.intention.IntentionConfig.property.sourceNamespace">SourceNamespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#source_namespace Intention#source_namespace}. |
 
 ---
 
@@ -984,7 +984,7 @@ Action *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#action Intention#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#action Intention#action}.
 
 ---
 
@@ -996,7 +996,7 @@ DestinationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#destination_name Intention#destination_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#destination_name Intention#destination_name}.
 
 ---
 
@@ -1008,7 +1008,7 @@ SourceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#source_name Intention#source_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#source_name Intention#source_name}.
 
 ---
 
@@ -1020,7 +1020,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#datacenter Intention#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#datacenter Intention#datacenter}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#description Intention#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#description Intention#description}.
 
 ---
 
@@ -1044,7 +1044,7 @@ DestinationNamespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#destination_namespace Intention#destination_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#destination_namespace Intention#destination_namespace}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#id Intention#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#id Intention#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1071,7 +1071,7 @@ Meta *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#meta Intention#meta}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#meta Intention#meta}.
 
 ---
 
@@ -1083,7 +1083,7 @@ SourceNamespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/intention#source_namespace Intention#source_namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/intention#source_namespace Intention#source_namespace}.
 
 ---
 

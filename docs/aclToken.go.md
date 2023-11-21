@@ -1,6 +1,6 @@
 # `consul_acl_token`
 
-Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token).
+Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token).
 
 # `aclToken` Submodule <a name="`aclToken` Submodule" id="@cdktf/provider-consul.aclToken"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry
 
 ### AclToken <a name="AclToken" id="@cdktf/provider-consul.aclToken.AclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclToken(scope Construct, id *string, config AclTokenConfig) AclToken
 ```
@@ -455,7 +455,7 @@ func ResetTemplatedPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclToken.AclToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.AclToken_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.AclToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ acltoken.AclToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclToken.AclToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.AclToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ acltoken.AclToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclToken.AclToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.AclToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the AclToken to import.
 
 The id of the existing AclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,7 +1008,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 &acltoken.AclTokenConfig {
 	Connection: interface{},
@@ -1047,7 +1047,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | The uuid of the token. If omitted, Consul will generate a random uuid. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.description">Description</a></code> | <code>*string</code> | The description of the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.expirationTime">ExpirationTime</a></code> | <code>*string</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.local">Local</a></code> | <code>interface{}</code> | The flag to set the token local to the current datacenter. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace to create the token within. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.nodeIdentities">NodeIdentities</a></code> | <code>interface{}</code> | node_identities block. |
@@ -1139,7 +1139,7 @@ AccessorId *string
 
 The uuid of the token. If omitted, Consul will generate a random uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -1153,7 +1153,7 @@ Description *string
 
 The description of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -1167,7 +1167,7 @@ ExpirationTime *string
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -1179,7 +1179,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1196,7 @@ Local interface{}
 
 The flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -1210,7 +1210,7 @@ Namespace *string
 
 The namespace to create the token within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#namespace AclToken#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#namespace AclToken#namespace}
 
 ---
 
@@ -1224,7 +1224,7 @@ NodeIdentities interface{}
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -1238,7 +1238,7 @@ Partition *string
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -1252,7 +1252,7 @@ Policies *[]*string
 
 The list of policies attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -1266,7 +1266,7 @@ Roles *[]*string
 
 The list of roles attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -1280,7 +1280,7 @@ ServiceIdentities interface{}
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#service_identities AclToken#service_identities}
 
 ---
 
@@ -1294,7 +1294,7 @@ TemplatedPolicies interface{}
 
 templated_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenNodeIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 &acltoken.AclTokenNodeIdentities {
 	Datacenter: *string,
@@ -1330,7 +1330,7 @@ Datacenter *string
 
 The datacenter of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenter AclToken#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#datacenter AclToken#datacenter}
 
 ---
 
@@ -1344,7 +1344,7 @@ NodeName *string
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#node_name AclToken#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#node_name AclToken#node_name}
 
 ---
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenServiceIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 &acltoken.AclTokenServiceIdentities {
 	ServiceName: *string,
@@ -1380,7 +1380,7 @@ ServiceName *string
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#service_name AclToken#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#service_name AclToken#service_name}
 
 ---
 
@@ -1394,7 +1394,7 @@ Datacenters *[]*string
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#datacenters AclToken#datacenters}
 
 ---
 
@@ -1403,12 +1403,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 &acltoken.AclTokenTemplatedPolicies {
 	TemplateName: *string,
 	Datacenters: *[]*string,
-	TemplateVariables: github.com/cdktf/cdktf-provider-consul-go/consul/v8.aclToken.AclTokenTemplatedPoliciesTemplateVariables,
+	TemplateVariables: github.com/cdktf/cdktf-provider-consul-go/consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables,
 }
 ```
 
@@ -1432,7 +1432,7 @@ TemplateName *string
 
 The name of the templated policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#template_name AclToken#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#template_name AclToken#template_name}
 
 ---
 
@@ -1446,7 +1446,7 @@ Datacenters *[]*string
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#datacenters AclToken#datacenters}
 
 ---
 
@@ -1460,7 +1460,7 @@ TemplateVariables AclTokenTemplatedPoliciesTemplateVariables
 
 template_variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#template_variables AclToken#template_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#template_variables AclToken#template_variables}
 
 ---
 
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 &acltoken.AclTokenTemplatedPoliciesTemplateVariables {
 	Name: *string,
@@ -1494,7 +1494,7 @@ Name *string
 
 The name of node, workload identity or service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_token#name AclToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token#name AclToken#name}
 
 ---
 
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenNodeIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenNodeIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclTokenNodeIdentitiesList
 ```
@@ -1648,7 +1648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenNodeIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenNodeIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclTokenNodeIdentitiesOutputReference
 ```
@@ -1959,7 +1959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenServiceIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenServiceIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclTokenServiceIdentitiesList
 ```
@@ -2102,7 +2102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenServiceIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenServiceIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclTokenServiceIdentitiesOutputReference
 ```
@@ -2420,7 +2420,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenTemplatedPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclTokenTemplatedPoliciesList
 ```
@@ -2563,7 +2563,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenTemplatedPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclTokenTemplatedPoliciesOutputReference
 ```
@@ -2923,7 +2923,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclTokenTemplatedPoliciesTemplateVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltoken"
 
 acltoken.NewAclTokenTemplatedPoliciesTemplateVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AclTokenTemplatedPoliciesTemplateVariablesOutputReference
 ```

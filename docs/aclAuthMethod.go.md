@@ -1,6 +1,6 @@
 # `consul_acl_auth_method`
 
-Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method).
+Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method).
 
 # `aclAuthMethod` Submodule <a name="`aclAuthMethod` Submodule" id="@cdktf/provider-consul.aclAuthMethod"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`consul_acl_auth_method`](https://re
 
 ### AclAuthMethod <a name="AclAuthMethod" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method consul_acl_auth_method}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method consul_acl_auth_method}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethod(scope Construct, id *string, config AclAuthMethodConfig) AclAuthMethod
 ```
@@ -415,7 +415,7 @@ func ResetTokenLocality()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -461,7 +461,7 @@ aclauthmethod.AclAuthMethod_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_IsTerraformResource(x interface{}) *bool
 ```
@@ -475,7 +475,7 @@ aclauthmethod.AclAuthMethod_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.AclAuthMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -504,7 +504,7 @@ The construct id used in the generated config for the AclAuthMethod to import.
 
 The id of the existing AclAuthMethod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,7 +968,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 &aclauthmethod.AclAuthMethodConfig {
 	Connection: interface{},
@@ -1010,7 +1010,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.configJson">ConfigJson</a></code> | <code>*string</code> | The raw configuration for this ACL auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.description">Description</a></code> | <code>*string</code> | A free form human readable description of the auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | An optional name to use instead of the name attribute when displaying information about this auth method. |
-| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
+| <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.maxTokenTtl">MaxTokenTtl</a></code> | <code>*string</code> | The maximum life of any token created by this auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace in which to create the auth method. |
 | <code><a href="#@cdktf/provider-consul.aclAuthMethod.AclAuthMethodConfig.property.namespaceRule">NamespaceRule</a></code> | <code>interface{}</code> | namespace_rule block. |
@@ -1099,7 +1099,7 @@ Name *string
 
 The name of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ Type *string
 
 The type of the ACL auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
 
 ---
 
@@ -1127,7 +1127,7 @@ Config *map[string]*string
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
 
 ---
 
@@ -1141,7 +1141,7 @@ ConfigJson *string
 
 The raw configuration for this ACL auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#config_json AclAuthMethod#config_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#config_json AclAuthMethod#config_json}
 
 ---
 
@@ -1155,7 +1155,7 @@ Description *string
 
 A free form human readable description of the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#description AclAuthMethod#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#description AclAuthMethod#description}
 
 ---
 
@@ -1169,7 +1169,7 @@ DisplayName *string
 
 An optional name to use instead of the name attribute when displaying information about this auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#display_name AclAuthMethod#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#display_name AclAuthMethod#display_name}
 
 ---
 
@@ -1181,7 +1181,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1200,7 +1200,7 @@ The maximum life of any token created by this auth method.
 
 **This attribute is required and must be set to a nonzero for the OIDC auth method.**
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
 
 ---
 
@@ -1214,7 +1214,7 @@ Namespace *string
 
 The namespace in which to create the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#namespace AclAuthMethod#namespace}
 
 ---
 
@@ -1228,7 +1228,7 @@ NamespaceRule interface{}
 
 namespace_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#namespace_rule AclAuthMethod#namespace_rule}
 
 ---
 
@@ -1242,7 +1242,7 @@ Partition *string
 
 The partition the ACL auth method is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#partition AclAuthMethod#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#partition AclAuthMethod#partition}
 
 ---
 
@@ -1256,7 +1256,7 @@ TokenLocality *string
 
 The kind of token that this auth method produces. This can be either 'local' or 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
 
 ---
 
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 &aclauthmethod.AclAuthMethodNamespaceRule {
 	BindNamespace: *string,
@@ -1292,7 +1292,7 @@ BindNamespace *string
 
 If the namespace rule's `selector` matches then this is used to control the namespace where the token is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#bind_namespace AclAuthMethod#bind_namespace}
 
 ---
 
@@ -1306,7 +1306,7 @@ Selector *string
 
 Specifies the expression used to match this namespace rule against valid identities returned from an auth method validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/resources/acl_auth_method#selector AclAuthMethod#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_auth_method#selector AclAuthMethod#selector}
 
 ---
 
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethodNamespaceRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclAuthMethodNamespaceRuleList
 ```
@@ -1460,7 +1460,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclAuthMethod.AclAuthMethodNamespaceRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclauthmethod"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclauthmethod"
 
 aclauthmethod.NewAclAuthMethodNamespaceRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclAuthMethodNamespaceRuleOutputReference
 ```

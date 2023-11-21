@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role
+// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulAclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role#id DataConsulAclRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role#id DataConsulAclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface DataConsulAclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the ACL Role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role#name DataConsulAclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role#name DataConsulAclRole#name}
   */
   readonly name: string;
   /**
   * The namespace to lookup the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role#namespace DataConsulAclRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role#namespace DataConsulAclRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The partition to lookup the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role#partition DataConsulAclRole#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role#partition DataConsulAclRole#partition}
   */
   readonly partition?: string;
 }
@@ -386,7 +381,7 @@ export class DataConsulAclRoleTemplatedPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role consul_acl_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role consul_acl_role}
 */
 export class DataConsulAclRole extends cdktf.TerraformDataSource {
 
@@ -402,7 +397,7 @@ export class DataConsulAclRole extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulAclRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulAclRole to import
-  * @param importFromId The id of the existing DataConsulAclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulAclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulAclRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -414,7 +409,7 @@ export class DataConsulAclRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.19.0/docs/data-sources/acl_role consul_acl_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role consul_acl_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -425,7 +420,7 @@ export class DataConsulAclRole extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.19.0',
+        providerVersion: '2.20.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
