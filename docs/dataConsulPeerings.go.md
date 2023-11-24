@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeerings(scope Construct, id *string, config DataConsulPeeringsConfig) DataConsulPeerings
 ```
@@ -285,7 +285,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataconsulpeerings.DataConsulPeerings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataconsulpeerings.DataConsulPeerings_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeerings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.DataConsulPeerings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -607,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 &dataconsulpeerings.DataConsulPeeringsConfig {
 	Connection: interface{},
@@ -740,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 &dataconsulpeerings.DataConsulPeeringsPeers {
 
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeeringsPeersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulPeeringsPeersList
 ```
@@ -887,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeerings.DataConsulPeeringsPeersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeerings"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulpeerings"
 
 dataconsulpeerings.NewDataConsulPeeringsPeersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulPeeringsPeersOutputReference
 ```
