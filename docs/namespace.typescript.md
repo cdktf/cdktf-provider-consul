@@ -1,7 +1,3 @@
-# `consul_namespace`
-
-Refer to the Terraform Registory for docs: [`consul_namespace`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace).
-
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-consul.namespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

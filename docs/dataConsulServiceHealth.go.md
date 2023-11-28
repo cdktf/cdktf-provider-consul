@@ -1,7 +1,3 @@
-# `data_consul_service_health`
-
-Refer to the Terraform Registory for docs: [`data_consul_service_health`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/service_health).
-
 # `dataConsulServiceHealth` Submodule <a name="`dataConsulServiceHealth` Submodule" id="@cdktf/provider-consul.dataConsulServiceHealth"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

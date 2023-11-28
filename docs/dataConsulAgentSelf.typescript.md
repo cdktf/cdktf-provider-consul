@@ -1,7 +1,3 @@
-# `data_consul_agent_self`
-
-Refer to the Terraform Registory for docs: [`data_consul_agent_self`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/agent_self).
-
 # `dataConsulAgentSelf` Submodule <a name="`dataConsulAgentSelf` Submodule" id="@cdktf/provider-consul.dataConsulAgentSelf"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

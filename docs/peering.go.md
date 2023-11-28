@@ -1,7 +1,3 @@
-# `consul_peering`
-
-Refer to the Terraform Registory for docs: [`consul_peering`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering).
-
 # `peering` Submodule <a name="`peering` Submodule" id="@cdktf/provider-consul.peering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

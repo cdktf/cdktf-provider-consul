@@ -1,7 +1,3 @@
-# `consul_config_entry_service_intentions`
-
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions).
-
 # `configEntryServiceIntentions` Submodule <a name="`configEntryServiceIntentions` Submodule" id="@cdktf/provider-consul.configEntryServiceIntentions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

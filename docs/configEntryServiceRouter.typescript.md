@@ -1,7 +1,3 @@
-# `consul_config_entry_service_router`
-
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_router`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_router).
-
 # `configEntryServiceRouter` Submodule <a name="`configEntryServiceRouter` Submodule" id="@cdktf/provider-consul.configEntryServiceRouter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

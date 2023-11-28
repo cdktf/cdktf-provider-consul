@@ -1,7 +1,3 @@
-# `data_consul_peering`
-
-Refer to the Terraform Registory for docs: [`data_consul_peering`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering).
-
 # `dataConsulPeering` Submodule <a name="`dataConsulPeering` Submodule" id="@cdktf/provider-consul.dataConsulPeering"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

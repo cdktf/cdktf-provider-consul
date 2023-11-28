@@ -1,7 +1,3 @@
-# `consul_key_prefix`
-
-Refer to the Terraform Registory for docs: [`consul_key_prefix`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix).
-
 # `keyPrefix` Submodule <a name="`keyPrefix` Submodule" id="@cdktf/provider-consul.keyPrefix"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

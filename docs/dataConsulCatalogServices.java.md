@@ -1,7 +1,3 @@
-# `data_consul_catalog_services`
-
-Refer to the Terraform Registory for docs: [`data_consul_catalog_services`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_services).
-
 # `dataConsulCatalogServices` Submodule <a name="`dataConsulCatalogServices` Submodule" id="@cdktf/provider-consul.dataConsulCatalogServices"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

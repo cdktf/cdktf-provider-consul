@@ -1,7 +1,3 @@
-# `consul_keys`
-
-Refer to the Terraform Registory for docs: [`consul_keys`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/keys).
-
 # `keys` Submodule <a name="`keys` Submodule" id="@cdktf/provider-consul.keys"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
