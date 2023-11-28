@@ -1,7 +1,3 @@
-# `consul_agent_service`
-
-Refer to the Terraform Registory for docs: [`consul_agent_service`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service).
-
 # `agentService` Submodule <a name="`agentService` Submodule" id="@cdktf/provider-consul.agentService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

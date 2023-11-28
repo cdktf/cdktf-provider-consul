@@ -1,7 +1,3 @@
-# `consul_acl_policy`
-
-Refer to the Terraform Registory for docs: [`consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_policy).
-
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-consul.aclPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclPolicy.AclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.NewAclPolicy(scope Construct, id *string, config AclPolicyConfig) AclPolicy
 ```
@@ -367,7 +363,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclPolicy.AclPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ aclpolicy.AclPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclPolicy.AclPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 aclpolicy.AclPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclPolicy.AclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclpolicy"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclpolicy"
 
 &aclpolicy.AclPolicyConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `consul_config_entry_service_splitter`
-
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_splitter`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter).
-
 # `configEntryServiceSplitter` Submodule <a name="`configEntryServiceSplitter` Submodule" id="@cdktf/provider-consul.configEntryServiceSplitter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitter(scope Construct, id *string, config ConfigEntryServiceSplitterConfig) ConfigEntryServiceSplitter
 ```
@@ -373,7 +369,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +415,7 @@ configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformResource(x interface{}) *bool
 ```
@@ -433,7 +429,7 @@ configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -794,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterConfig {
 	Connection: interface{},
@@ -993,15 +989,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplits {
 	Service: *string,
 	Weight: *f64,
 	Namespace: *string,
 	Partition: *string,
-	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders,
-	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v8.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders,
+	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders,
+	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders,
 	ServiceSubset: *string,
 }
 ```
@@ -1127,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplitsRequestHeaders {
 	Add: *map[string]*string,
@@ -1197,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplitsResponseHeaders {
 	Add: *map[string]*string,
@@ -1269,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceSplitterSplitsList
 ```
@@ -1412,7 +1408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceSplitterSplitsOutputReference
 ```
@@ -1894,7 +1890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference
 ```
@@ -2230,7 +2226,7 @@ func InternalValue() ConfigEntryServiceSplitterSplitsRequestHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference
 ```

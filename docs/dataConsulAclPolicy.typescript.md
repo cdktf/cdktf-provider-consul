@@ -1,7 +1,3 @@
-# `data_consul_acl_policy`
-
-Refer to the Terraform Registory for docs: [`data_consul_acl_policy`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_policy).
-
 # `dataConsulAclPolicy` Submodule <a name="`dataConsulAclPolicy` Submodule" id="@cdktf/provider-consul.dataConsulAclPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

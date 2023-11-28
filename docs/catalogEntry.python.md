@@ -1,7 +1,3 @@
-# `consul_catalog_entry`
-
-Refer to the Terraform Registory for docs: [`consul_catalog_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/catalog_entry).
-
 # `catalogEntry` Submodule <a name="`catalogEntry` Submodule" id="@cdktf/provider-consul.catalogEntry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

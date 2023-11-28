@@ -1,7 +1,3 @@
-# `consul_config_entry_service_intentions`
-
-Refer to the Terraform Registory for docs: [`consul_config_entry_service_intentions`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_intentions).
-
 # `configEntryServiceIntentions` Submodule <a name="`configEntryServiceIntentions` Submodule" id="@cdktf/provider-consul.configEntryServiceIntentions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentions(scope Construct, id *string, config ConfigEntryServiceIntentionsConfig) ConfigEntryServiceIntentions
 ```
@@ -400,7 +396,7 @@ func ResetSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +428,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +442,7 @@ configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +456,7 @@ configentryserviceintentions.ConfigEntryServiceIntentions_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.ConfigEntryServiceIntentions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -843,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsConfig {
 	Connection: interface{},
@@ -1058,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwt {
 	Providers: interface{},
@@ -1092,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwtProviders {
 	Name: *string,
@@ -1142,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaims {
 	Path: *[]*string,
@@ -1192,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSources {
 	Action: *string,
@@ -1372,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissions {
 	Action: *string,
@@ -1424,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissionsHttp {
 	Headers: interface{},
@@ -1522,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 &configentryserviceintentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeaders {
 	Name: *string,
@@ -1658,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtList
 ```
@@ -1801,7 +1797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtOutputReference
 ```
@@ -2110,7 +2106,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtProvidersList
 ```
@@ -2253,7 +2249,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtProvidersOutputReference
 ```
@@ -2591,7 +2587,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsList
 ```
@@ -2734,7 +2730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsJwtProvidersVerifyClaimsOutputReference
 ```
@@ -3059,7 +3055,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesList
 ```
@@ -3202,7 +3198,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesOutputReference
 ```
@@ -3772,7 +3768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersList
 ```
@@ -3915,7 +3911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpHeadersOutputReference
 ```
@@ -4378,7 +4374,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpList
 ```
@@ -4521,7 +4517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsHttpOutputReference
 ```
@@ -4946,7 +4942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsList
 ```
@@ -5089,7 +5085,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceIntentions.ConfigEntryServiceIntentionsSourcesPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceintentions"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceintentions"
 
 configentryserviceintentions.NewConfigEntryServiceIntentionsSourcesPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceIntentionsSourcesPermissionsOutputReference
 ```

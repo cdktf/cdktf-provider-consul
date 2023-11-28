@@ -1,7 +1,3 @@
-# `consul_acl_token`
-
-Refer to the Terraform Registory for docs: [`consul_acl_token`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token).
-
 # `aclToken` Submodule <a name="`aclToken` Submodule" id="@cdktf/provider-consul.aclToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

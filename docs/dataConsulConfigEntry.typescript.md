@@ -1,7 +1,3 @@
-# `data_consul_config_entry`
-
-Refer to the Terraform Registory for docs: [`data_consul_config_entry`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/config_entry).
-
 # `dataConsulConfigEntry` Submodule <a name="`dataConsulConfigEntry` Submodule" id="@cdktf/provider-consul.dataConsulConfigEntry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

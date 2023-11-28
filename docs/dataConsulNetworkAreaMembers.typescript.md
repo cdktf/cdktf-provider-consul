@@ -1,7 +1,3 @@
-# `data_consul_network_area_members`
-
-Refer to the Terraform Registory for docs: [`data_consul_network_area_members`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/network_area_members).
-
 # `dataConsulNetworkAreaMembers` Submodule <a name="`dataConsulNetworkAreaMembers` Submodule" id="@cdktf/provider-consul.dataConsulNetworkAreaMembers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

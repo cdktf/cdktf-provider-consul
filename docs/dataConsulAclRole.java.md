@@ -1,7 +1,3 @@
-# `data_consul_acl_role`
-
-Refer to the Terraform Registory for docs: [`data_consul_acl_role`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_role).
-
 # `dataConsulAclRole` Submodule <a name="`dataConsulAclRole` Submodule" id="@cdktf/provider-consul.dataConsulAclRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

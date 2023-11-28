@@ -1,7 +1,3 @@
-# `consul_autopilot_config`
-
-Refer to the Terraform Registory for docs: [`consul_autopilot_config`](https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/autopilot_config).
-
 # `autopilotConfig` Submodule <a name="`autopilotConfig` Submodule" id="@cdktf/provider-consul.autopilotConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 autopilotconfig.NewAutopilotConfig(scope Construct, id *string, config AutopilotConfigConfig) AutopilotConfig
 ```
@@ -395,7 +391,7 @@ func ResetUpgradeVersionTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsConstruct(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -441,7 +437,7 @@ autopilotconfig.AutopilotConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -455,7 +451,7 @@ autopilotconfig.AutopilotConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 autopilotconfig.AutopilotConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -882,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.autopilotConfig.AutopilotConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/autopilotconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/autopilotconfig"
 
 &autopilotconfig.AutopilotConfigConfig {
 	Connection: interface{},
