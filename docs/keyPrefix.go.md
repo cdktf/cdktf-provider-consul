@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.NewKeyPrefix(scope Construct, id *string, config KeyPrefixConfig) KeyPrefix
 ```
@@ -390,7 +390,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.KeyPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.KeyPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ keyprefix.KeyPrefix_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.KeyPrefix_IsTerraformResource(x interface{}) *bool
 ```
@@ -450,7 +450,7 @@ keyprefix.KeyPrefix_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.keyPrefix.KeyPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.KeyPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -855,7 +855,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.keyPrefix.KeyPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 &keyprefix.KeyPrefixConfig {
 	Connection: interface{},
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.keyPrefix.KeyPrefixSubkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 &keyprefix.KeyPrefixSubkey {
 	Path: *string,
@@ -1136,7 +1136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keyPrefix.KeyPrefixSubkeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.NewKeyPrefixSubkeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KeyPrefixSubkeyList
 ```
@@ -1279,7 +1279,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.keyPrefix.KeyPrefixSubkeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/keyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/keyprefix"
 
 keyprefix.NewKeyPrefixSubkeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KeyPrefixSubkeyOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespace.Namespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 namespace.NewNamespace(scope Construct, id *string, config NamespaceConfig) Namespace
 ```
@@ -370,7 +370,7 @@ func ResetRoleDefaults()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.namespace.Namespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 namespace.Namespace_IsConstruct(x interface{}) *bool
 ```
@@ -402,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.namespace.Namespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -416,7 +416,7 @@ namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.namespace.Namespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 namespace.Namespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ namespace.Namespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.namespace.Namespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 namespace.Namespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.namespace.NamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/namespace"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/namespace"
 
 &namespace.NamespaceConfig {
 	Connection: interface{},

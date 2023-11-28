@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolver.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolver(scope Construct, id *string, config ConfigEntryServiceResolverConfig) ConfigEntryServiceResolver
 ```
@@ -457,7 +457,7 @@ func ResetSubsets()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolver.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.ConfigEntryServiceResolver_IsConstruct(x interface{}) *bool
 ```
@@ -489,7 +489,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolver.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.ConfigEntryServiceResolver_IsTerraformElement(x interface{}) *bool
 ```
@@ -503,7 +503,7 @@ configentryserviceresolver.ConfigEntryServiceResolver_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolver.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.ConfigEntryServiceResolver_IsTerraformResource(x interface{}) *bool
 ```
@@ -517,7 +517,7 @@ configentryserviceresolver.ConfigEntryServiceResolver_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolver.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.ConfigEntryServiceResolver_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1010,7 +1010,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverConfig {
 	Connection: interface{},
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverFailover {
 	SubsetName: *string,
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailoverTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverFailoverTargets {
 	Datacenter: *string,
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverLoadBalancer {
 	HashPolicies: interface{},
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverLoadBalancerHashPolicies {
 	CookieConfig: interface{},
@@ -1737,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfig {
 	Path: *string,
@@ -1803,7 +1803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerLeastRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverLoadBalancerLeastRequestConfig {
 	ChoiceCount: *f64,
@@ -1835,7 +1835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerRingHashConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverLoadBalancerRingHashConfig {
 	MaximumRingSize: *f64,
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverRedirect {
 	Datacenter: *string,
@@ -2017,7 +2017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverSubsets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 &configentryserviceresolver.ConfigEntryServiceResolverSubsets {
 	Filter: *string,
@@ -2089,7 +2089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailoverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverFailoverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverFailoverList
 ```
@@ -2232,7 +2232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverFailoverOutputReference
 ```
@@ -2708,7 +2708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailoverTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverFailoverTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverFailoverTargetsList
 ```
@@ -2851,7 +2851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverFailoverTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverFailoverTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverFailoverTargetsOutputReference
 ```
@@ -3292,7 +3292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigList
 ```
@@ -3435,7 +3435,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverLoadBalancerHashPoliciesCookieConfigOutputReference
 ```
@@ -3789,7 +3789,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerHashPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverLoadBalancerHashPoliciesList
 ```
@@ -3932,7 +3932,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverLoadBalancerHashPoliciesOutputReference
 ```
@@ -4357,7 +4357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerLeastRequestConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerLeastRequestConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverLoadBalancerLeastRequestConfigList
 ```
@@ -4500,7 +4500,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerLeastRequestConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerLeastRequestConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverLoadBalancerLeastRequestConfigOutputReference
 ```
@@ -4796,7 +4796,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverLoadBalancerList
 ```
@@ -4939,7 +4939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverLoadBalancerOutputReference
 ```
@@ -5361,7 +5361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerRingHashConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerRingHashConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverLoadBalancerRingHashConfigList
 ```
@@ -5504,7 +5504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverLoadBalancerRingHashConfigOutputReference
 ```
@@ -5829,7 +5829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverRedirectList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverRedirectList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverRedirectList
 ```
@@ -5972,7 +5972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverRedirectOutputReference
 ```
@@ -6442,7 +6442,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverSubsetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverSubsetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceResolverSubsetsList
 ```
@@ -6585,7 +6585,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceResolver.ConfigEntryServiceResolverSubsetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryserviceresolver"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/configentryserviceresolver"
 
 configentryserviceresolver.NewConfigEntryServiceResolverSubsetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceResolverSubsetsOutputReference
 ```
