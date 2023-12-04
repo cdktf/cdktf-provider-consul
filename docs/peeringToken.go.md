@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peeringToken.PeeringToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.NewPeeringToken(scope Construct, id *string, config PeeringTokenConfig) PeeringToken
 ```
@@ -392,7 +392,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.peeringToken.PeeringToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ peeringtoken.PeeringToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.peeringToken.PeeringToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ peeringtoken.PeeringToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.peeringToken.PeeringToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 peeringtoken.PeeringToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.peeringToken.PeeringTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peeringtoken"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peeringtoken"
 
 &peeringtoken.PeeringTokenConfig {
 	Connection: interface{},
