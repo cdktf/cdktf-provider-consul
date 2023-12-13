@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 aclrolepolicyattachment.NewAclRolePolicyAttachment(scope Construct, id *string, config AclRolePolicyAttachmentConfig) AclRolePolicyAttachment
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclrolepolicyattachment"
 
 &aclrolepolicyattachment.AclRolePolicyAttachmentConfig {
 	Connection: interface{},
