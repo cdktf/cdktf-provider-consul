@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 dataconsulagentconfig.NewDataConsulAgentConfig(scope Construct, id *string, config DataConsulAgentConfigConfig) DataConsulAgentConfig
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ dataconsulagentconfig.DataConsulAgentConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataconsulagentconfig.DataConsulAgentConfig_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 dataconsulagentconfig.DataConsulAgentConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAgentConfig.DataConsulAgentConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulagentconfig"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulagentconfig"
 
 &dataconsulagentconfig.DataConsulAgentConfigConfig {
 	Connection: interface{},

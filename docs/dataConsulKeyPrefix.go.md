@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.NewDataConsulKeyPrefix(scope Construct, id *string, config DataConsulKeyPrefixConfig) DataConsulKeyPrefix
 ```
@@ -322,7 +322,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.DataConsulKeyPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.DataConsulKeyPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ dataconsulkeyprefix.DataConsulKeyPrefix_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.DataConsulKeyPrefix_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -382,7 +382,7 @@ dataconsulkeyprefix.DataConsulKeyPrefix_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.DataConsulKeyPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 &dataconsulkeyprefix.DataConsulKeyPrefixConfig {
 	Connection: interface{},
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefixSubkey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 &dataconsulkeyprefix.DataConsulKeyPrefixSubkey {
 	Name: *string,
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefixSubkeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.NewDataConsulKeyPrefixSubkeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulKeyPrefixSubkeyList
 ```
@@ -1175,7 +1175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeyPrefix.DataConsulKeyPrefixSubkeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeyprefix"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulkeyprefix"
 
 dataconsulkeyprefix.NewDataConsulKeyPrefixSubkeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulKeyPrefixSubkeyOutputReference
 ```
