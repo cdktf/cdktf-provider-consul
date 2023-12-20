@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 acltokenpolicyattachment.NewAclTokenPolicyAttachment(scope Construct, id *string, config AclTokenPolicyAttachmentConfig) AclTokenPolicyAttachment
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/acltokenpolicyattachment"
 
 &acltokenpolicyattachment.AclTokenPolicyAttachmentConfig {
 	Connection: interface{},
