@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [aclAuthMethod](./aclAuthMethod.go.md)
 - [aclBindingRule](./aclBindingRule.go.md)
 - [aclPolicy](./aclPolicy.go.md)
@@ -57,3 +60,8 @@ The following submodules are available:
 - [preparedQuery](./preparedQuery.go.md)
 - [provider](./provider.go.md)
 - [service](./service.go.md)
+
+
+
+
+
