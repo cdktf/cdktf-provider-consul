@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 dataconsulnetworksegments.NewDataConsulNetworkSegments(scope Construct, id *string, config DataConsulNetworkSegmentsConfig) DataConsulNetworkSegments
 ```
@@ -288,7 +288,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ dataconsulnetworksegments.DataConsulNetworkSegments_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 dataconsulnetworksegments.DataConsulNetworkSegments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulNetworkSegments.DataConsulNetworkSegmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulnetworksegments"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulnetworksegments"
 
 &dataconsulnetworksegments.DataConsulNetworkSegmentsConfig {
 	Connection: interface{},
