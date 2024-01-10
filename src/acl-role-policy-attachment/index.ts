@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment
 // generated from terraform resource schema
 
@@ -145,5 +140,31 @@ export class AclRolePolicyAttachment extends cdktf.TerraformResource {
       policy: cdktf.stringToTerraform(this._policy),
       role_id: cdktf.stringToTerraform(this._roleId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy: {
+        value: cdktf.stringToHclTerraform(this._policy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_id: {
+        value: cdktf.stringToHclTerraform(this._roleId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

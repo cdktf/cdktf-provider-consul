@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix
 // generated from terraform resource schema
 
@@ -75,6 +70,37 @@ export function keyPrefixSubkeyToTerraform(struct?: KeyPrefixSubkey | cdktf.IRes
     path: cdktf.stringToTerraform(struct!.path),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function keyPrefixSubkeyToHclTerraform(struct?: KeyPrefixSubkey | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    flags: {
+      value: cdktf.numberToHclTerraform(struct!.flags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class KeyPrefixSubkeyOutputReference extends cdktf.ComplexObject {
@@ -401,5 +427,61 @@ export class KeyPrefix extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
       subkey: cdktf.listMapper(keyPrefixSubkeyToTerraform, true)(this._subkey.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path_prefix: {
+        value: cdktf.stringToHclTerraform(this._pathPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subkeys: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._subkeys),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subkey: {
+        value: cdktf.listMapperHcl(keyPrefixSubkeyToHclTerraform, true)(this._subkey.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "KeyPrefixSubkeyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

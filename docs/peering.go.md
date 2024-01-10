@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peering.Peering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.NewPeering(scope Construct, id *string, config PeeringConfig) Peering
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.peering.Peering.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-consul.peering.Peering.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.peering.Peering.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-consul.peering.Peering.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-consul.peering.Peering.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.peering.Peering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.peering.Peering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ peering.Peering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.peering.Peering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ peering.Peering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.peering.Peering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.peering.PeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 &peering.PeeringConfig {
 	Connection: interface{},

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataConsulAclAuthMethodNamespaceRuleToTerraform(struct?: DataCon
   }
   return {
   }
+}
+
+
+export function dataConsulAclAuthMethodNamespaceRuleToHclTerraform(struct?: DataConsulAclAuthMethodNamespaceRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulAclAuthMethodNamespaceRuleOutputReference extends cdktf.ComplexObject {
@@ -277,5 +283,37 @@ export class DataConsulAclAuthMethod extends cdktf.TerraformDataSource {
       namespace: cdktf.stringToTerraform(this._namespace),
       partition: cdktf.stringToTerraform(this._partition),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

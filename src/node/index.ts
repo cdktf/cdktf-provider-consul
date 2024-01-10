@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/node
 // generated from terraform resource schema
 
@@ -231,5 +226,55 @@ export class Node extends cdktf.TerraformResource {
       partition: cdktf.stringToTerraform(this._partition),
       token: cdktf.stringToTerraform(this._token),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

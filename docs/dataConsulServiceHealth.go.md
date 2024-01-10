@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealth(scope Construct, id *string, config DataConsulServiceHealthConfig) DataConsulServiceHealth
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -126,6 +127,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.toMetadata"></a>
 
@@ -323,7 +332,7 @@ func ResetWaitFor()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +378,7 @@ dataconsulservicehealth.DataConsulServiceHealth_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +392,7 @@ dataconsulservicehealth.DataConsulServiceHealth_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealth.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.DataConsulServiceHealth_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthConfig {
 	Connection: interface{},
@@ -1030,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResults {
 
@@ -1043,7 +1052,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsChecks {
 
@@ -1056,7 +1065,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsNode {
 
@@ -1069,7 +1078,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehea
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 &dataconsulservicehealth.DataConsulServiceHealthResultsService {
 
@@ -1084,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehea
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsChecksList
 ```
@@ -1125,10 +1134,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1216,7 +1242,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsChecksOutputReference
 ```
@@ -1582,7 +1608,7 @@ func InternalValue() DataConsulServiceHealthResultsChecks
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsList
 ```
@@ -1623,10 +1649,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1714,7 +1757,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsNodeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsNodeList
 ```
@@ -1755,10 +1798,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1846,7 +1906,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsNodeOutputReference
 ```
@@ -2179,7 +2239,7 @@ func InternalValue() DataConsulServiceHealthResultsNode
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsOutputReference
 ```
@@ -2479,7 +2539,7 @@ func InternalValue() DataConsulServiceHealthResults
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulServiceHealthResultsServiceList
 ```
@@ -2520,10 +2580,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2611,7 +2688,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulServiceHealth.DataConsulServiceHealthResultsServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulservicehealth"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulservicehealth"
 
 dataconsulservicehealth.NewDataConsulServiceHealthResultsServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulServiceHealthResultsServiceOutputReference
 ```

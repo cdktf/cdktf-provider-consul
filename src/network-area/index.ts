@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/network_area
 // generated from terraform resource schema
 
@@ -210,5 +205,49 @@ export class NetworkArea extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
       use_tls: cdktf.booleanToTerraform(this._useTls),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_datacenter: {
+        value: cdktf.stringToHclTerraform(this._peerDatacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retry_join: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._retryJoin),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_tls: {
+        value: cdktf.booleanToHclTerraform(this._useTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/service_health
 // generated from terraform resource schema
 
@@ -62,6 +57,17 @@ export function dataConsulServiceHealthResultsChecksToTerraform(struct?: DataCon
   }
   return {
   }
+}
+
+
+export function dataConsulServiceHealthResultsChecksToHclTerraform(struct?: DataConsulServiceHealthResultsChecks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulServiceHealthResultsChecksOutputReference extends cdktf.ComplexObject {
@@ -168,6 +174,17 @@ export function dataConsulServiceHealthResultsNodeToTerraform(struct?: DataConsu
   }
 }
 
+
+export function dataConsulServiceHealthResultsNodeToHclTerraform(struct?: DataConsulServiceHealthResultsNode): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataConsulServiceHealthResultsNodeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -259,6 +276,17 @@ export function dataConsulServiceHealthResultsServiceToTerraform(struct?: DataCo
   }
 }
 
+
+export function dataConsulServiceHealthResultsServiceToHclTerraform(struct?: DataConsulServiceHealthResultsService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataConsulServiceHealthResultsServiceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -347,6 +375,17 @@ export function dataConsulServiceHealthResultsToTerraform(struct?: DataConsulSer
   }
   return {
   }
+}
+
+
+export function dataConsulServiceHealthResultsToHclTerraform(struct?: DataConsulServiceHealthResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulServiceHealthResultsOutputReference extends cdktf.ComplexObject {
@@ -644,5 +683,67 @@ export class DataConsulServiceHealth extends cdktf.TerraformDataSource {
       tag: cdktf.stringToTerraform(this._tag),
       wait_for: cdktf.stringToTerraform(this._waitFor),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.stringToHclTerraform(this._filter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      near: {
+        value: cdktf.stringToHclTerraform(this._near),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._nodeMeta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      passing: {
+        value: cdktf.booleanToHclTerraform(this._passing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tag: {
+        value: cdktf.stringToHclTerraform(this._tag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for: {
+        value: cdktf.stringToHclTerraform(this._waitFor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

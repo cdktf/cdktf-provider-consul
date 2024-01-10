@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter
 // generated from terraform resource schema
 
@@ -81,6 +76,37 @@ export function configEntryServiceSplitterSplitsRequestHeadersToTerraform(struct
     remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.remove),
     set: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.set),
   }
+}
+
+
+export function configEntryServiceSplitterSplitsRequestHeadersToHclTerraform(struct?: ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference | ConfigEntryServiceSplitterSplitsRequestHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    add: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.add),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    remove: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.remove),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    set: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.set),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference extends cdktf.ComplexObject {
@@ -206,6 +232,37 @@ export function configEntryServiceSplitterSplitsResponseHeadersToTerraform(struc
     remove: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.remove),
     set: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.set),
   }
+}
+
+
+export function configEntryServiceSplitterSplitsResponseHeadersToHclTerraform(struct?: ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference | ConfigEntryServiceSplitterSplitsResponseHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    add: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.add),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    remove: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.remove),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    set: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.set),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference extends cdktf.ComplexObject {
@@ -359,6 +416,61 @@ export function configEntryServiceSplitterSplitsToTerraform(struct?: ConfigEntry
     request_headers: configEntryServiceSplitterSplitsRequestHeadersToTerraform(struct!.requestHeaders),
     response_headers: configEntryServiceSplitterSplitsResponseHeadersToTerraform(struct!.responseHeaders),
   }
+}
+
+
+export function configEntryServiceSplitterSplitsToHclTerraform(struct?: ConfigEntryServiceSplitterSplits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partition: {
+      value: cdktf.stringToHclTerraform(struct!.partition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service: {
+      value: cdktf.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_subset: {
+      value: cdktf.stringToHclTerraform(struct!.serviceSubset),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    request_headers: {
+      value: configEntryServiceSplitterSplitsRequestHeadersToHclTerraform(struct!.requestHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConfigEntryServiceSplitterSplitsRequestHeadersList",
+    },
+    response_headers: {
+      value: configEntryServiceSplitterSplitsResponseHeadersToHclTerraform(struct!.responseHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ConfigEntryServiceSplitterSplitsResponseHeadersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ConfigEntryServiceSplitterSplitsOutputReference extends cdktf.ComplexObject {
@@ -734,5 +846,49 @@ export class ConfigEntryServiceSplitter extends cdktf.TerraformResource {
       partition: cdktf.stringToTerraform(this._partition),
       splits: cdktf.listMapper(configEntryServiceSplitterSplitsToTerraform, true)(this._splits.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      splits: {
+        value: cdktf.listMapperHcl(configEntryServiceSplitterSplitsToHclTerraform, true)(this._splits.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConfigEntryServiceSplitterSplitsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

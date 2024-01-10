@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.NewAclBindingRule(scope Construct, id *string, config AclBindingRuleConfig) AclBindingRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.aclBindingRule.AclBindingRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -131,6 +132,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.toMetadata"></a>
 
@@ -426,7 +433,7 @@ func ResetSelector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +493,7 @@ aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclBindingRule.AclBindingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.AclBindingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclBindingRule.AclBindingRuleBindVars.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 &aclbindingrule.AclBindingRuleBindVars {
 	Name: *string,
@@ -947,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclBindingRule.AclBindingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 &aclbindingrule.AclBindingRuleConfig {
 	Connection: interface{},
@@ -960,7 +967,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
 	AuthMethod: *string,
 	BindName: *string,
 	BindType: *string,
-	BindVars: github.com/cdktf/cdktf-provider-consul-go/consul/v8.aclBindingRule.AclBindingRuleBindVars,
+	BindVars: github.com/cdktf/cdktf-provider-consul-go/consul.aclBindingRule.AclBindingRuleBindVars,
 	Description: *string,
 	Id: *string,
 	Namespace: *string,
@@ -1196,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclBindingRule.AclBindingRuleBindVarsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclbindingrule"
 
 aclbindingrule.NewAclBindingRuleBindVarsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AclBindingRuleBindVarsOutputReference
 ```

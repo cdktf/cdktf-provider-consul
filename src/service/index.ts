@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/service
 // generated from terraform resource schema
 
@@ -120,6 +115,31 @@ export function serviceCheckHeaderToTerraform(struct?: ServiceCheckHeader | cdkt
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
   }
+}
+
+
+export function serviceCheckHeaderToHclTerraform(struct?: ServiceCheckHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceCheckHeaderOutputReference extends cdktf.ComplexObject {
@@ -312,6 +332,91 @@ export function serviceCheckToTerraform(struct?: ServiceCheck | cdktf.IResolvabl
     tls_skip_verify: cdktf.booleanToTerraform(struct!.tlsSkipVerify),
     header: cdktf.listMapper(serviceCheckHeaderToTerraform, true)(struct!.header),
   }
+}
+
+
+export function serviceCheckToHclTerraform(struct?: ServiceCheck | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    check_id: {
+      value: cdktf.stringToHclTerraform(struct!.checkId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deregister_critical_service_after: {
+      value: cdktf.stringToHclTerraform(struct!.deregisterCriticalServiceAfter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http: {
+      value: cdktf.stringToHclTerraform(struct!.http),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.stringToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    notes: {
+      value: cdktf.stringToHclTerraform(struct!.notes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tcp: {
+      value: cdktf.stringToHclTerraform(struct!.tcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timeout: {
+      value: cdktf.stringToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_skip_verify: {
+      value: cdktf.booleanToHclTerraform(struct!.tlsSkipVerify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    header: {
+      value: cdktf.listMapperHcl(serviceCheckHeaderToHclTerraform, true)(struct!.header),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ServiceCheckHeaderList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ServiceCheckOutputReference extends cdktf.ComplexObject {
@@ -935,5 +1040,97 @@ export class Service extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       check: cdktf.listMapper(serviceCheckToTerraform, true)(this._check.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_tag_override: {
+        value: cdktf.booleanToHclTerraform(this._enableTagOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external: {
+        value: cdktf.booleanToHclTerraform(this._external),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node: {
+        value: cdktf.stringToHclTerraform(this._node),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      service_id: {
+        value: cdktf.stringToHclTerraform(this._serviceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      check: {
+        value: cdktf.listMapperHcl(serviceCheckToHclTerraform, true)(this._check.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ServiceCheckList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

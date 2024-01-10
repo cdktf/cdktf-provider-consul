@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs
 // generated from terraform resource schema
 
@@ -153,6 +148,43 @@ export function consulProviderAuthJwtToTerraform(struct?: ConsulProviderAuthJwt)
   }
 }
 
+
+export function consulProviderAuthJwtToHclTerraform(struct?: ConsulProviderAuthJwt): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    auth_method: {
+      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bearer_token: {
+      value: cdktf.stringToHclTerraform(struct!.bearerToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    meta: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.meta),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    use_terraform_cloud_workload_identity: {
+      value: cdktf.booleanToHclTerraform(struct!.useTerraformCloudWorkloadIdentity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export interface ConsulProviderHeader {
   /**
   * The name of the header.
@@ -177,6 +209,31 @@ export function consulProviderHeaderToTerraform(struct?: ConsulProviderHeader | 
     name: cdktf.stringToTerraform(struct!.name),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function consulProviderHeaderToHclTerraform(struct?: ConsulProviderHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 
@@ -544,5 +601,115 @@ export class ConsulProvider extends cdktf.TerraformProvider {
       auth_jwt: consulProviderAuthJwtToTerraform(this._authJwt),
       header: cdktf.listMapper(consulProviderHeaderToTerraform, true)(this._header),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_file: {
+        value: cdktf.stringToHclTerraform(this._caFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_path: {
+        value: cdktf.stringToHclTerraform(this._caPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_pem: {
+        value: cdktf.stringToHclTerraform(this._caPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cert_file: {
+        value: cdktf.stringToHclTerraform(this._certFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cert_pem: {
+        value: cdktf.stringToHclTerraform(this._certPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_auth: {
+        value: cdktf.stringToHclTerraform(this._httpAuth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure_https: {
+        value: cdktf.booleanToHclTerraform(this._insecureHttps),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_file: {
+        value: cdktf.stringToHclTerraform(this._keyFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_pem: {
+        value: cdktf.stringToHclTerraform(this._keyPem),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scheme: {
+        value: cdktf.stringToHclTerraform(this._scheme),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_jwt: {
+        value: consulProviderAuthJwtToHclTerraform(this._authJwt),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConsulProviderAuthJwtList",
+      },
+      header: {
+        value: cdktf.listMapperHcl(consulProviderHeaderToHclTerraform, true)(this._header),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ConsulProviderHeaderList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

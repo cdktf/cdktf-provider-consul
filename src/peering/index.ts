@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering
 // generated from terraform resource schema
 
@@ -221,5 +216,43 @@ export class Peering extends cdktf.TerraformResource {
       peer_name: cdktf.stringToTerraform(this._peerName),
       peering_token: cdktf.stringToTerraform(this._peeringToken),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_name: {
+        value: cdktf.stringToHclTerraform(this._peerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peering_token: {
+        value: cdktf.stringToHclTerraform(this._peeringToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
