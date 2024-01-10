@@ -135,6 +135,25 @@ export function preparedQueryDnsToTerraform(struct?: PreparedQueryDnsOutputRefer
   }
 }
 
+
+export function preparedQueryDnsToHclTerraform(struct?: PreparedQueryDnsOutputReference | PreparedQueryDns): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ttl: {
+      value: cdktf.stringToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PreparedQueryDnsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -207,6 +226,31 @@ export function preparedQueryFailoverTargetsToTerraform(struct?: PreparedQueryFa
     datacenter: cdktf.stringToTerraform(struct!.datacenter),
     peer: cdktf.stringToTerraform(struct!.peer),
   }
+}
+
+
+export function preparedQueryFailoverTargetsToHclTerraform(struct?: PreparedQueryFailoverTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    datacenter: {
+      value: cdktf.stringToHclTerraform(struct!.datacenter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    peer: {
+      value: cdktf.stringToHclTerraform(struct!.peer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PreparedQueryFailoverTargetsOutputReference extends cdktf.ComplexObject {
@@ -344,6 +388,37 @@ export function preparedQueryFailoverToTerraform(struct?: PreparedQueryFailoverO
   }
 }
 
+
+export function preparedQueryFailoverToHclTerraform(struct?: PreparedQueryFailoverOutputReference | PreparedQueryFailover): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    datacenters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.datacenters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    nearest_n: {
+      value: cdktf.numberToHclTerraform(struct!.nearestN),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    targets: {
+      value: cdktf.listMapperHcl(preparedQueryFailoverTargetsToHclTerraform, true)(struct!.targets),
+      isBlock: true,
+      type: "list",
+      storageClassType: "PreparedQueryFailoverTargetsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PreparedQueryFailoverOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -467,6 +542,37 @@ export function preparedQueryTemplateToTerraform(struct?: PreparedQueryTemplateO
     remove_empty_tags: cdktf.booleanToTerraform(struct!.removeEmptyTags),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function preparedQueryTemplateToHclTerraform(struct?: PreparedQueryTemplateOutputReference | PreparedQueryTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    regexp: {
+      value: cdktf.stringToHclTerraform(struct!.regexp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    remove_empty_tags: {
+      value: cdktf.booleanToHclTerraform(struct!.removeEmptyTags),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
@@ -920,5 +1026,115 @@ export class PreparedQuery extends cdktf.TerraformResource {
       failover: preparedQueryFailoverToTerraform(this._failover.internalValue),
       template: preparedQueryTemplateToTerraform(this._template.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      connect: {
+        value: cdktf.booleanToHclTerraform(this._connect),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_check_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ignoreCheckIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      near: {
+        value: cdktf.stringToHclTerraform(this._near),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._nodeMeta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      only_passing: {
+        value: cdktf.booleanToHclTerraform(this._onlyPassing),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      service: {
+        value: cdktf.stringToHclTerraform(this._service),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._serviceMeta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      session: {
+        value: cdktf.stringToHclTerraform(this._session),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stored_token: {
+        value: cdktf.stringToHclTerraform(this._storedToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dns: {
+        value: preparedQueryDnsToHclTerraform(this._dns.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PreparedQueryDnsList",
+      },
+      failover: {
+        value: preparedQueryFailoverToHclTerraform(this._failover.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PreparedQueryFailoverList",
+      },
+      template: {
+        value: preparedQueryTemplateToHclTerraform(this._template.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PreparedQueryTemplateList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

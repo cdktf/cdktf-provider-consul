@@ -280,4 +280,66 @@ export class AutopilotConfig extends cdktf.TerraformResource {
       upgrade_version_tag: cdktf.stringToTerraform(this._upgradeVersionTag),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cleanup_dead_servers: {
+        value: cdktf.booleanToHclTerraform(this._cleanupDeadServers),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      datacenter: {
+        value: cdktf.stringToHclTerraform(this._datacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_upgrade_migration: {
+        value: cdktf.booleanToHclTerraform(this._disableUpgradeMigration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      last_contact_threshold: {
+        value: cdktf.stringToHclTerraform(this._lastContactThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_trailing_logs: {
+        value: cdktf.numberToHclTerraform(this._maxTrailingLogs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      redundancy_zone_tag: {
+        value: cdktf.stringToHclTerraform(this._redundancyZoneTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_stabilization_time: {
+        value: cdktf.stringToHclTerraform(this._serverStabilizationTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      upgrade_version_tag: {
+        value: cdktf.stringToHclTerraform(this._upgradeVersionTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

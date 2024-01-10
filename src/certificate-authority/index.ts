@@ -173,4 +173,36 @@ export class CertificateAuthority extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._config),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      config_json: {
+        value: cdktf.stringToHclTerraform(this._configJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connect_provider: {
+        value: cdktf.stringToHclTerraform(this._connectProvider),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

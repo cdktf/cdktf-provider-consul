@@ -94,6 +94,31 @@ export function aclRoleNodeIdentitiesToTerraform(struct?: AclRoleNodeIdentities 
   }
 }
 
+
+export function aclRoleNodeIdentitiesToHclTerraform(struct?: AclRoleNodeIdentities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    datacenter: {
+      value: cdktf.stringToHclTerraform(struct!.datacenter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    node_name: {
+      value: cdktf.stringToHclTerraform(struct!.nodeName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AclRoleNodeIdentitiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -216,6 +241,31 @@ export function aclRoleServiceIdentitiesToTerraform(struct?: AclRoleServiceIdent
   }
 }
 
+
+export function aclRoleServiceIdentitiesToHclTerraform(struct?: AclRoleServiceIdentities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    datacenters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.datacenters),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    service_name: {
+      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AclRoleServiceIdentitiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -334,6 +384,25 @@ export function aclRoleTemplatedPoliciesTemplateVariablesToTerraform(struct?: Ac
   }
 }
 
+
+export function aclRoleTemplatedPoliciesTemplateVariablesToHclTerraform(struct?: AclRoleTemplatedPoliciesTemplateVariablesOutputReference | AclRoleTemplatedPoliciesTemplateVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AclRoleTemplatedPoliciesTemplateVariablesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -413,6 +482,37 @@ export function aclRoleTemplatedPoliciesToTerraform(struct?: AclRoleTemplatedPol
     template_name: cdktf.stringToTerraform(struct!.templateName),
     template_variables: aclRoleTemplatedPoliciesTemplateVariablesToTerraform(struct!.templateVariables),
   }
+}
+
+
+export function aclRoleTemplatedPoliciesToHclTerraform(struct?: AclRoleTemplatedPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    datacenters: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.datacenters),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    template_name: {
+      value: cdktf.stringToHclTerraform(struct!.templateName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    template_variables: {
+      value: aclRoleTemplatedPoliciesTemplateVariablesToHclTerraform(struct!.templateVariables),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AclRoleTemplatedPoliciesTemplateVariablesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AclRoleTemplatedPoliciesOutputReference extends cdktf.ComplexObject {
@@ -760,5 +860,67 @@ export class AclRole extends cdktf.TerraformResource {
       service_identities: cdktf.listMapper(aclRoleServiceIdentitiesToTerraform, true)(this._serviceIdentities.internalValue),
       templated_policies: cdktf.listMapper(aclRoleTemplatedPoliciesToTerraform, true)(this._templatedPolicies.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      node_identities: {
+        value: cdktf.listMapperHcl(aclRoleNodeIdentitiesToHclTerraform, true)(this._nodeIdentities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AclRoleNodeIdentitiesList",
+      },
+      service_identities: {
+        value: cdktf.listMapperHcl(aclRoleServiceIdentitiesToHclTerraform, true)(this._serviceIdentities.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AclRoleServiceIdentitiesList",
+      },
+      templated_policies: {
+        value: cdktf.listMapperHcl(aclRoleTemplatedPoliciesToHclTerraform, true)(this._templatedPolicies.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AclRoleTemplatedPoliciesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

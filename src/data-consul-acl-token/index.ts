@@ -50,6 +50,17 @@ export function dataConsulAclTokenNodeIdentitiesToTerraform(struct?: DataConsulA
   }
 }
 
+
+export function dataConsulAclTokenNodeIdentitiesToHclTerraform(struct?: DataConsulAclTokenNodeIdentities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataConsulAclTokenNodeIdentitiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -117,6 +128,17 @@ export function dataConsulAclTokenPoliciesToTerraform(struct?: DataConsulAclToke
   }
   return {
   }
+}
+
+
+export function dataConsulAclTokenPoliciesToHclTerraform(struct?: DataConsulAclTokenPolicies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulAclTokenPoliciesOutputReference extends cdktf.ComplexObject {
@@ -188,6 +210,17 @@ export function dataConsulAclTokenRolesToTerraform(struct?: DataConsulAclTokenRo
   }
 }
 
+
+export function dataConsulAclTokenRolesToHclTerraform(struct?: DataConsulAclTokenRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataConsulAclTokenRolesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -255,6 +288,17 @@ export function dataConsulAclTokenServiceIdentitiesToTerraform(struct?: DataCons
   }
   return {
   }
+}
+
+
+export function dataConsulAclTokenServiceIdentitiesToHclTerraform(struct?: DataConsulAclTokenServiceIdentities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulAclTokenServiceIdentitiesOutputReference extends cdktf.ComplexObject {
@@ -326,6 +370,17 @@ export function dataConsulAclTokenTemplatedPoliciesTemplateVariablesToTerraform(
   }
 }
 
+
+export function dataConsulAclTokenTemplatedPoliciesTemplateVariablesToHclTerraform(struct?: DataConsulAclTokenTemplatedPoliciesTemplateVariables): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataConsulAclTokenTemplatedPoliciesTemplateVariablesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -388,6 +443,17 @@ export function dataConsulAclTokenTemplatedPoliciesToTerraform(struct?: DataCons
   }
   return {
   }
+}
+
+
+export function dataConsulAclTokenTemplatedPoliciesToHclTerraform(struct?: DataConsulAclTokenTemplatedPolicies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataConsulAclTokenTemplatedPoliciesOutputReference extends cdktf.ComplexObject {
@@ -632,5 +698,37 @@ export class DataConsulAclToken extends cdktf.TerraformDataSource {
       namespace: cdktf.stringToTerraform(this._namespace),
       partition: cdktf.stringToTerraform(this._partition),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      accessor_id: {
+        value: cdktf.stringToHclTerraform(this._accessorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

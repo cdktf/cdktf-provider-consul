@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 dataconsulconfigentry.NewDataConsulConfigEntry(scope Construct, id *string, config DataConsulConfigEntryConfig) DataConsulConfigEntry
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataconsulconfigentry.DataConsulConfigEntry_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 dataconsulconfigentry.DataConsulConfigEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulConfigEntry.DataConsulConfigEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/dataconsulconfigentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentry"
 
 &dataconsulconfigentry.DataConsulConfigEntryConfig {
 	Connection: interface{},

@@ -112,6 +112,31 @@ export function aclAuthMethodNamespaceRuleToTerraform(struct?: AclAuthMethodName
   }
 }
 
+
+export function aclAuthMethodNamespaceRuleToHclTerraform(struct?: AclAuthMethodNamespaceRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bind_namespace: {
+      value: cdktf.stringToHclTerraform(struct!.bindNamespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    selector: {
+      value: cdktf.stringToHclTerraform(struct!.selector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AclAuthMethodNamespaceRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -486,5 +511,85 @@ export class AclAuthMethod extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       namespace_rule: cdktf.listMapper(aclAuthMethodNamespaceRuleToTerraform, true)(this._namespaceRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      config: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._config),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      config_json: {
+        value: cdktf.stringToHclTerraform(this._configJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_token_ttl: {
+        value: cdktf.stringToHclTerraform(this._maxTokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_locality: {
+        value: cdktf.stringToHclTerraform(this._tokenLocality),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace_rule: {
+        value: cdktf.listMapperHcl(aclAuthMethodNamespaceRuleToHclTerraform, true)(this._namespaceRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AclAuthMethodNamespaceRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

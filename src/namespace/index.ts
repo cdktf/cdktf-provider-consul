@@ -235,4 +235,54 @@ export class Namespace extends cdktf.TerraformResource {
       role_defaults: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roleDefaults),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.stringToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_defaults: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policyDefaults),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      role_defaults: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roleDefaults),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

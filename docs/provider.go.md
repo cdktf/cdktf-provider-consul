@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 provider.NewConsulProvider(scope Construct, id *string, config ConsulProviderConfig) ConsulProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.resetAddress">ResetAddress</a></code> | *No description.* |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-consul.provider.ConsulProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-consul.provider.ConsulProvider.toMetadata"></a>
 
@@ -256,7 +263,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.provider.ConsulProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 provider.ConsulProvider_IsConstruct(x interface{}) *bool
 ```
@@ -288,7 +295,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 provider.ConsulProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -302,7 +309,7 @@ provider.ConsulProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-consul.provider.ConsulProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 provider.ConsulProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -316,7 +323,7 @@ provider.ConsulProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.provider.ConsulProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 provider.ConsulProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 &provider.ConsulProviderAuthJwt {
 	AuthMethod: *string,
@@ -937,12 +944,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 &provider.ConsulProviderConfig {
 	Address: *string,
 	Alias: *string,
-	AuthJwt: github.com/cdktf/cdktf-provider-consul-go/consul/v8.provider.ConsulProviderAuthJwt,
+	AuthJwt: github.com/cdktf/cdktf-provider-consul-go/consul/v9.provider.ConsulProviderAuthJwt,
 	CaFile: *string,
 	CaPath: *string,
 	CaPem: *string,
@@ -1233,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.provider.ConsulProviderHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v8/provider"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/provider"
 
 &provider.ConsulProviderHeader {
 	Name: *string,
