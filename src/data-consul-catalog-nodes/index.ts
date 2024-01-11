@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/catalog_nodes
 // generated from terraform resource schema
 
