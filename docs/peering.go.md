@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peering.Peering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.NewPeering(scope Construct, id *string, config PeeringConfig) Peering
 ```
@@ -399,7 +399,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.peering.Peering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.peering.Peering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ peering.Peering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.peering.Peering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ peering.Peering_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.peering.Peering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 peering.Peering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.peering.PeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/peering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/peering"
 
 &peering.PeeringConfig {
 	Connection: interface{},
