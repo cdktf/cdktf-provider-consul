@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQuery(scope Construct, id *string, config PreparedQueryConfig) PreparedQuery
 ```
@@ -522,7 +522,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.PreparedQuery_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.PreparedQuery_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ preparedquery.PreparedQuery_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.PreparedQuery_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ preparedquery.PreparedQuery_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.preparedQuery.PreparedQuery.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.PreparedQuery_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1185,7 +1185,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.preparedQuery.PreparedQueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 &preparedquery.PreparedQueryConfig {
 	Connection: interface{},
@@ -1199,8 +1199,8 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
 	Service: *string,
 	Connect: interface{},
 	Datacenter: *string,
-	Dns: github.com/cdktf/cdktf-provider-consul-go/consul/v9.preparedQuery.PreparedQueryDns,
-	Failover: github.com/cdktf/cdktf-provider-consul-go/consul/v9.preparedQuery.PreparedQueryFailover,
+	Dns: github.com/cdktf/cdktf-provider-consul-go/consul.preparedQuery.PreparedQueryDns,
+	Failover: github.com/cdktf/cdktf-provider-consul-go/consul.preparedQuery.PreparedQueryFailover,
 	Id: *string,
 	IgnoreCheckIds: *[]*string,
 	Near: *string,
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
 	Session: *string,
 	StoredToken: *string,
 	Tags: *[]*string,
-	Template: github.com/cdktf/cdktf-provider-consul-go/consul/v9.preparedQuery.PreparedQueryTemplate,
+	Template: github.com/cdktf/cdktf-provider-consul-go/consul.preparedQuery.PreparedQueryTemplate,
 	Token: *string,
 }
 ```
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.preparedQuery.PreparedQueryDns.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 &preparedquery.PreparedQueryDns {
 	Ttl: *string,
@@ -1610,7 +1610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.preparedQuery.PreparedQueryFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 &preparedquery.PreparedQueryFailover {
 	Datacenters: *[]*string,
@@ -1676,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.preparedQuery.PreparedQueryFailoverTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 &preparedquery.PreparedQueryFailoverTargets {
 	Datacenter: *string,
@@ -1726,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.preparedQuery.PreparedQueryTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 &preparedquery.PreparedQueryTemplate {
 	Regexp: *string,
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQueryDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQueryDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PreparedQueryDnsOutputReference
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() PreparedQueryDns
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQueryFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQueryFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PreparedQueryFailoverOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() PreparedQueryFailover
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQueryFailoverTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQueryFailoverTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PreparedQueryFailoverTargetsList
 ```
@@ -2581,7 +2581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQueryFailoverTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQueryFailoverTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PreparedQueryFailoverTargetsOutputReference
 ```
@@ -2906,7 +2906,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.preparedQuery.PreparedQueryTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/preparedquery"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/preparedquery"
 
 preparedquery.NewPreparedQueryTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PreparedQueryTemplateOutputReference
 ```
