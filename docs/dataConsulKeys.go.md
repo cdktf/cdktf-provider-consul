@@ -4,12 +4,12 @@
 
 ### DataConsulKeys <a name="DataConsulKeys" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys consul_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys consul_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeys(scope Construct, id *string, config DataConsulKeysConfig) DataConsulKeys
 ```
@@ -338,7 +338,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataconsulkeys.DataConsulKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataconsulkeys.DataConsulKeys_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataConsulKeys to import.
 
 The id of the existing DataConsulKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 &dataconsulkeys.DataConsulKeysConfig {
 	Connection: interface{},
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.errorOnMissingKeys">ErrorOnMissingKeys</a></code> | <code>interface{}</code> | Whether to return an error when a key is absent from the KV store and no default is configured. |
-| <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#id DataConsulKeys#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#id DataConsulKeys#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.key">Key</a></code> | <code>interface{}</code> | key block. |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace to lookup the keys. |
 | <code><a href="#@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition to lookup the keys. |
@@ -891,7 +891,7 @@ Datacenter *string
 
 The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#datacenter DataConsulKeys#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#datacenter DataConsulKeys#datacenter}
 
 ---
 
@@ -907,7 +907,7 @@ Whether to return an error when a key is absent from the KV store and no default
 
 This defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#error_on_missing_keys DataConsulKeys#error_on_missing_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#error_on_missing_keys DataConsulKeys#error_on_missing_keys}
 
 ---
 
@@ -919,7 +919,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#id DataConsulKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#id DataConsulKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ Key interface{}
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#key DataConsulKeys#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#key DataConsulKeys#key}
 
 ---
 
@@ -950,7 +950,7 @@ Namespace *string
 
 The namespace to lookup the keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#namespace DataConsulKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#namespace DataConsulKeys#namespace}
 
 ---
 
@@ -964,7 +964,7 @@ Partition *string
 
 The partition to lookup the keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#partition DataConsulKeys#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#partition DataConsulKeys#partition}
 
 ---
 
@@ -978,7 +978,7 @@ Token *string
 
 The ACL token to use. This overrides the token that the agent provides by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#token DataConsulKeys#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#token DataConsulKeys#token}
 
 ---
 
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 &dataconsulkeys.DataConsulKeysKey {
 	Name: *string,
@@ -1018,7 +1018,7 @@ This is the name of the key.
 
 This value of the key is exposed as `var.<name>`. This is not the path of the key in Consul.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#name DataConsulKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#name DataConsulKeys#name}
 
 ---
 
@@ -1032,7 +1032,7 @@ Path *string
 
 This is the path in Consul that should be read or written to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#path DataConsulKeys#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#path DataConsulKeys#path}
 
 ---
 
@@ -1046,7 +1046,7 @@ Default *string
 
 This is the default value to set for `var.<name>` if the key does not exist in Consul. Defaults to an empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/keys#default DataConsulKeys#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/keys#default DataConsulKeys#default}
 
 ---
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeysKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulKeysKeyList
 ```
@@ -1217,7 +1217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeysKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulKeysKeyOutputReference
 ```

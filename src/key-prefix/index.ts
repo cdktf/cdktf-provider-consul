@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix
+// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface KeyPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#datacenter KeyPrefix#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#id KeyPrefix#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#id KeyPrefix#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#namespace KeyPrefix#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#partition KeyPrefix#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#partition KeyPrefix#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#path_prefix KeyPrefix#path_prefix}
   */
   readonly pathPrefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#subkeys KeyPrefix#subkeys}
   */
   readonly subkeys?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#token KeyPrefix#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#token KeyPrefix#token}
   */
   readonly token?: string;
   /**
   * subkey block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#subkey KeyPrefix#subkey}
   */
   readonly subkey?: KeyPrefixSubkey[] | cdktf.IResolvable;
 }
 export interface KeyPrefixSubkey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#flags KeyPrefix#flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#flags KeyPrefix#flags}
   */
   readonly flags?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#path KeyPrefix#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#path KeyPrefix#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#value KeyPrefix#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#value KeyPrefix#value}
   */
   readonly value: string;
 }
@@ -228,7 +223,7 @@ export class KeyPrefixSubkeyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix consul_key_prefix}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix consul_key_prefix}
 */
 export class KeyPrefix extends cdktf.TerraformResource {
 
@@ -244,7 +239,7 @@ export class KeyPrefix extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a KeyPrefix resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyPrefix to import
-  * @param importFromId The id of the existing KeyPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeyPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -256,7 +251,7 @@ export class KeyPrefix extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/key_prefix consul_key_prefix} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/key_prefix consul_key_prefix} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +262,7 @@ export class KeyPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'consul_key_prefix',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

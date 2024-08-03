@@ -4,12 +4,12 @@
 
 ### DataConsulPeering <a name="DataConsulPeering" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering consul_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering consul_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 dataconsulpeering.NewDataConsulPeering(scope Construct, id *string, config DataConsulPeeringConfig) DataConsulPeering
 ```
@@ -290,7 +290,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 dataconsulpeering.DataConsulPeering_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 dataconsulpeering.DataConsulPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataconsulpeering.DataConsulPeering_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 dataconsulpeering.DataConsulPeering_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataconsulpeering.DataConsulPeering_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeering.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 dataconsulpeering.DataConsulPeering_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataConsulPeering to impor
 
 The id of the existing DataConsulPeering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulpeering"
 
 &dataconsulpeering.DataConsulPeeringConfig {
 	Connection: interface{},
@@ -727,9 +727,9 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulpeering"
 | <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.peerName">PeerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#id DataConsulPeering#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#partition DataConsulPeering#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.peerName">PeerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#id DataConsulPeering#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulPeering.DataConsulPeeringConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#partition DataConsulPeering#partition}. |
 
 ---
 
@@ -811,7 +811,7 @@ PeerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#peer_name DataConsulPeering#peer_name}.
 
 ---
 
@@ -823,7 +823,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#id DataConsulPeering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#id DataConsulPeering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/peering#partition DataConsulPeering#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/peering#partition DataConsulPeering#partition}.
 
 ---
 

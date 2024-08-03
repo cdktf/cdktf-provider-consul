@@ -4,12 +4,12 @@
 
 ### DataConsulAclTokenSecretId <a name="DataConsulAclTokenSecretId" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id consul_acl_token_secret_id}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.NewDataConsulAclTokenSecretId(scope Construct, id *string, config DataConsulAclTokenSecretIdConfig) DataConsulAclTokenSecretId
 ```
@@ -304,7 +304,7 @@ func ResetPgpKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataconsulacltokensecretid.DataConsulAclTokenSecretId_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 dataconsulacltokensecretid.DataConsulAclTokenSecretId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataConsulAclTokenSecretId
 
 The id of the existing DataConsulAclTokenSecretId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -703,7 +703,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokensecretid"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulacltokensecretid"
 
 &dataconsulacltokensecretid.DataConsulAclTokenSecretIdConfig {
 	Connection: interface{},
@@ -732,11 +732,11 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulacltokense
 | <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#accessor_id DataConsulAclTokenSecretId#accessor_id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#id DataConsulAclTokenSecretId#id}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#namespace DataConsulAclTokenSecretId#namespace}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#partition DataConsulAclTokenSecretId#partition}. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#pgp_key DataConsulAclTokenSecretId#pgp_key}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#accessor_id DataConsulAclTokenSecretId#accessor_id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#id DataConsulAclTokenSecretId#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#namespace DataConsulAclTokenSecretId#namespace}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.partition">Partition</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#partition DataConsulAclTokenSecretId#partition}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclTokenSecretId.DataConsulAclTokenSecretIdConfig.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#pgp_key DataConsulAclTokenSecretId#pgp_key}. |
 
 ---
 
@@ -818,7 +818,7 @@ AccessorId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#accessor_id DataConsulAclTokenSecretId#accessor_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#accessor_id DataConsulAclTokenSecretId#accessor_id}.
 
 ---
 
@@ -830,7 +830,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#id DataConsulAclTokenSecretId#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#id DataConsulAclTokenSecretId#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,7 +845,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#namespace DataConsulAclTokenSecretId#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#namespace DataConsulAclTokenSecretId#namespace}.
 
 ---
 
@@ -857,7 +857,7 @@ Partition *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#partition DataConsulAclTokenSecretId#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#partition DataConsulAclTokenSecretId#partition}.
 
 ---
 
@@ -869,7 +869,7 @@ PgpKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_token_secret_id#pgp_key DataConsulAclTokenSecretId#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token_secret_id#pgp_key DataConsulAclTokenSecretId#pgp_key}.
 
 ---
 

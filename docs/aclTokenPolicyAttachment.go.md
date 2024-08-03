@@ -4,12 +4,12 @@
 
 ### AclTokenPolicyAttachment <a name="AclTokenPolicyAttachment" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment consul_acl_token_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 acltokenpolicyattachment.NewAclTokenPolicyAttachment(scope Construct, id *string, config AclTokenPolicyAttachmentConfig) AclTokenPolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ acltokenpolicyattachment.AclTokenPolicyAttachment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 acltokenpolicyattachment.AclTokenPolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AclTokenPolicyAttachment t
 
 The id of the existing AclTokenPolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/acltokenpolicyattachment"
 
 &acltokenpolicyattachment.AclTokenPolicyAttachmentConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/acltokenpolicyattach
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy name. |
 | <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.tokenId">TokenId</a></code> | <code>*string</code> | The token accessor id. |
-| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclTokenPolicyAttachment.AclTokenPolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Policy *string
 
 The policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment#policy AclTokenPolicyAttachment#policy}
 
 ---
 
@@ -867,7 +867,7 @@ TokenId *string
 
 The token accessor id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment#token_id AclTokenPolicyAttachment#token_id}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token_policy_attachment#id AclTokenPolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

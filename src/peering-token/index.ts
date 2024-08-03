@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token
+// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface PeeringTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#id PeeringToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,23 +17,29 @@ export interface PeeringTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies KV metadata to associate with the peering. This parameter is not required and does not directly impact the cluster peering process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#meta PeeringToken#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#meta PeeringToken#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#partition PeeringToken#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}
   */
   readonly partition?: string;
   /**
   * The name assigned to the peer cluster. The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
   */
   readonly peerName: string;
+  /**
+  * The addresses for the cluster that generates the peering token. Addresses take the form {host or IP}:port. You can specify one or more load balancers or external IPs that route external traffic to this cluster's Consul servers.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
+  */
+  readonly serverExternalAddresses?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token consul_peering_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token}
 */
 export class PeeringToken extends cdktf.TerraformResource {
 
@@ -54,7 +55,7 @@ export class PeeringToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PeeringToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PeeringToken to import
-  * @param importFromId The id of the existing PeeringToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PeeringToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PeeringToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +67,7 @@ export class PeeringToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering_token consul_peering_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +78,7 @@ export class PeeringToken extends cdktf.TerraformResource {
       terraformResourceType: 'consul_peering_token',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -92,6 +93,7 @@ export class PeeringToken extends cdktf.TerraformResource {
     this._meta = config.meta;
     this._partition = config.partition;
     this._peerName = config.peerName;
+    this._serverExternalAddresses = config.serverExternalAddresses;
   }
 
   // ==========
@@ -164,6 +166,22 @@ export class PeeringToken extends cdktf.TerraformResource {
     return this.getStringAttribute('peering_token');
   }
 
+  // server_external_addresses - computed: false, optional: true, required: false
+  private _serverExternalAddresses?: string[]; 
+  public get serverExternalAddresses() {
+    return this.getListAttribute('server_external_addresses');
+  }
+  public set serverExternalAddresses(value: string[]) {
+    this._serverExternalAddresses = value;
+  }
+  public resetServerExternalAddresses() {
+    this._serverExternalAddresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverExternalAddressesInput() {
+    return this._serverExternalAddresses;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -174,6 +192,7 @@ export class PeeringToken extends cdktf.TerraformResource {
       meta: cdktf.hashMapper(cdktf.stringToTerraform)(this._meta),
       partition: cdktf.stringToTerraform(this._partition),
       peer_name: cdktf.stringToTerraform(this._peerName),
+      server_external_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serverExternalAddresses),
     };
   }
 
@@ -202,6 +221,12 @@ export class PeeringToken extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      server_external_addresses: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serverExternalAddresses),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
     };
 

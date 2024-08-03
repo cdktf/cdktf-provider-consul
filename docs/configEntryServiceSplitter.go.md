@@ -4,12 +4,12 @@
 
 ### ConfigEntryServiceSplitter <a name="ConfigEntryServiceSplitter" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter consul_config_entry_service_splitter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitter(scope Construct, id *string, config ConfigEntryServiceSplitterConfig) ConfigEntryServiceSplitter
 ```
@@ -419,7 +419,7 @@ func ResetPartition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ configentryservicesplitter.ConfigEntryServiceSplitter_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.ConfigEntryServiceSplitter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ConfigEntryServiceSplitter
 
 The id of the existing ConfigEntryServiceSplitter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterConfig {
 	Connection: interface{},
@@ -872,7 +872,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesp
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.name">Name</a></code> | <code>*string</code> | Specifies a name for the configuration entry. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.splits">Splits</a></code> | <code>interface{}</code> | splits block. |
-| <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#id ConfigEntryServiceSplitter#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#id ConfigEntryServiceSplitter#id}. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.meta">Meta</a></code> | <code>*map[string]*string</code> | Specifies key-value pairs to add to the KV store. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Specifies the namespace to apply the configuration entry. |
 | <code><a href="#@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterConfig.property.partition">Partition</a></code> | <code>*string</code> | Specifies the admin partition to apply the configuration entry. |
@@ -959,7 +959,7 @@ Name *string
 
 Specifies a name for the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#name ConfigEntryServiceSplitter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#name ConfigEntryServiceSplitter#name}
 
 ---
 
@@ -973,7 +973,7 @@ Splits interface{}
 
 splits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#splits ConfigEntryServiceSplitter#splits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#splits ConfigEntryServiceSplitter#splits}
 
 ---
 
@@ -985,7 +985,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#id ConfigEntryServiceSplitter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#id ConfigEntryServiceSplitter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1002,7 +1002,7 @@ Meta *map[string]*string
 
 Specifies key-value pairs to add to the KV store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#meta ConfigEntryServiceSplitter#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#meta ConfigEntryServiceSplitter#meta}
 
 ---
 
@@ -1016,7 +1016,7 @@ Namespace *string
 
 Specifies the namespace to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#namespace ConfigEntryServiceSplitter#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#namespace ConfigEntryServiceSplitter#namespace}
 
 ---
 
@@ -1030,7 +1030,7 @@ Partition *string
 
 Specifies the admin partition to apply the configuration entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#partition ConfigEntryServiceSplitter#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#partition ConfigEntryServiceSplitter#partition}
 
 ---
 
@@ -1039,15 +1039,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplits {
 	Service: *string,
 	Weight: *f64,
 	Namespace: *string,
 	Partition: *string,
-	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v9.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders,
-	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul/v9.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders,
+	RequestHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders,
+	ResponseHeaders: github.com/cdktf/cdktf-provider-consul-go/consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders,
 	ServiceSubset: *string,
 }
 ```
@@ -1076,7 +1076,7 @@ Service *string
 
 Specifies the name of the service to resolve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#service ConfigEntryServiceSplitter#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#service ConfigEntryServiceSplitter#service}
 
 ---
 
@@ -1092,7 +1092,7 @@ Specifies the percentage of traffic sent to the set of service instances specifi
 
 Each weight must be a floating integer between `0` and `100`. The smallest representable value is `.01`. The sum of weights across all splits must add up to `100`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#weight ConfigEntryServiceSplitter#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#weight ConfigEntryServiceSplitter#weight}
 
 ---
 
@@ -1106,7 +1106,7 @@ Namespace *string
 
 Specifies the namespace to use in the FQDN when resolving the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#namespace ConfigEntryServiceSplitter#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#namespace ConfigEntryServiceSplitter#namespace}
 
 ---
 
@@ -1120,7 +1120,7 @@ Partition *string
 
 Specifies the admin partition to use in the FQDN when resolving the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#partition ConfigEntryServiceSplitter#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#partition ConfigEntryServiceSplitter#partition}
 
 ---
 
@@ -1134,7 +1134,7 @@ RequestHeaders ConfigEntryServiceSplitterSplitsRequestHeaders
 
 request_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#request_headers ConfigEntryServiceSplitter#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#request_headers ConfigEntryServiceSplitter#request_headers}
 
 ---
 
@@ -1148,7 +1148,7 @@ ResponseHeaders ConfigEntryServiceSplitterSplitsResponseHeaders
 
 response_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#response_headers ConfigEntryServiceSplitter#response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#response_headers ConfigEntryServiceSplitter#response_headers}
 
 ---
 
@@ -1164,7 +1164,7 @@ Specifies a subset of the service to resolve.
 
 A service subset assigns a name to a specific subset of discoverable service instances within a datacenter, such as `version2` or `canary`. All services have an unnamed default subset that returns all healthy instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#service_subset ConfigEntryServiceSplitter#service_subset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#service_subset ConfigEntryServiceSplitter#service_subset}
 
 ---
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplitsRequestHeaders {
 	Add: *map[string]*string,
@@ -1204,7 +1204,7 @@ Map of one or more key-value pairs.
 
 Defines a set of key-value pairs to add to the header. Use header names as the keys. Header names are not case-sensitive. If header values with the same name already exist, the value is appended and Consul applies both headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#add ConfigEntryServiceSplitter#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#add ConfigEntryServiceSplitter#add}
 
 ---
 
@@ -1218,7 +1218,7 @@ Remove *[]*string
 
 Defines an list of headers to remove. Consul removes only headers containing exact matches. Header names are not case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#remove ConfigEntryServiceSplitter#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#remove ConfigEntryServiceSplitter#remove}
 
 ---
 
@@ -1234,7 +1234,7 @@ Map of one or more key-value pairs.
 
 Defines a set of key-value pairs to add to the request header or to replace existing header values with. Use header names as the keys. Header names are not case-sensitive. If header values with the same names already exist, Consul replaces the header values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#set ConfigEntryServiceSplitter#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#set ConfigEntryServiceSplitter#set}
 
 ---
 
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 &configentryservicesplitter.ConfigEntryServiceSplitterSplitsResponseHeaders {
 	Add: *map[string]*string,
@@ -1274,7 +1274,7 @@ Map of one or more key-value pairs.
 
 Defines a set of key-value pairs to add to the header. Use header names as the keys. Header names are not case-sensitive. If header values with the same name already exist, the value is appended and Consul applies both headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#add ConfigEntryServiceSplitter#add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#add ConfigEntryServiceSplitter#add}
 
 ---
 
@@ -1288,7 +1288,7 @@ Remove *[]*string
 
 Defines an list of headers to remove. Consul removes only headers containing exact matches. Header names are not case-sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#remove ConfigEntryServiceSplitter#remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#remove ConfigEntryServiceSplitter#remove}
 
 ---
 
@@ -1304,7 +1304,7 @@ Map of one or more key-value pairs.
 
 Defines a set of key-value pairs to add to the request header or to replace existing header values with. Use header names as the keys. Header names are not case-sensitive. If header values with the same names already exist, Consul replaces the header values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/config_entry_service_splitter#set ConfigEntryServiceSplitter#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_service_splitter#set ConfigEntryServiceSplitter#set}
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConfigEntryServiceSplitterSplitsList
 ```
@@ -1475,7 +1475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ConfigEntryServiceSplitterSplitsOutputReference
 ```
@@ -1957,7 +1957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceSplitterSplitsRequestHeadersOutputReference
 ```
@@ -2293,7 +2293,7 @@ func InternalValue() ConfigEntryServiceSplitterSplitsRequestHeaders
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryServiceSplitter.ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/configentryservicesplitter"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/configentryservicesplitter"
 
 configentryservicesplitter.NewConfigEntryServiceSplitterSplitsResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigEntryServiceSplitterSplitsResponseHeadersOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method
+// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulAclAuthMethodConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method#id DataConsulAclAuthMethod#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method#id DataConsulAclAuthMethod#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method#name DataConsulAclAuthMethod#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method#name DataConsulAclAuthMethod#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method#namespace DataConsulAclAuthMethod#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method#namespace DataConsulAclAuthMethod#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method#partition DataConsulAclAuthMethod#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method#partition DataConsulAclAuthMethod#partition}
   */
   readonly partition?: string;
 }
@@ -114,7 +109,7 @@ export class DataConsulAclAuthMethodNamespaceRuleList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method consul_acl_auth_method}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method consul_acl_auth_method}
 */
 export class DataConsulAclAuthMethod extends cdktf.TerraformDataSource {
 
@@ -130,7 +125,7 @@ export class DataConsulAclAuthMethod extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulAclAuthMethod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulAclAuthMethod to import
-  * @param importFromId The id of the existing DataConsulAclAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulAclAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulAclAuthMethod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -142,7 +137,7 @@ export class DataConsulAclAuthMethod extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_auth_method consul_acl_auth_method} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -153,7 +148,7 @@ export class DataConsulAclAuthMethod extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_acl_auth_method',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

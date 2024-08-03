@@ -4,12 +4,12 @@
 
 ### AclRolePolicyAttachment <a name="AclRolePolicyAttachment" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment consul_acl_role_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 aclrolepolicyattachment.NewAclRolePolicyAttachment(scope Construct, id *string, config AclRolePolicyAttachmentConfig) AclRolePolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ aclrolepolicyattachment.AclRolePolicyAttachment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 aclrolepolicyattachment.AclRolePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the AclRolePolicyAttachment to
 
 The id of the existing AclRolePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/aclrolepolicyattachment"
 
 &aclrolepolicyattachment.AclRolePolicyAttachmentConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/aclrolepolicyattachm
 | <code><a href="#@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy name. |
 | <code><a href="#@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.property.roleId">RoleId</a></code> | <code>*string</code> | The id of the role. |
-| <code><a href="#@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment#id AclRolePolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.aclRolePolicyAttachment.AclRolePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment#id AclRolePolicyAttachment#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Policy *string
 
 The policy name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment#policy AclRolePolicyAttachment#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment#policy AclRolePolicyAttachment#policy}
 
 ---
 
@@ -867,7 +867,7 @@ RoleId *string
 
 The id of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment#role_id AclRolePolicyAttachment#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment#role_id AclRolePolicyAttachment#role_id}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_role_policy_attachment#id AclRolePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role_policy_attachment#id AclRolePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

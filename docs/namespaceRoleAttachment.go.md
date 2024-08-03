@@ -4,12 +4,12 @@
 
 ### NamespaceRoleAttachment <a name="NamespaceRoleAttachment" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment consul_namespace_role_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment consul_namespace_role_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 namespaceroleattachment.NewNamespaceRoleAttachment(scope Construct, id *string, config NamespaceRoleAttachmentConfig) NamespaceRoleAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 namespaceroleattachment.NamespaceRoleAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 namespaceroleattachment.NamespaceRoleAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ namespaceroleattachment.NamespaceRoleAttachment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 namespaceroleattachment.NamespaceRoleAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ namespaceroleattachment.NamespaceRoleAttachment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 namespaceroleattachment.NamespaceRoleAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the NamespaceRoleAttachment to
 
 The id of the existing NamespaceRoleAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachment"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/namespaceroleattachment"
 
 &namespaceroleattachment.NamespaceRoleAttachmentConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/namespaceroleattachm
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace to attach the role to. |
 | <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.role">Role</a></code> | <code>*string</code> | The role name. |
-| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
+| <code><a href="#@cdktf/provider-consul.namespaceRoleAttachment.NamespaceRoleAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Namespace *string
 
 The namespace to attach the role to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment#namespace NamespaceRoleAttachment#namespace}
 
 ---
 
@@ -867,7 +867,7 @@ Role *string
 
 The role name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment#role NamespaceRoleAttachment#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment#role NamespaceRoleAttachment#role}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/namespace_role_attachment#id NamespaceRoleAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### AgentService <a name="AgentService" id="@cdktf/provider-consul.agentService.AgentService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service consul_agent_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service consul_agent_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.agentService.AgentService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.NewAgentService(scope Construct, id *string, config AgentServiceConfig) AgentService
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.agentService.AgentService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.agentService.AgentService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.agentService.AgentService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.agentService.AgentService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 agentservice.AgentService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the AgentService to import.
 
 The id of the existing AgentService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.agentService.AgentServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/agentservice"
 
 &agentservice.AgentServiceConfig {
 	Connection: interface{},
@@ -834,11 +834,11 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#name AgentService#name}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#address AgentService#address}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#id AgentService#id}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#port AgentService#port}. |
-| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#tags AgentService#tags}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#name AgentService#name}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.address">Address</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#address AgentService#address}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#id AgentService#id}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#port AgentService#port}. |
+| <code><a href="#@cdktf/provider-consul.agentService.AgentServiceConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#tags AgentService#tags}. |
 
 ---
 
@@ -920,7 +920,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#name AgentService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#name AgentService#name}.
 
 ---
 
@@ -932,7 +932,7 @@ Address *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#address AgentService#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#address AgentService#address}.
 
 ---
 
@@ -944,7 +944,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#id AgentService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#id AgentService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#port AgentService#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#port AgentService#port}.
 
 ---
 
@@ -971,7 +971,7 @@ Tags *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/agent_service#tags AgentService#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/agent_service#tags AgentService#tags}.
 
 ---
 
