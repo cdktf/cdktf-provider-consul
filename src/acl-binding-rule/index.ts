@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule
+// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the ACL auth method this rule apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
   */
   readonly authMethod: string;
   /**
   * The name to bind to a token at login-time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
   */
   readonly bindName: string;
   /**
   * Specifies the way the binding rule affects a token created at login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
   */
   readonly bindType: string;
   /**
   * A free form human readable description of the binding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#id AclBindingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#id AclBindingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,25 +46,25 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The namespace to create the binding rule within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#namespace AclBindingRule#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#namespace AclBindingRule#namespace}
   */
   readonly namespace?: string;
   /**
   * The partition the ACL binding rule is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#partition AclBindingRule#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#partition AclBindingRule#partition}
   */
   readonly partition?: string;
   /**
   * The expression used to match this rule against valid identities returned from an auth method validation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
   */
   readonly selector?: string;
   /**
   * bind_vars block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#bind_vars AclBindingRule#bind_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#bind_vars AclBindingRule#bind_vars}
   */
   readonly bindVars?: AclBindingRuleBindVars;
 }
@@ -72,7 +72,7 @@ export interface AclBindingRuleBindVars {
   /**
   * The name of node, workload identity or service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#name AclBindingRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#name AclBindingRule#name}
   */
   readonly name?: string;
 }
@@ -156,7 +156,7 @@ export class AclBindingRuleBindVarsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule consul_acl_binding_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule consul_acl_binding_rule}
 */
 export class AclBindingRule extends cdktf.TerraformResource {
 
@@ -172,7 +172,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclBindingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclBindingRule to import
-  * @param importFromId The id of the existing AclBindingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclBindingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclBindingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -184,7 +184,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_binding_rule consul_acl_binding_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -195,7 +195,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
       terraformResourceType: 'consul_acl_binding_rule',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,

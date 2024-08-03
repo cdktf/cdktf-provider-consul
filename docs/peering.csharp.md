@@ -4,7 +4,7 @@
 
 ### Peering <a name="Peering" id="@cdktf/provider-consul.peering.Peering"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering consul_peering}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering consul_peering}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peering.Peering.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Peering to import.
 
 The id of the existing Peering that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,9 +895,9 @@ new PeeringConfig {
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peeringToken">PeeringToken</a></code> | <code>string</code> | The peering token fetched from the peer cluster. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.peerName">PeerName</a></code> | <code>string</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#id Peering#id}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#id Peering#id}. |
 | <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#partition Peering#partition}. |
+| <code><a href="#@cdktf/provider-consul.peering.PeeringConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#partition Peering#partition}. |
 
 ---
 
@@ -981,7 +981,7 @@ public string PeeringToken { get; set; }
 
 The peering token fetched from the peer cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#peering_token Peering#peering_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#peering_token Peering#peering_token}
 
 ---
 
@@ -997,7 +997,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#peer_name Peering#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#peer_name Peering#peer_name}
 
 ---
 
@@ -1009,7 +1009,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#id Peering#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#id Peering#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1028,7 +1028,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#meta Peering#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#meta Peering#meta}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Partition { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/resources/peering#partition Peering#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering#partition Peering#partition}.
 
 ---
 

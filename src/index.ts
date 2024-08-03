@@ -23,6 +23,7 @@ export * as configEntryServiceIntentions from './config-entry-service-intentions
 export * as configEntryServiceResolver from './config-entry-service-resolver';
 export * as configEntryServiceRouter from './config-entry-service-router';
 export * as configEntryServiceSplitter from './config-entry-service-splitter';
+export * as configEntryV2ExportedServices from './config-entry-v2-exported-services';
 export * as intention from './intention';
 export * as keyPrefix from './key-prefix';
 export * as keys from './keys';
@@ -48,6 +49,7 @@ export * as dataConsulCatalogNodes from './data-consul-catalog-nodes';
 export * as dataConsulCatalogService from './data-consul-catalog-service';
 export * as dataConsulCatalogServices from './data-consul-catalog-services';
 export * as dataConsulConfigEntry from './data-consul-config-entry';
+export * as dataConsulConfigEntryV2ExportedServices from './data-consul-config-entry-v2-exported-services';
 export * as dataConsulDatacenters from './data-consul-datacenters';
 export * as dataConsulKeyPrefix from './data-consul-key-prefix';
 export * as dataConsulKeys from './data-consul-keys';

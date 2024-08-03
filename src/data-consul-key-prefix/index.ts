@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix
+// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface DataConsulKeyPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#datacenter DataConsulKeyPrefix#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#datacenter DataConsulKeyPrefix#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#id DataConsulKeyPrefix#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#id DataConsulKeyPrefix#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#namespace DataConsulKeyPrefix#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#namespace DataConsulKeyPrefix#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#partition DataConsulKeyPrefix#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#partition DataConsulKeyPrefix#partition}
   */
   readonly partition?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#path_prefix DataConsulKeyPrefix#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#path_prefix DataConsulKeyPrefix#path_prefix}
   */
   readonly pathPrefix: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#token DataConsulKeyPrefix#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#token DataConsulKeyPrefix#token}
   */
   readonly token?: string;
   /**
   * subkey block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#subkey DataConsulKeyPrefix#subkey}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#subkey DataConsulKeyPrefix#subkey}
   */
   readonly subkey?: DataConsulKeyPrefixSubkey[] | cdktf.IResolvable;
 }
 export interface DataConsulKeyPrefixSubkey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#default DataConsulKeyPrefix#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#default DataConsulKeyPrefix#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#name DataConsulKeyPrefix#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#name DataConsulKeyPrefix#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#path DataConsulKeyPrefix#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#path DataConsulKeyPrefix#path}
   */
   readonly path: string;
 }
@@ -224,7 +224,7 @@ export class DataConsulKeyPrefixSubkeyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix consul_key_prefix}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix consul_key_prefix}
 */
 export class DataConsulKeyPrefix extends cdktf.TerraformDataSource {
 
@@ -240,7 +240,7 @@ export class DataConsulKeyPrefix extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataConsulKeyPrefix resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataConsulKeyPrefix to import
-  * @param importFromId The id of the existing DataConsulKeyPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataConsulKeyPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataConsulKeyPrefix to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -252,7 +252,7 @@ export class DataConsulKeyPrefix extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.20.0/docs/data-sources/key_prefix consul_key_prefix} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/key_prefix consul_key_prefix} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,7 +263,7 @@ export class DataConsulKeyPrefix extends cdktf.TerraformDataSource {
       terraformResourceType: 'consul_key_prefix',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.20.0',
+        providerVersion: '2.21.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
