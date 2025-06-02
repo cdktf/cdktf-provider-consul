@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.NewCatalogEntry(scope Construct, id *string, config CatalogEntryConfig) CatalogEntry
 ```
@@ -419,7 +419,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.CatalogEntry_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.CatalogEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ catalogentry.CatalogEntry_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.CatalogEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ catalogentry.CatalogEntry_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.catalogEntry.CatalogEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.CatalogEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.catalogEntry.CatalogEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 &catalogentry.CatalogEntryConfig {
 	Connection: interface{},
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.catalogEntry.CatalogEntryService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 &catalogentry.CatalogEntryService {
 	Name: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.catalogEntry.CatalogEntryServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.NewCatalogEntryServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CatalogEntryServiceList
 ```
@@ -1284,7 +1284,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.catalogEntry.CatalogEntryServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/catalogentry"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/catalogentry"
 
 catalogentry.NewCatalogEntryServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CatalogEntryServiceOutputReference
 ```
