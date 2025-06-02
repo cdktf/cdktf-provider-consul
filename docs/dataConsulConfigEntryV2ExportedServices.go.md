@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 dataconsulconfigentryv2exportedservices.NewDataConsulConfigEntryV2ExportedServices(scope Construct, id *string, config DataConsulConfigEntryV2ExportedServicesConfig) DataConsulConfigEntryV2ExportedServices
 ```
@@ -325,7 +325,7 @@ func ResetServices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulConfigEntryV2ExportedServices.DataConsulConfigEntryV2ExportedServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/dataconsulconfigentryv2exportedservices"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulconfigentryv2exportedservices"
 
 &dataconsulconfigentryv2exportedservices.DataConsulConfigEntryV2ExportedServicesConfig {
 	Connection: interface{},

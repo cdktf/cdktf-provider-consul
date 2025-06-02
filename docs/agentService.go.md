@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.agentService.AgentService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 agentservice.NewAgentService(scope Construct, id *string, config AgentServiceConfig) AgentService
 ```
@@ -406,7 +406,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.agentService.AgentService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 agentservice.AgentService_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.agentService.AgentService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ agentservice.AgentService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-consul.agentService.AgentService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ agentservice.AgentService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.agentService.AgentService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 agentservice.AgentService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.agentService.AgentServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/v9/agentservice"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/agentservice"
 
 &agentservice.AgentServiceConfig {
 	Connection: interface{},
