@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query
+// https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface PreparedQueryConfig extends cdktf.TerraformMetaArguments {
   /**
   * When `true` the prepared query will return connect proxy services for a queried service.  Conditions such as `tags` in the prepared query will be matched against the proxy service. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#connect PreparedQuery#connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#connect PreparedQuery#connect}
   */
   readonly connect?: boolean | cdktf.IResolvable;
   /**
   * The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#id PreparedQuery#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#id PreparedQuery#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,85 +34,85 @@ export interface PreparedQueryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies a list of check IDs that should be ignored when filtering unhealthy instances. This is mostly useful in an emergency or as a temporary measure when a health check is found to be unreliable. Being able to ignore it in centrally-defined queries can be simpler than de-registering the check as an interim solution until the check can be fixed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#ignore_check_ids PreparedQuery#ignore_check_ids}
   */
   readonly ignoreCheckIds?: string[];
   /**
   * The name of the prepared query. Used to identify the prepared query during requests. Can be specified as an empty string to configure the query as a catch-all.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#name PreparedQuery#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#name PreparedQuery#name}
   */
   readonly name: string;
   /**
   * Allows specifying the name of a node to sort results near using Consul's distance sorting and network coordinates. The magic `_agent` value can be used to always sort nearest the node servicing the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#near PreparedQuery#near}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#near PreparedQuery#near}
   */
   readonly near?: string;
   /**
   * Specifies a list of user-defined key/value pairs that will be used for filtering the query results to nodes with the given metadata values present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#node_meta PreparedQuery#node_meta}
   */
   readonly nodeMeta?: { [key: string]: string };
   /**
   * When `true`, the prepared query will only return nodes with passing health checks in the result.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#only_passing PreparedQuery#only_passing}
   */
   readonly onlyPassing?: boolean | cdktf.IResolvable;
   /**
   * The name of the service to query
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#service PreparedQuery#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#service PreparedQuery#service}
   */
   readonly service: string;
   /**
   * Specifies a list of user-defined key/value pairs that will be used for filtering the query results to services with the given metadata values present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#service_meta PreparedQuery#service_meta}
   */
   readonly serviceMeta?: { [key: string]: string };
   /**
   * The name of the Consul session to tie this query's lifetime to.  This is an advanced parameter that should not be used without a complete understanding of Consul sessions and the implications of their use (it is recommended to leave this blank in nearly all cases).  If this parameter is omitted the query will not expire.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#session PreparedQuery#session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#session PreparedQuery#session}
   */
   readonly session?: string;
   /**
   * The ACL token to store with the prepared query. This token will be used by default whenever the query is executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#stored_token PreparedQuery#stored_token}
   */
   readonly storedToken?: string;
   /**
   * The list of required and/or disallowed tags.  If a tag is in this list it must be present.  If the tag is preceded with a "!" then it is disallowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#tags PreparedQuery#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#tags PreparedQuery#tags}
   */
   readonly tags?: string[];
   /**
   * The ACL token to use when saving the prepared query. This overrides the token that the agent provides by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#token PreparedQuery#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#token PreparedQuery#token}
   */
   readonly token?: string;
   /**
   * dns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#dns PreparedQuery#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#dns PreparedQuery#dns}
   */
   readonly dns?: PreparedQueryDns;
   /**
   * failover block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#failover PreparedQuery#failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#failover PreparedQuery#failover}
   */
   readonly failover?: PreparedQueryFailover;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#template PreparedQuery#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#template PreparedQuery#template}
   */
   readonly template?: PreparedQueryTemplate;
 }
@@ -120,7 +120,7 @@ export interface PreparedQueryDns {
   /**
   * The TTL to send when returning DNS results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#ttl PreparedQuery#ttl}
   */
   readonly ttl?: string;
 }
@@ -206,13 +206,13 @@ export interface PreparedQueryFailoverTargets {
   /**
   * Specifies a WAN federated datacenter to forward the query to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#datacenter PreparedQuery#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Specifies a cluster peer to use for failover.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#peer PreparedQuery#peer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#peer PreparedQuery#peer}
   */
   readonly peer?: string;
 }
@@ -359,19 +359,19 @@ export interface PreparedQueryFailover {
   /**
   * Remote datacenters to return results from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#datacenters PreparedQuery#datacenters}
   */
   readonly datacenters?: string[];
   /**
   * Return results from this many datacenters, sorted in ascending order of estimated RTT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#nearest_n PreparedQuery#nearest_n}
   */
   readonly nearestN?: number;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#targets PreparedQuery#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#targets PreparedQuery#targets}
   */
   readonly targets?: PreparedQueryFailoverTargets[] | cdktf.IResolvable;
 }
@@ -515,19 +515,19 @@ export interface PreparedQueryTemplate {
   /**
   * The regular expression to match with. When using `name_prefix_match`, this regex is applied against the query name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#regexp PreparedQuery#regexp}
   */
   readonly regexp: string;
   /**
   * If set to true, will cause the tags list inside the service structure to be stripped of any empty strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#remove_empty_tags PreparedQuery#remove_empty_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#remove_empty_tags PreparedQuery#remove_empty_tags}
   */
   readonly removeEmptyTags?: boolean | cdktf.IResolvable;
   /**
   * The type of template matching to perform. Currently only `name_prefix_match` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#type PreparedQuery#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#type PreparedQuery#type}
   */
   readonly type: string;
 }
@@ -663,7 +663,7 @@ export class PreparedQueryTemplateOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query consul_prepared_query}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query consul_prepared_query}
 */
 export class PreparedQuery extends cdktf.TerraformResource {
 
@@ -679,7 +679,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PreparedQuery resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PreparedQuery to import
-  * @param importFromId The id of the existing PreparedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PreparedQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PreparedQuery to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -691,7 +691,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/prepared_query consul_prepared_query} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/prepared_query consul_prepared_query} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -702,7 +702,7 @@ export class PreparedQuery extends cdktf.TerraformResource {
       terraformResourceType: 'consul_prepared_query',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
