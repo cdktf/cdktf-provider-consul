@@ -4,7 +4,7 @@
 
 ### AclToken <a name="AclToken" id="@cdktf/provider-consul.aclToken.AclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclToken.AclToken.Initializer"></a>
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the AclToken to import.
 
 The id of the existing AclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1073,7 +1073,7 @@ const aclTokenConfig: aclToken.AclTokenConfig = { ... }
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.accessorId">accessorId</a></code> | <code>string</code> | The uuid of the token. If omitted, Consul will generate a random uuid. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.description">description</a></code> | <code>string</code> | The description of the token. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.expirationTime">expirationTime</a></code> | <code>string</code> | If set this represents the point after which a token should be considered revoked and is eligible for destruction. |
-| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | The flag to set the token local to the current datacenter. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace to create the token within. |
 | <code><a href="#@cdktf/provider-consul.aclToken.AclTokenConfig.property.nodeIdentities">nodeIdentities</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.aclToken.AclTokenNodeIdentities">AclTokenNodeIdentities</a>[]</code> | node_identities block. |
@@ -1165,7 +1165,7 @@ public readonly accessorId: string;
 
 The uuid of the token. If omitted, Consul will generate a random uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
 
 ---
 
@@ -1179,7 +1179,7 @@ public readonly description: string;
 
 The description of the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#description AclToken#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#description AclToken#description}
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly expirationTime: string;
 
 If set this represents the point after which a token should be considered revoked and is eligible for destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1222,7 +1222,7 @@ public readonly local: boolean | IResolvable;
 
 The flag to set the token local to the current datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#local AclToken#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#local AclToken#local}
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly namespace: string;
 
 The namespace to create the token within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#namespace AclToken#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#namespace AclToken#namespace}
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly nodeIdentities: IResolvable | AclTokenNodeIdentities[];
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#node_identities AclToken#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#node_identities AclToken#node_identities}
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly partition: string;
 
 The partition the ACL token is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#partition AclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#partition AclToken#partition}
 
 ---
 
@@ -1278,7 +1278,7 @@ public readonly policies: string[];
 
 The list of policies attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly roles: string[];
 
 The list of roles attached to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#roles AclToken#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#roles AclToken#roles}
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly serviceIdentities: IResolvable | AclTokenServiceIdentities[];
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#service_identities AclToken#service_identities}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly templatedPolicies: IResolvable | AclTokenTemplatedPolicies[];
 
 templated_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
 
 ---
 
@@ -1353,7 +1353,7 @@ public readonly datacenter: string;
 
 The datacenter of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#datacenter AclToken#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenter AclToken#datacenter}
 
 ---
 
@@ -1367,7 +1367,7 @@ public readonly nodeName: string;
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#node_name AclToken#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#node_name AclToken#node_name}
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly serviceName: string;
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#service_name AclToken#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#service_name AclToken#service_name}
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly datacenters: string[];
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenters AclToken#datacenters}
 
 ---
 
@@ -1448,7 +1448,7 @@ public readonly templateName: string;
 
 The name of the templated policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#template_name AclToken#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#template_name AclToken#template_name}
 
 ---
 
@@ -1462,7 +1462,7 @@ public readonly datacenters: string[];
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenters AclToken#datacenters}
 
 ---
 
@@ -1476,7 +1476,7 @@ public readonly templateVariables: AclTokenTemplatedPoliciesTemplateVariables;
 
 template_variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#template_variables AclToken#template_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#template_variables AclToken#template_variables}
 
 ---
 
@@ -1508,7 +1508,7 @@ public readonly name: string;
 
 The name of node, workload identity or service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_token#name AclToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#name AclToken#name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ConfigEntryV2ExportedServices <a name="ConfigEntryV2ExportedServices" id="@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services consul_config_entry_v2_exported_services}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services consul_config_entry_v2_exported_services}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServices.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ConfigEntryV2ExportedServi
 
 The id of the existing ConfigEntryV2ExportedServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/configentryv2export
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.kind">Kind</a></code> | <code>*string</code> | The kind of exported services config (ExportedServices, NamespaceExportedServices, PartitionExportedServices). |
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.name">Name</a></code> | <code>*string</code> | The name of the config entry to read. |
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.partition">Partition</a></code> | <code>*string</code> | The partition the config entry is associated with. |
-| <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#id ConfigEntryV2ExportedServices#id}. |
+| <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#id ConfigEntryV2ExportedServices#id}. |
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.namespace">Namespace</a></code> | <code>*string</code> | The namespace the config entry is associated with. |
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.partitionConsumers">PartitionConsumers</a></code> | <code>*[]*string</code> | The exported service partition consumers. |
 | <code><a href="#@cdktf/provider-consul.configEntryV2ExportedServices.ConfigEntryV2ExportedServicesConfig.property.peerConsumers">PeerConsumers</a></code> | <code>*[]*string</code> | The exported service peer consumers. |
@@ -1032,7 +1032,7 @@ Kind *string
 
 The kind of exported services config (ExportedServices, NamespaceExportedServices, PartitionExportedServices).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#kind ConfigEntryV2ExportedServices#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#kind ConfigEntryV2ExportedServices#kind}
 
 ---
 
@@ -1046,7 +1046,7 @@ Name *string
 
 The name of the config entry to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#name ConfigEntryV2ExportedServices#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#name ConfigEntryV2ExportedServices#name}
 
 ---
 
@@ -1060,7 +1060,7 @@ Partition *string
 
 The partition the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#partition ConfigEntryV2ExportedServices#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#partition ConfigEntryV2ExportedServices#partition}
 
 ---
 
@@ -1072,7 +1072,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#id ConfigEntryV2ExportedServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#id ConfigEntryV2ExportedServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1089,7 +1089,7 @@ Namespace *string
 
 The namespace the config entry is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#namespace ConfigEntryV2ExportedServices#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#namespace ConfigEntryV2ExportedServices#namespace}
 
 ---
 
@@ -1103,7 +1103,7 @@ PartitionConsumers *[]*string
 
 The exported service partition consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#partition_consumers ConfigEntryV2ExportedServices#partition_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#partition_consumers ConfigEntryV2ExportedServices#partition_consumers}
 
 ---
 
@@ -1117,7 +1117,7 @@ PeerConsumers *[]*string
 
 The exported service peer consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#peer_consumers ConfigEntryV2ExportedServices#peer_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#peer_consumers ConfigEntryV2ExportedServices#peer_consumers}
 
 ---
 
@@ -1131,7 +1131,7 @@ SamenessGroupConsumers *[]*string
 
 The exported service sameness group consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#sameness_group_consumers ConfigEntryV2ExportedServices#sameness_group_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#sameness_group_consumers ConfigEntryV2ExportedServices#sameness_group_consumers}
 
 ---
 
@@ -1145,7 +1145,7 @@ Services *[]*string
 
 The exported services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/config_entry_v2_exported_services#services ConfigEntryV2ExportedServices#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/config_entry_v2_exported_services#services ConfigEntryV2ExportedServices#services}
 
 ---
 

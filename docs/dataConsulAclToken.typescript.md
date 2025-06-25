@@ -4,7 +4,7 @@
 
 ### DataConsulAclToken <a name="DataConsulAclToken" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token consul_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token consul_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAclToken.DataConsulAclToken.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataConsulAclToken to impo
 
 The id of the existing DataConsulAclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ const dataConsulAclTokenConfig: dataConsulAclToken.DataConsulAclTokenConfig = { 
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.accessorId">accessorId</a></code> | <code>string</code> | The accessor ID of the ACL token. |
-| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#id DataConsulAclToken#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#id DataConsulAclToken#id}. |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace to lookup the ACL token. |
 | <code><a href="#@cdktf/provider-consul.dataConsulAclToken.DataConsulAclTokenConfig.property.partition">partition</a></code> | <code>string</code> | The partition to lookup the ACL token. |
 
@@ -843,7 +843,7 @@ public readonly accessorId: string;
 
 The accessor ID of the ACL token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#accessor_id DataConsulAclToken#accessor_id}
 
 ---
 
@@ -855,7 +855,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#id DataConsulAclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#id DataConsulAclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -872,7 +872,7 @@ public readonly namespace: string;
 
 The namespace to lookup the ACL token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#namespace DataConsulAclToken#namespace}
 
 ---
 
@@ -886,7 +886,7 @@ public readonly partition: string;
 
 The partition to lookup the ACL token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/acl_token#partition DataConsulAclToken#partition}
 
 ---
 

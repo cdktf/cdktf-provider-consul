@@ -4,7 +4,7 @@
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-consul.aclRole.AclRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role consul_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role consul_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.aclRole.AclRole.Initializer"></a>
 
@@ -562,7 +562,7 @@ The construct id used in the generated config for the AclRole to import.
 
 The id of the existing AclRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ new AclRoleConfig {
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.name">Name</a></code> | <code>string</code> | The name of the ACL role. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.description">Description</a></code> | <code>string</code> | A free form human readable description of the role. |
-| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#id AclRole#id}. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | The namespace to create the role within. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.nodeIdentities">NodeIdentities</a></code> | <code>object</code> | node_identities block. |
 | <code><a href="#@cdktf/provider-consul.aclRole.AclRoleConfig.property.partition">Partition</a></code> | <code>string</code> | The partition the ACL role is associated with. |
@@ -1085,7 +1085,7 @@ public string Name { get; set; }
 
 The name of the ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -1099,7 +1099,7 @@ public string Description { get; set; }
 
 A free form human readable description of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -1111,7 +1111,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1128,7 +1128,7 @@ public string Namespace { get; set; }
 
 The namespace to create the role within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#namespace AclRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#namespace AclRole#namespace}
 
 ---
 
@@ -1142,7 +1142,7 @@ public object NodeIdentities { get; set; }
 
 node_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#node_identities AclRole#node_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#node_identities AclRole#node_identities}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string Partition { get; set; }
 
 The partition the ACL role is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#partition AclRole#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#partition AclRole#partition}
 
 ---
 
@@ -1172,7 +1172,7 @@ The list of policies that should be applied to the role.
 
 Both the policy ID or its name can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#policies AclRole#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#policies AclRole#policies}
 
 ---
 
@@ -1186,7 +1186,7 @@ public object ServiceIdentities { get; set; }
 
 service_identities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#service_identities AclRole#service_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#service_identities AclRole#service_identities}
 
 ---
 
@@ -1200,7 +1200,7 @@ public object TemplatedPolicies { get; set; }
 
 templated_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#templated_policies AclRole#templated_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#templated_policies AclRole#templated_policies}
 
 ---
 
@@ -1236,7 +1236,7 @@ public string Datacenter { get; set; }
 
 Specifies the node's datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#datacenter AclRole#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#datacenter AclRole#datacenter}
 
 ---
 
@@ -1250,7 +1250,7 @@ public string NodeName { get; set; }
 
 The name of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#node_name AclRole#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#node_name AclRole#node_name}
 
 ---
 
@@ -1286,7 +1286,7 @@ public string ServiceName { get; set; }
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#service_name AclRole#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#service_name AclRole#service_name}
 
 ---
 
@@ -1302,7 +1302,7 @@ The datacenters the effective policy is valid within.
 
 When no datacenters are provided the effective policy is valid in all datacenters including those which do not yet exist but may in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#datacenters AclRole#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#datacenters AclRole#datacenters}
 
 ---
 
@@ -1340,7 +1340,7 @@ public string TemplateName { get; set; }
 
 The name of the templated policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#template_name AclRole#template_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#template_name AclRole#template_name}
 
 ---
 
@@ -1354,7 +1354,7 @@ public string[] Datacenters { get; set; }
 
 Specifies the datacenters the effective policy is valid within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#datacenters AclRole#datacenters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#datacenters AclRole#datacenters}
 
 ---
 
@@ -1368,7 +1368,7 @@ public AclRoleTemplatedPoliciesTemplateVariables TemplateVariables { get; set; }
 
 template_variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#template_variables AclRole#template_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#template_variables AclRole#template_variables}
 
 ---
 
@@ -1402,7 +1402,7 @@ public string Name { get; set; }
 
 The name of node, workload identity or service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_role#name AclRole#name}
 
 ---
 
