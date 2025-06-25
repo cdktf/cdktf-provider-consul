@@ -4,7 +4,7 @@
 
 ### DataConsulAgentSelf <a name="DataConsulAgentSelf" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/agent_self consul_agent_self}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/agent_self consul_agent_self}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulAgentSelf.DataConsulAgentSelf.Initializer"></a>
 
@@ -419,7 +419,7 @@ The construct id used in the generated config for the DataConsulAgentSelf to imp
 
 The id of the existing DataConsulAgentSelf that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/data-sources/agent_self#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/agent_self#import import section} in the documentation of this resource for the id to use
 
 ---
 

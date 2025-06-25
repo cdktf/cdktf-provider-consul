@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service
+// https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,27 +15,27 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The address of the service. Defaults to the address of the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#address Service#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#address Service#address}
   */
   readonly address?: string;
   /**
   * The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#datacenter Service#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#datacenter Service#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
   */
   readonly enableTagOverride?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#external Service#external}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}
   */
   readonly external?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#id Service#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#id Service#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,55 +44,61 @@ export interface ServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * A map of arbitrary KV metadata linked to the service instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#meta Service#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#meta Service#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * The name of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
   */
   readonly name: string;
   /**
   * The namespace to create the service within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#namespace Service#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#namespace Service#namespace}
   */
   readonly namespace?: string;
   /**
   * The name of the node the to register the service on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#node Service#node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#node Service#node}
   */
   readonly nodeAttribute: string;
   /**
   * The partition the service is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#partition Service#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#partition Service#partition}
   */
   readonly partition?: string;
   /**
   * The port of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#port Service#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#port Service#port}
   */
   readonly port?: number;
   /**
   * If the service ID is not provided, it will be defaulted to the value of the `name` attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#service_id Service#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#service_id Service#service_id}
   */
   readonly serviceId?: string;
   /**
   * A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tags Service#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tags Service#tags}
   */
   readonly tags?: string[];
   /**
+  * Object that configures how the service responds to DNS SRV requests based on the service's health status. You can specify one or more of the following states and configure an integer value indicating its weight: `passing`, `warning`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#weights Service#weights}
+  */
+  readonly weights?: { [key: string]: number };
+  /**
   * check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#check Service#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#check Service#check}
   */
   readonly check?: ServiceCheck[] | cdktf.IResolvable;
 }
@@ -100,13 +106,13 @@ export interface ServiceCheckHeader {
   /**
   * The name of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
   */
   readonly name: string;
   /**
   * The header's list of values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#value Service#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#value Service#value}
   */
   readonly value: string[];
 }
@@ -247,73 +253,73 @@ export interface ServiceCheck {
   /**
   * An ID, *unique per agent*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#check_id Service#check_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#check_id Service#check_id}
   */
   readonly checkId: string;
   /**
   * The time after which the service is automatically deregistered when in the `critical` state. Defaults to `30s`. Setting to `0` will disable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}
   */
   readonly deregisterCriticalServiceAfter?: string;
   /**
   * The HTTP endpoint to call for an HTTP check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#http Service#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#http Service#http}
   */
   readonly http?: string;
   /**
   * The interval to wait between each health-check invocation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#interval Service#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#interval Service#interval}
   */
   readonly interval: string;
   /**
   * The method to use for HTTP health-checks. Defaults to `GET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#method Service#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#method Service#method}
   */
   readonly method?: string;
   /**
   * The name of the health-check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
   */
   readonly name: string;
   /**
   * An opaque field meant to hold human readable text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#notes Service#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#notes Service#notes}
   */
   readonly notes?: string;
   /**
   * The initial health-check status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#status Service#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#status Service#status}
   */
   readonly status?: string;
   /**
   * The TCP address and port to connect to for a TCP check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tcp Service#tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tcp Service#tcp}
   */
   readonly tcp?: string;
   /**
   * Specifies a timeout for outgoing connections in the case of a HTTP or TCP check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#timeout Service#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#timeout Service#timeout}
   */
   readonly timeout: string;
   /**
   * Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}
   */
   readonly tlsSkipVerify?: boolean | cdktf.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#header Service#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#header Service#header}
   */
   readonly header?: ServiceCheckHeader[] | cdktf.IResolvable;
 }
@@ -736,7 +742,7 @@ export class ServiceCheckList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service}
 */
 export class Service extends cdktf.TerraformResource {
 
@@ -752,7 +758,7 @@ export class Service extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Service resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Service to import
-  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -764,7 +770,7 @@ export class Service extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -775,7 +781,7 @@ export class Service extends cdktf.TerraformResource {
       terraformResourceType: 'consul_service',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.21.0',
+        providerVersion: '2.22.0',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
@@ -799,6 +805,7 @@ export class Service extends cdktf.TerraformResource {
     this._port = config.port;
     this._serviceId = config.serviceId;
     this._tags = config.tags;
+    this._weights = config.weights;
     this._check.internalValue = config.check;
   }
 
@@ -1008,6 +1015,22 @@ export class Service extends cdktf.TerraformResource {
     return this._tags;
   }
 
+  // weights - computed: false, optional: true, required: false
+  private _weights?: { [key: string]: number }; 
+  public get weights() {
+    return this.getNumberMapAttribute('weights');
+  }
+  public set weights(value: { [key: string]: number }) {
+    this._weights = value;
+  }
+  public resetWeights() {
+    this._weights = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightsInput() {
+    return this._weights;
+  }
+
   // check - computed: false, optional: true, required: false
   private _check = new ServiceCheckList(this, "check", true);
   public get check() {
@@ -1043,6 +1066,7 @@ export class Service extends cdktf.TerraformResource {
       port: cdktf.numberToTerraform(this._port),
       service_id: cdktf.stringToTerraform(this._serviceId),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      weights: cdktf.hashMapper(cdktf.numberToTerraform)(this._weights),
       check: cdktf.listMapper(serviceCheckToTerraform, true)(this._check.internalValue),
     };
   }
@@ -1126,6 +1150,12 @@ export class Service extends cdktf.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      weights: {
+        value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(this._weights),
+        isBlock: false,
+        type: "map",
+        storageClassType: "numberMap",
       },
       check: {
         value: cdktf.listMapperHcl(serviceCheckToHclTerraform, true)(this._check.internalValue),

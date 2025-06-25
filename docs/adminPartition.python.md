@@ -4,7 +4,7 @@
 
 ### AdminPartition <a name="AdminPartition" id="@cdktf/provider-consul.adminPartition.AdminPartition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition consul_admin_partition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition consul_admin_partition}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer"></a>
 
@@ -23,6 +23,7 @@ adminPartition.AdminPartition(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   description: str = None,
+  disable_gossip: typing.Union[bool, IResolvable] = None,
   id: str = None
 )
 ```
@@ -40,7 +41,8 @@ adminPartition.AdminPartition(
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.name">name</a></code> | <code>str</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.description">description</a></code> | <code>str</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.disableGossip">disable_gossip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable gossip pool for the partition. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -120,7 +122,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#description AdminPartition#description}
+
+---
+
+##### `disable_gossip`<sup>Optional</sup> <a name="disable_gossip" id="@cdktf/provider-consul.adminPartition.AdminPartition.Initializer.parameter.disableGossip"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable gossip pool for the partition. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#disable_gossip AdminPartition#disable_gossip}
 
 ---
 
@@ -128,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,6 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.resetDisableGossip">reset_disable_gossip</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.resetId">reset_id</a></code> | *No description.* |
 
 ---
@@ -498,6 +511,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_description() -> None
 ```
 
+##### `reset_disable_gossip` <a name="reset_disable_gossip" id="@cdktf/provider-consul.adminPartition.AdminPartition.resetDisableGossip"></a>
+
+```python
+def reset_disable_gossip() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-consul.adminPartition.AdminPartition.resetId"></a>
 
 ```python
@@ -618,7 +637,7 @@ The construct id used in the generated config for the AdminPartition to import.
 
 The id of the existing AdminPartition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,9 +668,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.disableGossipInput">disable_gossip_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.disableGossip">disable_gossip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartition.property.name">name</a></code> | <code>str</code> | *No description.* |
 
@@ -809,6 +830,16 @@ description_input: str
 
 ---
 
+##### `disable_gossip_input`<sup>Optional</sup> <a name="disable_gossip_input" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.disableGossipInput"></a>
+
+```python
+disable_gossip_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.idInput"></a>
 
 ```python
@@ -836,6 +867,16 @@ description: str
 ```
 
 - *Type:* str
+
+---
+
+##### `disable_gossip`<sup>Required</sup> <a name="disable_gossip" id="@cdktf/provider-consul.adminPartition.AdminPartition.property.disableGossip"></a>
+
+```python
+disable_gossip: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -896,6 +937,7 @@ adminPartition.AdminPartitionConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   description: str = None,
+  disable_gossip: typing.Union[bool, IResolvable] = None,
   id: str = None
 )
 ```
@@ -913,7 +955,8 @@ adminPartition.AdminPartitionConfig(
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.name">name</a></code> | <code>str</code> | The partition name. This must be a valid DNS hostname label. |
 | <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.description">description</a></code> | <code>str</code> | Free form partition description. |
-| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#id AdminPartition#id}. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.disableGossip">disable_gossip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Disable gossip pool for the partition. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#id AdminPartition#id}. |
 
 ---
 
@@ -997,7 +1040,7 @@ name: str
 
 The partition name. This must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#name AdminPartition#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#name AdminPartition#name}
 
 ---
 
@@ -1011,7 +1054,21 @@ description: str
 
 Free form partition description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#description AdminPartition#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#description AdminPartition#description}
+
+---
+
+##### `disable_gossip`<sup>Optional</sup> <a name="disable_gossip" id="@cdktf/provider-consul.adminPartition.AdminPartitionConfig.property.disableGossip"></a>
+
+```python
+disable_gossip: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Disable gossip pool for the partition. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#disable_gossip AdminPartition#disable_gossip}
 
 ---
 
@@ -1023,7 +1080,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/admin_partition#id AdminPartition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/admin_partition#id AdminPartition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

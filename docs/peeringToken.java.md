@@ -4,7 +4,7 @@
 
 ### PeeringToken <a name="PeeringToken" id="@cdktf/provider-consul.peeringToken.PeeringToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token consul_peering_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token consul_peering_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.peeringToken.PeeringToken.Initializer"></a>
 
@@ -43,9 +43,9 @@ PeeringToken.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.peerName">peerName</a></code> | <code>java.lang.String</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#id PeeringToken#id}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#partition PeeringToken#partition}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringToken.Initializer.parameter.serverExternalAddresses">serverExternalAddresses</a></code> | <code>java.util.List<java.lang.String></code> | The addresses for the cluster that generates the peering token. |
 
 ---
@@ -118,7 +118,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#id PeeringToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#meta PeeringToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#meta PeeringToken#meta}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#partition PeeringToken#partition}.
 
 ---
 
@@ -161,7 +161,7 @@ The addresses for the cluster that generates the peering token.
 
 Addresses take the form {host or IP}:port. You can specify one or more load balancers or external IPs that route external traffic to this cluster's Consul servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
 
 ---
 
@@ -616,7 +616,7 @@ The construct id used in the generated config for the PeeringToken to import.
 
 The id of the existing PeeringToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -971,9 +971,9 @@ PeeringTokenConfig.builder()
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.peerName">peerName</a></code> | <code>java.lang.String</code> | The name assigned to the peer cluster. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#id PeeringToken#id}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies KV metadata to associate with the peering. |
-| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}. |
+| <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.partition">partition</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#partition PeeringToken#partition}. |
 | <code><a href="#@cdktf/provider-consul.peeringToken.PeeringTokenConfig.property.serverExternalAddresses">serverExternalAddresses</a></code> | <code>java.util.List<java.lang.String></code> | The addresses for the cluster that generates the peering token. |
 
 ---
@@ -1060,7 +1060,7 @@ The name assigned to the peer cluster.
 
 The `peer_name` is used to reference the peer cluster in service discovery queries and configuration entries such as `service-intentions`. This field must be a valid DNS hostname label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#peer_name PeeringToken#peer_name}
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#id PeeringToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#id PeeringToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ Specifies KV metadata to associate with the peering.
 
 This parameter is not required and does not directly impact the cluster peering process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#meta PeeringToken#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#meta PeeringToken#meta}
 
 ---
 
@@ -1103,7 +1103,7 @@ public java.lang.String getPartition();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#partition PeeringToken#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#partition PeeringToken#partition}.
 
 ---
 
@@ -1119,7 +1119,7 @@ The addresses for the cluster that generates the peering token.
 
 Addresses take the form {host or IP}:port. You can specify one or more load balancers or external IPs that route external traffic to this cluster's Consul servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/peering_token#server_external_addresses PeeringToken#server_external_addresses}
 
 ---
 

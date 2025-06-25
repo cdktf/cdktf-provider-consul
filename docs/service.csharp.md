@@ -4,7 +4,7 @@
 
 ### Service <a name="Service" id="@cdktf/provider-consul.service.Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service consul_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service consul_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.service.Service.Initializer"></a>
 
@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-consul.service.Service.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.resetServiceId">ResetServiceId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.resetWeights">ResetWeights</a></code> | *No description.* |
 
 ---
 
@@ -461,6 +462,12 @@ private void ResetServiceId()
 private void ResetTags()
 ```
 
+##### `ResetWeights` <a name="ResetWeights" id="@cdktf/provider-consul.service.Service.resetWeights"></a>
+
+```csharp
+private void ResetWeights()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -564,7 +571,7 @@ The construct id used in the generated config for the Service to import.
 
 The id of the existing Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.service.Service.property.portInput">PortInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.serviceIdInput">ServiceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.weightsInput">WeightsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.datacenter">Datacenter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.enableTagOverride">EnableTagOverride</a></code> | <code>object</code> | *No description.* |
@@ -622,6 +630,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.service.Service.property.port">Port</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.serviceId">ServiceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.weights">Weights</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | *No description.* |
 
 ---
 
@@ -917,6 +926,16 @@ public string[] TagsInput { get; }
 
 ---
 
+##### `WeightsInput`<sup>Optional</sup> <a name="WeightsInput" id="@cdktf/provider-consul.service.Service.property.weightsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, double> WeightsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, double>
+
+---
+
 ##### `Address`<sup>Required</sup> <a name="Address" id="@cdktf/provider-consul.service.Service.property.address"></a>
 
 ```csharp
@@ -1047,6 +1066,16 @@ public string[] Tags { get; }
 
 ---
 
+##### `Weights`<sup>Required</sup> <a name="Weights" id="@cdktf/provider-consul.service.Service.property.weights"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, double> Weights { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, double>
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1119,7 +1148,7 @@ public string CheckId { get; set; }
 
 An ID, *unique per agent*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#check_id Service#check_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#check_id Service#check_id}
 
 ---
 
@@ -1133,7 +1162,7 @@ public string Interval { get; set; }
 
 The interval to wait between each health-check invocation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#interval Service#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#interval Service#interval}
 
 ---
 
@@ -1147,7 +1176,7 @@ public string Name { get; set; }
 
 The name of the health-check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1161,7 +1190,7 @@ public string Timeout { get; set; }
 
 Specifies a timeout for outgoing connections in the case of a HTTP or TCP check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#timeout Service#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#timeout Service#timeout}
 
 ---
 
@@ -1177,7 +1206,7 @@ The time after which the service is automatically deregistered when in the `crit
 
 Defaults to `30s`. Setting to `0` will disable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#deregister_critical_service_after Service#deregister_critical_service_after}
 
 ---
 
@@ -1191,7 +1220,7 @@ public object Header { get; set; }
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#header Service#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#header Service#header}
 
 ---
 
@@ -1205,7 +1234,7 @@ public string Http { get; set; }
 
 The HTTP endpoint to call for an HTTP check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#http Service#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#http Service#http}
 
 ---
 
@@ -1219,7 +1248,7 @@ public string Method { get; set; }
 
 The method to use for HTTP health-checks. Defaults to `GET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#method Service#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#method Service#method}
 
 ---
 
@@ -1233,7 +1262,7 @@ public string Notes { get; set; }
 
 An opaque field meant to hold human readable text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#notes Service#notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#notes Service#notes}
 
 ---
 
@@ -1247,7 +1276,7 @@ public string Status { get; set; }
 
 The initial health-check status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#status Service#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#status Service#status}
 
 ---
 
@@ -1261,7 +1290,7 @@ public string Tcp { get; set; }
 
 The TCP address and port to connect to for a TCP check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tcp Service#tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tcp Service#tcp}
 
 ---
 
@@ -1275,7 +1304,7 @@ public object TlsSkipVerify { get; set; }
 
 Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tls_skip_verify Service#tls_skip_verify}
 
 ---
 
@@ -1311,7 +1340,7 @@ public string Name { get; set; }
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1325,7 +1354,7 @@ public string[] Value { get; set; }
 
 The header's list of values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#value Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#value Service#value}
 
 ---
 
@@ -1357,7 +1386,8 @@ new ServiceConfig {
     string Partition = null,
     double Port = null,
     string ServiceId = null,
-    string[] Tags = null
+    string[] Tags = null,
+    System.Collections.Generic.IDictionary<string, double> Weights = null
 };
 ```
 
@@ -1378,14 +1408,15 @@ new ServiceConfig {
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.check">Check</a></code> | <code>object</code> | check block. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">EnableTagOverride</a></code> | <code>object</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">External</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#external Service#external}. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#id Service#id}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">External</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of arbitrary KV metadata linked to the service instance. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">Namespace</a></code> | <code>string</code> | The namespace to create the service within. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.partition">Partition</a></code> | <code>string</code> | The partition the service is associated with. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.port">Port</a></code> | <code>double</code> | The port of the service. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.serviceId">ServiceId</a></code> | <code>string</code> | If the service ID is not provided, it will be defaulted to the value of the `name` attribute. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of values that are opaque to Consul, but can be used to distinguish between services or nodes. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.weights">Weights</a></code> | <code>System.Collections.Generic.IDictionary<string, double></code> | Object that configures how the service responds to DNS SRV requests based on the service's health status. |
 
 ---
 
@@ -1469,7 +1500,7 @@ public string Name { get; set; }
 
 The name of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#name Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#name Service#name}
 
 ---
 
@@ -1483,7 +1514,7 @@ public string NodeAttribute { get; set; }
 
 The name of the node the to register the service on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#node Service#node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#node Service#node}
 
 ---
 
@@ -1497,7 +1528,7 @@ public string Address { get; set; }
 
 The address of the service. Defaults to the address of the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#address Service#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#address Service#address}
 
 ---
 
@@ -1511,7 +1542,7 @@ public object Check { get; set; }
 
 check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#check Service#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#check Service#check}
 
 ---
 
@@ -1525,7 +1556,7 @@ public string Datacenter { get; set; }
 
 The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#datacenter Service#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#datacenter Service#datacenter}
 
 ---
 
@@ -1539,7 +1570,7 @@ public object EnableTagOverride { get; set; }
 
 Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#enable_tag_override Service#enable_tag_override}
 
 ---
 
@@ -1551,7 +1582,7 @@ public object External { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#external Service#external}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}.
 
 ---
 
@@ -1563,7 +1594,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#id Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#id Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1580,7 +1611,7 @@ public System.Collections.Generic.IDictionary<string, string> Meta { get; set; }
 
 A map of arbitrary KV metadata linked to the service instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#meta Service#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#meta Service#meta}
 
 ---
 
@@ -1594,7 +1625,7 @@ public string Namespace { get; set; }
 
 The namespace to create the service within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#namespace Service#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#namespace Service#namespace}
 
 ---
 
@@ -1608,7 +1639,7 @@ public string Partition { get; set; }
 
 The partition the service is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#partition Service#partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#partition Service#partition}
 
 ---
 
@@ -1622,7 +1653,7 @@ public double Port { get; set; }
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#port Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#port Service#port}
 
 ---
 
@@ -1636,7 +1667,7 @@ public string ServiceId { get; set; }
 
 If the service ID is not provided, it will be defaulted to the value of the `name` attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#service_id Service#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#service_id Service#service_id}
 
 ---
 
@@ -1650,7 +1681,23 @@ public string[] Tags { get; set; }
 
 A list of values that are opaque to Consul, but can be used to distinguish between services or nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.21.0/docs/resources/service#tags Service#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#tags Service#tags}
+
+---
+
+##### `Weights`<sup>Optional</sup> <a name="Weights" id="@cdktf/provider-consul.service.ServiceConfig.property.weights"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, double> Weights { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, double>
+
+Object that configures how the service responds to DNS SRV requests based on the service's health status.
+
+You can specify one or more of the following states and configure an integer value indicating its weight: `passing`, `warning`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#weights Service#weights}
 
 ---
 
