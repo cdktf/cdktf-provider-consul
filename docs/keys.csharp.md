@@ -280,7 +280,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-consul.keys.Keys.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-consul.keys.Keys.importFrom"></a>
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-consul.keys.Keys.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-consul.keys.Keys.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -374,12 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutKey` <a name="PutKey" id="@cdktf/provider-consul.keys.Keys.putKey"></a>
 
 ```csharp
-private void PutKey(object Value)
+private void PutKey(IResolvable|KeysKey[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-consul.keys.Keys.putKey.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]
 
 ---
 
@@ -545,18 +545,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.Keys.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.Keys.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.Keys.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.key">Key</a></code> | <code><a href="#@cdktf/provider-consul.keys.KeysKeyList">KeysKeyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.var">Var</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.datacenterInput">DatacenterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.Keys.property.keyInput">KeyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.Keys.property.keyInput">KeyInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.partitionInput">PartitionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.Keys.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
@@ -643,20 +643,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-consul.keys.Keys.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.keys.Keys.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -703,10 +703,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-consul.keys.Keys.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -753,10 +753,10 @@ public string IdInput { get; }
 ##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-consul.keys.Keys.property.keyInput"></a>
 
 ```csharp
-public object KeyInput { get; }
+public IResolvable|KeysKey[] KeyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]
 
 ---
 
@@ -868,16 +868,16 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Consul;
 
 new KeysConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Datacenter = null,
     string Id = null,
-    object Key = null,
+    IResolvable|KeysKey[] Key = null,
     string Namespace = null,
     string Partition = null,
     string Token = null
@@ -888,16 +888,16 @@ new KeysConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#datacenter Keys#datacenter}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#id Keys#id}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.key">Key</a></code> | <code>object</code> | key block. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.key">Key</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]</code> | key block. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#namespace Keys#namespace}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.partition">Partition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#partition Keys#partition}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysConfig.property.token">Token</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#token Keys#token}. |
@@ -907,20 +907,20 @@ new KeysConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-consul.keys.KeysConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-consul.keys.KeysConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -967,10 +967,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-consul.keys.KeysConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1004,10 +1004,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-consul.keys.KeysConfig.property.key"></a>
 
 ```csharp
-public object Key { get; set; }
+public IResolvable|KeysKey[] Key { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]
 
 key block.
 
@@ -1061,7 +1061,7 @@ using HashiCorp.Cdktf.Providers.Consul;
 new KeysKey {
     string Path,
     string Default = null,
-    object Delete = null,
+    bool|IResolvable Delete = null,
     double Flags = null,
     string Name = null,
     string Value = null
@@ -1074,7 +1074,7 @@ new KeysKey {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.path">Path</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#path Keys#path}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#default Keys#default}. |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#delete Keys#delete}. |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.delete">Delete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#delete Keys#delete}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.flags">Flags</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#flags Keys#flags}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#name Keys#name}. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKey.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#value Keys#value}. |
@@ -1108,10 +1108,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-consul.keys.KeysKey.property.delete"></a>
 
 ```csharp
-public object Delete { get; set; }
+public bool|IResolvable Delete { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/keys#delete Keys#delete}.
 
@@ -1276,7 +1276,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKeyList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKeyList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]</code> | *No description.* |
 
 ---
 
@@ -1307,10 +1307,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-consul.keys.KeysKeyList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|KeysKey[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>[]
 
 ---
 
@@ -1579,18 +1579,18 @@ private void ResetValue()
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.defaultInput">DefaultInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.deleteInput">DeleteInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.deleteInput">DeleteInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.flagsInput">FlagsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.pathInput">PathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.valueInput">ValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.default">Default</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.delete">Delete</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.delete">Delete</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.flags">Flags</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.path">Path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.value">Value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a></code> | *No description.* |
 
 ---
 
@@ -1631,10 +1631,10 @@ public string DefaultInput { get; }
 ##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-consul.keys.KeysKeyOutputReference.property.deleteInput"></a>
 
 ```csharp
-public object DeleteInput { get; }
+public bool|IResolvable DeleteInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1691,10 +1691,10 @@ public string Default { get; }
 ##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-consul.keys.KeysKeyOutputReference.property.delete"></a>
 
 ```csharp
-public object Delete { get; }
+public bool|IResolvable Delete { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1741,10 +1741,10 @@ public string Value { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-consul.keys.KeysKeyOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|KeysKey InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.keys.KeysKey">KeysKey</a>
 
 ---
 

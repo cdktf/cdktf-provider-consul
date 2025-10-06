@@ -14,20 +14,20 @@ from cdktf_cdktf_provider_consul import service
 service.Service(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   node_attribute: str,
   address: str = None,
-  check: typing.Union[IResolvable, typing.List[ServiceCheck]] = None,
+  check: IResolvable | typing.List[ServiceCheck] = None,
   datacenter: str = None,
-  enable_tag_override: typing.Union[bool, IResolvable] = None,
-  external: typing.Union[bool, IResolvable] = None,
+  enable_tag_override: bool | IResolvable = None,
+  external: bool | IResolvable = None,
   id: str = None,
   meta: typing.Mapping[str] = None,
   namespace: str = None,
@@ -43,20 +43,20 @@ service.Service(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the service. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.nodeAttribute">node_attribute</a></code> | <code>str</code> | The name of the node the to register the service on. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.address">address</a></code> | <code>str</code> | The address of the service. Defaults to the address of the node. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.check">check</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | check block. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.check">check</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | check block. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.enableTagOverride">enable_tag_override</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.external">external</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | A map of arbitrary KV metadata linked to the service instance. |
 | <code><a href="#@cdktf/provider-consul.service.Service.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace to create the service within. |
@@ -88,13 +88,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-consul.service.Service.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.service.Service.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-consul.service.Service.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `check`<sup>Optional</sup> <a name="check" id="@cdktf/provider-consul.service.Service.Initializer.parameter.check"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 check block.
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_tag_override`<sup>Optional</sup> <a name="enable_tag_override" id="@cdktf/provider-consul.service.Service.Initializer.parameter.enableTagOverride"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `external`<sup>Optional</sup> <a name="external" id="@cdktf/provider-consul.service.Service.Initializer.parameter.external"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}.
 
@@ -545,7 +545,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-consul.service.Service.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-consul.service.Service.importFrom"></a>
@@ -608,7 +608,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -624,7 +624,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-consul.service.Service.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -652,13 +652,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_check(
-  value: typing.Union[IResolvable, typing.List[ServiceCheck]]
+  value: IResolvable | typing.List[ServiceCheck]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-consul.service.Service.putCheck.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 ---
 
@@ -877,19 +877,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.service.Service.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.check">check</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheckList">ServiceCheckList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.addressInput">address_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.checkInput">check_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.checkInput">check_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.datacenterInput">datacenter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.enableTagOverrideInput">enable_tag_override_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.externalInput">external_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.enableTagOverrideInput">enable_tag_override_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.externalInput">external_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.metaInput">meta_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -902,8 +902,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.service.Service.property.weightsInput">weights_input</a></code> | <code>typing.Mapping[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.datacenter">datacenter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.Service.property.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.enableTagOverride">enable_tag_override</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.Service.property.external">external</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.Service.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -992,20 +992,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-consul.service.Service.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.service.Service.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1052,10 +1052,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-consul.service.Service.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1082,10 +1082,10 @@ address_input: str
 ##### `check_input`<sup>Optional</sup> <a name="check_input" id="@cdktf/provider-consul.service.Service.property.checkInput"></a>
 
 ```python
-check_input: typing.Union[IResolvable, typing.List[ServiceCheck]]
+check_input: IResolvable | typing.List[ServiceCheck]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 ---
 
@@ -1102,20 +1102,20 @@ datacenter_input: str
 ##### `enable_tag_override_input`<sup>Optional</sup> <a name="enable_tag_override_input" id="@cdktf/provider-consul.service.Service.property.enableTagOverrideInput"></a>
 
 ```python
-enable_tag_override_input: typing.Union[bool, IResolvable]
+enable_tag_override_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `external_input`<sup>Optional</sup> <a name="external_input" id="@cdktf/provider-consul.service.Service.property.externalInput"></a>
 
 ```python
-external_input: typing.Union[bool, IResolvable]
+external_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1242,20 +1242,20 @@ datacenter: str
 ##### `enable_tag_override`<sup>Required</sup> <a name="enable_tag_override" id="@cdktf/provider-consul.service.Service.property.enableTagOverride"></a>
 
 ```python
-enable_tag_override: typing.Union[bool, IResolvable]
+enable_tag_override: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `external`<sup>Required</sup> <a name="external" id="@cdktf/provider-consul.service.Service.property.external"></a>
 
 ```python
-external: typing.Union[bool, IResolvable]
+external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1392,13 +1392,13 @@ service.ServiceCheck(
   name: str,
   timeout: str,
   deregister_critical_service_after: str = None,
-  header: typing.Union[IResolvable, typing.List[ServiceCheckHeader]] = None,
+  header: IResolvable | typing.List[ServiceCheckHeader] = None,
   http: str = None,
   method: str = None,
   notes: str = None,
   status: str = None,
   tcp: str = None,
-  tls_skip_verify: typing.Union[bool, IResolvable] = None
+  tls_skip_verify: bool | IResolvable = None
 )
 ```
 
@@ -1411,13 +1411,13 @@ service.ServiceCheck(
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.name">name</a></code> | <code>str</code> | The name of the health-check. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.timeout">timeout</a></code> | <code>str</code> | Specifies a timeout for outgoing connections in the case of a HTTP or TCP check. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.deregisterCriticalServiceAfter">deregister_critical_service_after</a></code> | <code>str</code> | The time after which the service is automatically deregistered when in the `critical` state. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]</code> | header block. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]</code> | header block. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.http">http</a></code> | <code>str</code> | The HTTP endpoint to call for an HTTP check. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.method">method</a></code> | <code>str</code> | The method to use for HTTP health-checks. Defaults to `GET`. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.notes">notes</a></code> | <code>str</code> | An opaque field meant to hold human readable text. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.status">status</a></code> | <code>str</code> | The initial health-check status. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tcp">tcp</a></code> | <code>str</code> | The TCP address and port to connect to for a TCP check. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`. |
 
 ---
 
@@ -1496,10 +1496,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.service.ServiceCheck.property.header"></a>
 
 ```python
-header: typing.Union[IResolvable, typing.List[ServiceCheckHeader]]
+header: IResolvable | typing.List[ServiceCheckHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
 
 header block.
 
@@ -1580,10 +1580,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tls_skip_verify`<sup>Optional</sup> <a name="tls_skip_verify" id="@cdktf/provider-consul.service.ServiceCheck.property.tlsSkipVerify"></a>
 
 ```python
-tls_skip_verify: typing.Union[bool, IResolvable]
+tls_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to deactivate certificate verification for HTTP health-checks. Defaults to `false`.
 
@@ -1649,20 +1649,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_consul import service
 
 service.ServiceConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   node_attribute: str,
   address: str = None,
-  check: typing.Union[IResolvable, typing.List[ServiceCheck]] = None,
+  check: IResolvable | typing.List[ServiceCheck] = None,
   datacenter: str = None,
-  enable_tag_override: typing.Union[bool, IResolvable] = None,
-  external: typing.Union[bool, IResolvable] = None,
+  enable_tag_override: bool | IResolvable = None,
+  external: bool | IResolvable = None,
   id: str = None,
   meta: typing.Mapping[str] = None,
   namespace: str = None,
@@ -1678,20 +1678,20 @@ service.ServiceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.name">name</a></code> | <code>str</code> | The name of the service. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.nodeAttribute">node_attribute</a></code> | <code>str</code> | The name of the node the to register the service on. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.address">address</a></code> | <code>str</code> | The address of the service. Defaults to the address of the node. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.check">check</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | check block. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.check">check</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | check block. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. This overrides the agent's default datacenter and the datacenter in the provider setup. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enable_tag_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride">enable_tag_override</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`. |
+| <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.external">external</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#id Service#id}. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | A map of arbitrary KV metadata linked to the service instance. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace to create the service within. |
@@ -1706,20 +1706,20 @@ service.ServiceConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-consul.service.ServiceConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-consul.service.ServiceConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1766,10 +1766,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-consul.service.ServiceConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1818,10 +1818,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `check`<sup>Optional</sup> <a name="check" id="@cdktf/provider-consul.service.ServiceConfig.property.check"></a>
 
 ```python
-check: typing.Union[IResolvable, typing.List[ServiceCheck]]
+check: IResolvable | typing.List[ServiceCheck]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 check block.
 
@@ -1846,10 +1846,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_tag_override`<sup>Optional</sup> <a name="enable_tag_override" id="@cdktf/provider-consul.service.ServiceConfig.property.enableTagOverride"></a>
 
 ```python
-enable_tag_override: typing.Union[bool, IResolvable]
+enable_tag_override: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies to disable the anti-entropy feature for this service's tags. Defaults to `false`.
 
@@ -1860,10 +1860,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `external`<sup>Optional</sup> <a name="external" id="@cdktf/provider-consul.service.ServiceConfig.property.external"></a>
 
 ```python
-external: typing.Union[bool, IResolvable]
+external: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/service#external Service#external}.
 
@@ -2117,7 +2117,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]</code> | *No description.* |
 
 ---
 
@@ -2148,10 +2148,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckHeaderList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceCheckHeader]]
+internal_value: IResolvable | typing.List[ServiceCheckHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
 
 ---
 
@@ -2415,7 +2415,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.valueInput">value_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.value">value</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a></code> | *No description.* |
 
 ---
 
@@ -2486,10 +2486,10 @@ value: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckHeaderOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceCheckHeader]
+internal_value: IResolvable | ServiceCheckHeader
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>
 
 ---
 
@@ -2625,7 +2625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | *No description.* |
 
 ---
 
@@ -2656,10 +2656,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ServiceCheck]]
+internal_value: IResolvable | typing.List[ServiceCheck]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
 
 ---
 
@@ -2925,13 +2925,13 @@ Returns a reversible string representation.
 
 ```python
 def put_header(
-  value: typing.Union[IResolvable, typing.List[ServiceCheckHeader]]
+  value: IResolvable | typing.List[ServiceCheckHeader]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
 
 ---
 
@@ -2993,7 +2993,7 @@ def reset_tls_skip_verify() -> None
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.header">header</a></code> | <code><a href="#@cdktf/provider-consul.service.ServiceCheckHeaderList">ServiceCheckHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.checkIdInput">check_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.deregisterCriticalServiceAfterInput">deregister_critical_service_after_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.headerInput">header_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.headerInput">header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.httpInput">http_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.intervalInput">interval_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.methodInput">method_input</a></code> | <code>str</code> | *No description.* |
@@ -3002,7 +3002,7 @@ def reset_tls_skip_verify() -> None
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.statusInput">status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tcpInput">tcp_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.timeoutInput">timeout_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerifyInput">tls_skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerifyInput">tls_skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.checkId">check_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.deregisterCriticalServiceAfter">deregister_critical_service_after</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.http">http</a></code> | <code>str</code> | *No description.* |
@@ -3013,8 +3013,8 @@ def reset_tls_skip_verify() -> None
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tcp">tcp</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.timeout">timeout</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify">tls_skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a></code> | *No description.* |
 
 ---
 
@@ -3075,10 +3075,10 @@ deregister_critical_service_after_input: str
 ##### `header_input`<sup>Optional</sup> <a name="header_input" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.headerInput"></a>
 
 ```python
-header_input: typing.Union[IResolvable, typing.List[ServiceCheckHeader]]
+header_input: IResolvable | typing.List[ServiceCheckHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.service.ServiceCheckHeader">ServiceCheckHeader</a>]
 
 ---
 
@@ -3165,10 +3165,10 @@ timeout_input: str
 ##### `tls_skip_verify_input`<sup>Optional</sup> <a name="tls_skip_verify_input" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerifyInput"></a>
 
 ```python
-tls_skip_verify_input: typing.Union[bool, IResolvable]
+tls_skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3275,20 +3275,20 @@ timeout: str
 ##### `tls_skip_verify`<sup>Required</sup> <a name="tls_skip_verify" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.tlsSkipVerify"></a>
 
 ```python
-tls_skip_verify: typing.Union[bool, IResolvable]
+tls_skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-consul.service.ServiceCheckOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ServiceCheck]
+internal_value: IResolvable | ServiceCheck
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-consul.service.ServiceCheck">ServiceCheck</a>
 
 ---
 

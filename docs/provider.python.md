@@ -23,9 +23,9 @@ provider.ConsulProvider(
   cert_file: str = None,
   cert_pem: str = None,
   datacenter: str = None,
-  header: typing.Union[IResolvable, typing.List[ConsulProviderHeader]] = None,
+  header: IResolvable | typing.List[ConsulProviderHeader] = None,
   http_auth: str = None,
-  insecure_https: typing.Union[bool, IResolvable] = None,
+  insecure_https: bool | IResolvable = None,
   key_file: str = None,
   key_pem: str = None,
   namespace: str = None,
@@ -47,9 +47,9 @@ provider.ConsulProvider(
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. Defaults to that of the agent. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]</code> | header block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]</code> | header block. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.httpAuth">http_auth</a></code> | <code>str</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecure_https</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecure_https</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyFile">key_file</a></code> | <code>str</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyPem">key_pem</a></code> | <code>str</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs#namespace ConsulProvider#namespace}. |
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]
 
 header block.
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecure_https`<sup>Optional</sup> <a name="insecure_https" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean value to disable SSL certificate verification;
 
@@ -608,9 +608,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFileInput">cert_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPemInput">cert_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenterInput">datacenter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">header_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuthInput">http_auth_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">insecure_https_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">insecure_https_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFileInput">key_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPemInput">key_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
@@ -624,9 +624,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFile">cert_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPem">cert_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenter">datacenter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuth">http_auth</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">insecure_https</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">insecure_https</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFile">key_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPem">key_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
@@ -820,10 +820,10 @@ datacenter_input: str
 ##### `header_input`<sup>Optional</sup> <a name="header_input" id="@cdktf/provider-consul.provider.ConsulProvider.property.headerInput"></a>
 
 ```python
-header_input: typing.Union[IResolvable, typing.List[ConsulProviderHeader]]
+header_input: IResolvable | typing.List[ConsulProviderHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]
 
 ---
 
@@ -840,10 +840,10 @@ http_auth_input: str
 ##### `insecure_https_input`<sup>Optional</sup> <a name="insecure_https_input" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput"></a>
 
 ```python
-insecure_https_input: typing.Union[bool, IResolvable]
+insecure_https_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -980,10 +980,10 @@ datacenter: str
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProvider.property.header"></a>
 
 ```python
-header: typing.Union[IResolvable, typing.List[ConsulProviderHeader]]
+header: IResolvable | typing.List[ConsulProviderHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]
 
 ---
 
@@ -1000,10 +1000,10 @@ http_auth: str
 ##### `insecure_https`<sup>Optional</sup> <a name="insecure_https" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps"></a>
 
 ```python
-insecure_https: typing.Union[bool, IResolvable]
+insecure_https: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1088,7 +1088,7 @@ provider.ConsulProviderAuthJwt(
   auth_method: str,
   bearer_token: str = None,
   meta: typing.Mapping[str] = None,
-  use_terraform_cloud_workload_identity: typing.Union[bool, IResolvable] = None
+  use_terraform_cloud_workload_identity: bool | IResolvable = None
 )
 ```
 
@@ -1099,7 +1099,7 @@ provider.ConsulProviderAuthJwt(
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.authMethod">auth_method</a></code> | <code>str</code> | The name of the auth method to use for login. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.bearerToken">bearer_token</a></code> | <code>str</code> | The bearer token to present to the auth method during login for authentication purposes. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Specifies arbitrary KV metadata linked to the token. Can be useful to track origins. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">use_terraform_cloud_workload_identity</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">use_terraform_cloud_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
 
 ---
 
@@ -1150,10 +1150,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_terraform_cloud_workload_identity`<sup>Optional</sup> <a name="use_terraform_cloud_workload_identity" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity"></a>
 
 ```python
-use_terraform_cloud_workload_identity: typing.Union[bool, IResolvable]
+use_terraform_cloud_workload_identity: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
 
@@ -1178,9 +1178,9 @@ provider.ConsulProviderConfig(
   cert_file: str = None,
   cert_pem: str = None,
   datacenter: str = None,
-  header: typing.Union[IResolvable, typing.List[ConsulProviderHeader]] = None,
+  header: IResolvable | typing.List[ConsulProviderHeader] = None,
   http_auth: str = None,
-  insecure_https: typing.Union[bool, IResolvable] = None,
+  insecure_https: bool | IResolvable = None,
   key_file: str = None,
   key_pem: str = None,
   namespace: str = None,
@@ -1202,9 +1202,9 @@ provider.ConsulProviderConfig(
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">datacenter</a></code> | <code>str</code> | The datacenter to use. Defaults to that of the agent. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">header</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]</code> | header block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]</code> | header block. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">http_auth</a></code> | <code>str</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecure_https</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecure_https</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">key_file</a></code> | <code>str</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">key_pem</a></code> | <code>str</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">namespace</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs#namespace ConsulProvider#namespace}. |
@@ -1344,10 +1344,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.header"></a>
 
 ```python
-header: typing.Union[IResolvable, typing.List[ConsulProviderHeader]]
+header: IResolvable | typing.List[ConsulProviderHeader]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>]
 
 header block.
 
@@ -1374,10 +1374,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `insecure_https`<sup>Optional</sup> <a name="insecure_https" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps"></a>
 
 ```python
-insecure_https: typing.Union[bool, IResolvable]
+insecure_https: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Boolean value to disable SSL certificate verification;
 

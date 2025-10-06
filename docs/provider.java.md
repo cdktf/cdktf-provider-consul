@@ -21,11 +21,9 @@ ConsulProvider.Builder.create(Construct scope, java.lang.String id)
 //  .certFile(java.lang.String)
 //  .certPem(java.lang.String)
 //  .datacenter(java.lang.String)
-//  .header(IResolvable)
-//  .header(java.util.List<ConsulProviderHeader>)
+//  .header(IResolvable|java.util.List<ConsulProviderHeader>)
 //  .httpAuth(java.lang.String)
-//  .insecureHttps(java.lang.Boolean)
-//  .insecureHttps(IResolvable)
+//  .insecureHttps(java.lang.Boolean|IResolvable)
 //  .keyFile(java.lang.String)
 //  .keyPem(java.lang.String)
 //  .namespace(java.lang.String)
@@ -47,9 +45,9 @@ ConsulProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.datacenter">datacenter</a></code> | <code>java.lang.String</code> | The datacenter to use. Defaults to that of the agent. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs#namespace ConsulProvider#namespace}. |
@@ -170,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.header"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
 
 header block.
 
@@ -192,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecureHttps`<sup>Optional</sup> <a name="insecureHttps" id="@cdktf/provider-consul.provider.ConsulProvider.Initializer.parameter.insecureHttps"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean value to disable SSL certificate verification;
 
@@ -592,9 +590,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFileInput">certFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPemInput">certPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenterInput">datacenterInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">headerInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuthInput">httpAuthInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">insecureHttpsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">insecureHttpsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPemInput">keyPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -608,9 +606,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFile">certFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPem">certPem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -804,10 +802,10 @@ public java.lang.String getDatacenterInput();
 ##### `headerInput`<sup>Optional</sup> <a name="headerInput" id="@cdktf/provider-consul.provider.ConsulProvider.property.headerInput"></a>
 
 ```java
-public java.lang.Object getHeaderInput();
+public IResolvable|java.util.List<ConsulProviderHeader> getHeaderInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
 
 ---
 
@@ -824,10 +822,10 @@ public java.lang.String getHttpAuthInput();
 ##### `insecureHttpsInput`<sup>Optional</sup> <a name="insecureHttpsInput" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput"></a>
 
 ```java
-public java.lang.Object getInsecureHttpsInput();
+public java.lang.Boolean|IResolvable getInsecureHttpsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -964,10 +962,10 @@ public java.lang.String getDatacenter();
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProvider.property.header"></a>
 
 ```java
-public java.lang.Object getHeader();
+public IResolvable|java.util.List<ConsulProviderHeader> getHeader();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
 
 ---
 
@@ -984,10 +982,10 @@ public java.lang.String getHttpAuth();
 ##### `insecureHttps`<sup>Optional</sup> <a name="insecureHttps" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps"></a>
 
 ```java
-public java.lang.Object getInsecureHttps();
+public java.lang.Boolean|IResolvable getInsecureHttps();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1072,8 +1070,7 @@ ConsulProviderAuthJwt.builder()
     .authMethod(java.lang.String)
 //  .bearerToken(java.lang.String)
 //  .meta(java.util.Map<java.lang.String, java.lang.String>)
-//  .useTerraformCloudWorkloadIdentity(java.lang.Boolean)
-//  .useTerraformCloudWorkloadIdentity(IResolvable)
+//  .useTerraformCloudWorkloadIdentity(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1084,7 +1081,7 @@ ConsulProviderAuthJwt.builder()
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.authMethod">authMethod</a></code> | <code>java.lang.String</code> | The name of the auth method to use for login. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.bearerToken">bearerToken</a></code> | <code>java.lang.String</code> | The bearer token to present to the auth method during login for authentication purposes. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.meta">meta</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Specifies arbitrary KV metadata linked to the token. Can be useful to track origins. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">useTerraformCloudWorkloadIdentity</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">useTerraformCloudWorkloadIdentity</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
 
 ---
 
@@ -1135,10 +1132,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `useTerraformCloudWorkloadIdentity`<sup>Optional</sup> <a name="useTerraformCloudWorkloadIdentity" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity"></a>
 
 ```java
-public java.lang.Object getUseTerraformCloudWorkloadIdentity();
+public java.lang.Boolean|IResolvable getUseTerraformCloudWorkloadIdentity();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
 
@@ -1163,11 +1160,9 @@ ConsulProviderConfig.builder()
 //  .certFile(java.lang.String)
 //  .certPem(java.lang.String)
 //  .datacenter(java.lang.String)
-//  .header(IResolvable)
-//  .header(java.util.List<ConsulProviderHeader>)
+//  .header(IResolvable|java.util.List<ConsulProviderHeader>)
 //  .httpAuth(java.lang.String)
-//  .insecureHttps(java.lang.Boolean)
-//  .insecureHttps(IResolvable)
+//  .insecureHttps(java.lang.Boolean|IResolvable)
 //  .keyFile(java.lang.String)
 //  .keyPem(java.lang.String)
 //  .namespace(java.lang.String)
@@ -1189,9 +1184,9 @@ ConsulProviderConfig.builder()
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">datacenter</a></code> | <code>java.lang.String</code> | The datacenter to use. Defaults to that of the agent. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">header</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>></code> | header block. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">insecureHttps</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs#namespace ConsulProvider#namespace}. |
@@ -1331,10 +1326,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `header`<sup>Optional</sup> <a name="header" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.header"></a>
 
 ```java
-public java.lang.Object getHeader();
+public IResolvable|java.util.List<ConsulProviderHeader> getHeader();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>>
 
 header block.
 
@@ -1361,10 +1356,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `insecureHttps`<sup>Optional</sup> <a name="insecureHttps" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps"></a>
 
 ```java
-public java.lang.Object getInsecureHttps();
+public java.lang.Boolean|IResolvable getInsecureHttps();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Boolean value to disable SSL certificate verification;
 
