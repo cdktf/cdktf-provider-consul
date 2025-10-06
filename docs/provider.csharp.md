@@ -386,9 +386,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFileInput">CertFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPemInput">CertPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenterInput">DatacenterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">HeaderInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.headerInput">HeaderInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuthInput">HttpAuthInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">InsecureHttpsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput">InsecureHttpsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPemInput">KeyPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
@@ -402,9 +402,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certFile">CertFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.certPem">CertPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.datacenter">Datacenter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">Header</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.header">Header</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.httpAuth">HttpAuth</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">InsecureHttps</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps">InsecureHttps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.keyPem">KeyPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProvider.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
@@ -598,10 +598,10 @@ public string DatacenterInput { get; }
 ##### `HeaderInput`<sup>Optional</sup> <a name="HeaderInput" id="@cdktf/provider-consul.provider.ConsulProvider.property.headerInput"></a>
 
 ```csharp
-public object HeaderInput { get; }
+public IResolvable|ConsulProviderHeader[] HeaderInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]
 
 ---
 
@@ -618,10 +618,10 @@ public string HttpAuthInput { get; }
 ##### `InsecureHttpsInput`<sup>Optional</sup> <a name="InsecureHttpsInput" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttpsInput"></a>
 
 ```csharp
-public object InsecureHttpsInput { get; }
+public bool|IResolvable InsecureHttpsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -758,10 +758,10 @@ public string Datacenter { get; }
 ##### `Header`<sup>Optional</sup> <a name="Header" id="@cdktf/provider-consul.provider.ConsulProvider.property.header"></a>
 
 ```csharp
-public object Header { get; }
+public IResolvable|ConsulProviderHeader[] Header { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]
 
 ---
 
@@ -778,10 +778,10 @@ public string HttpAuth { get; }
 ##### `InsecureHttps`<sup>Optional</sup> <a name="InsecureHttps" id="@cdktf/provider-consul.provider.ConsulProvider.property.insecureHttps"></a>
 
 ```csharp
-public object InsecureHttps { get; }
+public bool|IResolvable InsecureHttps { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -866,7 +866,7 @@ new ConsulProviderAuthJwt {
     string AuthMethod,
     string BearerToken = null,
     System.Collections.Generic.IDictionary<string, string> Meta = null,
-    object UseTerraformCloudWorkloadIdentity = null
+    bool|IResolvable UseTerraformCloudWorkloadIdentity = null
 };
 ```
 
@@ -877,7 +877,7 @@ new ConsulProviderAuthJwt {
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.authMethod">AuthMethod</a></code> | <code>string</code> | The name of the auth method to use for login. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.bearerToken">BearerToken</a></code> | <code>string</code> | The bearer token to present to the auth method during login for authentication purposes. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Specifies arbitrary KV metadata linked to the token. Can be useful to track origins. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">UseTerraformCloudWorkloadIdentity</a></code> | <code>object</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity">UseTerraformCloudWorkloadIdentity</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable. |
 
 ---
 
@@ -928,10 +928,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseTerraformCloudWorkloadIdentity`<sup>Optional</sup> <a name="UseTerraformCloudWorkloadIdentity" id="@cdktf/provider-consul.provider.ConsulProviderAuthJwt.property.useTerraformCloudWorkloadIdentity"></a>
 
 ```csharp
-public object UseTerraformCloudWorkloadIdentity { get; set; }
+public bool|IResolvable UseTerraformCloudWorkloadIdentity { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to use a [Terraform Workload Identity token](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/workload-identity-tokens). The token will be read from the `TFC_WORKLOAD_IDENTITY_TOKEN` environment variable.
 
@@ -956,9 +956,9 @@ new ConsulProviderConfig {
     string CertFile = null,
     string CertPem = null,
     string Datacenter = null,
-    object Header = null,
+    IResolvable|ConsulProviderHeader[] Header = null,
     string HttpAuth = null,
-    object InsecureHttps = null,
+    bool|IResolvable InsecureHttps = null,
     string KeyFile = null,
     string KeyPem = null,
     string Namespace = null,
@@ -980,9 +980,9 @@ new ConsulProviderConfig {
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certFile">CertFile</a></code> | <code>string</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.certPem">CertPem</a></code> | <code>string</code> | PEM-encoded certificate provided to the remote agent; requires use of `key_file` or `key_pem`. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | The datacenter to use. Defaults to that of the agent. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">Header</a></code> | <code>object</code> | header block. |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.header">Header</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.httpAuth">HttpAuth</a></code> | <code>string</code> | HTTP Basic Authentication credentials to be used when communicating with Consul, in the format of either `user` or `user:pass`. |
-| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">InsecureHttps</a></code> | <code>object</code> | Boolean value to disable SSL certificate verification; |
+| <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps">InsecureHttps</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Boolean value to disable SSL certificate verification; |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyFile">KeyFile</a></code> | <code>string</code> | A path to a PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | PEM-encoded private key, required if `cert_file` or `cert_pem` is specified. |
 | <code><a href="#@cdktf/provider-consul.provider.ConsulProviderConfig.property.namespace">Namespace</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs#namespace ConsulProvider#namespace}. |
@@ -1122,10 +1122,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Header`<sup>Optional</sup> <a name="Header" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.header"></a>
 
 ```csharp
-public object Header { get; set; }
+public IResolvable|ConsulProviderHeader[] Header { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-consul.provider.ConsulProviderHeader">ConsulProviderHeader</a>[]
 
 header block.
 
@@ -1152,10 +1152,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureHttps`<sup>Optional</sup> <a name="InsecureHttps" id="@cdktf/provider-consul.provider.ConsulProviderConfig.property.insecureHttps"></a>
 
 ```csharp
-public object InsecureHttps { get; set; }
+public bool|IResolvable InsecureHttps { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Boolean value to disable SSL certificate verification;
 
