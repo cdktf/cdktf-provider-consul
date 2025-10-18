@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token
+// https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The uuid of the token. If omitted, Consul will generate a random uuid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#accessor_id AclToken#accessor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#accessor_id AclToken#accessor_id}
   */
   readonly accessorId?: string;
   /**
   * The description of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#description AclToken#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#description AclToken#description}
   */
   readonly description?: string;
   /**
   * If set this represents the point after which a token should be considered revoked and is eligible for destruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#expiration_time AclToken#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#expiration_time AclToken#expiration_time}
   */
   readonly expirationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#id AclToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#id AclToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,49 +40,49 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * The flag to set the token local to the current datacenter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#local AclToken#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#local AclToken#local}
   */
   readonly local?: boolean | cdktf.IResolvable;
   /**
   * The namespace to create the token within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#namespace AclToken#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#namespace AclToken#namespace}
   */
   readonly namespace?: string;
   /**
   * The partition the ACL token is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#partition AclToken#partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#partition AclToken#partition}
   */
   readonly partition?: string;
   /**
   * The list of policies attached to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#policies AclToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#policies AclToken#policies}
   */
   readonly policies?: string[];
   /**
   * The list of roles attached to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#roles AclToken#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#roles AclToken#roles}
   */
   readonly roles?: string[];
   /**
   * node_identities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#node_identities AclToken#node_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#node_identities AclToken#node_identities}
   */
   readonly nodeIdentities?: AclTokenNodeIdentities[] | cdktf.IResolvable;
   /**
   * service_identities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#service_identities AclToken#service_identities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#service_identities AclToken#service_identities}
   */
   readonly serviceIdentities?: AclTokenServiceIdentities[] | cdktf.IResolvable;
   /**
   * templated_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#templated_policies AclToken#templated_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#templated_policies AclToken#templated_policies}
   */
   readonly templatedPolicies?: AclTokenTemplatedPolicies[] | cdktf.IResolvable;
 }
@@ -90,13 +90,13 @@ export interface AclTokenNodeIdentities {
   /**
   * The datacenter of the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenter AclToken#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#datacenter AclToken#datacenter}
   */
   readonly datacenter: string;
   /**
   * The name of the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#node_name AclToken#node_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#node_name AclToken#node_name}
   */
   readonly nodeName: string;
 }
@@ -237,13 +237,13 @@ export interface AclTokenServiceIdentities {
   /**
   * Specifies the datacenters the effective policy is valid within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#datacenters AclToken#datacenters}
   */
   readonly datacenters?: string[];
   /**
   * The name of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#service_name AclToken#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#service_name AclToken#service_name}
   */
   readonly serviceName: string;
 }
@@ -387,7 +387,7 @@ export interface AclTokenTemplatedPoliciesTemplateVariables {
   /**
   * The name of node, workload identity or service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#name AclToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#name AclToken#name}
   */
   readonly name?: string;
 }
@@ -473,19 +473,19 @@ export interface AclTokenTemplatedPolicies {
   /**
   * Specifies the datacenters the effective policy is valid within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#datacenters AclToken#datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#datacenters AclToken#datacenters}
   */
   readonly datacenters?: string[];
   /**
   * The name of the templated policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#template_name AclToken#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#template_name AclToken#template_name}
   */
   readonly templateName: string;
   /**
   * template_variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#template_variables AclToken#template_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#template_variables AclToken#template_variables}
   */
   readonly templateVariables?: AclTokenTemplatedPoliciesTemplateVariables;
 }
@@ -656,7 +656,7 @@ export class AclTokenTemplatedPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token consul_acl_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token consul_acl_token}
 */
 export class AclToken extends cdktf.TerraformResource {
 
@@ -672,7 +672,7 @@ export class AclToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclToken to import
-  * @param importFromId The id of the existing AclToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -684,7 +684,7 @@ export class AclToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/resources/acl_token consul_acl_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/resources/acl_token consul_acl_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -695,7 +695,7 @@ export class AclToken extends cdktf.TerraformResource {
       terraformResourceType: 'consul_acl_token',
       terraformGeneratorMetadata: {
         providerName: 'consul',
-        providerVersion: '2.22.0',
+        providerVersion: '2.22.1',
         providerVersionConstraint: '~> 2.16'
       },
       provider: config.provider,
