@@ -4,7 +4,7 @@
 
 ### DataConsulDatacenters <a name="DataConsulDatacenters" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/datacenters consul_datacenters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/datacenters consul_datacenters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacenters.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataConsulDatacenters to i
 
 The id of the existing DataConsulDatacenters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/datacenters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/datacenters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ new DataConsulDatacentersConfig {
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/datacenters#id DataConsulDatacenters#id}. |
+| <code><a href="#@cdktf/provider-consul.dataConsulDatacenters.DataConsulDatacentersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/datacenters#id DataConsulDatacenters#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.0/docs/data-sources/datacenters#id DataConsulDatacenters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/consul/2.22.1/docs/data-sources/datacenters#id DataConsulDatacenters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
