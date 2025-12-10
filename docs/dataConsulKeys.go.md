@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/consul/2.2
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeys(scope Construct, id *string, config DataConsulKeysConfig) DataConsulKeys
 ```
@@ -338,7 +338,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ dataconsulkeys.DataConsulKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ dataconsulkeys.DataConsulKeys_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.DataConsulKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 &dataconsulkeys.DataConsulKeysConfig {
 	Connection: interface{},
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 &dataconsulkeys.DataConsulKeysKey {
 	Name: *string,
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKeyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeysKeyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataConsulKeysKeyList
 ```
@@ -1217,7 +1217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-consul.dataConsulKeys.DataConsulKeysKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-consul-go/consul/dataconsulkeys"
+import "github.com/cdktf/cdktf-provider-consul-go/consul/v10/dataconsulkeys"
 
 dataconsulkeys.NewDataConsulKeysKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataConsulKeysKeyOutputReference
 ```
